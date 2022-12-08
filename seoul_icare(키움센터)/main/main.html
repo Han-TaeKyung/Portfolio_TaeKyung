@@ -1,0 +1,626 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>서울시아이돌봄포털</title>
+    <link rel="stylesheet" type="text/css" href="../css/reset.css">
+    <link rel="stylesheet" type="text/css" href="../css/layout.css">
+    <link rel="stylesheet" type="text/css" href="../css/layout_media.css">
+    <link rel="stylesheet" type="text/css" href="../css/main.css">
+    <link rel="stylesheet" type="text/css" href="../css/main_media.css">
+    <script src="../js/lib/jquery-1.12.4.min.js"></script>
+    <script src="../js/lib/bxslider.min.js"></script>
+    <script src="../js/lib/jquery.mousewheel.js"></script>
+    <script src="../js/layout.js"></script>
+    <script src="../js/main.js"></script>
+</head>
+<body>
+
+<div id="skipNav">
+    <p><a href="#container">본문바로가기</a></p>
+    <p><a href="#gnb">주메뉴바로가기</a></p>
+</div>
+
+<div id="seoul-common-gnb">서울시 메뉴바 들어갈 곳</div>
+
+<div class="header">
+    <div class="header_wrap">
+        <div class="header_top">
+            <ul>
+                <!--<li class="h_search">
+                    <input type="text" title="검색어 입력폼" placeholder="검색어를 입력하세요.">
+                    <button type="button"><img src="../img/common/dot_ico.png" alt="검색버튼"></button>
+                </li>-->
+                <li class="h_btn">
+                    <a href="#">로그인</a>
+                </li>
+                <li class="h_btn">
+                    <a href="#">회원가입</a>
+                </li>
+            </ul>
+        </div><!--header_top END-->
+        <div id="gnb">
+            <ul>
+                <li class="logo">
+                    <a href="main.html" title="메인으로"><img src="../img/common/logo.png" alt="서울시 아이돌봄 케어"></a>
+                </li>
+                <li class="m_gnbBtn">
+                    <button type="button" class="m_gnbOpen"><img src="../img/common/m_gnb.png" alt="메뉴열기"></button>
+                    <button type="button" class="m_gnbClose"><img src="../img/common/m_gnb_close.png" alt="메뉴닫기"></button>
+                </li>
+                <li class="gnb_wrap">
+                    <div class="mobile_login">
+                        <ul>
+                            <li class="login_btn"><a href="#">로그인</a> </li>
+                            <li class="join_btn"><a href="#">회원가입</a> </li>
+                        </ul>
+                    </div>
+                    <ul>
+                        <li><a href="../sub/sub_layout.html" class="pc_menu">서비스 소개</a>
+                            <a href="#" class="mobile_menu">서비스 소개</a>
+                            <div class="gnb_2dep">
+                                <ul>
+                                    <li><a href="#">서울시 온마을 아이돌봄사업</a></li>
+                                    <li><a href="#">우리동네 키움센터</a></li>
+                                    <li><a href="#">지역아동센터</a></li>
+                                    <li><a href="#">열린 육아방</a></li>
+                                    <li><a href="#">공동육아 나눔터</a></li>
+                                    <li class="gnb_3dep">
+                                        <a href="#" class="pc_menu">서울시 아이돌봄 서비스</a>
+                                        <a href="#" class="mobile_menu">서울시 아이돌봄 서비스</a>
+                                        <ul>
+                                            <li><a href="#">아이돌봄 서비스 소개</a> </li>
+                                            <li><a href="#">아이돌봄 서비스 종류</a> </li>
+                                            <li><a href="#">아이돌봄 서비스 신청방법</a> </li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="#">초등돌봄교실</a></li>
+                                    <li><a href="#">청소년방과후 아카데미</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li><a href="#" class="pc_menu">우리동네키움센터 예약</a>
+                            <a href="#" class="mobile_menu">우리동네키움센터 예약</a>
+                            <div class="gnb_2dep">
+                                <ul>
+                                    <li><a href="#">돌봄서비스 예약 안내</a> </li>
+                                    <li><a href="#">우리동네키움센터 예약</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="gnb_bg_none"><a href="#">맞춤형 정보 서비스</a> </li>
+                        <li class="gnb_bg_none"><a href="#">아이돌봄시설 지도</a> </li>
+                        <li><a href="#" class="pc_menu">홍보·알림</a>
+                            <a href="#" class="mobile_menu">홍보·알림</a>
+                            <div class="gnb_2dep">
+                                <ul>
+                                    <li><a href="#">공지사항</a> </li>
+                                    <li><a href="#">홍보방</a></li>
+                                    <li><a href="#">우리동네키움센터 소식</a></li>
+                                    <li><a href="#">갤러리</a></li>
+                                    <li><a href="#">우리동네 보육반장 소식</a> </li>
+                                    <li><a href="#">자주묻는질문</a> </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li><a href="#" class="pc_menu">우리키움 참여단</a>
+                            <a href="#" class="mobile_menu">우리키움 참여단</a>
+                            <div class="gnb_2dep">
+                                <ul>
+                                    <li><a href="#">우리키움 참여단 소개</a> </li>
+                                    <li><a href="#">우리키움 참여단 인증</a> </li>
+                                    <li><a href="#">참여단 소통방</a></li>
+                                    <li><a href="#">공지사항</a></li>
+                                    <li><a href="#">활동·알림</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                    </ul>
+                </li><!--gnb_wrap END-->
+            </ul>
+            <div class="m_gnb_bg"></div>
+        </div><!--gnb END-->
+    </div><!--header_wrap END-->
+</div><!--header END-->
+
+
+<div id="container" class="main_page01 page" data-page="1">
+    <div class="main_visual">
+        <!--20191125 수정-->
+        <ul id="main_slider">
+            <li>
+                <img src="../img/main/main_visual01.jpg" alt="메인비주얼1">
+                <div class="main_visual_txt">
+                    <h4>온마을 아이돌봄</h4>
+                    <h5><span>서울시</span> 우리동네키움센터</h5>
+                    <p>
+                        놀면서 배우는 우리들 꿈터!<br>
+                        초등돌봄, 이제 서울시가 책임집니다.
+                    </p>
+                </div><!--main_visual_txt END-->
+            </li>
+            <li>
+                <img src="../img/main/main_visual02.jpg" alt="메인비주얼2">
+                <div class="main_visual_txt">
+                    <h4>온마을 아이돌봄</h4>
+                    <h5><span>서울시</span> 우리동네키움센터</h5>
+                    <p>
+                        방과 후, 틈새를 메움 더 큰 희망을 키움<br>
+                        서울시 우리동네키움포털
+                    </p>
+                </div><!--main_visual_txt END-->
+            </li>
+        </ul><!--main_slider END-->
+        <!--20191125 수정 END-->
+        <ul class="main_visual_con">
+
+            <li class="main_visual_btn">
+                <ul>
+                    <li><a href="#" class="visual_prev"><img src="../img/main/prev.png" alt="이전"> </a> </li>
+                    <li id="slide-counter01" class="slide_counter"></li>
+                    <li><a href="#" class="visual_next"><img src="../img/main/next.png" alt="다음"></a> </li>
+                    <li class="ml_20">
+                        <a href="#" class="visual_stop"><img src="../img/main/stop.png" alt="일시정지"></a>
+                        <a href="#" class="visual_play"><img src="../img/main/play.png" alt="재생"></a>
+                    </li>
+                </ul>
+            </li><!--main_visual_btn END-->
+        </ul><!-- main_visual_con END -->
+    </div><!--main_visual END-->
+
+    <div class="main_page01_wrap">
+        <div class="page01_con">
+            <div class="main_loginBefore"><!--로그인 하기 전-->
+                <ul>
+                    <li class="main_search">
+                        <h4>우리동네 돌봄 시설을 찾으신다면?</h4>
+                        <p class="dot">아이돌봄 포털에서 서울시의 돌봄 시설과 행사&교육을 검색할 수 있습니다.</p>
+                        <div class="main_searchBox">
+                            <ul>
+                                <li class="search_input"><input type="text" title="자치구 또는 이용하려는 서비스 검색폼" placeholder="거주하시는 자치구 또는 이용하려는 서비스를 입력해주세요."> </li>
+                                <li class="search_btn">
+                                    <button type="button"><img src="../img/main/main_searchBtn.png" alt="검색버튼"> </button>
+                                </li>
+                            </ul>
+                        </div><!--main_searchBox END-->
+                    </li><!--main_search END-->
+                    <li class="main_login">
+                        <p class="dot">로그인을 하시면 거주지 주변 돌봄 시설과 행사&교육 정보를 확인할 수 있습니다.</p>
+                        <ul>
+                            <li class="main_login_btn gradient"><a href="#">로그인</a> </li>
+                            <li>아직 회원이 아니시라면? </li>
+                            <li class="main_join_btn"><a href="#">회원가입</a> </li>
+                        </ul>
+                    </li><!--main_login END-->
+                </ul>
+            </div><!--main_loginBefore END-->
+
+            <div class="main_loginAfter" style="display: none;"><!--로그인 한 뒤-->
+                <div class="clear">
+                    <h4>우리동네 돌봄시설 현황</h4>
+                    <p><img src="../img/main/location.png" alt="위치아이콘"><a href="#">구로구</a> </p>
+                </div>
+                <div class="main_center_wrap">
+                    <ul class="main_center_num">
+                        <li>
+                            <a href="#">
+                                <span class="numBox">
+                                    <b>3</b>
+                                    개소
+                                </span>
+                                <span class="numTxt">
+                                    우리동네키움센터
+                                </span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <span class="numBox">
+                                    <b>12</b>
+                                    개소
+                                </span>
+                                <span class="numTxt">
+                                    지역아동센터
+                                </span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <span class="numBox">
+                                    <b>24</b>
+                                    개소
+                                </span>
+                                <span class="numTxt">
+                                    초등돌봄교실
+                                </span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <span class="numBox">
+                                    <b>2</b>
+                                    개소
+                                </span>
+                                <span class="numTxt">
+                                    열린육아방
+                                </span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <span class="numBox">
+                                    <b>5</b>
+                                    개소
+                                </span>
+                                <span class="numTxt">
+                                    공동육아나눔터
+                                </span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <span class="numBox">
+                                    <b>12</b>
+                                    개소
+                                </span>
+                                <span class="numTxt">
+                                    영.유아보육시설
+                                </span>
+                            </a>
+                        </li>
+                    </ul>
+                    <ul class="main_center_rgt">
+                        <li>
+                            <p class="dot font_222">자세한 정보를 확인하고 싶으시다면?</p>
+                            <a href="#" class="main_btn_ty01 gradient">맞춤형 정보 서비스</a>
+                        </li>
+                    </ul>
+                </div><!--main_center_wrap END-->
+            </div><!--main_loginAfter END-->
+        </div>
+    </div><!--main_page01_con END-->
+</div><!--main_page01 END-->
+<div class="main_page02 page" data-page="2">
+    <div class="main_content">
+        <h4 class="main_title_ty01">
+            <span>서울시</span> 아이돌봄 서비스는
+        </h4>
+        <p class="main_title_ty02">
+            영유아에서 18세 미만 청소년까지 다양하게 이용 가능합니다.
+        </p>
+        <div class="main_page02_con"><!--PC화면-->
+            <!-- 링크연결 20191128 -->
+            <div class="main_img_map">
+                <img src="../img/main/main_page02_img.png" alt="열린육아방 : 만6세이하 영유아 및 부모, 공동육아 나눔터 : 18세 미만의 자녀나 부모, 우리동네 키움센터 : 만6~12세 초등학생, 초등 돌봄교실 : 초1~6학년, 지역아동센터 : 만18세미만">
+                <p class="img_link img_link01"><a href="#" title="열린육아방 바로가기"></a></p>
+                <p class="img_link img_link02"><a href="#" title="공동육아나눔터 바로가기"></a></p>
+                <p class="img_link img_link03"><a href="#" title="우리동네키움센터 바로가기"></a></p>
+                <p class="img_link img_link04"><a href="#" title="초등돌봄교실 바로가기"></a></p>
+                <p class="img_link img_link05"><a href="#" title="지역아동센터 바로가기"></a></p>
+            </div><!--main_img_map END-->
+        </div>
+        <div class="m_main_page02_con"><!--모바일화면-->
+            <ul>
+                <li class="m_m_page02_ico"><img src="../img/main/main_page02_img01.png" alt="열린육아방 아이콘"></li>
+                <li class="m_m_page02_txt">
+                    <a href="#"> <span>열린육아방</span> 만6세이라 영유아 및 부모</a>
+                </li>
+            </ul>
+            <ul>
+                <li class="m_m_page02_ico"><img src="../img/main/main_page02_img02.png" alt="공동육아나눔터 아이콘"></li>
+                <li class="m_m_page02_txt">
+                    <a href="#"> <span>공동육아나눔터</span> 18세 미만의 자녀나 부모</a>
+                </li>
+            </ul>
+            <ul>
+                <li class="m_m_page02_ico"><img src="../img/main/main_page02_img03.png" alt="우리동네 키움센터 아이콘"></li>
+                <li class="m_m_page02_txt">
+                    <a href="#"> <span>우리동네 키움센터</span> 만6~12세 초등학생</a>
+                </li>
+            </ul>
+            <ul>
+                <li class="m_m_page02_ico"><img src="../img/main/main_page02_img04.png" alt="초등 돌봄교실 아이콘"></li>
+                <li class="m_m_page02_txt">
+                    <a href="#">  <span>초등 돌봄교실</span> 초1~6학년</a>
+                </li>
+            </ul>
+            <ul>
+                <li class="m_m_page02_ico"><img src="../img/main/main_page02_img05.png" alt="지역아동센터 아이콘"></li>
+                <li class="m_m_page02_txt">
+                    <a href="#"> <span>지역아동센터</span> 만18세 미만</a>
+                </li>
+            </ul>
+        </div>
+        <!-- 링크연결 20191128 END-->
+    </div><!--main_content-->
+</div><!--main_page02 END-->
+<div class="main_page03 page" data-page="3">
+    <div class="main_content">
+        <h4 class="main_title_ty01">
+            <span>서울시</span> 아이돌봄 서비스는
+        </h4>
+        <p class="main_title_ty02">
+            돌봄 사각지대를 없애고 안전한 돌봄 서비스를 제공하기 위해<br>
+            집, 학교에 인접한 10분거리 우리동네 키움센터를 설치하고 있습니다.
+        </p>
+        <ul class="main_half">
+            <li class="main_half_lft">
+                <div>
+                    <h5 class="main_title_ty03">서울시 아이돌봄 서비스 현황</h5>
+                    <ul class="table_ty_li">
+                        <li>
+                            <p class="title_h">구분</p>
+                            <p class="title_h02">개소</p>
+                        </li>
+                        <li>
+                            <p class="title_h02">우리동네<br>키움센터</p>
+                            <p class="con_num">79</p>
+                        </li>
+                        <li>
+                            <p class="title_h02">지역<br>아동센터</p>
+                            <p class="con_num">433</p>
+                        </li>
+                        <li>
+                            <p class="title_h02">열린<br>육아방</p>
+                            <p class="con_num">42</p>
+                        </li>
+                        <li>
+                            <p class="title_h02">공동육아<br>나눔터</p>
+                            <p class="con_num">28</p>
+                        </li>
+                        <li>
+                            <p class="title_h02">초등<br>돌봄교실</p>
+                            <p class="con_num">602</p>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="mt_65">
+                    <h5 class="main_title_ty03">우리동네 키움센터 연차별 추진목표</h5>
+                    <div>
+                        <img src="../img/main/graph.png" alt="19년 94개소 신규설치, 22년까지 400개소 확충 : 2018년 4개소, 2019년 98개소, 2020년 217개소, 2021년 336개소, 2022년 400개소">
+                    </div>
+                </div>
+            </li>
+            <li class="main_half_rgt">
+                <div>
+                    <h5 class="main_title_ty03">놀면서 배우는 우리들 꿈터 우리동네키움센터</h5>
+                    <ul class="main_list mt_40">
+                        <li>집, 학교 주변 이용가능한 초등돌봄 센터 확대</li>
+                        <li>지역, 아동특성 고려한 안전한 공간 디자인</li>
+                    </ul>
+                    <!-- 20191125 수정 -->
+                    <div class="mt_20 main_map">
+                        <img  class="map_img" src="../img/main/main_map.png" alt="지역별 키움센터 : 강서구, 양천구, 구로구, 금천구, 영등포구, 동작구, 관악구, 서초구, 강남구, 송파구, 강동구, 도봉구, 노원구, 강북구, 은평구, 성북구, 중랑구, 동대문구, 종로구, 서대문구, 마포구, 용산구, 중구, 성동구, 광진구">
+                        <ul class="map_pin">
+                            <li class="pin_gs"><p>99</p></li><!--강서구-->
+                            <li class="pin_yc"><p>99</p></li><!--양천구-->
+                            <li class="pin_gr"><p>99</p></li><!--구로구-->
+                            <li class="pin_gc"><p>99</p></li><!--금천구-->
+                            <li class="pin_ydp"><p>99</p></li><!--영등포구-->
+                            <li class="pin_dj"><p>99</p></li><!--동작구-->
+                            <li class="pin_ga"><p>99</p></li><!--관악구-->
+                            <li class="pin_sc"><p>99</p></li><!--서초구-->
+                            <li class="pin_gn"><p>99</p></li><!--강남구-->
+                            <li class="pin_sp"><p>99</p></li><!--송파구-->
+                            <li class="pin_gd"><p>99</p></li><!--강동구-->
+                            <li class="pin_db"><p>99</p></li><!--도봉구-->
+                            <li class="pin_no"><p>99</p></li><!--노원구-->
+                            <li class="pin_gb"><p>99</p></li><!--강북구-->
+                            <li class="pin_ep"><p>99</p></li><!--은평구-->
+                            <li class="pin_sb"><p>99</p></li><!--성북구-->
+                            <li class="pin_jr01"><p>99</p></li><!--중랑구-->
+                            <li class="pin_ddm"><p>99</p></li><!--동대문구-->
+                            <li class="pin_jr02"><p>99</p></li><!--종로구-->
+                            <li class="pin_sdm"><p>99</p></li><!--서대문구-->
+                            <li class="pin_mp"><p>99</p></li><!--마포구-->
+                            <li class="pin_ys"><p>99</p></li><!--용산구-->
+                            <li class="pin_jg"><p>99</p></li><!--중구-->
+                            <li class="pin_sd"><p>99</p></li><!--성동구-->
+                            <li class="pin_gj"><p>99</p></li><!--광진구-->
+                        </ul><!--map_pin-->
+                    </div><!--main_map END-->
+                    <!-- 20191125 수정 END-->
+                </div>
+            </li>
+        </ul><!--main_half END-->
+    </div><!--main_content-->
+</div><!--main_page03 END-->
+<div class="main_page04 page" data-page="4">
+    <div class="main_content01">
+        <h4 class="main_title_ty04"><span class="font_ye font_b">우리키움</span><span class="font_red font_b">참여단의 활동</span>을 확인해보세요!</h4>
+        <div class="main_post">
+            <ul class="post_btn"><!-- 20200103 버튼 위치 변경 슬라이드 위로 옮겨주세요. -->
+                <li><a href="#" class="post_prev"></a> </li>
+                <li><a href="#" class="post_next"></a> </li>
+            </ul>
+            <ul id="main_post_slide">
+                <li class="post">
+                    <a href="#">
+                        <span class="post_img">
+                            <img src="../img/main/post_img01.png" alt="참여단 활동 이미지">
+                        </span>
+                        <span class="post_con">
+                            <b class="post_title">닌니닌니 사랑해요</b>
+                            강동구<b class="post_day">2019.03.31</b>
+                        </span>
+                    </a>
+                </li>
+                <li class="post">
+                    <a href="#">
+                        <span class="post_img">
+                            <img src="../img/main/post_img02.png" alt="참여단 활동 이미지">
+                        </span>
+                        <span class="post_con">
+                            <b class="post_title">자연의 변화를 읽을 줄 아는 아이</b>
+                            강동구<b class="post_day">2019.03.31</b>
+                        </span>
+                    </a>
+                </li>
+                <li class="post">
+                    <a href="#">
+                        <span class="post_img">
+                            <img src="../img/main/post_img03.png" alt="참여단 활동 이미지">
+                        </span>
+                        <span class="post_con">
+                            <b class="post_title">사랑으로 피어나는 우리아이</b>
+                            강동구<b class="post_day">2019.03.31</b>
+                        </span>
+                    </a>
+                </li>
+            </ul><!--main_post_slide END-->
+
+
+        </div><!--main_post END-->
+    </div>
+    <div class="main_content02">
+        <div>
+            <h4 class="main_title_ty04"><span class="font_ye font_b">서울시</span> <span class="font_red font_b">아이돌봄 서비스</span> 소식입니다.</h4>
+            <ul class="main_half main_half02">
+                <li>
+                    <div class="tab_list m1">
+                        <ul>
+                            <li class="m1">
+                                <a href="#" onclick="return false"><span>공지사항</span></a>
+                                <ul>
+                                    <li class="latest_con"><a href="#">2019년도 아이돌봄 홈페이지(시스템) 개편 설문조사 홈페이지(시스템) 개편 설문조사</a><span class="date">2019.03.31</span></li>
+                                    <li class="latest_con"><a href="#">이용자 서약서 재동의 진행 안내</a><span class="date">2019.03.31</span></li>
+                                    <li class="latest_con"><a href="#">2019년 정부지원 유형 미판정으로 인한 판정 중지 안내</a><span class="date">2019.03.31</span></li>
+                                    <li class="latest_con"><a href="#">자녀양육 정부지원 중복금지 기준 예외에 대한 추가</a><span class="date">2019.03.31</span></li>
+                                    <li class="latest_con"><a href="#">아이돌보미의 겸업금지 관련 안내</a><span class="date">2019.03.31</span></li>
+                                </ul>
+                                <ul>
+                                    <li class="latest_more"><a href="#">더보기</a> </li>
+                                </ul>
+                            </li>
+
+                            <li class="m2">
+                                <a href="#" onclick="return false"><span>홍보방</span></a>
+                                <ul>
+                                    <li class="latest_con"><a href="#">2019년도 아이돌봄 홈페이지(시스템) 개편 설문조사2</a><span class="date">2019.03.31</span></li>
+                                    <li class="latest_con"><a href="#">이용자 서약서 재동의 진행 안내</a><span class="date">2019.03.31</span></li>
+                                    <li class="latest_con"><a href="#">2019년 정부지원 유형 미판정으로 인한 판정 중지 안내</a><span class="date">2019.03.31</span></li>
+                                    <li class="latest_con"><a href="#">자녀양육 정부지원 중복금지 기준 예외에 대한 추가</a><span class="date">2019.03.31</span></li>
+                                    <li class="latest_con"><a href="#">아이돌보미의 겸업금지 관련 안내</a><span class="date">2019.03.31</span></li>
+                                </ul>
+                                <ul>
+                                    <li class="latest_more"><a href="#">더보기</a> </li>
+                                </ul>
+                            </li>
+                            <li class="m3">
+                                <a href="#" onclick="return false"><span>우리동네키움센터 소식</span></a>
+                                <ul>
+                                    <li class="latest_con"><a href="#">2019년도 아이돌봄 홈페이지(시스템) 개편 설문조사3</a><span class="date">2019.03.31</span></li>
+                                    <li class="latest_con"><a href="#">이용자 서약서 재동의 진행 안내</a><span class="date">2019.03.31</span></li>
+                                    <li class="latest_con"><a href="#">2019년 정부지원 유형 미판정으로 인한 판정 중지 안내</a><span class="date">2019.03.31</span></li>
+                                    <li class="latest_con"><a href="#">자녀양육 정부지원 중복금지 기준 예외에 대한 추가</a><span class="date">2019.03.31</span></li>
+                                    <li class="latest_con"><a href="#">아이돌보미의 겸업금지 관련 안내</a><span class="date">2019.03.31</span></li>
+                                </ul>
+                                <ul>
+                                    <li class="latest_more"><a href="#">더보기</a> </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div><!--tab_list END-->
+                </li>
+                <li>
+                    <h5 class="main_title_ty03">갤러리</h5>
+                    <div class="main_gallery">
+                        <ul id="gallery_slide">
+                            <li class="gallery_slide_con">
+                                <a href="#">
+                                    <img src="../img/main/gallery_img01.png" alt="갤러리 이미지">
+                                    <span class="gallery_slide_t">
+                                        <b>제 2회 성동구 우리동네키움센터 제 2회 성동구 우리동네키움센터</b>
+                                        2019.03.31
+                                    </span>
+                                </a>
+                            </li>
+                            <li class="gallery_slide_con">
+                                <a href="#">
+                                    <img src="../img/main/gallery_img02.png" alt="갤러리 이미지">
+                                    <span class="gallery_slide_t">
+                                        <b>제 2회 성동구 우리동네키움센터…</b>
+                                        2019.03.31
+                                    </span>
+                                </a>
+                            </li>
+                            <li class="gallery_slide_con">
+                                <a href="#">
+                                    <img src="../img/main/gallery_img01.png" alt="갤러리 이미지">
+                                    <span class="gallery_slide_t">
+                                        <b>제 2회 성동구 우리동네키움센터 제 2회 성동구 우리동네키움센터</b>
+                                        2019.03.31
+                                    </span>
+                                </a>
+                            </li>
+                        </ul><!--gallery_slide END-->
+
+                        <div class="gallery_more">
+                            <a href="#">더보기</a>
+                        </div>
+                    </div>
+                </li>
+            </ul><!--main_half02-->
+        </div>
+    </div>
+</div><!--main_page04 END-->
+
+<div class="main_nav">
+    <ul>
+        <li data-n="1" class="main_on main_nav01"></li>
+        <li data-n="2" class="main_nav02"></li>
+        <li data-n="3" class="main_nav03"></li>
+        <li data-n="4" class="main_nav04"></li>
+    </ul>
+</div><!--main_line END-->
+
+
+<footer id="footer">
+    <div class="footer_wrap">
+        <div class="inner">
+            <div class="footer-link">
+                <ul>
+                    <li><a href="#">홈페이지 도우미</a></li>
+                    <li class="policy"><a href="#">개인정보처리방침</a></li>
+                    <li class="mobile_none"><a href="#">저작권 정책</a></li>
+                    <li class="mobile_none"><a href="#">영상정보처리기기 운영 관리방침</a></li>
+                    <li><a href="#">홈페이지 바로잡기</a></li>
+                    <li class="mobile_none"><a href="#">사이트맵</a></li>
+                    <li id="li_mogo"><a href="#">PC버전</a></li>
+                </ul>
+                <div class="sns sns-new">
+                    <a href="#" class="rss">RSS</a>
+                    <a href="https://www.facebook.com/seoul.kr" class="fb" target="_blank" title="새창열림" onclick="se_click_logging('https://www.facebook.com/seoul.kr?tr_code=sns',location.href);">페이스북</a>
+                    <a href="http://twitter.com/seoulmania" class="tw" target="_blank" title="새창열림" onclick="se_click_logging('http://twitter.com/seoulmania?tr_code=sns',location.href);">트위터</a>
+                    <a href="http://www.instagram.com/seoul_official" class="ins" target="_blank" title="새창열림" onclick="se_click_logging('http://www.instagram.com/seoul_official?tr_code=sns',location.href);">인스타그램</a>
+                    <a href="http://story.kakao.com/ch/seoul" class="ks" target="_blank" title="새창열림" onclick="se_click_logging('http://story.kakao.com/ch/seoul?tr_code=sns',location.href);">카카오스토리</a>
+                    <a href="http://www.youtube.com/seoullive" class="yt" target="_blank" title="새창열림" onclick="se_click_logging('http://www.youtube.com/seoullive?tr_code=sns',location.href);">유튜브</a>
+                    <a href="http://blog.seoul.go.kr" class="bl" target="_blank" title="새창열림" onclick="se_click_logging('http://blog.seoul.go.kr?tr_code=sns',location.href);">블로그</a>
+                </div>
+            </div>
+        </div>
+    </div><!--footer_wrap END-->
+    <div class="footer_wrap02">
+        <div class="row">
+            <div class="inner">
+                <span class="foo-logo inquiry"><em class="blind">문의 전화번호 120, 정보를 못찾으셨나요? 120 다산콜센터로 물어보세요!</em></span>
+                <div class="address">
+                    <p class="city">서울특별시청  04524 서울특별시 중구 세종대로 110 <a href="#" onclick="action_logging({tr_code:'footer_07'});" class="map">[찾아오시는 길]</a></p>
+                    <p class="">대표전화 : 02-120 또는 02-731-2120</p>
+                    <p class="copy">© Seoul Metropolitan Government all rights reserved</p>
+                </div>
+                <div class="mark">
+                    <!--
+                    <a href="/seoul/gcs.do"  onclick="action_logging({tr_code:'gcs'});" target="_blank" title="굿콘텐츠제공서비스 품질인증서"><img src="/res_newseoul/images/footer_mark_good.png" alt="이용자가 선택한 우수 콘텐츠 서비스 - 한국데이터베이스진흥원 인증마크" /></a>
+                    -->
+                    <a href="#" onclick="action_logging({tr_code:'wa'});" title="웹접근성 품질마크"><img src="../img/common/footer_mark_wah.png" alt="과학기술정보통신부 WEB ACCESSIBILITY 마크(웹 접근성 품질인증 마크)"></a>
+                </div>
+            </div>
+        </div>
+    </div><!--footer_wrap02 END-->
+</footer>
+
+</body>
+</html>

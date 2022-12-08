@@ -1,0 +1,95 @@
+/* reset */
+/* html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, menu, nav, output, ruby, section, summary, time, mark, audio, video, input, textarea{
+    margin:0;
+    padding:0;
+    border:0;
+    font-size:100%;
+    vertical-align:baseline;
+    outline:none;
+    -webkit-text-size-adjust:none;
+    -webkit-box-sizing:border-box;
+    -moz-box-sizing:border-box;
+    box-sizing:border-box;
+
+}
+ol, ul{
+    list-style:none;
+}
+img{
+    border:0;
+    max-width:100%;
+    vertical-align:top
+}
+
+img, fieldset{
+    border:0
+}
+
+ul, ol, li, dl{
+    list-style:none;
+}
+a, a:link{
+    text-decoration:none;
+}
+
+button{
+    margin:0;
+    padding:0;
+    border:0;
+    cursor:pointer
+} */
+@font-face {
+    font-family: 'Nanum Barun Gothic';
+    font-style: normal;
+    font-weight: 400;
+    src: url("fonts/NanumBarunGothic-Regular.eot");
+    src: url("fonts/NanumBarunGothic-Regular.eot?#iefix") format("embedded-opentype"), url("fonts/NanumBarunGothic-Regular.woff") format("woff"), url("fonts/NanumBarunGothic-Regular.ttf") format("truetype"); }
+
+@font-face {
+    font-family: 'Nanum Barun Gothic';
+    font-style: normal;
+    font-weight: 700;
+    src: url("fonts/NanumBarunGothic-Bold.eot");
+    src: url("fonts/NanumBarunGothic-Bold.eot?#iefix") format("embedded-opentype"), url("fonts/NanumBarunGothic-Bold.woff") format("woff"), url("fonts/NanumBarunGothic-Bold.ttf") format("truetype"); }
+
+
+
+.mask{background-color: rgba(0,0,0,0.5); top: 0; width: 100%; height: 100%; position: fixed; z-index: 1000; display: none;}
+.sns_wrap{display:none; width: 480px; height: auto; background-color: #fff; padding: 35px 15px; box-sizing: border-box; position: absolute; z-index: 1001; top:50%; margin-top: -150px; left: 50%; margin-left: -240px; font-family: 'Nanum Barun Gothic';}
+.sns_wrap > h5{font-size:28px; letter-spacing: -0.025em; color: #222222; text-align: center; font-weight: normal;}
+.sns_close{position: absolute; right: 0; top: 0;}
+.sns_con{margin-top: -3px;}
+.sns_con ul li{width: 25%; text-align: center; float: left; margin-top: 33px; }
+.sns_con ul:after{display: block; content:""; clear: both;}
+.sns_con ul li a{display: block;}
+.sns_con ul li a span{display: block; font-size: 16px; letter-spacing: -0.025em; color: #222222;}
+.sns_con ul li a span img{margin-bottom: 15px;}
+.sns a{background-image: url("/resources/front/images/sns_image/sns_bg.png"); background-repeat: no-repeat; background-position: left center; padding-left: 22px; line-height:18px; display: inline-block; font-size: 12px; color: #222222 !important; font-weight: bold;}
+
+/* 세뮤tv */
+.semutv a{background-image: url("/www/share/images/content/comm/semu/semutv.png"); background-repeat: no-repeat; background-position: left center; padding-left: 22px; line-height:18px; display: inline-block; font-size: 12px; color: #222222 !important; font-weight: bold;}
+
+@media screen and (max-width:1199px)  {
+	/* 세뮤tv */
+	.m_semutv{float: right !important; width: 78px; height:28px; border-radius: 14px; background-color: #fff; text-align: center; line-height: 28px; margin-left: 10px;}
+}
+
+@media screen and (max-width:767px)  {
+    .sns_wrap{width: 100%; height: 100%; position: fixed; left: 0; margin-left: 0; top: 0; margin-top: 0;}
+    .sns_wrap > h5{font-size: 24px;}
+    .sns_con ul li a span{font-size: 14px;}
+
+	.m_sns{width: 65px;}
+	.m_sns a{font-size:11px !important;}
+	/* 세뮤tv */
+	.m_semutv{ width: 65px; margin-left: 5px;}
+	.m_semutv a{font-size:11px !important;}
+}
+
+@media screen and (max-width:767px)  {
+	.m_gnb_b{padding:9px 2%;}
+}
+
+@media screen and (max-width:330px)  {
+	.m_sns{width: 52px;}
+}

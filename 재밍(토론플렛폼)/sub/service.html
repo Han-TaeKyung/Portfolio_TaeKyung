@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>재밍</title>
+    <link rel="stylesheet" type="text/css" href="../css/reset.css">
+    <link rel="stylesheet" type="text/css" href="../css/layout.css">
+    <link rel="stylesheet" type="text/css" href="../css/layout_media.css">
+    <link rel="stylesheet" type="text/css" href="../css/sub.css">
+    <link rel="stylesheet" type="text/css" href="../css/sub_media.css">
+    <script src="../js/lib/jquery.mousewheel.js"></script>
+    <script src="../js/layout.js"></script>
+</head>
+<body>
+
+<div id="skipNav">
+    <p><a href="#container">본문바로가기</a></p>
+    <p><a href="#gnb">주메뉴바로가기</a></p>
+</div>
+
+<header>
+    <div class="header_wrap">
+        <ul>
+            <li class="logo">
+                <a href="../main/main.html" title="메인으로">
+                    <img src="../images/common/logo.png" alt="JAMMING" class="pc-block">
+                    <img src="../images/common/mobile_logo.png" alt="JAMMING" class="mobile-block">
+                </a>
+            </li>
+            <li id="gnb" class="gnb">
+                <ul>
+                    <li><a href="service.html">재밍 소개</a></li>
+                    <li><a href="view.html">참여현황보기</a></li>
+                    <li><a href="chat.html">재밍참여하기</a></li>
+                </ul>
+            </li>
+            <li class="log_wrap">
+                <ul>
+                    <li class="log"><a href="#">로그인</a></li>
+                    <li class="join"><a href="#">회원가입</a></li>
+                </ul>
+                 <!-- 로그인 했을때
+                <ul class="login_wrap">
+                    <li>
+                        <a href="#"><span>홍</span>홍길동</a>
+                        <ul class="login_menu"> 
+                            <li><a href="#">마이페이지</a></li>
+                            <li><a href="#">로그아웃</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                 -->
+                <ul class="font_size_btn">
+                    <li><a href="#" onclick="zoomIn();"><img src="../images/common/font_plus.png" alt="글자확대"></a></li>
+                    <li><a href="#" onClick="zoomOut();"><img src="../images/common/font_mi.png" alt="글자축소"></a></li>
+                </ul>
+            </li>
+        </ul>
+    </div><!-- header_wrap END -->
+</header>
+
+
+<div id="container" class="sub_container sub_container_bg02">
+    <div class="subWrap">
+        <h3 class="sub_tit_xxlg">재밍 소개</h3>
+        <div class="mt60">
+            <img src="../images/sub/sub_logo.png" alt="JAMMING" class="sub_logo_img">
+            <p class="service_txt01">
+                온라인 공간에서 다양한 아이디어와 의견을 공유하여 관련주제의 <br>
+                최신 관심사와 문제점을 공유하고 실시간으로 해결책을 모색하는 <br>
+                개방형 온라인 브레인스토밍
+            </p>
+            <p class="service_txt02">
+                재밍(Jamming)시스템은 IBM에서 미래기술예측을 위해 활용하는 방법으로, 유망기술과 관련된 문제들을<br> 
+                자유롭게 토론하여 해결책을 찾아가는 개방형 온라인 브레인스토밍의 한 형태입니다. 이를 통해 다양하고 <br>
+                자유로운 의견들을 데이터화하여 기술로드맵 기획에 활용할 예정에 있습니다.
+            </p>
+        </div>
+        <div class="jm_intro">
+            <h4 class="sub_tit_xlg">재밍시스템 주요기능</h4>
+            <ul class="jm_box_wrap">
+                <li class="jm_box jm_box01">
+                    <h5>채팅방 현황을 한눈에</h5>
+                    <p>
+                        채팅방별 <span class="point">핵심 키워드</span>를 빠르게<br>
+                        파악하여 채팅에 참여할 수 있도록<br>
+                        워드 클라우드 제공
+                    </p>
+                </li>
+                <li class="jm_box jm_box02">
+                    <h5>다양한 자료 공유</h5>
+                    <p>
+                        채팅방 주제에 맞춰 다양한 의견을<br>
+                        나눌 때, 도움이 되는 <span class="point">이미지 혹은<br>
+                        링크 공유</span> 기능 제공
+                    </p>
+                </li>
+
+                <li class="jm_box jm_box03">
+                    <h5>대화를 더욱 깊게</h5>
+                    <p>
+                        타인의 의견에 답글을 달아 더욱<br>
+                        심도 있는 대화를 할 수 있도록<br>
+                        <span class="point">답글기능</span> 제공
+                    </p>
+                </li>
+            </ul>
+        </div>
+
+    </div><!-- subWrap END -->
+</div><!-- sub_container END -->
+
+
+<footer>
+    <div class="footer_wrap">
+        <ul>
+            <li>(우 30141) 세종특별자치시 집현중앙로 79, 중소기업기술정보진흥원(TIPA)  TEL: 044-390-0440, 0441 )</li>
+            <li>COPYRIGHT © TIPA(Korea Technology and Information Promotion Agency for SMEs). ALL RIGHT RESERVED</li> 
+         </ul>
+    </div><!-- footer_wrap END -->
+</footer>
+</body>
+</html>

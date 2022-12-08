@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>뉴스포털</title>
+    <link rel="stylesheet" type="text/css" href="../css/reset.css">
+    <link rel="stylesheet" type="text/css" href="../css/layout.css">
+    <link rel="stylesheet" type="text/css" href="../css/main.css">
+    <script src="../js/lib/jquery-1.12.4.min.js"></script>
+    <script src="../js/lib/jquery.bxslider.min.js"></script>
+    <script src="../js/layout.js"></script>
+    <script src="../js/main.js"></script>
+</head>
+<body>
+<div id="skipNav">
+    <p><a href="#content">본문 바로가기</a></p>
+    <p><a href="#gnb">주메뉴 바로가기</a></p>
+    <p><a href="#footer">푸터 바로가기</a></p>
+</div>
+
+<header id="header">
+
+    <div class="global-area02">
+        <ul class="global-menu02">
+            <li><a href="http://www.paju.go.kr/index.do">파주시청 홈</a></li>
+            <li class="on" ><a href="#">뉴스포털</a></li>
+            <li ><a href="http://tour.paju.go.kr/user/tour/main/index.do">문화관광</a></li>
+            <li ><a href="http://mayor.paju.go.kr/mayor/index.do">On 시장실</a></li>
+            <li><a href="http://www.pajucouncil.go.kr/" target="_blank">파주시의회</a></li>
+        </ul>
+    </div>
+
+    <div class="util-area">
+        <ul class="sns-media">
+            <li class="kakaostory"><a href="https://story.kakao.com/ch/pajusi" target="_blank" title="새창으로">카카오스토리 파주시 </a></li>
+            <li class="twitter"><a href="https://twitter.com/pajusi" target="_blank" title="새창 열림" >트위터 파주시 </a></li>
+            <li class="facebook"><a href="https://www.facebook.com/hopepaju/" target="_blank" title="새창 열림" >페이스북 파주시</a></li>
+            <li class="naverblog"><a href="http://blog.naver.com/paju_si" target="_blank" title="새창 열림" >네이버블로그 파주시</a></li>
+            <li class="youtube"><a href="https://www.youtube.com/channel/UCicR_6NEnfhLP-FvM4txuUA/featured?view_as=subscriber" target="_blank" title="새창 열림" >유투브 파주시</a></li>
+            <li class="air_info">16.4℃ 맑음  미세먼지(보통)·초미세먼지(좋음)</li>
+        </ul>
+        <div class="util-menu">
+            <ul class="user-menu">
+                <li><a href="http://www.paju.go.kr/login/user/BD_index.do"><strong>로그인</strong></a></li>
+                <li><a href="http://www.paju.go.kr/user/register/BD_index.do"><strong>회원가입</strong></a></li>
+            </ul>
+            <div class="util-control">
+                <button type="button" class="print" onclick="jsDivPirnt(); return false;"><img src="http://www.paju.go.kr/resources/user/www/images/layout/ico-print.png" alt="인쇄"></button>
+                <p class="txt-zoom">
+                    <img src="http://www.paju.go.kr/resources/user/www/images/layout/ico-text-size.png" alt="글자크기 조절">
+                    <button type="button" class="btn-zoom-in js-zoomin"><img src="http://www.paju.go.kr/resources/user/www/images/layout/ico-plus.png" alt="확대"/></button>
+                    <button type="button" class="btn-zoom-out js-zoomout"><img src="http://www.paju.go.kr/resources/user/www/images/layout/ico-minus.png" alt="축소"/></button>
+                </p>
+            </div>
+            <ul class="language-menu">
+                <li><a href="http://www.paju.go.kr/index.do" target="_blank" title="새창"><strong>KOR</strong></a></li>
+                <li><a href="http://webtrans.wordia.co.kr:7000/etgi/paju/english.html" target="_blank" title="새창">ENG</a></li>
+                <li><a href="http://webtrans.wordia.co.kr:7000/etgi/paju/chinese.html" target="_blank" title="새창">CHN</a></li>
+                <li><a href="http://webtrans.wordia.co.kr:7000/etgi/paju/japanese.html" target="_blank" title="새창">JPN</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <nav class="gnb-area">
+        <div class="inner">
+            <ul class="gnb_wrap">
+                <li class="logo">
+                    <a href="main.html" title="메인으로"><img src="../images/common/logo.png" alt="파주뉴스포털 로고"></a>
+                </li>
+                <li class="gnb_menu" id="gnb">
+                    <ul>
+                        <li><a href="../sub/sub_news.html">주요뉴스</a></li>
+                        <li class="gnb_2dep"><a href="#">보도</a>
+                            <ul class="gnb_2depth">
+                                <li><a href="#">보도자료</a> </li>
+                                <li><a href="#">설명자료</a> </li>
+                                <li><a href="#">파주시보</a> </li>
+                                <li><a href="#">도정소식</a> </li>
+                            </ul>
+                        </li>
+                        <li class="gnb_2dep"><a href="#">영상</a>
+                            <ul class="gnb_2depth">
+                                <li><a href="#">파주투데이</a> </li>
+                                <li><a href="#">웹드라마</a> </li>
+                                <li><a href="#">기타/홍보</a> </li>
+                            </ul>
+                        </li>
+                        <li class="gnb_2dep"><a href="#">포토</a>
+                            <ul class="gnb_2depth gnb_2depth03">
+                                <li><a href="#">문화/관광</a> </li>
+                                <li><a href="#">축제/체육/행사</a> </li>
+                                <li><a href="#">자매결연도시</a> </li>
+                                <li><a href="#">주요시설</a> </li>
+                                <li><a href="#">기타/일반</a> </li>
+                                <li><a href="#">시정/행정</a> </li>
+                            </ul>
+                        </li>
+                        <li class="gnb_2dep"><a href="#">소식</a>
+                            <ul class="gnb_2depth gnb_2depth04">
+                                <li><a href="#">파주소식</a> </li>
+                                <li><a href="#">시민기자e야기</a> </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        <div class="gnb_2depth_bg"></div>
+    </nav>
+</header>
+
+<div class="main_container" id="content">
+    <div class="main_content01">
+        <div class="main_inner">
+            <div>
+                <ul class="lft_con">
+                    <li class="main_banner box-round">
+                        <img src="../images/main/main_banner.png" alt="뉴스배너">
+                        <p class="main_banner_con">
+                            <a href="#">
+                                <b class="ellipsis">파주시, 등교개학 대비 코로나19 예방물품 지원</b>
+                                <span>파주시는 지난 20일부로 초·중·고 전 학년의 온라인 개학이 이루어진 가운데 앞으로의 등교개학에 대비해 각급 학교에 코로나19 예방물품을 지원했다고 27일 밝혔다. 등교개학에 대비해 각급 학교에 코로나19 예방물품을 지원했다고 27일 밝혔다</span>
+                            </a>
+                            <span class="main_banner_day">
+                                2020.5.10<b>싱싱뉴스</b>
+                            </span>
+                        </p>
+                    </li>
+                </ul>
+                <ul class="rgt_con">
+                    <li class="main_news">
+                        <ul>
+                            <li class="box-round">
+                                <a href="#">
+                                    <span class="main_news_img">
+                                        <img src="../images/main/main_news01.png" alt="파주시민 1인당 파주형 긴급생활지원금 10만원지급">
+                                    </span>
+                                    <span class="main_news_con">
+                                        파주시, 코로나19 경제 위기 극복
+                                        위한 분야별 긴급 긴급 지원대책..
+                                    </span>
+                                </a>
+                            </li>
+                            <li class="box-round">
+                                <a href="#">
+                                    <span class="main_news_img">
+                                        <img src="../images/main/main_news02.png" alt="파주시 코로나19 해외유입차단 임시생활시설 인력확대운영 이미지">
+                                    </span>
+                                    <span class="main_news_con">
+                                        파주시, 코로나19 해외유입차단
+                                        임시생활시설 인력 확대 운영
+                                         임시생활시설 인력 확대 운영
+                                    </span>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="latest box-round">
+                        <ul>
+                            <li class="ellipsis"><a href="#">파주시, 4월 27일부터 자가격리 이탈자 관리 강화</a> </li>
+                            <li class="ellipsis"><a href="#">금촌통일시장, 상권진흥구역 지정 40억 공모사업 선정</a> </li>
+                            <li class="ellipsis"><a href="#">파주시, 27일부터 저소득층에 한시생활지원 74억 지급</a> </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div><!-- main_inner END -->
+    </div><!-- main_content01 END -->
+    <div class="main_content02">
+        <div class="main_inner">
+            <div class="e-story">
+                <h3 class="main_tit">시민기자e야기</h3>
+                <ul>
+                    <li>
+                        <a href="#">
+                            <span class="e-story_img"><img src="../images/main/e-story_img01.png" alt="이미지"> </span>
+                            <span class="e-story_con">
+                                향토문화유적 ‘황정욱 묘 및 신도비’를 찾아서향토문화유적 ‘황정욱 묘 및 신도비’를 찾아서
+                            </span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <span class="e-story_img"><img src="../images/main/e-story_img02.png" alt="이미지"> </span>
+                            <span class="e-story_con">
+                               ‘파주시은빛사랑채’ 코로나19 긴급구호 물품지원, 어르신들에게 사랑의 키트를!
+                            </span>
+                        </a>
+                    </li>
+                </ul>
+                <a href="#" class="more_btn"><img src="../images/main/more_btn.png" alt="+"></a>
+            </div><!-- e-story END -->
+            <div class="news_top">
+                <h3 class="main_tit">시민 관심 뉴스 Top 3</h3>
+                <div class="news_top_wrap">
+                    <ul>
+                        <li class="news_top_img">
+                            <img src="../images/main/news_top01.png" alt="싱싱뉴스 이미지">
+                        </li>
+                        <li class="news_top_con">
+                            <span class="news_label">싱싱뉴스</span>
+                            <p class="ellipsis"><a href="#">생활 속 거리두기 어떻게 하나요?</a></p>
+                            <p class="news_day">2020.05.11</p>
+                        </li>
+                    </ul>
+                    <ul>
+                        <li class="news_top_img">
+                            <img src="../images/main/news_top02.png" alt="싱싱뉴스 이미지">
+                        </li>
+                        <li class="news_top_con">
+                            <span class="news_label">싱싱뉴스</span>
+                            <p class="ellipsis"><a href="#">파주시, 코로나19 위기 등 1,047가구에 긴급생계비 지원</a></p>
+                            <p class="news_day">2020.05.11</p>
+                        </li>
+                    </ul>
+                    <ul>
+                        <li class="news_top_img">
+                            <img src="../images/main/news_top03.png" alt="싱싱뉴스 이미지">
+                        </li>
+                        <li class="news_top_con">
+                            <span class="news_label">싱싱뉴스</span>
+                            <p class="ellipsis"><a href="#">경기도 재난기본소득 방문 접수 시작</a></p>
+                            <p class="news_day">2020.05.11</p>
+                        </li>
+                    </ul>
+                </div>
+            </div><!-- news_top END -->
+        </div><!-- main_inner END -->
+    </div><!-- main_content02 END -->
+
+    <div class="main_content03">
+        <div class="main_inner">
+            <div class="main_con03_1">
+                <h3 class="main_tit">카드배너</h3>
+                <div class="card_banner">
+                    <ul id="banner">
+                        <li><img src="../images/main/card_banner_img.png" alt="파주시주간소식 5월 3주차(5/18~5/24)"></li>
+                        <li><img src="../images/main/card_banner_img.png" alt="파주시주간소식 5월 3주차(5/18~5/24)"></li>
+                        <li><img src="../images/main/card_banner_img.png" alt="파주시주간소식 5월 3주차(5/18~5/24)"></li>
+                    </ul><!-- banner END -->
+                    <div class="banner_control">
+                        <ul class="banner_btn">
+                            <li class="banner_prev">
+                                <a href="#"><img src="../images/main/prev.png" alt="이전"></a>
+                            </li>
+                            <li id="banner-counter"></li>
+                            <li class="banner_next">
+                                <a href="#"><img src="../images/main/next.png" alt="다음"></a>
+                            </li>
+                        </ul>
+                        <ul class="banner_p">
+                            <li>
+                                <a href="#" class="banner_stop">
+                                    <img src="../images/main/stop.png" alt="일시정지">
+                                </a>
+                                <a href="#" class="banner_play">
+                                    <img src="../images/main/play.png" alt="재생">
+                                </a>
+                            </li>
+                        </ul>
+                        <ul class="banner_all">
+                            <li id="card_banner_btn"><a href="#">전체보기</a> </li>
+                        </ul>
+                    </div><!-- banner_control END -->
+
+                    <div class="modal-layer" id="card_banner_popup">
+                        <div class="modal-inner">
+                            <h4 class="popup-title">배너전체보기</h4>
+                            <div class="popup-body">
+                                <ul class="popupzone-list-all">
+                                    <li><img src="../images/main/card_banner_img.png" alt="파주시주간소식 5월 3주차(5/18~5/24)"></li>
+                                    <li><img src="../images/main/card_banner_img.png" alt="파주시주간소식 5월 3주차(5/18~5/24)"></li>
+                                    <li><img src="../images/main/card_banner_img.png" alt="파주시주간소식 5월 3주차(5/18~5/24)"></li>
+                                </ul>
+                            </div>
+                            <button type="button" class="btn-close-modal js-close-modal"><img src="../images/main/ico-close-modal.png" alt="배너전체보기 닫기"></button>
+                        </div>
+                    </div><!-- modal-layer END -->
+                </div><!-- card_banner END -->
+            </div><!-- main_con03_1 END -->
+            <div class="main_con03_2">
+                <h3 class="main_tit">보도&시보</h3>
+                <div class="tab_list m1">
+                    <ul>
+                        <li class="m1">
+                            <a href="#" onclick="return false"><span>보도자료</span></a>
+                            <ul>
+                                <li><a href="#">한수위 파주쌀 할인 이벤트 행사한수위 파주쌀 할인 이벤트 행사한수위 파주쌀 할인 이벤트 행사</a>
+                                    <span>2020 - 05 - 01</span>
+                                </li>
+                                <li><a href="#">파주시, 새로운 지역농업개발 시험연구포장 조성 박차</a>
+                                    <span>2020 - 05 - 01</span>
+                                </li>
+                                <li><a href="#">파주시, 어린이 놀이시설 소독용역 착수</a>
+                                    <span>2020 - 05 - 01</span>
+                                </li>
+                                <li><a href="#">코로나19 극복을 위한 '한수위 파주쌀' 할인 이벤트 행사</a>
+                                    <span>2020 - 05 - 01</span>
+                                </li>
+                                <li><a href="#">파주시, 4월 27일부터 자가격리 이탈자 관리 강화</a>
+                                    <span>2020 - 05 - 01</span>
+                                </li>
+                            </ul>
+                        </li>
+
+                        <li class="m2">
+                            <a href="#" onclick="return false"><span>파주시보</span></a>
+                            <ul>
+                                <li><a href="#">한수위 파주쌀 할인 이벤트 행사</a>
+                                    <span>2020 - 05 - 01</span>
+                                </li>
+                                <li><a href="#">파주시, 새로운 지역농업개발 시험연구포장 조성 박차</a>
+                                    <span>2020 - 05 - 01</span>
+                                </li>
+                                <li><a href="#">파주시, 어린이 놀이시설 소독용역 착수</a>
+                                    <span>2020 - 05 - 01</span>
+                                </li>
+                                <li><a href="#">코로나19 극복을 위한 '한수위 파주쌀' 할인 이벤트 행사</a>
+                                    <span>2020 - 05 - 01</span>
+                                </li>
+                                <li><a href="#">파주시, 4월 27일부터 자가격리 이탈자 관리 강화</a>
+                                    <span>2020 - 05 - 01</span>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div><!--tab_list END-->
+                <a href="#" class="latest_more"><img src="../images/main/more_btn.png" alt="보도&시보 더보기"></a>
+            </div><!-- main_con03_2 END -->
+            <div class="main_con03_3">
+                <h3 class="main_tit">파주소식</h3>
+                <ul class="paju_news">
+                    <li class="paju_news_img">
+                        <img src="../images/main/paju_news.png" alt="파주소식 5월호 이미지">
+                        <div class="img_bg"></div>
+                    </li>
+                    <li class="paju_news_con">
+                        <p>
+                            파주소식 5월호<br>
+                            2020.05.04
+                        </p>
+                        <button type="button">다운로드</button>
+                    </li>
+                </ul><!--paju_news-->
+                <a href="#" class="latest_more"><img src="../images/main/more_btn.png" alt="보도&시보 더보기"></a>
+            </div><!-- main_con03_3 END -->
+        </div>
+    </div><!-- main_content03 END -->
+    <div class="main_content04">
+        <div class="main_inner">
+            <h3 class="main_tit">미디어 소통</h3>
+            <ul class="media_content">
+                <li class="media_first box-round">
+                    <img src="../images/main/media_img01.png" alt="">
+                    <div class="play_btn"><img src="../images/main/play_btn02.png" alt="재생버튼 이미지"></div>
+                    <p>
+                        <a href="#">
+                            <span class="media_tit ellipsis">파주형 긴급생활지원금, 행정복지센터에서 본격 접수 시작해!</span>
+                            <span class="media_txt ellipsis">지난 4월 20일부터 각 읍면동 행정복지센터와 농협에서 경기도 재난기본소득 ...</span>
+                        </a>
+                    </p>
+                </li>
+                <li class="media_con box-round">
+                    <p class="media_img">
+                        <img src="../images/main/media_img02.png" alt="이미지">
+                    </p>
+                    <p class="media_con_txt">
+                        <a href="#">
+                            월롱산 아름다운 꽃동산<br>
+                            (2020. 05. 06)
+                        </a>
+                    </p>
+                </li>
+                <li class="media_con box-round">
+                    <p class="media_img">
+                        <img src="../images/main/media_img03.png" alt="이미지">
+                    </p>
+                    <p class="media_con_txt">
+                        <a href="#">
+                            제98회 어린이날 기념 아동양육시설
+                            방문(2020. 05. 04)
+                        </a>
+                    </p>
+                </li>
+            </ul>
+
+            <ul class="news_sns">
+                <li><a href="#"><img src="../images/main/kakao.png" alt="카카오스토리 아이콘">카카오스토리</a> </li>
+                <li><a href="#"><img src="../images/main/tw.png" alt="트위터 아이콘">트위터</a> </li>
+                <li><a href="#"><img src="../images/main/fb.png" alt="페이스북 아이콘">페이스북</a> </li>
+                <li><a href="#"><img src="../images/main/naver.png" alt="네이버블로그 아이콘">네이버블로그</a> </li>
+                <li><a href="#"><img src="../images/main/yt.png" alt="유튜브 아이콘">유튜브</a> </li>
+            </ul><!-- news_sns END -->
+        </div>
+    </div><!-- main_content04 END -->
+</div><!--main_container END-->
+
+<footer>
+    <div class="footer_top" id="footer">
+        <div class="footer_top_inner">
+            <ul>
+                <li class="fb"><a href="#">개인정보처리방침</a> </li>
+                <li><a href="#">저작권정책</a> </li>
+                <li><a href="#">홈페이지</a> </li>
+                <li><a href="#">이용안내</a> </li>
+                <li><a href="#">찾아오시는길</a> </li>
+            </ul>
+            <a href="#skipNav" class="top"><img src="../images/common/top_btn.png" alt="상단으로"></a>
+        </div>
+    </div>
+    <div class="footer_inner">
+        <p>
+            파주시 홈페이지에 게시된 전자우편주소는 무단으로 수집할 수 없으며, 위반시 정보통신망법에 의해 처벌됩니다.<br>
+            (우 10932) 경기도 파주시 시청로 50 | 대표전화 : 031) 940-4114<br>
+            COPYRIGHT(C) 2015, PAJU CITY ALL RIGHTS RESERVED
+        </p>
+    </div>
+</footer>
+
+</body>
+</html>

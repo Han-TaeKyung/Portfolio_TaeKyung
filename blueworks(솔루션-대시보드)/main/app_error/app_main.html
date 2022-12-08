@@ -1,0 +1,696 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>Blueworks</title>
+    <link rel="stylesheet" type="text/css" href="../../css/reset.css">
+    <link rel="stylesheet" type="text/css" href="../../css/icons.css">
+    <link rel="stylesheet" type="text/css" href="../../css/new_style.css">
+    <script type="text/javascript" src="../../js/lib/jquery-1.12.4.min.js"></script>
+    <script type="text/javascript" src="../../js/lib/jquery.bxslider.min.js"></script>
+    <script type="text/javascript" src="../../js/new_script.js"></script>
+</head>
+<body>
+<div id="mask"></div>
+    <div id="header">
+        <ul class="logo">
+            <li><a href="#"><img src="../../img/common/logo.png" alt="Blueworks"></a></li>
+        </ul><!--logo END-->
+        <ul class="sta">
+            <li class="sta_title">
+                <h2 class="mal_font">APP 에러</h2>
+                <ul class="sta_wrap">
+                    <li><i class="fa fa-home"></i></li>
+                    <li><i class="fa fa-angle-right"></i> </li>
+                    <li>운영관리</li>
+                    <li><i class="fa fa-angle-right"></i> </li>
+                    <li class="sta_on">APP 에러</li>
+                </ul>
+            </li><!--sta_title END-->
+
+            <li class="sta_user">
+                <!--20181206 추가-->
+                <ul style="padding: 0 10px 0 20px;line-height: 70px; background-image: none;">
+                    <li class="pt_5">
+                        <a href="/main/main.do" style="font-size: 16px;font-weight: bold; color: #fff; background-color: #37cfdc;padding: 0.7rem 1.5rem 0.6rem; border-radius: 0.25rem;">Server</a>
+                        <a href="/ngapp" style="font-size: 16px;font-weight: bold;color: #188ae2;padding: 0.7rem 1.5rem 0.6rem">Client</a>
+                    </li>
+                </ul>
+                <!--20181206 추가 END-->
+                <ul class="sta_user_wrap">
+                    <li class="pt_6">
+                        <i class="fa fa-user-circle"></i>
+                    </li>
+                    <li>
+                        <span>홍길동</span>
+                    </li>
+                    <li>
+                        대리 기획
+                    </li>
+                    <li>
+                        <a href="#"><i class="fa fa-power-off"></i></a>
+                    </li>
+                </ul><!--sta_user_wrap END-->
+                <ul class="sta_alram">
+                    <li>
+                        <a href="javascript:" onclick="javascript:alramPopup()" id="alram_popup_btn"><i class="fa fa-bell-o"></i></a>
+                        <p class="alram_on"></p>
+                    </li>
+                </ul><!--sta_alram END-->
+            </li><!--sta_user END-->
+        </ul><!--sta END-->
+    </div><!--header END-->
+
+    <!--알림팝업 S-->
+    <div id="alram_popup" class="alram_popup">
+        <ul class="alram_title">
+            <li>알림</li>
+            <li class="alram_close">
+                <a href="#" id="alram_close">
+                    <img src="../../img/sub/alram_btn.png" alt="닫기">
+                </a>
+            </li>
+        </ul>
+        <ul>
+            <li class="alram_all_del">
+                <a href="#">
+                    <i class="fa fa-trash-o"></i> 알림 전체 삭제
+                </a>
+            </li>
+        </ul>
+        <ul class="alram_con">
+            <li class="alram_con_txt">
+                <p class="alram_day">2017-08-03 12:50:25</p>
+                <p>
+                    <span>EM20170619-00002</span> 오류에 대한 처리자로 지정되었습니다.
+                </p>
+                <a href="#">
+                    <span class="al_del_btn">
+                        
+                    </span>
+                </a>
+            </li>
+            <li class="alram_con_txt">
+                <p class="alram_day">2017-08-03 12:50:25</p>
+                <p>
+                    <span>EM20170619-00002</span> 오류에 대한 처리자로 지정되었습니다.
+                </p>
+                <a href="#">
+                    <span class="al_del_btn">
+                        
+                    </span>
+                </a>
+            </li>
+            <li class="alram_con_txt">
+                <p class="alram_day">2017-08-03 12:50:25</p>
+                <p>
+                    <span>EM20170619-00002</span> 오류에 대한 처리자로 지정되었습니다.
+                </p>
+                <a href="#">
+                    <span class="al_del_btn">
+                        
+                    </span>
+                </a>
+            </li>
+
+        </ul><!--alram_con END-->
+    </div>
+    <!--알림팝업 E-->
+
+    <div class="container">
+
+        <div id="gnb">
+            <ul id="nav">
+                <li><a href="#"><i class="fa fa-th-large"></i>Dashboard</a>
+                </li>
+                <li><a href="#"><i class="fa fa-pie-chart"></i>운영관리</a>
+                    <ul>
+                        <li><a href="#"><span>-</span>APP에러</a></li>
+                        <li><a href="#"><span>-</span>SR</a></li>
+                        <li><a href="#"><span>-</span>시스템현황</a></li>
+                    </ul>
+                </li>
+                <li><a href="#"><i class="fa fa-bar-chart-o"></i>통계정보</a>
+                    <ul>
+                        <li><a href="#"><span>-</span>에러발생현황</a></li>
+                        <li><a href="#"><span>-</span>에러관리현황</a></li>
+                        <li><a href="#"><span>-</span>운영관리현황</a></li>
+                        <li><a href="#"><span>-</span>담당자별현황</a></li>
+                        <li><a href="#"><span>-</span>처리기간별현황</a></li>
+                        <li><a href="#"><span>-</span>처리기간준수현황</a></li>
+                    </ul>
+                </li>
+                <li><a href="#"><i class="fa fa-puzzle-piece"></i>조직관리</a>
+                    <ul>
+                        <li><a href="#"><span>-</span>부서관리</a></li>
+                        <li><a href="#"><span>-</span>담당자관리</a></li>
+                    </ul>
+                </li>
+                <li><a href="#"><i class="fa fa-cog"></i>환경설정</a>
+                    <ul>
+                        <li><a href="#"><span>-</span>서버관리</a></li>
+                        <li><a href="#"><span>-</span>시스템관리</a></li>
+                        <li><a href="#"><span>-</span>메뉴관리</a></li>
+                        <li><a href="#"><span>-</span>시나리오관리</a></li>
+                        <li><a href="#"><span>-</span>필터관리</a></li>
+                        <li><a href="#"><span>-</span>휴일관리</a></li>
+                        <li><a href="#"><span>-</span>등급관리</a></li>
+                        <li><a href="#"><span>-</span>저장소관리</a></li>
+                        <li><a href="#"><span>-</span>라이센스관리</a></li>
+                    </ul>
+                </li>
+                <li><a href="#"><i class="fa fa-sticky-note-o"></i>샘플</a>
+                    <ul>
+                        <li><a href="#"><span>-</span>샘플목록</a></li>
+                    </ul>
+                </li>
+            </ul>
+
+            <ul class="copyright">
+                <li>2017 © BlueWorks.</li>
+            </ul><!--copy_right END-->
+        </div><!--gnb END-->
+
+        <div class="content">
+            <div class="appBox">
+                <ul class="search_box">
+                    <li>
+                        <input type="text" class="input-type01" placeholder="에러번호를 입력하세요.">
+                    </li>
+                    <li class="search_btn">
+                        <a href="#" title="검색"><i class="fa fa-search"></i></a>
+                    </li>
+                </ul><!--search_box END-->
+
+                <div class="appBox_wrap">
+                    <ul class="app_total">
+                        <li><h3>TOTAL</h3></li>
+                        <li>
+                            <ul class="app_total_wrap">
+                                <li class="app_total_01">
+                                    <p class="total_name">발생</p>
+                                    <p>120</p>
+                                </li>
+                                <li>
+                                    <ul>
+                                        <li>
+                                            <p class="total_name">배정</p>
+                                            <p class="mt-2">27</p>
+                                        </li>
+                                        <li>
+                                            <p class="total_name">처리중</p>
+                                            <p class="mt-2">40</p>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul><!--app_total END-->
+
+                    <ul id="app_slide" class="app_slide_wrap">
+
+                        <li class="app_slide_box app_box_on">
+                            <ul>
+                                <li class="app_link"><a href="#">www.zesinc.co.kr/redmin/redmin/admin</a></li>
+                                <li class="app_box_con">
+                                    <ul>
+                                        <li class="app_box_total">27</li>
+                                        <li>
+                                            <ul>
+                                                <li>16</li>
+                                                <li>11</li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li><!--app_slide_box-->
+
+                        <li class="app_slide_box">
+                            <ul>
+                                <li class="app_link"><a href="#">www.zesinc.co.kr/redmin/redmin/admin</a></li>
+                                <li class="app_box_con">
+                                    <ul>
+                                        <li class="app_box_total">32</li>
+                                        <li>
+                                            <ul>
+                                                <li>24</li>
+                                                <li>8</li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li><!--app_slide_box-->
+
+                        <li class="app_slide_box">
+                            <ul>
+                                <li class="app_link"><a href="#">www.zesinc.co.kr/redmin/redmin/admin</a></li>
+                                <li class="app_box_con">
+                                    <ul>
+                                        <li class="app_box_total">18</li>
+                                        <li>
+                                            <ul>
+                                                <li>12</li>
+                                                <li>6</li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li><!--app_slide_box-->
+
+                        <li class="app_slide_box">
+                            <ul>
+                                <li class="app_link"><a href="#">www.zesinc.co.kr/redmin/redmin/admin</a></li>
+                                <li class="app_box_con">
+                                    <ul>
+                                        <li class="app_box_total">24</li>
+                                        <li>
+                                            <ul>
+                                                <li>12</li>
+                                                <li>12</li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li><!--app_slide_box-->
+
+                        <li class="app_slide_box">
+                            <ul>
+                                <li class="app_link"><a href="#">www.zesinc.co.kr/redmin/redmin/admin</a></li>
+                                <li class="app_box_con">
+                                    <ul>
+                                        <li class="app_box_total">28</li>
+                                        <li>
+                                            <ul>
+                                                <li>17</li>
+                                                <li>11</li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li><!--app_slide_box-->
+
+                        <li class="app_slide_box">
+                            <ul>
+                                <li class="app_link"><a href="#">www.zesinc.co.kr/redmin/redmin/admin</a></li>
+                                <li class="app_box_con">
+                                    <ul>
+                                        <li class="app_box_total">16</li>
+                                        <li>
+                                            <ul>
+                                                <li>10</li>
+                                                <li>6</li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li><!--app_slide_box-->
+
+                        <li class="app_slide_box">
+                            <ul>
+                                <li class="app_link"><a href="#">www.zesinc.co.kr/redmin/redmin/admin</a></li>
+                                <li class="app_box_con">
+                                    <ul>
+                                        <li class="app_box_total">8</li>
+                                        <li>
+                                            <ul>
+                                                <li>6</li>
+                                                <li>2</li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li><!--app_slide_box-->
+
+                    </ul><!--app_slide END-->
+                    <ul class="app_slide_btn">
+                        <li class="list_btn">
+                            <a href="javascript:" onclick="javascript:showPopup()" id="app_popup">
+                                <i class="fa fa-reorder"></i>
+                            </a>
+                        </li>
+                        <li class="arrow_btn prev_btn">
+                            <a href="#"><i class="fa fa-angle-left"></i></a>
+                        </li>
+                        <li class="arrow_btn next_btn">
+                            <a href="#"><i class="fa fa-angle-right"></i></a>
+                        </li>
+                    </ul><!--app_slide_btn END-->
+                </div><!--appBox_wrap END-->
+            </div><!--appBox END-->
+
+            <!--팝업창-->
+            <div id="app_all_popup" class="main_popup">
+                <ul class="popup_btn">
+                    <li>
+                        <a href="#" id="popup_close"><img src="../../img/sub/popup_close_btn.png" alt="닫기"> </a>
+                    </li>
+                </ul>
+                <ul class="main_popup_wrap app_slide_wrap">
+
+                    <li class="app_slide_box app_box_on">
+                        <ul>
+                            <li class="app_link"><a href="#">www.zesinc.co.kr/redmin/redmin/admin</a></li>
+                            <li class="app_box_con">
+                                <ul>
+                                    <li class="app_box_total">27</li>
+                                    <li>
+                                        <ul>
+                                            <li>16</li>
+                                            <li>11</li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li><!--app_slide_box-->
+
+                    <li class="app_slide_box">
+                        <ul>
+                            <li class="app_link"><a href="#">www.zesinc.co.kr/redmin/redmin/admin</a></li>
+                            <li class="app_box_con">
+                                <ul>
+                                    <li class="app_box_total">32</li>
+                                    <li>
+                                        <ul>
+                                            <li>24</li>
+                                            <li>8</li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li><!--app_slide_box-->
+
+                    <li class="app_slide_box">
+                        <ul>
+                            <li class="app_link"><a href="#">www.zesinc.co.kr/redmin/redmin/admin</a></li>
+                            <li class="app_box_con">
+                                <ul>
+                                    <li class="app_box_total">18</li>
+                                    <li>
+                                        <ul>
+                                            <li>12</li>
+                                            <li>6</li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li><!--app_slide_box-->
+
+                    <li class="app_slide_box">
+                        <ul>
+                            <li class="app_link"><a href="#">www.zesinc.co.kr/redmin/redmin/admin</a></li>
+                            <li class="app_box_con">
+                                <ul>
+                                    <li class="app_box_total">24</li>
+                                    <li>
+                                        <ul>
+                                            <li>12</li>
+                                            <li>12</li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li><!--app_slide_box-->
+
+                    <li class="app_slide_box">
+                        <ul>
+                            <li class="app_link"><a href="#">www.zesinc.co.kr/redmin/redmin/admin</a></li>
+                            <li class="app_box_con">
+                                <ul>
+                                    <li class="app_box_total">28</li>
+                                    <li>
+                                        <ul>
+                                            <li>17</li>
+                                            <li>11</li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li><!--app_slide_box-->
+
+                    <li class="app_slide_box">
+                        <ul>
+                            <li class="app_link"><a href="#">www.zesinc.co.kr/redmin/redmin/admin</a></li>
+                            <li class="app_box_con">
+                                <ul>
+                                    <li class="app_box_total">16</li>
+                                    <li>
+                                        <ul>
+                                            <li>10</li>
+                                            <li>6</li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li><!--app_slide_box-->
+
+                    <li class="app_slide_box">
+                        <ul>
+                            <li class="app_link"><a href="#">www.zesinc.co.kr/redmin/redmin/admin</a></li>
+                            <li class="app_box_con">
+                                <ul>
+                                    <li class="app_box_total">8</li>
+                                    <li>
+                                        <ul>
+                                            <li>6</li>
+                                            <li>2</li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li><!--app_slide_box-->
+
+                    <li class="app_slide_box">
+                        <ul>
+                            <li class="app_link"><a href="#">www.zesinc.co.kr/redmin/redmin/admin</a></li>
+                            <li class="app_box_con">
+                                <ul>
+                                    <li class="app_box_total">28</li>
+                                    <li>
+                                        <ul>
+                                            <li>17</li>
+                                            <li>11</li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li><!--app_slide_box-->
+
+                    <li class="app_slide_box">
+                        <ul>
+                            <li class="app_link"><a href="#">www.zesinc.co.kr/redmin/redmin/admin</a></li>
+                            <li class="app_box_con">
+                                <ul>
+                                    <li class="app_box_total">16</li>
+                                    <li>
+                                        <ul>
+                                            <li>10</li>
+                                            <li>6</li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li><!--app_slide_box-->
+
+                    <li class="app_slide_box">
+                        <ul>
+                            <li class="app_link"><a href="#">www.zesinc.co.kr/redmin/redmin/admin</a></li>
+                            <li class="app_box_con">
+                                <ul>
+                                    <li class="app_box_total">8</li>
+                                    <li>
+                                        <ul>
+                                            <li>6</li>
+                                            <li>2</li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li><!--app_slide_box-->
+
+                </ul><!--main_popup_wrap END-->
+            </div><!--main_banner_popup END-->
+            <!--팝업창 END-->
+
+            <div class="appTab">
+                <!--달력-->
+                <div class="calendar">
+                    <ul class="calendar_select">
+                        <li>
+                            <a href="#" class="calender_btn"><i class="fa fa-calendar"></i></a>
+                            <input type="text" value="2017-06-16 ~ 2017-07-20" class="calendar_box" id="">
+                        </li>
+
+                    </ul><!--calender_select END-->
+                    <ul class="calendar_btn">
+                        <li><a href="#">1주</a> </li>
+                        <li><a href="#" class="calendar_on">1달</a> </li>
+                        <li><a href="#">6달</a> </li>
+                        <li><a href="#">1년</a> </li>
+                    </ul><!--calendar_btn END -->
+                </div><!--calendar END-->
+                <div class="tab_wrap">
+                    <ul class="tabMenu">
+                        <li class="tab_on"><a href="#tab_con01">발생<span class="tab_num">28</span></a></li>
+                        <li><a href="#tab_con02">배정<span class="tab_num">11</span></a></li>
+                        <li><a href="#tab_con03">처리중<span class="tab_num">21</span></a></li>
+                        <li><a href="#tab_con04">처리완료<span class="tab_num">14</span></a></li>
+                        <li><a href="#tab_con05">무시<span class="tab_num">2</span></a></li>
+                        <li><a href="#tab_con06">보관소<span class="tab_num">0</span></a></li>
+                    </ul>
+                </div><!--tab_btn END-->
+                <div class="tab_con tab_con01">
+                    <h3 class="blind">발생</h3>
+                    <div class="tab_con_wrap">
+                        <div class="lineChart">
+                            <div class="line_chart_wrap">
+                                <ul class="chart_btn">
+                                    <li class="chart_txt">
+                                        <ul>
+                                            <li><span class="chart_color chart_red">매우높음</span><span class="chart_num">2</span></li>
+                                            <li><span class="chart_color chart_yellow">높음</span><span class="chart_num">1</span></li>
+                                            <li><span class="chart_color chart_blue">낮음</span><span class="chart_num">3</span></li>
+                                            <li><span class="chart_color chart_green">매우낮음</span><span class="chart_num">4</span></li>
+                                            <li class="reset_btn">
+                                                <a href="#"><img src="../../img/sub/reset_btn.png" alt="새로고침"> </a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li class="down_btn">
+                                        <a href="#"><i class="fa fa-file-excel-o"></i>엑셀다운로드</a>
+                                    </li>
+                                </ul><!--chart_btn END-->
+
+                                <ul class="line_chart_con">
+                                    <img src="../../img/sub/chart.png" alt="그래프">
+                                </ul><!--line_chart_con END-->
+
+                            </div><!--line_chart_wrap END-->
+                        </div><!--line_chart END-->
+
+                        <div class="tab_table">
+                            <div class="tab_table_wrap">
+                                <table>
+                                    <caption>발생(번호, 등급, 위치, 현황(빈도/기간), 추이, 최초발생일, 최근발생일, 완료예정일)</caption>
+                                    <colgroup>
+                                        <col style="width:239px ">
+                                        <col style="width:156px ">
+                                        <col style="width:162px ">
+                                        <col style="width:199px ">
+                                        <col style="width:330px ">
+                                        <col style="width:153px ">
+                                        <col style="width:174px ">
+                                        <col style="width:auto ">
+                                    </colgroup>
+                                    <thead>
+                                    <tr>
+                                        <th scope="colgroup">번호</th>
+                                        <th scope="colgroup">등급</th>
+                                        <th scope="colgroup">위치</th>
+                                        <th scope="colgroup">현황(빈도/기간)</th>
+                                        <th scope="colgroup">추이</th>
+                                        <th scope="colgroup">최초 발생일</th>
+                                        <th scope="colgroup">최근 발생일</th>
+                                        <th scope="colgroup">완료 예정일</th>
+                                    </tr>
+                                    </thead>
+                                    <tbody>
+                                    <tr>
+                                        <td><a href="app_sub01.html">EM20170718-00002</a></td>
+                                        <td><span class="chart_color chart_red">매우높음</span></td>
+                                        <td>LocalHost</td>
+                                        <td>1건 / 1일동안</td>
+                                        <td>
+                                            <img src="../../img/sub/table_img.png" alt="추이 이미지">
+                                        </td>
+                                        <td>2017-06-20</td>
+                                        <td>2017-07-18</td>
+                                        <td>2017-07-20</td>
+                                    </tr>
+                                    <tr>
+                                        <td><a href="#">EM20170718-00002</a></td>
+                                        <td><span class="chart_color chart_yellow">높음</span></td>
+                                        <td>LocalHost</td>
+                                        <td>1건 / 1일동안</td>
+                                        <td>
+                                            <img src="../../img/sub/table_img.png" alt="추이 이미지">
+                                        </td>
+                                        <td>2017-06-20</td>
+                                        <td>2017-07-18</td>
+                                        <td>2017-07-20</td>
+                                    </tr>
+                                    <tr>
+                                        <td><a href="#">EM20170718-00002</a></td>
+                                        <td><span class="chart_color chart_blue">낮음</span></td>
+                                        <td>LocalHost</td>
+                                        <td>1건 / 1일동안</td>
+                                        <td>
+                                            <img src="../../img/sub/table_img.png" alt="추이 이미지">
+                                        </td>
+                                        <td>2017-06-20</td>
+                                        <td>2017-07-18</td>
+                                        <td>2017-07-20</td>
+                                    </tr>
+                                    <tr>
+                                        <td><a href="#">EM20170718-00002</a></td>
+                                        <td><span class="chart_color chart_green">매우낮음</span></td>
+                                        <td>LocalHost</td>
+                                        <td>1건 / 1일동안</td>
+                                        <td>
+                                            <img src="../../img/sub/table_img.png" alt="추이 이미지">
+                                        </td>
+                                        <td>2017-06-20</td>
+                                        <td>2017-07-18</td>
+                                        <td>2017-07-20</td>
+                                    </tr>
+                                    </tbody>
+                                </table>
+                            </div><!--tab_table_wrap END-->
+                        </div><!--tab_table END-->
+
+                        <div class="table_paging">
+                            <ul class="paging_txt">
+                                <li>전체 <span>15</span>건 중 <span>1</span>번째 부터 <span>10</span>번째</li>
+                            </ul><!--paging_txt END-->
+                            <ul class="paging">
+                                <li class="paging_prev paging_btn"><a href="#">Previous</a></li>
+                                <li class="paging_num paging_on"><a href="#">1</a></li>
+                                <li class="paging_num"><a href="#">2</a></li>
+                                <li class="paging_num"><a href="#">3</a></li>
+                                <li class="paging_num"><a href="#">4</a></li>
+                                <li class="paging_num"><a href="#">5</a></li>
+                                <li class="paging_num"><a href="#">6</a></li>
+                                <li class="paging_next paging_btn padding_btn_on"><a href="#">Next</a></li>
+                            </ul><!--paging END--->
+                        </div><!--table_paging END--->
+                    </div><!--tab_con_wrap END-->
+                </div>
+                <div class="tab_con tab_con02">배정</div>
+                <div class="tab_con tab_con03">처리중</div>
+                <div class="tab_con tab_con04">처리완료</div>
+                <div class="tab_con tab_con05">무시</div>
+                <div class="tab_con tab_con06">보관소</div>
+            </div><!--appTab END-->
+
+        </div><!--content END-->
+
+    </div><!--container END-->
+
+</body>
+</html>

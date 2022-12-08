@@ -1,0 +1,39 @@
+@media screen and (max-width:1199px)  {
+    .board_list{overflow: inherit;}
+    .board_list table{width: 100%;}
+    .board_list table tr td{line-height: 21px;}
+}
+@media screen and (max-width:767px)  {
+    .board_list table colgroup{display: none;}
+    .board_list table thead tr th{display: none;}
+    .board_list table{border-top:1px solid #424242;}
+
+    .board_list table tbody td {
+        display: block;
+        float: left;
+        clear: left;
+        width: 100%;
+        padding: 3px 10px 3px;
+        border: none;
+        text-align: left;
+        box-sizing: border-box;
+    }
+    .board_list table tbody tr td a{font-size: 13px;}
+    .board_list table [data-cell-header]:before {
+        content: attr(data-cell-header);
+        display: inline-block;
+    }
+    .board_list table tbody tr:after {
+        display: block;
+        clear: both;
+        content: ".";
+        visibility: hidden;
+        height: 0
+    }
+    .board_list table tbody tr{border-bottom: 1px solid #e4e4e4;}
+    .board_list table tbody tr:first-child{border-top:1px solid #424242;}
+    .board_list table tbody tr td:first-child{padding-top: 10px;}
+    .board_list table tbody tr td.ta_lft{padding-left: 10px !important}
+    .board_list table tbody tr:nth-child(odd){background-color: #f8f8f8;}
+    .board_list table tr:last-child td{border-bottom: 0;}
+}

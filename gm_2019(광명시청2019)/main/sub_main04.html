@@ -1,0 +1,2403 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>광명시청</title>
+    <link rel="stylesheet" type="text/css" href="../css/reset.css"><!-- 기존에 있는 css 파일-->
+    <link rel="stylesheet" type="text/css" href="../css/new_layout.css"><!--레이아웃 css 파일-->
+    <link rel="stylesheet" type="text/css" href="../css/new_layout_media.css"><!--모바일 레이아웃 css 파일-->
+    <link rel="stylesheet" type="text/css" href="../css/new_main.css"><!--메인 css 파일-->
+    <link rel="stylesheet" type="text/css" href="../css/new_main_media.css"><!--모바일 메인 css 파일-->
+    <script src="../js/jquery-1.12.0.min.js"></script><!-- 기존에 있는 js 파일-->
+    <script src="../js/bxslider.min.js"></script><!-- 기존에 있는 js 파일-->
+    <script src="../js/new_layout.js"></script><!-- 레이아웃 js 파일-->
+    <script src="../js/new_main04.js"></script><!-- 메인 js 파일-->
+</head>
+<body>
+
+<div id="skipNav">
+    <p><a href="#container">본문바로가기</a></p>
+    <p><a href="#header">주메뉴바로가기</a></p>
+</div>
+
+<div class="mask"></div>
+
+<div id="header">
+    <div class="header_top">
+        <div class="header_top_wrap">
+            <ul>
+                <li class="m_gnbBtn">
+                    <a href="#gnb" class="m_gnb_open"><img src="../img/common_19/m_gnbBtn.png" alt="메뉴열기"> </a>
+                    <button type="button" class="m_gnb_close"><img src="../img/common_19/m_gnbClose.png" alt="메뉴닫기"></button>
+                </li>
+                <li class="logo">
+                    <a href="main.html" class="메인화면으로"><img src="../img/common_19/logo.png" alt="및을 품은 광명시"> </a>
+                </li>
+                <li class="m_searchBtn">
+                    <button type="button"><img src="../img/common_19/m_searchBtn.png" alt="검색폼 열기"> </button>
+                </li>
+                <li class="h_search">
+                    <div>
+                        <select title="검색선택">
+                            <option value="">통합검색</option>
+                            <option value="">디렉토리</option>
+                            <option value="">웹게시물</option>
+                        </select>
+                        <input type="text" title="검색어입력" placeholder="검색어를 입력해주세요." class="h_search_txt">
+                        <button type="button" class="h_search_btn">
+                            <img src="../img/common_19/search_btn.png" alt="검색버튼">
+                        </button>
+                    </div>
+                </li><!--h_search END-->
+                <li class="header_top_menu">
+                    <ul>
+                        <li class="mobile_none"><a href="#">사이트맵</a> </li>
+                        <li class="lg pc_lg"><a href="#">Language</a>
+                            <ul>
+                                <li><a href="#">English</a> </li>
+                                <li><a href="#">Chinese</a> </li>
+                                <li><a href="#">Japanese</a> </li>
+                            </ul>
+                        </li>
+                        <li class="ht_btn">
+                            <a href="#">
+                                <img src="../img/common_19/login.png" alt="로그인">
+                                <!--<img src="../img/common_19/logout.png" alt="로그아웃">-->
+                                <span>로그인</span>
+                                <!--<span>로그아웃</span>-->
+                            </a>
+                        </li>
+                        <li class="ht_btn">
+                            <a href="#">
+                                <img src="../img/common_19/join.png" alt="회원가입">
+                                <span>회원가입</span>
+                                <!--<span>마이페이지</span>-->
+                            </a>
+                        </li>
+                        <li class="lg mobile_lg"><a href="#">Language</a>
+                            <ul>
+                                <li><a href="#">English</a> </li>
+                                <li><a href="#">Chinese</a> </li>
+                                <li><a href="#">Japanese</a> </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li><!--header_top_menu END-->
+            </ul>
+        </div><!--header_top_wrap END-->
+    </div><!--header_top END-->
+
+    <div class="m_gnb_top">
+        <ul class="m_gnb_sns">
+            <li><a href="#" class="m_facebook"></a> </li>
+            <li><a href="#" class="m_twitter"></a> </li>
+            <li><a href="#" class="m_kakao"></a> </li>
+            <li><a href="#" class="m_blog"></a> </li>
+            <li><a href="#" class="m_instagram"></a> </li>
+            <li><a href="#" class="m_youtube"></a> </li>
+            <li><a href="#" class="m_naver"></a> </li>
+            <li><a href="#" class="m_share"></a> </li>
+        </ul><!--m_gnb_sns END-->
+        <ul class="m_gnb_field">
+            <li>
+                <a href="#" class="m_gnb_fieldOn m_gnbMenu">전체메뉴</a>
+            </li>
+            <li>
+                <a href="#" class="m_gnbField">분야별정보</a>
+            </li>
+        </ul><!--m_gnb_field END-->
+    </div><!--m_gnb_top END-->
+
+    <div class="mobile_block m_gnb_home">
+        <ul>
+            <li><a href="#">뉴스/소개</a> </li>
+            <li><a href="#">민원/참여</a> </li>
+            <li><a href="#">교육/일자리</a> </li>
+            <li><a href="#" class="m_gnb_home_on">문화관광</a> </li>
+        </ul>
+    </div>
+
+    <div class="header_gnb">
+        <div>
+            <ul class="gnb_wrap gnb_wrap_all" id="gnb">
+                <li class="m_on"><a href="sub_main01.html">뉴스/소개</a>
+                    <ul class="gnb_2dep">
+                        <li class="gnb_home"><a href="#">뉴스/소개 홈</a> </li>
+                        <li class="gnb_3dep">
+                            <a href="#" class="pc_menu">새소식</a>
+                            <a href="#" class="mobile_menu">새소식</a>
+                            <ul>
+                                <li><a href="#">공지사항</a> </li>
+                                <li class="gnb_4dep">
+                                    <a href="#" class="pc_menu">고시/공고/입법예고</a>
+                                    <a href="#" class="mobile_menu">고시/공고/입법예고</a>
+                                    <ul>
+                                        <li><a href="#">고시공고</a> </li>
+                                        <li><a href="#">입법예고</a> </li>
+                                        <li><a href="#">입찰공고</a> </li>
+                                        <li><a href="#">공시송달</a> </li>
+                                        <li><a href="#">시험/채용공고</a> </li>
+                                    </ul>
+                                </li>
+                                <li><a href="#">행사 · 축제</a> </li>
+                                <li class="gnb_link"><a href="#">시 주간행사</a> </li>
+                                <li><a href="#">보도/해명</a> </li>
+                                <li><a href="#">전자시보</a> </li>
+                            </ul>
+                        </li>
+                        <li class="gnb_3dep">
+                            <a href="#">시정홍보</a>
+                            <ul>
+                                <li class="gnb_4dep">
+                                    <a href="#" class="pc_menu">뉴스레터/소식지</a>
+                                    <a href="#" class="mobile_menu">뉴스레터/소식지</a>
+                                    <ul>
+                                        <li><a href="#">카카오톡 플러스친구 메시지 알림</a> </li>
+                                        <li><a href="#">뉴스레터</a> </li>
+                                        <li><a href="#">광명소식지</a> </li>
+                                    </ul>
+                                </li>
+                                <li><a href="#">반상회보</a> </li>
+                                <li class="gnb_4dep">
+                                    <a href="#" class="pc_menu">미디어시정</a>
+                                    <a href="#" class="mobile_menu">미디어시정</a>
+                                    <ul>
+                                        <li><a href="#">인터넷방송(IGBS)</a> </li>
+                                        <li><a href="#">포토뱅크</a> </li>
+                                        <li><a href="#">영상뉴스</a> </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="gnb_3dep">
+                            <a href="#" class="pc_menu">열린행정</a>
+                            <a href="#" class="mobile_menu">열린행정</a>
+                            <ul>
+                                <li class="gnb_4dep">
+                                    <a href="#" class="pc_menu">시정자료실</a>
+                                    <a href="#" class="mobile_menu">시정자료실</a>
+                                    <ul>
+                                        <li><a href="#">시정백서</a> </li>
+                                        <li><a href="#">여성백서</a> </li>
+                                        <li><a href="#">행정자료실</a> </li>
+                                        <li><a href="#">정책실명제</a> </li>
+                                        <li><a href="#">공무국외여행귀국보고서</a> </li>
+                                    </ul>
+                                </li>
+                                <li class="gnb_4dep">
+                                    <a href="#" class="pc_menu">법무행정</a>
+                                    <a href="#" class="mobile_menu">법무행정</a>
+                                    <ul>
+                                        <li><a href="#">관련사이트</a> </li>
+                                        <li><a href="#">고문변호사 현황</a> </li>
+                                        <li><a href="#">자치법규/입법예고</a> </li>
+                                    </ul>
+                                </li>
+                                <li class="gnb_4dep">
+                                    <a href="#" class="pc_menu">입찰계약정보</a>
+                                    <a href="#" class="mobile_menu">입찰계약정보</a>
+                                    <ul>
+                                        <li><a href="#">발주계획</a> </li>
+                                        <li><a href="#">입찰정보</a> </li>
+                                        <li><a href="#">계약정보</a> </li>
+                                        <li><a href="#">관련정보</a> </li>
+                                    </ul>
+                                </li>
+                                <li class="gnb_4dep">
+                                    <a href="#" class="pc_menu">위반업소공개</a>
+                                    <a href="#" class="mobile_menu">위반업소공개</a>
+                                    <ul>
+                                        <li><a href="#">환경위반업소공개</a> </li>
+                                        <li><a href="#">위생법규위반업소</a> </li>
+                                        <li><a href="#">원산지위반업소공개</a> </li>
+                                    </ul>
+                                </li>
+                                <li class="gnb_4dep">
+                                    <a href="#" class="pc_menu">위원회 자료공개</a>
+                                    <a href="#" class="mobile_menu">위원회 자료공개</a>
+                                    <ul>
+                                        <li><a href="#">위촉직(일반시민)위원 모집</a> </li>
+                                        <li><a href="#">각종 위원회 위원명단</a> </li>
+                                        <li><a href="#">각종 위원회 회의 고지</a> </li>
+                                        <li><a href="#">위원회 회의록</a> </li>
+                                        <li><a href="#">위원회 인재풀</a> </li>
+                                    </ul>
+                                </li>
+                                <li class="gnb_4dep">
+                                    <a href="#" class="pc_menu">행정정보공개</a>
+                                    <a href="#" class="mobile_menu">행정정보공개</a>
+                                    <ul>
+                                        <li><a href="#">행정정보공표</a> </li>
+                                        <li><a href="#">행정정보공개안내</a> </li>
+                                        <li><a href="#">행정정보공개목록</a> </li>
+                                        <li><a href="#">행정정보공개청구</a> </li>
+                                        <li><a href="#">조직정보공개</a> </li>
+                                        <li><a href="#">업무추진비 공개</a> </li>
+                                        <li><a href="#">상품권 구매·사용</a> </li>
+                                        <li><a href="#">예산집행실명공개</a> </li>
+                                        <li><a href="#">공공시설물 설치 비용 공개</a> </li>
+                                    </ul>
+                                </li>
+                                <li class="gnb_4dep">
+                                    <a href="#" class="pc_menu">열린감사</a>
+                                    <a href="#" class="mobile_menu">열린감사</a>
+                                    <ul>
+                                        <li><a href="#">감사계획</a> </li>
+                                        <li><a href="#">감사결과</a> </li>
+                                    </ul>
+                                </li>
+                                <li><a href="#">용역과제</a> </li>
+                            </ul>
+                        </li>
+                        <li class="gnb_3dep">
+                            <a href="#" class="pc_menu">시정정보</a>
+                            <a href="#" class="mobile_menu">시정정보</a>
+                            <ul>
+                                <li><a href="#">광명도시공사</a> </li>
+                                <li class="gnb_4dep">
+                                    <a href="#" class="pc_menu">공공데이터개방</a>
+                                    <a href="#" class="mobile_menu">공공데이터개방</a>
+                                    <ul>
+                                        <li><a href="#">개방제도안내</a> </li>
+                                        <li><a href="#">광명나눔데이터</a> </li>
+                                        <li><a href="#">데이터개방요청</a> </li>
+                                    </ul>
+                                </li>
+                                <li class="gnb_4dep">
+                                    <a href="#" class="pc_menu">정보공개현황</a>
+                                    <a href="#" class="mobile_menu">정보공개현황</a>
+                                    <ul>
+                                        <li><a href="#">정보공개자료</a></li>
+                                        <li><a href="#">정보공개 청구 및 처리현황</a></li>
+                                        <li><a href="#">행정규제 목록</a></li>
+                                        <li><a href="#">지도점검결과</a></li>
+                                        <li><a href="#">정보공개 비공개 세부기준</a></li>
+                                    </ul>
+                                </li>
+                                <li class="gnb_4dep">
+                                    <a href="#" class="pc_menu">지방공기업</a>
+                                    <a href="#" class="mobile_menu">지방공기업</a>
+                                    <ul>
+                                        <li><a href="#">지방공기업 위탁 및 개발사업</a> </li>
+                                        <li><a href="#">지방공기업 예산</a> </li>
+                                        <li><a href="#">지방공기업 재무제표</a> </li>
+                                        <li><a href="#">지방공기업 계약정보</a> </li>
+                                        <li><a href="#">발주계획</a> </li>
+                                        <li><a href="#">입찰정보</a> </li>
+                                    </ul>
+                                </li>
+                                <li class="gnb_4dep">
+                                    <a href="#" class="pc_menu">통계</a>
+                                    <a href="#" class="mobile_menu">통계</a>
+                                    <ul>
+                                        <li><a href="#">통계</a> </li>
+                                        <li><a href="#">통계연보</a> </li>
+                                    </ul>
+                                </li>
+                                <li><a href="#">사회조사</a> </li>
+                            </ul>
+                        </li>
+                        <li class="gnb_3dep">
+                            <a href="#" class="pc_menu">광명소개</a>
+                            <a href="#" class="mobile_menu">광명소개</a>
+                            <ul>
+                                <li class="gnb_4dep">
+                                    <a href="#" class="pc_menu">시청안내</a>
+                                    <a href="#" class="mobile_menu">시청안내</a>
+                                    <ul>
+                                        <li><a href="#">조직안내 및 전화번호</a> </li>
+                                        <li><a href="#">청사안내도</a> </li>
+                                        <li><a href="#">주차장안내</a> </li>
+                                        <li><a href="#">찾아오시는길</a> </li>
+                                    </ul>
+                                </li>
+                                <li class="gnb_4dep">
+                                    <a href="#" class="pc_menu">주요시책</a>
+                                    <a href="#" class="mobile_menu">주요시책</a>
+                                    <ul>
+                                        <li><a href="#">시정방침</a> </li>
+                                        <li><a href="#">주요 업무 계획</a> </li>
+                                        <li><a href="#">시정안내책자</a> </li>
+                                    </ul>
+                                </li>
+                                <li class="gnb_4dep">
+                                    <a href="#" class="pc_menu">광명의 상징물</a>
+                                    <a href="#" class="mobile_menu">광명의 상징물</a>
+                                    <ul>
+                                        <li><a href="#">CI</a> </li>
+                                        <li><a href="#">시민헌장/시민노래</a> </li>
+                                    </ul>
+                                </li>
+                                <li class="gnb_4dep">
+                                    <a href="#" class="pc_menu">광명시 현황</a>
+                                    <a href="#" class="mobile_menu">광명시 현황</a>
+                                    <ul>
+                                        <li><a href="#">일반현황</a> </li>
+                                        <li><a href="#">선거구역</a> </li>
+                                        <li><a href="#">행정구역/동명칭</a> </li>
+                                    </ul>
+                                </li>
+                                <li class="gnb_4dep">
+                                    <a href="#" class="pc_menu">광명의 역사</a>
+                                    <a href="#" class="mobile_menu">광명의 역사</a>
+                                    <ul>
+                                        <li><a href="#">역사와 연혁</a> </li>
+                                        <li><a href="#">역대시장</a> </li>
+                                        <li><a href="#">향토사료관</a> </li>
+                                        <li><a href="#">문화유산/인물</a> </li>
+                                    </ul>
+                                </li>
+                                <li class="gnb_4dep">
+                                    <a href="#" class="pc_menu">국내외 교류</a>
+                                    <a href="#" class="mobile_menu">국내외 교류</a>
+                                    <ul>
+                                        <li><a href="#">국외</a> </li>
+                                        <li><a href="#">국내</a> </li>
+                                    </ul>
+                                </li>
+                                <li class="gnb_4dep">
+                                    <a href="#" class="pc_menu">시민이용시설</a>
+                                    <a href="#" class="mobile_menu">시민이용시설</a>
+                                    <ul>
+                                        <li><a href="#">도서관</a> </li>
+                                        <li><a href="#">보건소</a> </li>
+                                        <li><a href="#">시민회관</a> </li>
+                                        <li><a href="#">시민운동장</a> </li>
+                                        <li><a href="#">시민체육관</a> </li>
+                                        <li><a href="#">개방화장실 현황</a> </li>
+                                        <li><a href="#">주차장</a> </li>
+                                        <li><a href="#">공공와이파이</a> </li>
+                                        <li><a href="#">휴일당번약국</a> </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li><a href="sub_main02.html">민원/참여</a>
+                    <ul class="gnb_2dep">
+                        <li class="gnb_home"><a href="#">민원/참여 홈</a> </li>
+                        <li class="gnb_3dep">
+                            <a href="#" class="pc_menu">민원안내</a>
+                            <a href="#" class="mobile_menu">민원안내</a>
+                            <ul>
+                                <li><a href="#">종합민원실 안내도</a> </li>
+                                <li><a href="#">종합민원상담센터</a> </li>
+                                <li><a href="#">민원상담전화</a> </li>
+                                <li><a href="#">어디서나 민원</a> </li>
+                                <li><a href="#">본인서명/인감신고/증명발급</a> </li>
+                                <li><a href="#">행정처리기준편람</a> </li>
+                                <li><a href="#">행정정보공동이용</a> </li>
+                                <li><a href="#">대법원인터넷등기소</a> </li>
+                                <li><a href="#">110화상수화통역서비스</a> </li>
+                                <li><a href="#">출생·사망·혼인신고 등 10종에 대한 신고절차</a> </li>
+                                <li><a href="#">고객서비스 표준 매뉴얼</a> </li>
+                                <li class="gnb_4dep">
+                                    <a href="#" class="pc_menu">행정서비스헌장</a>
+                                    <a href="#" class="mobile_menu">행정서비스헌장</a>
+                                    <ul>
+                                        <li><a href="#">행정서비스헌장</a> </li>
+                                        <li><a href="#">부서별 이행표준</a> </li>
+                                    </ul>
+                                </li>
+                                <li><a href="#">민원편람</a> </li>
+                                <li><a href="#">본인 서명확인제도 홍보영상</a> </li>
+                            </ul>
+                        </li>
+                        <li class="gnb_3dep">
+                            <a href="#" class="pc_menu">편리한 민원시책</a>
+                            <a href="#" class="mobile_menu">편리한 민원시책</a>
+                            <ul>
+                                <li><a href="#">민원조정제도</a> </li>
+                                <li><a href="#">사전심사청구제</a> </li>
+                                <li><a href="#">민원후견인제</a> </li>
+                                <li><a href="#">민원1회 방문 처리제</a> </li>
+                                <li><a href="#">야간민원서비스</a> </li>
+                                <li><a href="#">사회취약계층 전용상담창구</a> </li>
+                                <li><a href="#">폐업신고 간소화서비스</a> </li>
+                                <li><a href="#">구술 및 전화민원</a> </li>
+                            </ul>
+                        </li>
+                        <li class="gnb_3dep">
+                            <a href="#" class="pc_menu">무인민원발급</a>
+                            <a href="#" class="mobile_menu">무인민원발급</a>
+                            <ul>
+                                <li><a href="#">설치현황</a> </li>
+                                <li><a href="#">발급 받을 수 있는 증명</a> </li>
+                                <li><a href="#">서비스 이용제한 안내</a> </li>
+                            </ul>
+                        </li>
+                        <li class="gnb_3dep">
+                            <a href="#" class="pc_menu">민원신청</a>
+                            <a href="#" class="mobile_menu">민원신청</a>
+                            <ul>
+                                <li><a href="#">민원 접수</a> </li>
+                                <li><a href="#">민원24</a> </li>
+                                <li><a href="#">민원처리공개</a> </li>
+                                <li><a href="#">민원처리만족도 및 서비스 평가결과</a> </li>
+                                <li><a href="#">365민원실 운영현황</a> </li>
+                                <li><a href="#">환경신문고</a> </li>
+                                <li><a href="#">외국인을 위한 전자정부</a> </li>
+                                <li><a href="#">청탁금지법 온라인 콜센터</a> </li>
+                            </ul>
+                        </li>
+                        <li class="gnb_3dep">
+                            <a href="#" class="pc_menu">민원콜센터안내</a>
+                            <a href="#" class="mobile_menu">민원콜센터안내</a>
+                            <ul>
+                                <li><a href="#">센터소개</a> </li>
+                                <li><a href="#">위치안내</a> </li>
+                                <li><a href="#">상담안내</a> </li>
+                                <li><a href="#">민원서식</a> </li>
+                            </ul>
+                        </li>
+                        <li class="gnb_3dep">
+                            <a href="#" class="pc_menu">분야별민원</a>
+                            <a href="#" class="mobile_menu">분야별민원</a>
+                            <ul>
+                                <li class="gnb_4dep">
+                                    <a href="#" class="pc_menu">가족관계등록</a>
+                                    <a href="#" class="mobile_menu">가족관계등록</a>
+                                    <ul>
+                                        <li><a href="#">가족관계등록제도의 의의</a> </li>
+                                        <li><a href="#">가족관계등록신고</a> </li>
+                                        <li><a href="#">증명서 발급</a> </li>
+                                        <li><a href="#">증명서의 종류 및 기록사항</a> </li>
+                                        <li><a href="#">가족관계신고사항 처리실적</a> </li>
+                                    </ul>
+                                </li>
+                                <li class="gnb_4dep">
+                                    <a href="#" class="pc_menu">여권민원</a>
+                                    <a href="#" class="mobile_menu">여권민원</a>
+                                    <ul>
+                                        <li><a href="#">여권민원안내 및 여권신청서</a> </li>
+                                        <li><a href="#">여권교부 및 우편수령</a> </li>
+                                        <li><a href="#">미국비자면제프로그램</a> </li>
+                                    </ul>
+                                </li>
+                                <li class="gnb_4dep">
+                                    <a href="#" class="pc_menu">부동산민원</a>
+                                    <a href="#" class="mobile_menu">부동산민원</a>
+                                    <ul>
+                                        <li><a href="#">건축민원</a> </li>
+                                        <li><a href="#">토지(임야)</a> </li>
+                                        <li><a href="#">검인신청</a> </li>
+                                        <li><a href="#">등기소민원</a> </li>
+                                    </ul>
+                                </li>
+                                <li class="gnb_4dep">
+                                    <a href="#" class="pc_menu">정보통신 사용전 검사</a>
+                                    <a href="#" class="mobile_menu">정보통신 사용전 검사</a>
+                                    <ul>
+                                        <li><a href="#">업무안내</a> </li>
+                                        <li><a href="#">자주하는질문</a> </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="gnb_3dep">
+                            <a href="#" class="pc_menu">시민참여</a>
+                            <a href="#" class="mobile_menu">시민참여</a>
+                            <ul>
+                                <li class="gnb_4dep">
+                                    <a href="#" class="pc_menu">시민과의 대화</a>
+                                    <a href="#" class="mobile_menu">시민과의 대화</a>
+                                    <ul>
+                                        <li><a href="#">시민과의 대화 건의사항 추진상황</a> </li>
+                                    </ul>
+                                </li>
+                                <li class="gnb_4dep">
+                                    <a href="#" class="pc_menu">민원신고센터</a>
+                                    <a href="#" class="mobile_menu">민원신고센터</a>
+                                    <ul>
+                                        <li><a href="#">신고센터</a> </li>
+                                        <li><a href="#">공무원 부조리 신고</a> </li>
+                                    </ul>
+                                </li>
+                                <li class="gnb_4dep">
+                                    <a href="#" class="pc_menu">시민참여방</a>
+                                    <a href="#" class="mobile_menu">시민참여방</a>
+                                    <ul>
+                                        <li><a href="#">국민생각함 정책토론방</a> </li>
+                                        <li><a href="#">광명시민1번가</a> </li>
+                                        <li><a href="#">설문조사</a> </li>
+                                        <li><a href="#">칭찬합시다</a> </li>
+                                    </ul>
+                                </li>
+                                <li class="gnb_4dep">
+                                    <a href="#" class="pc_menu">행정규제 개혁</a>
+                                    <a href="#" class="mobile_menu">행정규제 개혁</a>
+                                    <ul>
+                                        <li><a href="#">규제개혁</a> </li>
+                                        <li><a href="#">규제개혁 알림</a> </li>
+                                        <li><a href="#">지방규제 신고센터</a> </li>
+                                    </ul>
+                                </li>
+                                <li class="gnb_4dep">
+                                    <a href="#" class="pc_menu">광명시민대상</a>
+                                    <a href="#" class="mobile_menu">광명시민대상</a>
+                                    <ul>
+                                        <li><a href="#">광명시민대상안내</a> </li>
+                                        <li><a href="#">역대수상내역</a> </li>
+                                    </ul>
+                                </li>
+                                <li class="gnb_4dep">
+                                    <a href="#" class="pc_menu">시민건의</a>
+                                    <a href="#" class="mobile_menu">시민건의</a>
+                                    <ul>
+                                        <li><a href="#">홈페이지개선제안</a> </li>
+                                        <li><a href="#">시민제안</a> </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="gnb_3dep">
+                            <a href="#" class="pc_menu">서비스신청</a>
+                            <a href="#" class="mobile_menu">서비스신청</a>
+                            <ul>
+                                <li><a href="#">주말농장신청</a> </li>
+                                <li><a href="#">공유농업</a> </li>
+                                <li><a href="#">정장대여신청</a> </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li><a href="sub_main03.html">교육/일자리</a>
+                    <ul class="gnb_2dep">
+                        <li class="gnb_home"><a href="#">교육/일자리 홈</a> </li>
+                        <li class="gnb_3dep">
+                            <a href="#" class="pc_menu">교육관련기관</a>
+                            <a href="#" class="mobile_menu">교육관련기관</a>
+                            <ul>
+                                <li><a href="#">정보화 교육</a> </li>
+                                <li><a href="#">평생학습원</a> </li>
+                                <li><a href="#">광명학습지원센터</a> </li>
+                            </ul>
+                        </li>
+                        <li class="gnb_3dep">
+                            <a href="#" class="pc_menu">교육지원</a>
+                            <a href="#" class="mobile_menu">교육지원</a>
+                            <ul>
+                                <li><a href="#">(재)경기도민회장학회 장학금</a> </li>
+                                <li class="gnb_4dep">
+                                    <a href="#" class="pc_menu">교복지원금 신청</a>
+                                    <a href="#" class="mobile_menu">교복지원금 신청</a>
+                                    <ul>
+                                        <li><a href="#">교복구입비 신청</a> </li>
+                                        <li><a href="#">대안교육기관 신입생 교복구입비</a> </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="gnb_3dep">
+                            <a href="#" class="pc_menu">아르바이트</a>
+                            <a href="#" class="mobile_menu">아르바이트</a>
+                            <ul>
+                                <li><a href="#">아르바이트신청</a> </li>
+                            </ul>
+                        </li>
+                        <li><a href="#">광명일자리센터</a> </li>
+                        <li class="gnb_3dep">
+                            <a href="#" class="pc_menu">고용정책</a>
+                            <a href="#" class="mobile_menu">고용정책</a>
+                            <ul>
+                                <li><a href="#">취업지원 프로그램 운영 현황</a> </li>
+                                <li><a href="#">채용박람회 현황</a> </li>
+                                <li><a href="#">지역맞춤형 일자리 창출 지원사업</a> </li>
+                                <li><a href="#">공공근로</a> </li>
+                                <li><a href="#">지역공동체 일자리 사업</a> </li>
+                                <li><a href="#">직업 소개소 현황</a> </li>
+                                <li><a href="#">노동조합</a> </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li><a href="sub_main04.html" class="header_gnb_on">문화/관광</a>
+                    <ul class="gnb_2dep">
+                        <li class="gnb_home"><a href="#">문화/관광 홈</a> </li>
+                        <li class="gnb_3dep">
+                            <a href="#" class="pc_menu">문화예술단체</a>
+                            <a href="#" class="mobile_menu">문화예술단체</a>
+                            <ul>
+                                <li><a href="#">시립예술단</a> </li>
+                                <li><a href="#">예술/공연단체</a> </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">광명8경</a>
+                        </li>
+                        <li>
+                            <a href="#">시민회관</a>
+                        </li>
+                        <li class="gnb_3dep">
+                            <a href="#" class="pc_menu">착한가격지정업소</a>
+                            <a href="#" class="mobile_menu">착한가격지정업소</a>
+                            <ul>
+                                <li><a href="#">착한가격지정업소란?</a> </li>
+                                <li><a href="#">착한가격지정업소</a> </li>
+                            </ul>
+                        </li>
+                        <li class="gnb_3dep">
+                            <a href="#" class="pc_menu">문화사업</a>
+                            <a href="#" class="mobile_menu">문화사업</a>
+                            <ul>
+                                <li><a href="#">영화상영관 현황</a> </li>
+                                <li><a href="#">출판사 및 인쇄소 현황</a> </li>
+                                <li><a href="#">박물관/미술관 현황</a> </li>
+                                <li><a href="#">문화유통업 현황</a> </li>
+                                <li><a href="#">문화관광 해설사</a> </li>
+                            </ul>
+                        </li>
+                        <li><a href="#">광명동굴</a> </li>
+                        <li class="gnb_3dep">
+                            <a href="#" class="pc_menu">관광산업</a>
+                            <a href="#" class="mobile_menu">관광산업</a>
+                            <ul>
+                                <li><a href="#">여행업 현황</a> </li>
+                                <li><a href="#">관광 편의시설업</a> </li>
+                                <li><a href="#">관광 호텔업</a> </li>
+                                <li><a href="#">관광객 이용시설업 현황</a> </li>
+                                <li><a href="#">유원시설업 현황</a> </li>
+                            </ul>
+                        </li>
+                        <li><a href="#">문화관광포털</a> </li>
+                        <li class="gnb_3dep">
+                            <a href="#" class="pc_menu">광명문화재</a>
+                            <a href="#" class="mobile_menu">광명문화재</a>
+                            <ul>
+                                <li class="gnb_4dep">
+                                    <a href="#" class="pc_menu">문화재관</a>
+                                    <a href="#" class="mobile_menu">문화재관</a>
+                                    <ul>
+                                        <li><a href="#">지정문화재실</a> </li>
+                                        <li><a href="#">비지정문화재실</a> </li>
+                                    </ul>
+                                </li>
+                                <li class="gnb_4dep">
+                                    <a href="#" class="pc_menu">역사관</a>
+                                    <a href="#" class="mobile_menu">역사관</a>
+                                    <ul>
+                                        <li><a href="#">연혁</a> </li>
+                                        <li><a href="#">시대별자료</a> </li>
+                                        <li><a href="#">행정박물</a> </li>
+                                        <li><a href="#">분야별자료</a> </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+            <ul class="gnb_wrap gnb_wrap_field">
+                <li><a href="sub_main05.html" class="pc_menu">분야별 정보</a>
+                    <ul class="gnb_2dep">
+                        <li class="gnb_home pc_menu"><a href="#">분야별 정보 홈</a> </li>
+                        <li class="gnb_3dep gnb_3dep_on02">
+                            <a href="#">환경</a>
+                            <ul>
+                                <li class="gnb_4dep">
+                                    <a href="#" class="pc_menu">수질환경</a>
+                                    <a href="#" class="mobile_menu">수질환경</a>
+                                    <ul>
+                                        <li><a href="#">하천수</a> </li>
+                                        <li><a href="#">먹는물</a> </li>
+                                        <li><a href="#">수질오염 총량제 현황</a> </li>
+                                        <li><a href="#">가축분뇨배출시설 현황</a> </li>
+                                    </ul>
+                                </li>
+                                <li class="gnb_4dep">
+                                    <a href="#" class="pc_menu">자원회수시설</a>
+                                    <a href="#" class="mobile_menu">자원회수시설</a>
+                                    <ul>
+                                        <li><a href="#">개요</a></li>
+                                        <li><a href="#">시설 계통도</a></li>
+                                        <li><a href="#">운영실적</a></li>
+                                    </ul>
+                                </li>
+                                <li class="gnb_4dep">
+                                    <a href="#" class="pc_menu">청소</a>
+                                    <a href="#" class="mobile_menu">청소</a>
+                                    <ul>
+                                        <li class="gnb_5dep">
+                                            <a href="#" class="pc_menu">생활쓰레기</a>
+                                            <a href="#" class="mobile_menu">생활쓰레기</a>
+                                            <ul>
+                                                <li><a href="#">생활쓰레기 종량제</a> </li>
+                                                <li><a href="#">생활쓰레기 배출요령</a> </li>
+                                                <li><a href="#">음식물쓰레기 배출요령</a> </li>
+                                                <li><a href="#">재활용쓰레기 배출요령</a> </li>
+                                                <li><a href="#">봉투에 담기 어려우나 대형폐기물이 아닌것</a> </li>
+                                                <li><a href="#">취급 위험폐기물의 배출 방법</a> </li>
+                                            </ul>
+                                        </li>
+                                        <li><a href="#">쓰레기봉투 판매소</a> </li>
+                                        <li class="gnb_5dep">
+                                            <a href="#" class="pc_menu">대형폐기물처리</a>
+                                            <a href="#" class="mobile_menu">대형폐기물처리</a>
+                                            <ul>
+                                                <li><a href="#">대형폐기물처리 수수료 기준표</a> </li>
+                                                <li><a href="#">대형폐기물 인터넷 신청</a> </li>
+                                            </ul>
+                                        </li>
+                                        <li><a href="#">분뇨처리</a> </li>
+                                        <li class="gnb_5dep">
+                                            <a href="#" class="pc_menu">재활용</a>
+                                            <a href="#" class="mobile_menu">재활용</a>
+                                            <ul>
+                                                <li><a href="#">재활용품센터안내</a> </li>
+                                                <li><a href="#">재활용 선별현황</a> </li>
+                                            </ul>
+                                        </li>
+                                        <li class="gnb_5dep">
+                                            <a href="#" class="pc_menu">사업장 폐기물</a>
+                                            <a href="#" class="mobile_menu">사업장 폐기물</a>
+                                            <ul>
+                                                <li><a href="#">1회용품 사용억제 및 무상제공금지품목 안내</a> </li>
+                                                <li><a href="#">폐기물 배출자 신고현황</a> </li>
+                                            </ul>
+                                        </li>
+                                        <li class="gnb_5dep">
+                                            <a href="#" class="pc_menu">생활폐기물</a>
+                                            <a href="#" class="mobile_menu">생활폐기물</a>
+                                            <ul>
+                                                <li><a href="#">청소대행업체 수거량 및 대행료</a> </li>
+                                                <li><a href="#">생활쓰레기 배출량</a> </li>
+                                                <li><a href="#">동별 생활폐기물 수거 업체</a> </li>
+                                                <li><a href="#">무단투기CCTV 설치 현황</a> </li>
+                                                <li><a href="#">생활폐기물 자동집하시설 현황</a> </li>
+                                                <li><a href="#">폐기물 처리업 현황</a> </li>
+                                                <li><a href="#">음식물 쓰레기 다량 배출 사업장</a> </li>
+                                                <li><a href="#">생활폐기물 수집운반 대행업체 평가결과</a> </li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="gnb_4dep">
+                                    <a href="#" class="pc_menu">중하수도</a>
+                                    <a href="#" class="mobile_menu">중하수도</a>
+                                    <ul>
+                                        <li><a href="#">수질검사현황</a> </li>
+                                        <li><a href="#">중하수도시설현황</a> </li>
+                                        <li><a href="#">지하수 준공 및 폐공현황</a> </li>
+                                        <li><a href="#">하수관로 공사추진현황</a> </li>
+                                        <li><a href="#">하수도 원인자부담금</a> </li>
+                                        <li><a href="#">분뇨 처리장시설/수집운반업체</a> </li>
+                                        <li><a href="#">정화조청소업체 및 수수료 부과</a> </li>
+                                        <li><a href="#">정화조 청소료</a> </li>
+                                    </ul>
+                                </li>
+                                <li class="gnb_4dep">
+                                    <a href="#" class="pc_menu">하천</a>
+                                    <a href="#" class="mobile_menu">하천</a>
+                                    <ul>
+                                        <li><a href="#">하천현황</a> </li>
+                                        <li><a href="#">하천유지관리</a> </li>
+                                    </ul>
+                                </li>
+                                <li class="gnb_4dep">
+                                    <a href="#" class="pc_menu">대기</a>
+                                    <a href="#" class="mobile_menu">대기</a>
+                                    <ul>
+                                        <li class="gnb_5dep">
+                                            <a href="#" class="pc_menu">도시환경</a>
+                                            <a href="#" class="mobile_menu">도시환경</a>
+                                            <ul>
+                                                <li><a href="#">비산먼지발생사업 신고기준 및 사업자 현황</a> </li>
+                                                <li><a href="#">어린이 활동공간 관리대상 현황</a> </li>
+                                            </ul>
+                                        </li>
+                                        <li class="gnb_5dep">
+                                            <a href="#" class="pc_menu">대기보전</a>
+                                            <a href="#" class="mobile_menu">대기보전</a>
+                                            <ul>
+                                                <li><a href="#">탄소포인트제 사업안내</a> </li>
+                                                <li><a href="#">대기오염물질 측정 결과</a> </li>
+                                                <li><a href="#">석면해체, 제거작업 현황</a> </li>
+                                                <li><a href="#">석면해체제거작업장의 석면비산 측정결과</a> </li>
+                                                <li><a href="#">다중이용시설 실내 공기질 관리 현황</a> </li>
+                                                <li><a href="#">배출가스 저감사업 안내</a> </li>
+                                                <li><a href="#">매연단속 현황</a> </li>
+                                                <li><a href="#">자동차 공회전 제한구역 단속 결과</a> </li>
+                                                <li><a href="#">자동차 배출가스 점검</a> </li>
+                                                <li><a href="#">자동차 배출가스 확인검사 대행업체</a> </li>
+                                                <li><a href="#">대기오염정보센터</a> </li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="gnb_4dep">
+                                    <a href="#" class="pc_menu">자연</a>
+                                    <a href="#" class="mobile_menu">자연</a>
+                                    <ul>
+                                        <li><a href="#">야생동물 피해예방사업</a> </li>
+                                        <li><a href="#">특정토양 오염관리대상시설</a> </li>
+                                    </ul>
+                                </li>
+                                <li class="gnb_4dep">
+                                    <a href="#" class="pc_menu">환경보전</a>
+                                    <a href="#" class="mobile_menu">환경보전</a>
+                                    <ul>
+                                        <li><a href="#">환경보전계획</a> </li>
+                                        <li><a href="#">환경오염물질 배출사업자</a> </li>
+                                        <li><a href="#">오염원 배출업소 환경기술지원</a> </li>
+                                        <li><a href="#">환경오염신고 포상금 운영</a> </li>
+                                        <li><a href="#">환경법 위반 과태료 징수</a> </li>
+                                        <li><a href="#">환경관리인 교육안내</a> </li>
+                                        <li><a href="#">초과배출 부과금, 과징금 징수</a> </li>
+                                        <li><a href="#">명예환경 감시원</a> </li>
+                                        <li><a href="#">환경오염사고 처리</a> </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="gnb_3dep">
+                            <a href="#">부동산/도시개발</a>
+                            <ul>
+                                <li class="gnb_4dep">
+                                    <a href="#" class="pc_menu">부동산</a>
+                                    <a href="#" class="mobile_menu">부동산</a>
+                                    <ul>
+                                        <li><a href="#">부동산 중개보수 계산</a> </li>
+                                        <li><a href="#">부동산 중개사무소 소통마당</a> </li>
+                                        <li><a href="#">맞춤형 경기 부동산 포털</a> </li>
+                                        <li><a href="#">부동산거래시스템</a> </li>
+                                        <li><a href="#">공시지가정보열람</a> </li>
+                                        <li><a href="#">내 토지 찾기</a> </li>
+                                        <li><a href="#">도로명주소 찾기</a> </li>
+                                        <li><a href="#">도로명주소 웹툰</a> </li>
+                                        <li class="gnb_5dep">
+                                            <a href="#" class="pc_menu">공시지가</a>
+                                            <a href="#" class="mobile_menu">공시지가</a>
+                                            <ul>
+                                                <li><a href="#">공시지가현황</a> </li>
+                                                <li><a href="#">개별공시지가조사/결정</a> </li>
+                                                <li><a href="#">공시지가의견제출/이의신청</a> </li>
+                                                <li><a href="#">개별공시지가 열람</a> </li>
+                                            </ul>
+                                        </li>
+                                        <li><a href="#">부동산중개업 등록/폐업현황</a> </li>
+                                        <li><a href="#">조상땅 및 내토지 찾기 신청절차 안내</a> </li>
+                                        <li><a href="#">지적공부 동별, 지목별현황</a> </li>
+                                        <li><a href="#">공유토지분할 신청절차</a> </li>
+                                        <li><a href="#">지적측량 기준점 현황</a> </li>
+                                        <li><a href="#">외국인 토지거래신고/허가현황</a> </li>
+                                        <li><a href="#">비법인 부동산 등기용 등록번호 부여신청</a> </li>
+                                    </ul>
+                                </li>
+                                <li class="gnb_4dep">
+                                    <a href="#" class="pc_menu">주택</a>
+                                    <a href="#" class="mobile_menu">주택</a>
+                                    <ul>
+                                        <li><a href="#">주택가격열람</a> </li>
+                                        <li><a href="#">개별주택가격열람</a> </li>
+                                        <li><a href="#">공동주택가격열람</a> </li>
+                                        <li><a href="#">아파트 실거래가 조회</a> </li>
+                                        <li class="gnb_5dep">
+                                            <a href="#" class="pc_menu">주택 건설</a>
+                                            <a href="#" class="mobile_menu">주택 건설</a>
+                                            <ul>
+                                                <li><a href="#">시공 중 공동 주택현황</a> </li>
+                                                <li><a href="#">공동주택 현황</a> </li>
+                                                <li><a href="#">주택 보급률 현황</a> </li>
+                                                <li><a href="#">공동주택 사업승인/착공현황</a> </li>
+                                                <li><a href="#">공동주택 입주자 모집 및 마감재</a> </li>
+                                                <li><a href="#">공동주택 사용검사</a> </li>
+                                                <li><a href="#">도시형 생활주택 인허가현황</a> </li>
+                                                <li><a href="#">공동주택</a> </li>
+                                                <li><a href="#">공동주택 보조금 지원</a> </li>
+                                                <li><a href="#">공동주택 하자보수 예치현황</a> </li>
+                                                <li><a href="#">임대사업자 현황</a> </li>
+                                                <li><a href="#">영구 임대 아파트 선정</a> </li>
+                                            </ul>
+                                        </li>
+                                        <li><a href="#">층간소음</a> </li>
+                                    </ul>
+                                </li>
+                                <li class="gnb_4dep">
+                                    <a href="#" class="pc_menu">뉴타운</a>
+                                    <a href="#" class="mobile_menu">뉴타운</a>
+                                    <ul>
+                                        <li class="gnb_5dep">
+                                            <a href="#" class="pc_menu">광명뉴타운사업</a>
+                                            <a href="#" class="mobile_menu">광명뉴타운사업</a>
+                                            <ul>
+                                                <li><a href="#">개발배경/사업개요</a> </li>
+                                                <li><a href="#">재개발·재건축 사업추진절차</a> </li>
+                                                <li><a href="#">재개발정비사업 추진현황</a> </li>
+                                            </ul>
+                                        </li>
+
+                                    </ul>
+                                </li>
+                                <li class="gnb_4dep">
+                                    <a href="#" class="pc_menu">지역개발</a>
+                                    <a href="#" class="mobile_menu">지역개발</a>
+                                    <ul>
+                                        <li><a href="#">구름산지구 도시개발사업</a> </li>
+                                        <li><a href="#">도시생활환경지표</a> </li>
+                                        <li><a href="#">도시계획현황</a> </li>
+                                        <li><a href="#">토지이용계획확인신청</a> </li>
+                                        <li><a href="#">광명 역세권 택지개발</a> </li>
+                                        <li><a href="#">재건축정비사업추진현황</a> </li>
+                                        <li><a href="#">법원경매</a> </li>
+                                        <li class="gnb_5dep">
+                                            <a href="#" class="pc_menu">지역 및 도시계획</a>
+                                            <a href="#" class="mobile_menu">지역 및 도시계획</a>
+                                            <ul>
+                                                <li><a href="#">개발제한구역내 주민지원 사업</a> </li>
+                                                <li><a href="#">군사시설보호구역 변경</a> </li>
+                                                <li><a href="#">도시개발사업 추진현황</a> </li>
+                                                <li><a href="#">토지이용정보</a> </li>
+                                                <li><a href="#">개발제한구역 현황</a> </li>
+                                            </ul>
+                                        </li>
+                                        <li><a href="#">학교용지부담금 부과징수</a> </li>
+                                    </ul>
+                                </li>
+                                <li class="gnb_4dep">
+                                    <a href="#" class="pc_menu">건설/건축</a>
+                                    <a href="#" class="mobile_menu">건설/건축</a>
+                                    <ul>
+                                        <li><a href="#">불법건축물 이행강제금 현황</a> </li>
+                                        <li><a href="#">건축신고 및 허가 등 현황</a> </li>
+                                        <li><a href="#">마을회관 현황</a> </li>
+                                        <li><a href="#">전문건설업 현황</a> </li>
+                                        <li><a href="#">전문건설업 등록 및 등록사항 신고안내</a> </li>
+                                    </ul>
+                                </li>
+                                <li class="gnb_4dep">
+                                    <a href="#" class="pc_menu">도로</a>
+                                    <a href="#" class="mobile_menu">도로</a>
+                                    <ul>
+                                        <li class="gnb_5dep">
+                                            <a href="#" class="pc_menu">도로정책</a>
+                                            <a href="#" class="mobile_menu">도로정책</a>
+                                            <ul>
+                                                <li><a href="#">도로점용(굴착)허가 현황</a> </li>
+                                                <li><a href="#">도로건설공사 추진현황</a> </li>
+                                            </ul>
+                                        </li>
+                                        <li><a href="#">도로/터널 현황</a> </li>
+                                        <li><a href="#">교량터널 안전점검</a> </li>
+                                    </ul>
+                                </li>
+                                <li><a href="#">관련사이트</a> </li>
+                                <li class="gnb_4dep">
+                                    <a href="#" class="pc_menu">도시경관</a>
+                                    <a href="#" class="mobile_menu">도시경관</a>
+                                    <ul>
+                                        <li class="gnb_5dep">
+                                            <a href="#" class="pc_menu">현수막게첨대</a>
+                                            <a href="#" class="mobile_menu">현수막게첨대</a>
+                                            <ul>
+                                                <li><a href="#">현수막위치</a> </li>
+                                                <li><a href="#">관련법규</a> </li>
+                                                <li><a href="#">위탁업체</a> </li>
+                                            </ul>
+                                        </li>
+                                        <li class="gnb_5dep">
+                                            <a href="#" class="pc_menu">옥외광고물</a>
+                                            <a href="#" class="mobile_menu">옥외광고물</a>
+                                            <ul>
+                                                <li><a href="#">옥외광고업 현황</a> </li>
+                                                <li><a href="#">옥외광고업자 교육안내</a> </li>
+                                                <li><a href="#">시민 게시판 현황</a> </li>
+                                                <li><a href="#">간판정비구역 지정 안내</a> </li>
+                                                <li><a href="#">불법 광고물 수거보상제 안내</a> </li>
+                                            </ul>
+                                        </li>
+                                        <li class="gnb_5dep">
+                                            <a href="#" class="pc_menu">디자인정책</a>
+                                            <a href="#" class="mobile_menu">디자인정책</a>
+                                            <ul>
+                                                <li><a href="#">관련규정</a> </li>
+                                                <li><a href="#">경관계획</a> </li>
+                                                <li><a href="#">가이드라인</a> </li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li><a href="#">건축정보 가이드북</a> </li>
+                            </ul>
+                        </li>
+                        <li class="gnb_3dep">
+                            <a href="#">교통</a>
+                            <ul>
+                                <li class="gnb_4dep">
+                                    <a href="#" class="pc_menu">차량등록</a>
+                                    <a href="#" class="mobile_menu">차량등록</a>
+                                    <ul>
+                                        <li class="gnb_5dep">
+                                            <a href="#" class="pc_menu">자동차</a>
+                                            <a href="#" class="mobile_menu">자동차</a>
+                                            <ul>
+                                                <li><a href="#">임시운행허가</a> </li>
+                                                <li><a href="#">신규등록</a> </li>
+                                                <li><a href="#">이전등록</a> </li>
+                                                <li><a href="#">변경등록</a> </li>
+                                                <li><a href="#">말소등록</a> </li>
+                                                <li><a href="#">저당권설정/말소등록</a> </li>
+                                                <li><a href="#">자가용화물자동차 사용신고</a> </li>
+                                                <li><a href="#">등록증/번호판/봉인재교부</a> </li>
+                                                <li><a href="#">등록원부 발급</a> </li>
+                                                <li><a href="#">공채매입기준</a> </li>
+                                                <li><a href="#">불법명의자동차(대포차)</a> </li>
+                                            </ul>
+                                        </li>
+                                        <li class="gnb_5dep">
+                                            <a href="#" class="pc_menu">이륜차</a>
+                                            <a href="#" class="mobile_menu">이륜차</a>
+                                            <ul>
+                                                <li><a href="#">사용신고</a> </li>
+                                                <li><a href="#">신고사항변경</a> </li>
+                                                <li><a href="#">사용폐지신고</a> </li>
+                                                <li><a href="#">신고필증/번호판/봉인,재교부</a> </li>
+                                                <li><a href="#">용어해설</a> </li>
+                                            </ul>
+                                        </li>
+                                        <li class="gnb_5dep">
+                                            <a href="#" class="pc_menu">건설기계</a>
+                                            <a href="#" class="mobile_menu">건설기계</a>
+                                            <ul>
+                                                <li><a href="#">신규등록</a> </li>
+                                                <li><a href="#">이전/변경등록</a> </li>
+                                                <li><a href="#">말소등록</a> </li>
+                                                <li><a href="#">저당권 말소 등록</a> </li>
+                                                <li><a href="#">저당권 설정 등록</a> </li>
+                                                <li><a href="#">등록증 재교부</a> </li>
+                                                <li><a href="#">등록원부 발급</a> </li>
+                                                <li><a href="#">건설기계 조종사 면허</a> </li>
+                                            </ul>
+                                        </li>
+                                        <li class="gnb_5dep">
+                                            <a href="#" class="pc_menu">과태료</a>
+                                            <a href="#" class="mobile_menu">과태료</a>
+                                            <ul>
+                                                <li><a href="#">질서위반행위규제법</a> </li>
+                                                <li><a href="#">자동차 과태료</a> </li>
+                                                <li><a href="#">건설기계 과태료</a> </li>
+                                                <li><a href="#">이륜자동차 과태료</a> </li>
+                                                <li><a href="#">자동차책임 보험 과태료</a> </li>
+                                                <li><a href="#">자동차검사 과태료</a> </li>
+                                                <li><a href="#">압류등록/해제</a> </li>
+                                            </ul>
+                                        </li>
+                                        <li class="gnb_5dep">
+                                            <a href="#" class="pc_menu">취득세/등록면허세</a>
+                                            <a href="#" class="mobile_menu">취득세/등록면허세</a>
+                                            <ul>
+                                                <li><a href="#">취득세</a> </li>
+                                                <li><a href="#">등록면허세</a> </li>
+                                                <li><a href="#">감면</a> </li>
+                                            </ul>
+                                        </li>
+                                        <li class="gnb_5dep">
+                                            <a href="#" class="pc_menu">종합검사</a>
+                                            <a href="#" class="mobile_menu">종합검사</a>
+                                            <ul>
+                                                <li><a href="#">자동차 종합검사/점검</a> </li>
+                                                <li><a href="#">건설기계 정기검사</a> </li>
+                                                <li><a href="#">자동차검사 SMS 통보신청</a> </li>
+                                                <li><a href="#"></a> </li>
+                                                <li><a href="#"></a> </li>
+                                                <li><a href="#"></a> </li>
+                                                <li><a href="#"></a> </li>
+                                                <li><a href="#"></a> </li>
+                                                <li><a href="#"></a> </li>
+                                                <li><a href="#"></a> </li>
+                                            </ul>
+                                        </li>
+                                        <li class="gnb_5dep">
+                                            <a href="#" class="pc_menu">의무보험</a>
+                                            <a href="#" class="mobile_menu">의무보험</a>
+                                            <ul>
+                                                <li><a href="#">의무(책임)보험</a> </li>
+                                                <li><a href="#">무보험 운행수사</a> </li>
+                                            </ul>
+                                        </li>
+                                        <li class="gnb_5dep">
+                                            <a href="#" class="pc_menu">자주하는질문</a>
+                                            <a href="#" class="mobile_menu">자주하는질문</a>
+                                            <ul>
+                                                <li><a href="#">신규등록</a> </li>
+                                                <li><a href="#">말소등록</a> </li>
+                                                <li><a href="#">변경등록</a> </li>
+                                                <li><a href="#">이전등록</a> </li>
+                                                <li><a href="#">등록일반사항</a> </li>
+                                                <li><a href="#">검사</a> </li>
+                                                <li><a href="#">의무(책임)보험</a> </li>
+                                                <li><a href="#">이륜차</a> </li>
+                                            </ul>
+                                        </li>
+                                        <li><a href="#">차량등록현황</a> </li>
+                                        <li><a href="#">관련사이트</a> </li>
+                                    </ul>
+                                </li>
+                                <li class="gnb_4dep">
+                                    <a href="#" class="pc_menu">주정차단속</a>
+                                    <a href="#" class="mobile_menu">주정차단속</a>
+                                    <ul>
+                                        <li class="gnb_5dep">
+                                            <a href="#" class="pc_menu">주정차위반안내</a>
+                                            <a href="#" class="mobile_menu">주정차위반안내</a>
+                                            <ul>
+                                                <li><a href="#">단속 근거법규</a> </li>
+                                                <li><a href="#">무인단속(CCTV)안내</a> </li>
+                                                <li><a href="#">의견진술 및 이의신청 절차</a> </li>
+                                                <li><a href="#">주정차 위반 과태료 부과 및 납부</a> </li>
+                                                <li><a href="#">자주하는 질문과 답변</a> </li>
+                                                <li><a href="#">과태료 감경제도 안내</a> </li>
+                                            </ul>
+                                        </li>
+                                        <li><a href="#">과태료 통합조회</a> </li>
+                                        <li><a href="#">민원이용안내</a> </li>
+                                        <li><a href="#">주정차단속 문자알림서비스</a> </li>
+                                        <li><a href="#">공지사항</a> </li>
+                                    </ul>
+                                </li>
+                                <li class="gnb_4dep">
+                                    <a href="#" class="pc_menu">교통/지리정보</a>
+                                    <a href="#" class="mobile_menu">교통/지리정보</a>
+                                    <ul>
+                                        <li class="gnb_5dep">
+                                            <a href="#" class="pc_menu">첨단교통정보서비스(ITS)</a>
+                                            <a href="#" class="mobile_menu">첨단교통정보서비스(ITS)</a>
+                                            <ul>
+                                                <li><a href="#">ITS 정의/도입효과</a> </li>
+                                                <li><a href="#">ITS 구축구간</a> </li>
+                                                <li><a href="#">교통정보</a> </li>
+                                                <li><a href="#">찾아오시는길</a> </li>
+                                            </ul>
+                                        </li>
+                                        <li class="gnb_5dep">
+                                            <a href="#" class="pc_menu">광명GPS</a>
+                                            <a href="#" class="mobile_menu">광명GPS</a>
+                                            <ul>
+                                                <li><a href="#">40Km내 주변 도로 안내</a> </li>
+                                                <li><a href="#">광명시 주요시설</a> </li>
+                                            </ul>
+                                        </li>
+                                        <li><a href="#">수치지형도 보유현황</a> </li>
+                                        <li><a href="#">항공사진 보유 현황</a> </li>
+                                    </ul>
+                                </li>
+                                <li class="gnb_4dep">
+                                    <a href="#" class="pc_menu">교통관리</a>
+                                    <a href="#" class="mobile_menu">교통관리</a>
+                                    <ul>
+                                        <li><a href="#">교통정보현황</a> </li>
+                                        <li><a href="#">승용차 요일제 안내</a> </li>
+                                        <li><a href="#">어린이보호구역 개선 공사추진현황</a> </li>
+                                    </ul>
+                                </li>
+                                <li class="gnb_4dep">
+                                    <a href="#" class="pc_menu">대중교통</a>
+                                    <a href="#" class="mobile_menu">대중교통</a>
+                                    <ul>
+                                        <li><a href="#">특별교통수단 운행 안내</a> </li>
+                                        <li><a href="#">교통 유발부담금 부과 안내</a> </li>
+                                        <li><a href="#">유가보조금 신청 안내</a> </li>
+                                        <li><a href="#">경기버스정보</a> </li>
+                                        <li><a href="#">버스이용불편사항 처리현황</a> </li>
+                                        <li><a href="#">대중교통현황</a> </li>
+                                        <li><a href="#">택시 이용안내</a> </li>
+                                    </ul>
+                                </li>
+                                <li class="gnb_4dep">
+                                    <a href="#" class="pc_menu">KTX광명역</a>
+                                    <a href="#" class="mobile_menu">KTX광명역</a>
+                                    <ul>
+                                        <li><a href="#">광명역 현황</a> </li>
+                                        <li><a href="#">관련기관 전화번호</a> </li>
+                                        <li><a href="#">운행시간</a> </li>
+                                        <li><a href="#">자가용 이용</a> </li>
+                                        <li class="gnb_5dep">
+                                            <a href="#" class="pc_menu">대중교통이용</a>
+                                            <a href="#" class="mobile_menu">대중교통이용</a>
+                                            <ul>
+                                                <li><a href="#">지하철 연계버스</a> </li>
+                                                <li><a href="#">고속버스/시외버스</a> </li>
+                                                <li><a href="#">공항리무진/광역급행버스</a> </li>
+                                                <li><a href="#">시내/마을버스</a> </li>
+                                                <li><a href="#">셔틀전동 열차</a> </li>
+                                            </ul>
+                                        </li>
+                                        <li><a href="#">주차장 안내</a> </li>
+                                        <li><a href="#">렌터카</a> </li>
+                                    </ul>
+                                </li>
+                                <li><a href="#">고속철도예약</a> </li>
+                            </ul>
+                        </li>
+                        <li class="gnb_3dep">
+                            <a href="#">위생</a>
+                            <ul>
+                                <li class="gnb_4dep">
+                                    <a href="#" class="pc_menu">음식문화개선사업</a>
+                                    <a href="#" class="mobile_menu">음식문화개선사업</a>
+                                    <ul>
+                                        <li class="gnb_5dep">
+                                            <a href="#" class="pc_menu">광명모범음식점</a>
+                                            <a href="#" class="mobile_menu">광명모범음식점</a>
+                                            <ul>
+                                                <li><a href="#">모범음식점</a> </li>
+                                                <li><a href="#">음식문화특화거리</a> </li>
+                                            </ul>
+                                        </li>
+                                        <li><a href="#">좋은 식단</a> </li>
+                                        <li><a href="#">경영지원</a> </li>
+                                        <li><a href="#">나트륨 줄이기</a> </li>
+                                    </ul>
+                                </li>
+                                <li class="gnb_4dep">
+                                    <a href="#" class="pc_menu">공중위생</a>
+                                    <a href="#" class="mobile_menu">공중위생</a>
+                                    <ul>
+                                        <li><a href="#">공중위생업 현황</a> </li>
+                                        <li><a href="#">공중위생영업 서비스 평가 결과</a> </li>
+                                        <li><a href="#">명예공중위생감시원 위촉 안내</a> </li>
+                                    </ul>
+                                </li>
+                                <li class="gnb_4dep">
+                                    <a href="#" class="pc_menu">식품안전</a>
+                                    <a href="#" class="mobile_menu">식품안전</a>
+                                    <ul>
+                                        <li><a href="#">식품접객업 지하수 수질검사 결과</a> </li>
+                                        <li><a href="#">식품관련업 현황</a> </li>
+                                        <li><a href="#">식품 위생법 위반 신고 포상금</a> </li>
+                                        <li><a href="#">위생관리등급 평가 결과</a> </li>
+                                        <li><a href="#">위해식품 등 긴급 회수</a> </li>
+                                        <li><a href="#">유통식품 수거결과 부적합 제품</a> </li>
+                                        <li><a href="#">식품위생관리</a> </li>
+                                    </ul>
+                                </li>
+                                <li><a href="#">보건소</a> </li>
+                            </ul>
+                        </li>
+                        <li class="gnb_3dep">
+                            <a href="#">복지</a>
+                            <ul>
+                                <li class="gnb_4dep">
+                                    <a href="#" class="pc_menu">사회복지</a>
+                                    <a href="#" class="mobile_menu">사회복지</a>
+                                    <ul>
+                                        <li class="gnb_5dep">
+                                            <a href="#" class="pc_menu">국민기초생활보장</a>
+                                            <a href="#" class="mobile_menu">국민기초생활보장</a>
+                                            <ul>
+                                                <li><a href="#">수급자</a> </li>
+                                                <li><a href="#">각종 감면제도</a> </li>
+                                                <li><a href="#">의료급여</a> </li>
+                                                <li><a href="#">의료급여 대상자 현황</a> </li>
+                                                <li><a href="#">자활기금</a> </li>
+                                                <li><a href="#">이재민구호</a> </li>
+                                                <li><a href="#">우리시 현황</a> </li>
+                                            </ul>
+                                        </li>
+                                        <li class="gnb_5dep">
+                                            <a href="#" class="pc_menu">자활사업</a>
+                                            <a href="#" class="mobile_menu">자활사업</a>
+                                            <ul>
+                                                <li><a href="#">자활사업대상자</a> </li>
+                                                <li><a href="#">근로능력자판정</a> </li>
+                                                <li><a href="#">차상위자선정관리</a> </li>
+                                                <li><a href="#">자활지원사업</a> </li>
+                                                <li><a href="#">조건이행여부 확인 및 생계급여의 중지</a> </li>
+                                                <li><a href="#">우리시 현황</a> </li>
+                                            </ul>
+                                        </li>
+                                        <li class="gnb_5dep">
+                                            <a href="#" class="pc_menu">복지서비스</a>
+                                            <a href="#" class="mobile_menu">복지서비스</a>
+                                            <ul>
+                                                <li><a href="#">무한돌봄사업</a> </li>
+                                                <li><a href="#">광명푸드뱅크·마켓「행복바구니」</a> </li>
+                                                <li><a href="#">긴급복지지원</a> </li>
+                                            </ul>
+                                        </li>
+                                        <li class="gnb_5dep">
+                                            <a href="#" class="pc_menu">복지시설</a>
+                                            <a href="#" class="mobile_menu">복지시설</a>
+                                            <ul>
+                                                <li><a href="#">광명종합사회복지관</a> </li>
+                                                <li><a href="#">철산종합사회복지관</a> </li>
+                                                <li><a href="#">하안종합사회복지관</a> </li>
+                                                <li><a href="#">광명장애인종합복지관</a> </li>
+                                                <li><a href="#">광명지역자활센터</a> </li>
+                                                <li><a href="#">소하노인종합복지관</a> </li>
+                                            </ul>
+                                        </li>
+                                        <li><a href="#">발달 재활 및 언어치료 기관</a> </li>
+                                        <li><a href="#">지역사회서비스투자사업(바우처)</a> </li>
+                                        <li><a href="#">사회복지법인(시설)현황</a> </li>
+                                        <li><a href="#">어려운이웃돕기 성금모금</a> </li>
+                                        <li><a href="#">자원봉사시설</a> </li>
+                                    </ul>
+                                </li>
+                                <li class="gnb_4dep">
+                                    <a href="#" class="pc_menu">장애인</a>
+                                    <a href="#" class="mobile_menu">장애인</a>
+                                    <ul>
+                                        <li><a href="#">장애인등록신청</a> </li>
+                                        <li><a href="#">장애인복지사업</a> </li>
+                                        <li><a href="#">우리시 현황</a> </li>
+                                        <li><a href="#">장애인단체 행사일정</a> </li>
+                                        <li><a href="#">장애인활동 지원제도</a> </li>
+                                        <li><a href="#">장애인연금 및 장애인 수당 지급</a> </li>
+                                        <li><a href="#">장애인활동 지원기관</a> </li>
+                                        <li><a href="#">공공기관 장애인 전용주차장</a> </li>
+                                        <li><a href="#">장애인 일자리 현황</a> </li>
+                                        <li><a href="#">중증장애인생산품 구매업체</a> </li>
+                                        <li><a href="#">장애인 생산품 구매 실적</a> </li>
+                                    </ul>
+                                </li>
+                                <li class="gnb_4dep">
+                                    <a href="#" class="pc_menu">노인</a>
+                                    <a href="#" class="mobile_menu">노인</a>
+                                    <ul>
+                                        <li><a href="#">일반현황</a> </li>
+                                        <li><a href="#">기초연금</a> </li>
+                                        <li><a href="#">장기요양보험</a> </li>
+                                        <li><a href="#">무료양로시설</a> </li>
+                                        <li><a href="#">노인요양센터</a> </li>
+                                        <li><a href="#">사회활동지원사업</a> </li>
+                                        <li><a href="#">경로식당운영</a> </li>
+                                        <li><a href="#">식사배달사업</a> </li>
+                                        <li><a href="#">노인주간보호센터</a> </li>
+                                        <li><a href="#">경로당현황</a> </li>
+                                        <li><a href="#">노인급여현황</a> </li>
+                                        <li><a href="#">노인교실 현황</a> </li>
+                                    </ul>
+                                </li>
+                                <li class="gnb_4dep">
+                                    <a href="#" class="pc_menu">여성/가족</a>
+                                    <a href="#" class="mobile_menu">여성/가족</a>
+                                    <ul>
+                                        <li><a href="#">양성평등헌장</a> </li>
+                                        <li><a href="#">관련 법규</a> </li>
+                                        <li><a href="#">여성폭력피해</a> </li>
+                                        <li><a href="#">한부모가족</a> </li>
+                                        <li><a href="#">광명시건강가정지원센터</a> </li>
+                                        <li><a href="#">광명시다문화가족지원센터</a> </li>
+                                    </ul>
+                                </li>
+                                <li class="gnb_4dep">
+                                    <a href="#" class="pc_menu">아동/청소년</a>
+                                    <a href="#" class="mobile_menu">아동/청소년</a>
+                                    <ul>
+                                        <li><a href="#">아동친화도시</a> </li>
+                                        <li><a href="#">아동인권침해 구제</a> </li>
+                                        <li><a href="#">아동학대예방사업</a> </li>
+                                        <li><a href="#">지역아동센터</a> </li>
+                                        <li><a href="#">공동생활가정보호</a> </li>
+                                        <li><a href="#">광명시 드림스타트</a> </li>
+                                        <li class="gnb_5dep">
+                                            <a href="#" class="pc_menu">입양·가정위탁 보호</a>
+                                            <a href="#" class="mobile_menu">입양·가정위탁 보호</a>
+                                            <ul>
+                                                <li><a href="#">입양</a> </li>
+                                                <li><a href="#">가정위탁보호</a> </li>
+                                            </ul>
+                                        </li>
+                                        <li><a href="#">결식아동급식지원</a> </li>
+                                        <li><a href="#">급식가맹점</a> </li>
+                                        <li><a href="#">청소년종합정보시스템</a> </li>
+                                        <li><a href="#">자료실</a> </li>
+                                    </ul>
+                                </li>
+                                <li class="gnb_4dep">
+                                    <a href="#" class="pc_menu">보육</a>
+                                    <a href="#" class="mobile_menu">보육</a>
+                                    <ul>
+                                        <li><a href="#">보육시설</a> </li>
+                                        <li><a href="#">보육정보</a> </li>
+                                        <li><a href="#">보육홍보</a> </li>
+                                        <li><a href="#">아이돌봄지원사업</a> </li>
+                                        <li><a href="#">광명시 보육정보센터</a> </li>
+                                    </ul>
+                                </li>
+                                <li class="gnb_4dep">
+                                    <a href="#" class="pc_menu">장사</a>
+                                    <a href="#" class="mobile_menu">장사</a>
+                                    <ul>
+                                        <li><a href="#">봉안당</a> </li>
+                                        <li><a href="#">관내공동묘지현황</a> </li>
+                                        <li><a href="#">관내 장례식장 현황</a> </li>
+                                        <li><a href="#">개정된 장사관련법률</a> </li>
+                                        <li><a href="#">장의행정</a> </li>
+                                    </ul>
+                                </li>
+                                <li class="gnb_4dep">
+                                    <a href="#" class="pc_menu">기타 복지</a>
+                                    <a href="#" class="mobile_menu">기타 복지</a>
+                                    <ul>
+                                        <li><a href="#">복지시설현황</a> </li>
+                                        <li><a href="#">광명희망카</a> </li>
+                                        <li><a href="#">스포츠이용권 신청</a> </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="#">보훈</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="gnb_3dep">
+                            <a href="#" class="pc_menu">지역/경제</a>
+                            <a href="#" class="mobile_menu">지역/경제</a>
+                            <ul>
+                                <li class="gnb_4dep">
+                                    <a href="#" class="pc_menu">기업</a>
+                                    <a href="#" class="mobile_none">기업</a>
+                                    <ul>
+                                        <li><a href="#">기업현황</a> </li>
+                                        <li><a href="#">기업체현황</a> </li>
+                                        <li><a href="#">관내제품홍보</a> </li>
+                                        <li><a href="#">전문건설업체현황</a> </li>
+                                        <li class="gnb_5dep">
+                                            <a href="#" class="pc_menu">기업지원</a>
+                                            <a href="#" class="mobile_menu">기업지원</a>
+                                            <ul>
+                                                <li><a href="#">광명시 기업지원</a> </li>
+                                                <li><a href="#">관련기관 기업지원</a> </li>
+                                            </ul>
+                                        </li>
+                                        <li class="gnb_5dep">
+                                            <a href="#" class="pc_menu">공장설립</a>
+                                            <a href="#" class="mobile_menu">공장설립</a>
+                                            <ul>
+                                                <li><a href="#">공장설립안내</a> </li>
+                                                <li><a href="#">공장신설 승인 현황</a> </li>
+                                                <li><a href="#">공장설립 완료 신고 현황</a> </li>
+                                            </ul>
+                                        </li>
+                                        <li><a href="#">중소기업 제품구매실적</a> </li>
+                                        <li class="gnb_5dep">
+                                            <a href="#" class="pc_menu">지역산업</a>
+                                            <a href="#" class="mobile_menu">지역산업</a>
+                                            <ul>
+                                                <li><a href="#">담배소매인지정 현황</a> </li>
+                                                <li><a href="#">대부업 현황</a> </li>
+                                                <li><a href="#">기업SOS 현장 기동반 운영 안내</a> </li>
+                                                <li><a href="#">소규모기업 환경 개선 사업 안내</a> </li>
+                                            </ul>
+                                        </li>
+
+                                    </ul>
+                                </li>
+                                <li class="gnb_4dep">
+                                    <a href="#" class="pc_menu">경제</a>
+                                    <a href="#" class="mobile_menu">경제</a>
+                                    <ul>
+                                        <li><a href="#">물가동향(개인서비스 생필품)</a> </li>
+                                        <li class="gnb_5dep">
+                                            <a href="#" class="pc_menu">지역경제</a>
+                                            <a href="#" class="mobile_menu">지역경제</a>
+                                            <ul>
+                                                <li><a href="#">공공요금현황</a> </li>
+                                            </ul>
+                                        </li>
+                                        <li class="gnb_5dep">
+                                            <a href="#" class="pc_menu">전통시장</a>
+                                            <a href="#" class="mobile_menu">전통시장</a>
+                                            <ul>
+                                                <li><a href="#">광명시장 내 상가안내</a> </li>
+                                                <li><a href="#">새마을시장 내 상가안내</a> </li>
+                                            </ul>
+                                        </li>
+                                        <li><a href="#">운전자금 및 특례보증지원</a> </li>
+                                        <li><a href="#">해외시장개척단 파견</a> </li>
+                                        <li><a href="#">전시회 지원 안내</a> </li>
+                                        <li class="gnb_5dep">
+                                            <a href="#" class="pc_menu">에너지관리</a>
+                                            <a href="#" class="mobile_menu">에너지관리</a>
+                                            <ul>
+                                                <li><a href="#">가스충전소 현황</a> </li>
+                                                <li><a href="#">서민층 가스시설 개선사업 현황</a> </li>
+                                                <li><a href="#">주유소 현황</a> </li>
+                                                <li><a href="#">청사 에너지 관리</a> </li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li><a href="#">광명시 사회적경제지원센터</a> </li>
+                                <li class="gnb_4dep">
+                                    <a href="#" class="pc_menu">청년창업지원센터</a>
+                                    <a href="#" class="mobile_menu">청년창업지원센터</a>
+                                    <ul>
+                                        <li><a href="#">센터소개</a> </li>
+                                        <li><a href="#">청년 창업팀 현황</a> </li>
+                                    </ul>
+                                </li>
+                                <li class="gnb_4dep">
+                                    <a href="#" class="pc_menu">농업/농촌</a>
+                                    <a href="#" class="mobile_menu">농업/농촌</a>
+                                    <ul>
+                                        <li><a href="#">농림진흥현황</a> </li>
+                                        <li><a href="#">농산물 사업/운영현황</a> </li>
+                                        <li class="gnb_5dep">
+                                            <a href="#" class="pc_menu">농업기반시설</a>
+                                            <a href="#" class="mobile_menu">농업기반시설</a>
+                                            <ul>
+                                                <li><a href="#">농업기반시설 현황</a> </li>
+                                                <li><a href="#">농업기반시설 목적 외 사용승인 신청 안내</a> </li>
+                                                <li><a href="#">후계농업경영인 신청 안내</a> </li>
+                                                <li><a href="#">후계농업경영인 현황</a> </li>
+                                                <li><a href="#">농기계교육 과정 안내</a> </li>
+                                                <li><a href="#">보행관리기 지원사업 안내</a> </li>
+                                            </ul>
+                                        </li>
+                                        <li><a href="#">농어업인자녀 학자금 지원</a> </li>
+                                        <li><a href="#">축산기반시설 현황</a> </li>
+                                        <li><a href="#">축산업진흥현황</a> </li>
+                                        <li><a href="#">축산재해질병관리</a> </li>
+                                        <li><a href="#">동물병원/약국/판매업 현황</a> </li>
+                                        <li><a href="#">도시농업</a> </li>
+                                    </ul>
+                                </li>
+                                <li><a href="#">수산자원현황</a> </li>
+                                <li><a href="#">광명사랑화폐</a> </li>
+                            </ul>
+                        </li>
+                        <li class="gnb_3dep">
+                            <a href="#" class="pc_menu">세금/예산</a>
+                            <a href="#" class="mobile_menu">세금/예산</a>
+                            <ul>
+                                <li class="gnb_4dep">
+                                    <a href="#" class="pc_menu">재정 규모</a>
+                                    <a href="#" class="mobile_menu">재정 규모</a>
+                                    <ul>
+                                        <li><a href="#">2019년 4회 추경 예산규모</a> </li>
+                                        <li><a href="#">세입결산연도별 비교</a> </li>
+                                        <li><a href="#">세출결산연도별 비교</a></li>
+                                        <li><a href="#" >채무 연도별 비교</a></li>
+                                    </ul>
+                                </li>
+                                <li class="gnb_4dep">
+                                    <a href="#" class="pc_menu">예산일반</a>
+                                    <a href="#" class="mobile_menu">예산일반</a>
+                                    <ul>
+                                        <li><a href="#">예산서</a> </li>
+                                        <li><a href="#">결산서</a></li>
+                                        <li><a href="#">중기지방재정계획</a></li>
+                                        <li><a href="#">지방재정공시</a></li>
+                                        <li class="gnb_5dep">
+                                            <a href="#" class="pc_menu">기금운용계획</a>
+                                            <a href="#" class="mobile_menu">기금운용계획</a>
+                                            <ul>
+                                                <li><a href="#">기금개요</a> </li>
+                                                <li><a href="#">연도별 기금운용계획</a> </li>
+                                            </ul>
+                                        </li>
+                                        <li><a href="#">세외수입징수 현황</a></li>
+                                        <li><a href="#">지방세징수 현황</a></li>
+                                        <li><a href="#">취득세 및 공채매입비율</a></li>
+                                        <li class="gnb_5dep">
+                                            <a href="#" class="pc_menu">세입·세출 운영현황</a>
+                                            <a href="#" class="mobile_menu">세입·세출 운영현황</a>
+                                            <ul>
+                                                <li><a href="#">세입세출총괄</a> </li>
+                                                <li><a href="#">세입운용현황</a> </li>
+                                            </ul>
+                                        </li>
+                                        <li><a href="#">사업별 세부설명자료</a></li>
+                                        <li><a href="#">성인지 예산서</a></li>
+                                        <li><a href="#">지방보조금</a></li>
+                                        <li><a href="#">성과계획서</a></li>
+                                        <li><a href="#">지역통합재정통계</a></li>
+                                    </ul>
+                                </li>
+                                <li class="gnb_4dep">
+                                    <a href="#" class="pc_menu">주민참여예산</a>
+                                    <a href="#" class="mobile_menu">주민참여예산</a>
+                                    <ul>
+                                        <li><a href="#">주민참여예산제 소개</a> </li>
+                                        <li class="gnb_5dep">
+                                            <a href="#" class="pc_menu">주민참여예산위원회</a>
+                                            <a href="#" class="mobile_menu">주민참여예산위원회</a>
+                                            <ul>
+                                                <li><a href="#">주민참여예산위원회 자료</a> </li>
+                                                <li><a href="#">주민참여예산위원회 활동</a> </li>
+                                            </ul>
+                                        </li>
+                                        <li class="gnb_5dep">
+                                            <a href="#" class="pc_menu">시민의견 예산반영</a>
+                                            <a href="#" class="mobile_menu">시민의견 예산반영</a>
+                                            <ul>
+                                                <li><a href="#">예산반영 안내</a> </li>
+                                                <li><a href="#">예산참여방</a> </li>
+                                                <li><a href="#">예산반영 결과보기</a> </li>
+                                            </ul>
+                                        </li>
+                                        <li><a href="#">예산편성에바란다</a> </li>
+                                    </ul>
+                                </li>
+                                <li class="gnb_4dep">
+                                    <a href="#" class="pc_menu">예산공부방</a>
+                                    <a href="#" class="mobile_menu">예산공부방</a>
+                                    <ul>
+                                        <li class="gnb_5dep">
+                                            <a href="#" class="pc_menu">예산이해</a>
+                                            <a href="#" class="mobile_menu">예산이해</a>
+                                            <ul>
+                                                <li><a href="#">예산과 회계</a> </li>
+                                                <li><a href="#">예산의 원칙</a> </li>
+                                                <li><a href="#">용어해설</a> </li>
+                                                <li><a href="#">예산의 일생</a> </li>
+                                                <li><a href="#">예산의 편성</a> </li>
+                                                <li><a href="#">예산의 심의</a> </li>
+                                                <li><a href="#">예산의 집행</a> </li>
+                                                <li><a href="#">예산의 종료</a> </li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="gnb_4dep">
+                                    <a href="#" class="pc_menu">세금납부</a>
+                                    <a href="#" class="mobile_menu">세금납부</a>
+                                    <ul>
+                                        <li><a href="#">인터넷 납부</a> </li>
+                                        <li><a href="#">자동이체 납부</a> </li>
+                                        <li><a href="#">지방세 신용카드(포인트) 납부</a> </li>
+                                        <li><a href="#">지방세 가상계좌납부</a> </li>
+                                        <li><a href="#">상하수도 요금납부안내</a> </li>
+                                        <li><a href="#">상하수도 요금산정기준</a> </li>
+                                        <li class="gnb_5dep">
+                                            <a href="#" class="pc_menu">환경개선부담금 납부</a>
+                                            <a href="#" class="mobile_menu">환경개선부담금 납부</a>
+                                            <ul>
+                                                <li><a href="#">개요</a> </li>
+                                                <li><a href="#">온라인납부</a> </li>
+                                            </ul>
+                                        </li>
+                                        <li><a href="#">압류자동차 공매</a> </li>
+                                        <li><a href="#">관련사이트</a> </li>
+                                    </ul>
+                                </li>
+                                <li class="gnb_4dep">
+                                    <a href="#" class="pc_menu">지방세</a>
+                                    <a href="#" class="mobile_menu">지방세</a>
+                                    <ul>
+                                        <li class="gnb_5dep">
+                                            <a href="#" class="pc_menu">지방세개요</a>
+                                            <a href="#" class="mobile_menu">지방세개요</a>
+                                            <ul>
+                                                <li><a href="#">취득세</a> </li>
+                                                <li><a href="#">등록면허세</a> </li>
+                                                <li><a href="#">지역자원시설세</a> </li>
+                                                <li><a href="#">재산세</a> </li>
+                                                <li><a href="#">주민세</a> </li>
+                                                <li><a href="#">지방소득세</a> </li>
+                                                <li><a href="#">자동차세</a> </li>
+                                                <li><a href="#">자동차세 계산</a> </li>
+                                                <li><a href="#">특정부동산분지역자원시설세</a> </li>
+                                            </ul>
+                                        </li>
+                                        <li><a href="#">지방세구제제도</a> </li>
+                                        <li><a href="#">지방세 환급금 환급</a> </li>
+                                        <li><a href="#">지방세 제증명 발급</a> </li>
+                                        <li><a href="#">지방세에 부과되는 국세</a> </li>
+                                        <li><a href="#">납세자권리헌장</a> </li>
+                                        <li><a href="#">체납시 받게되는 불이익</a> </li>
+                                        <li><a href="#">지방세 ARS 납부전화</a> </li>
+                                        <li><a href="#">마을세무사</a> </li>
+                                        <li><a href="#">스마트고지서</a> </li>
+                                        <li><a href="#">알아두면 유익한 지방세</a> </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="gnb_3dep">
+                            <a href="#">소통/인권</a>
+                            <ul>
+                                <li class="gnb_4dep">
+                                    <a href="#" class="pc_menu">광명시민인권센터</a>
+                                    <a href="#" class="mobile_menu">광명시민인권센터</a>
+                                    <ul>
+                                        <li class="gnb_5dep">
+                                            <a href="#" class="pc_menu">센터소개</a>
+                                            <a href="#" class="mobile_menu">센터소개</a>
+                                            <ul>
+                                                <li><a href="#">광명시민인권센터</a> </li>
+                                                <li><a href="#">광명시민인권위원회</a> </li>
+                                                <li><a href="#">광명시 인권보장 및 증진에 관한 조례</a> </li>
+                                            </ul>
+                                        </li>
+                                        <li class="gnb_5dep">
+                                            <a href="#" class="pc_menu">인권옹호관제도</a>
+                                            <a href="#" class="mobile_menu">인권옹호관제도</a>
+                                            <ul>
+                                                <li><a href="#">결정례</a> </li>
+                                                <li><a href="#">인권상담·진정</a> </li>
+                                            </ul>
+                                        </li>
+                                        <li class="gnb_5dep">
+                                            <a href="#" class="pc_menu">인권교육</a>
+                                            <a href="#" class="mobile_menu">인권교육</a>
+                                            <ul>
+                                                <li><a href="#">교육개요</a> </li>
+                                                <li><a href="#">교육신청</a> </li>
+                                                <li><a href="#">교육참가후기</a> </li>
+                                                <li><a href="#">교육자료실</a> </li>
+                                            </ul>
+                                        </li>
+                                        <li><a href="#">갤러리</a> </li>
+                                        <li><a href="#">홍보자료실</a> </li>
+                                        <li><a href="#">자유게시판</a> </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="gnb_3dep">
+                            <a href="#">안전</a>
+                            <ul>
+                                <li class="gnb_4dep">
+                                    <a href="#" class="pc_menu">U-통합관제센터</a>
+                                    <a href="#" class="mobile_menu">U-통합관제센터</a>
+                                    <ul>
+                                        <li><a href="#">U-통합관제센터란</a> </li>
+                                        <li><a href="#">기관과 협력체계</a> </li>
+                                        <li><a href="#">일반현황</a> </li>
+                                        <li class="gnb_5dep">
+                                            <a href="#" class="pc_menu">안전서비스</a>
+                                            <a href="#" class="mobile_menu">안전서비스</a>
+                                            <ul>
+                                                <li><a href="#">수배차량 실시간 알림시스템</a> </li>
+                                                <li><a href="#">범죄 발생시 대응 체계</a> </li>
+                                            </ul>
+                                        </li>
+                                        <li><a href="#">CCTV 현황</a> </li>
+                                        <li class="gnb_5dep">
+                                            <a href="#" class="pc_menu">견학신청</a>
+                                            <a href="#" class="mobile_menu">견학신청</a>
+                                            <ul>
+                                                <li><a href="#">견학신청 안내</a> </li>
+                                            </ul>
+                                        </li>
+                                        <li><a href="#">운영성과</a> </li>
+                                        <li><a href="#">궁금해요</a> </li>
+                                    </ul>
+                                </li>
+                                <li class="gnb_4dep">
+                                    <a href="#" class="pc_menu">민방위</a>
+                                    <a href="#" class="mobile_menu">민방위</a>
+                                    <ul>
+                                        <li class="gnb_5dep">
+                                            <a href="#" class="pc_menu">비상대피시설</a>
+                                            <a href="#" class="mobile_menu">비상대피시설</a>
+                                            <ul>
+                                                <li><a href="#">현황</a> </li>
+                                                <li><a href="#">위치도</a> </li>
+                                            </ul>
+                                        </li>
+                                        <li class="gnb_5dep">
+                                            <a href="#" class="pc_menu">비상급수시설</a>
+                                            <a href="#" class="mobile_menu">비상급수시설</a>
+                                            <ul>
+                                                <li><a href="#">현황</a> </li>
+                                                <li><a href="#">수질검사결과</a> </li>
+                                            </ul>
+                                        </li>
+                                        <li><a href="#">민방위 교육일정</a> </li>
+                                        <li><a href="#">민방위 비상소집훈련 일정</a> </li>
+                                        <li><a href="#">민방위 훈련</a> </li>
+                                        <li><a href="#">비상시 국민행동요령</a> </li>
+                                        <li><a href="#">사회복무요원 근무지 배치현황</a> </li>
+                                    </ul>
+                                </li>
+                                <li class="gnb_4dep">
+                                    <a href="#" class="pc_menu">재난관리</a>
+                                    <a href="#" class="mobile_menu">재난관리</a>
+                                    <ul>
+                                        <li><a href="#">재난 예.경보시스템 현황</a> </li>
+                                        <li><a href="#">배수펌프장 및 배수문 현황</a> </li>
+                                        <li><a href="#">제설함 배치현장</a> </li>
+                                        <li><a href="#">재해위험지구 정비사업 현황</a> </li>
+                                        <li><a href="#">지역자율방재단 현황</a> </li>
+                                        <li><a href="#">풍수해 보험 안내</a> </li>
+                                        <li><a href="#">특정관리대상시설 안전점검 결과</a> </li>
+                                        <li><a href="#">각종 시설물 안전지도점검 결과</a> </li>
+                                        <li><a href="#">재난대응 안전한국 훈련 결과</a> </li>
+                                        <li><a href="#">지진대피소 현황</a> </li>
+                                        <li><a href="#">사전재해영향성 검토</a> </li>
+                                        <li><a href="#">급경사지 안전점검결과</a> </li>
+                                        <li><a href="#">소규모 공공시설 안전점검 결과</a> </li>
+                                    </ul>
+                                </li>
+                                <li class="gnb_4dep">
+                                    <a href="#" class="pc_menu">재난재해정보</a>
+                                    <a href="#" class="mobile_menu">재난재해정보</a>
+                                    <ul>
+                                        <li class="gnb_5dep">
+                                            <a href="#" class="pc_menu">재난문자알림서비스</a>
+                                            <a href="#" class="mobile_menu">재난문자알림서비스</a>
+                                            <ul>
+                                                <li><a href="#">재난문자알림이란</a> </li>
+                                                <li><a href="#">재난문자알림신청/해제</a> </li>
+                                            </ul>
+                                        </li>
+                                        <li><a href="#">용어해설</a> </li>
+                                        <li><a href="#">재난재해분류</a> </li>
+                                    </ul>
+                                </li>
+                                <li class="gnb_4dep">
+                                    <a href="#" class="pc_menu">재해대비행동요령</a>
+                                    <a href="#" class="mobile_menu">재해대비행동요령</a>
+                                    <ul>
+                                        <li class="gnb_5dep">
+                                            <a href="#" class="pc_menu">자연재난</a>
+                                            <a href="#" class="mobile_menu">자연재난</a>
+                                            <ul>
+                                                <li><a href="#">호우</a> </li>
+                                                <li><a href="#">태풍</a> </li>
+                                                <li><a href="#">지진</a> </li>
+                                                <li><a href="#">가뭄 및 폭염</a> </li>
+                                                <li><a href="#">한파</a> </li>
+                                                <li><a href="#">대설</a> </li>
+                                                <li><a href="#">강풍</a> </li>
+                                                <li><a href="#">낙뢰</a> </li>
+                                                <li><a href="#">산사태</a> </li>
+                                                <li><a href="#">적조</a> </li>
+                                                <li><a href="#">지진해일</a> </li>
+                                                <li><a href="#">풍랑</a> </li>
+                                                <li><a href="#">해일</a> </li>
+                                                <li><a href="#">홍수</a> </li>
+                                                <li><a href="#">황사</a> </li>
+                                            </ul>
+                                        </li>
+                                        <li class="gnb_5dep">
+                                            <a href="#" class="pc_menu">사회재난</a>
+                                            <a href="#" class="mobile_menu">사회재난</a>
+                                            <ul>
+                                                <li><a href="#">가스사고</a> </li>
+                                                <li><a href="#">붕괴</a> </li>
+                                                <li><a href="#">산불</a> </li>
+                                                <li><a href="#">전기사고</a> </li>
+                                                <li><a href="#">철도,지하철사고</a> </li>
+                                                <li><a href="#">폭발</a> </li>
+                                                <li><a href="#">화생방사고</a> </li>
+                                                <li><a href="#">화재</a> </li>
+                                                <li><a href="#">환경오염사고</a> </li>
+                                            </ul>
+                                        </li>
+                                        <li class="gnb_5dep">
+                                            <a href="#" class="pc_menu">생활안전</a>
+                                            <a href="#" class="mobile_menu">생활안전</a>
+                                            <ul>
+                                                <li><a href="#">감전사고</a> </li>
+                                                <li><a href="#">교통사고</a> </li>
+                                                <li><a href="#">봄철야외활동</a> </li>
+                                                <li><a href="#">소화기사용법</a> </li>
+                                                <li><a href="#">소화전사용법</a> </li>
+                                                <li><a href="#">승강기안전사고</a> </li>
+                                                <li><a href="#">식중독</a> </li>
+                                                <li><a href="#">오존</a> </li>
+                                                <li><a href="#">응급처치</a> </li>
+                                                <li><a href="#">정전사고</a> </li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="gnb_4dep">
+                                    <a href="#" class="pc_menu">안전문화운동</a>
+                                    <a href="#" class="mobile_menu">안전문화운동</a>
+                                    <ul>
+                                        <li class="gnb_5dep">
+                                            <a href="#" class="pc_menu">안전문화운동소개</a>
+                                            <a href="#" class="mobile_menu">안전문화운동소개</a>
+                                            <ul>
+                                                <li><a href="#">안전관리헌장</a> </li>
+                                                <li><a href="#">안전문화의 의미</a> </li>
+                                                <li><a href="#">안전문화운동의 필요성</a> </li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li><a href="#">안전신문고</a> </li>
+                                <li class="gnb_4dep">
+                                    <a href="#" class="pc_menu">아동안전</a>
+                                    <a href="#" class="mobile_menu">아동안전</a>
+                                    <ul>
+                                        <li><a href="#">아동안전지도</a> </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="gnb_3dep">
+                            <a href="#">공원/체육</a>
+                            <ul>
+                                <li class="gnb_4dep">
+                                    <a href="#" class="pc_menu">공원</a>
+                                    <a href="#" class="mobile_menu">공원</a>
+                                    <ul>
+                                        <li><a href="#">구름산</a> </li>
+                                        <li><a href="#">도덕산</a> </li>
+                                        <li class="gnb_5dep">
+                                            <a href="#" class="pc_menu">근린공원</a>
+                                            <a href="#" class="mobile_menu">근린공원</a>
+                                            <ul>
+                                                <li><a href="#">가림근린공원</a> </li>
+                                                <li><a href="#">광덕/광덕산근린공원</a> </li>
+                                                <li><a href="#">너부대 근린공원</a> </li>
+                                                <li><a href="#">덕안근린공원</a> </li>
+                                                <li><a href="#">소하근린공원</a> </li>
+                                                <li><a href="#">안터저수지 근린공원</a> </li>
+                                                <li><a href="#">영당말근린공원</a> </li>
+                                                <li><a href="#">왕재산근린공원</a> </li>
+                                                <li><a href="#">철망산근린공원</a> </li>
+                                                <li><a href="#">한내근린공원</a> </li>
+                                                <li><a href="#">현충근린공원</a> </li>
+                                            </ul>
+                                        </li>
+                                        <li class="gnb_5dep">
+                                            <a href="#" class="pc_menu">주제공원</a>
+                                            <a href="#" class="mobile_menu">주제공원</a>
+                                            <ul>
+                                                <li><a href="#">일직수변공원</a> </li>
+                                                <li><a href="#">기형도문화공원</a> </li>
+                                                <li><a href="#">충현역사공원</a> </li>
+                                            </ul>
+                                        </li>
+                                        <li><a href="#">안양천변공원</a> </li>
+                                        <li><a href="#">어린이공원</a> </li>
+                                        <li><a href="#">학교숲 조성</a> </li>
+                                        <li><a href="#">약수터</a> </li>
+                                    </ul>
+                                </li>
+                                <li class="gnb_4dep">
+                                    <a href="#" class="pc_menu">공원녹화</a>
+                                    <a href="#" class="mobile_menu">공원녹화</a>
+                                    <ul>
+                                        <li><a href="#">공원현황</a> </li>
+                                        <li><a href="#">유아숲 체험교실</a> </li>
+                                        <li><a href="#">역세권 택지개발지구 인수인계 현황</a> </li>
+                                        <li><a href="#">가로수 및 가로화단 현황</a> </li>
+                                        <li><a href="#">가로수 사업 승인 현황</a> </li>
+                                        <li><a href="#">보호수 관리 현황</a> </li>
+                                        <li><a href="#">공원 및 녹지점용 허가 현황</a> </li>
+                                        <li><a href="#">어린이놀이터 모래소독 현황</a> </li>
+                                        <li><a href="#">어린이 놀이터 안전검사결과</a> </li>
+                                        <li><a href="#">물체험시설 수질검사 결과</a> </li>
+                                        <li><a href="#">병해충 방제 현황</a> </li>
+                                    </ul>
+                                </li>
+                                <li class="gnb_4dep">
+                                    <a href="#" class="pc_menu">산림자원</a>
+                                    <a href="#" class="mobile_menu">산림자원</a>
+                                    <ul>
+                                        <li><a href="#">산사태위험지구 지정 및 사방 사업 현황</a> </li>
+                                        <li><a href="#">산림욕장 조성 현황</a> </li>
+                                        <li><a href="#">숲가꾸기 사업 현황</a> </li>
+                                        <li><a href="#">등산로 현황</a> </li>
+                                        <li><a href="#">산림정책</a> </li>
+                                    </ul>
+                                </li>
+                                <li class="gnb_4dep">
+                                    <a href="#" class="pc_menu">체육시설</a>
+                                    <a href="#" class="mobile_menu">체육시설</a>
+                                    <ul>
+                                        <li><a href="#">광명국민체육센터</a> </li>
+                                        <li><a href="#">노온다목적운동장</a> </li>
+                                        <li><a href="#">사성공원체육시설</a> </li>
+                                        <li><a href="#">기타체육시설</a> </li>
+                                        <li><a href="#">생활체육광장</a> </li>
+                                        <li><a href="#">체육 육성지원 현황</a> </li>
+                                        <li><a href="#">체육대회 개최 및 출전 지원 현황</a> </li>
+                                        <li><a href="#">직장운동경기부 현황</a> </li>
+                                        <li><a href="#">체육시설 현황</a> </li>
+                                        <li><a href="#">종목별 가맹단체 및 행사일정</a> </li>
+                                        <li><a href="#">체육시설업 현황</a> </li>
+                                        <li><a href="#">공공체육시설 안전점검</a> </li>
+                                    </ul>
+                                </li>
+                                <li class="gnb_4dep">
+                                    <a href="#" class="pc_menu">시민체육관</a>
+                                    <a href="#" class="mobile_menu">시민체육관</a>
+                                    <ul>
+                                        <li><a href="#">시민체육관 소개</a> </li>
+                                        <li><a href="#">실내경기장 안내</a> </li>
+                                        <li class="gnb_5dep">
+                                            <a href="#" class="pc_menu">체력단련장 안내</a>
+                                            <a href="#" class="mobile_menu">체력단련장 안내</a>
+                                            <ul>
+                                                <li><a href="#">헬스장</a> </li>
+                                                <li><a href="#">요가</a> </li>
+                                                <li><a href="#">에어로빅</a> </li>
+                                                <li><a href="#">탁구장</a> </li>
+                                                <li><a href="#">실내골프</a> </li>
+                                                <li><a href="#">댄스스포츠</a> </li>
+                                            </ul>
+                                        </li>
+                                        <li><a href="#">인공암벽장</a> </li>
+                                        <li><a href="#">사계절 테마어린이물놀이장</a> </li>
+                                        <li><a href="#">인조 아이스링크</a> </li>
+                                        <li><a href="#">부대시설</a> </li>
+                                        <li><a href="#">주차장 이용안내</a> </li>
+                                        <li><a href="#">자주하는 질문(FAQ)</a> </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        <div class="gnb_line"></div>
+    </div><!--header_gnb END-->
+</div><!--header END-->
+
+<div id="container" class="main_container main_container02">
+    <div class="main_content">
+        <div class="main05_content">
+            <div class="fl_lft">
+                <div class="main05_banner01 box-shadow">
+                    <ul id="main_05_banner01">
+                        <li><img src="../img/main_19/main05_banner01.png" alt="배너이미지"> </li>
+                        <li><img src="../img/main_19/main05_banner01.png" alt="배너이미지"> </li>
+                        <li><img src="../img/main_19/main05_banner01.png" alt="배너이미지"> </li>
+                    </ul>
+                    <ul class="main05_banner_btn">
+                        <li class="main05_prev">
+                            <a href="#"><img src="../img/main_19/main04_prev.png" alt="이전"> </a>
+                        </li>
+                        <li class="main05_next">
+                            <a href="#"><img src="../img/main_19/main04_next.png" alt="다음"> </a>
+                        </li>
+                    </ul>
+                </div><!--main05_banner01 END-->
+
+                <div class="main05_reser box-shadow">
+                    <h3>공공시설물, 견학 예약</h3>
+                    <ul>
+                        <li><a href="#">도덕산 캠핑장</a> </li>
+                        <li><a href="#">시립 야구장</a> </li>
+                        <li><a href="#">시민 운동장</a> </li>
+                        <li><a href="#">시민 체육관</a> </li>
+                        <li><a href="#">맑은물 홍보관</a> </li>
+                    </ul>
+                </div><!--main05_reser END-->
+            </div>
+            <div class="fl_center">
+                <div class="main05_cave box-shadow mobile_block">
+                    <h3>광명동굴</h3>
+                    <ul>
+                        <li><a href="#">관람예약</a> </li>
+                        <li><a href="#">이달의 행사</a> </li>
+                        <li><a href="#">와인동굴</a> </li>
+                        <li><a href="#">VR체험관</a> </li>
+                    </ul>
+                </div>
+
+                <div class="main05_banner02 box-shadow">
+                    <ul id="main_05_banner02">
+                        <li class="main05_banner_con">
+                            <img src="../img/main_19/main05_gm_banner01.png" alt="광명1경 이미지">
+                            <div class="main05_view">
+                                <span class="main05_label">광명1경</span>
+                                <a href="#">
+                                    <p class="main05_banner_title">
+                                        <span>제 1경</span>도덕산 정상 도덕정
+                                    </p>
+                                    <p class="main05_banner_txt">
+                                        도덕산 도덕정은 광명 시내 중심에 위치한 도덕산 정상에
+                                        있는 정자로 이곳에서는 광명시내를 한 눈에 조망할 수 있다.
+                                    </p>
+                                </a>
+                            </div>
+                        </li>
+                        <li class="main05_banner_con">
+                            <img src="../img/main_19/main05_gm_banner02.png" alt="광명2경 이미지">
+                            <div class="main05_view">
+                                <span class="main05_label">광명2경</span>
+                                <a href="#">
+                                    <p class="main05_banner_title">
+                                        <span>제 2경</span>KTX광명역 낮과 밤
+                                    </p>
+                                    <p class="main05_banner_txt">
+                                        대한민국 최고의 철골 대칭형 건물로 크기가 약 축구장 6.7배(48,184㎡)에 달한다. 한옥의 처마와 버선의 곡선을 형상화해 전통미를 살리고, 유리 천장을 통한 자연 채광으로 은은함과 쾌적함을 선사하여 낮에는 공항을 밤에는 우주선을 연상케 한다. 특히 야경이 아름다워 야경 출사지로도 손꼽힌다.
+                                    </p>
+                                </a>
+                            </div>
+                        </li>
+                        <li class="main05_banner_con">
+                            <img src="../img/main_19/main05_gm_banner03.png" alt="광명3경 이미지">
+                            <div class="main05_view">
+                                <span class="main05_label">광명3경</span>
+                                <a href="#">
+                                    <p class="main05_banner_title">
+                                        <span>제 3경</span>안터생태공원
+                                    </p>
+                                    <p class="main05_banner_txt">
+                                        안터생태공원은 금개구리(환경부법정보호야생동물, 멸종위기 야생동물2급)의 서식처를 보호하기 위해 복원된 도심 속 내륙 습지이다.
+                                    </p>
+                                </a>
+                            </div>
+                        </li>
+                        <li class="main05_banner_con">
+                            <img src="../img/main_19/main05_gm_banner04.png" alt="광명4경 이미지">
+                            <div class="main05_view">
+                                <span class="main05_label">광명4경</span>
+                                <a href="#">
+                                    <p class="main05_banner_title">
+                                        <span>제 4경</span>오리 이원익 종택과 관감당
+                                    </p>
+                                    <p class="main05_banner_txt">
+                                        조선시대의 명신(名臣)이자 청백리로 이름 높던 오리(梧里) 이원익(李元翼 :1547~1634)선생의 종가이다.
+                                    </p>
+                                </a>
+                            </div>
+                        </li>
+                        <li class="main05_banner_con">
+                            <img src="../img/main_19/main05_gm_banner05.png" alt="광명5경 이미지">
+                            <div class="main05_view">
+                                <span class="main05_label">광명5경</span>
+                                <a href="#">
+                                    <p class="main05_banner_title">
+                                        <span>제 5경</span>광명동굴
+                                    </p>
+                                    <p class="main05_banner_txt">
+                                        상상 그 이상, 광명동굴‘동굴’이라면 자연이 만든 천연 동굴을 상상하겠지만 광명동굴은 사람이 만든 인공동굴로서 수도권에서는 유일하다.
+                                    </p>
+                                </a>
+                            </div>
+                        </li>
+                        <li class="main05_banner_con">
+                            <img src="../img/main_19/main05_gm_banner06.png" alt="광명6경 이미지">
+                            <div class="main05_view">
+                                <span class="main05_label">광명6경</span>
+                                <a href="#">
+                                    <p class="main05_banner_title">
+                                        <span>제 6경</span>광명전통시장
+                                    </p>
+                                    <p class="main05_banner_txt">
+                                        지금은 400여개의 점포로 전국에서 손꼽히는 대표적인 전통시장이 되었다.또한 광명전통시장에 인접한 의류 상권과 가구점, 먹자골목, 금융기, 병원까지 들어서면서 한 군데서 생활의 모든...
+                                    </p>
+                                </a>
+                            </div>
+                        </li>
+                        <li class="main05_banner_con">
+                            <img src="../img/main_19/main05_gm_banner07.png" alt="광명7경 이미지">
+                            <div class="main05_view">
+                                <span class="main05_label">광명7경</span>
+                                <a href="#">
+                                    <p class="main05_banner_title">
+                                        <span>제 7경</span>구름산 산림욕장
+                                    </p>
+                                    <p class="main05_banner_txt">
+                                        구름산 산림욕장은 스트레스를 해소시키고 심폐기능을 강화시켜주는 피톤치드 발생량이 경기도 내 삼림욕장 중 으뜸(2013년 기준)인 구름산237m)에 자리한다.
+                                    </p>
+                                </a>
+                            </div>
+                        </li>
+                        <li class="main05_banner_con">
+                            <img src="../img/main_19/main05_gm_banner08.png" alt="광명8경 이미지">
+                            <div class="main05_view">
+                                <span class="main05_label">광명8경</span>
+                                <a href="#">
+                                    <p class="main05_banner_title">
+                                        <span>제 8경</span>광명한내(안양천)의 사계
+                                    </p>
+                                    <p class="main05_banner_txt">
+                                        과천시 청계산 남서계곡에서 발원해 서쪽한강으로 흘러드는 광명한내는 남북방향으로 길게 흐르며 광명시민의 소중한휴식처가 되었다.
+                                    </p>
+                                </a>
+                            </div>
+                        </li>
+                    </ul>
+                    <ul class="main05_banner_btn">
+                        <li class="slide_counter" id="slide-counter"></li>
+                        <li class="main05_prev02">
+                            <a href="#"><img src="../img/main_19/main04_prev.png" alt="이전"> </a>
+                        </li>
+                        <li class="main05_next02">
+                            <a href="#"><img src="../img/main_19/main04_next.png" alt="다음"> </a>
+                        </li>
+                    </ul>
+                </div><!--main05_banner02 END-->
+
+                <div class="main05_cave box-shadow pc_block">
+                    <h3>광명동굴</h3>
+                    <ul>
+                        <li><a href="#">관람예약</a> </li>
+                        <li><a href="#">이달의 행사</a> </li>
+                        <li><a href="#">와인동굴</a> </li>
+                        <li><a href="#">VR체험관</a> </li>
+                    </ul>
+                </div>
+
+            </div>
+            <div class="fl_rgt">
+                <ul>
+                    <li class="box_btn box-shadow">
+                        <a href="#">
+                            <img src="../img/main_19/chunghyeon.gif" alt="광명시  투어버스">
+                            <span>광명시<br class="mobile_block"> 투어버스</span>
+                        </a>
+                    </li>
+                    <li class="box_btn box-shadow">
+                        <a href="#">
+                            <img src="../img/main_19/box_ico02.png" alt="광명시  투어버스">
+                            <span>관광홍보물<br class="mobile_block"> 신청</span>
+                        </a>
+                    </li>
+                    <li class="box_btn box-shadow">
+                        <a href="#">
+                            <img src="../img/main_19/box_ico03.png" alt="광명시  투어버스">
+                            <span>문화관광<br class="mobile_block"> 포털</span>
+                        </a>
+                    </li>
+                    <li class="up_btn box-shadow">
+                        <a href="#">
+                            <img src="../img/main_19/up_btn.png" alt="광명업사이클아트센터" class="pc_block">
+                            <img src="../img/main_19/m_up_btn.png" alt="광명업사이클아트센터" class="mobile_block">
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div><!--main_content END-->
+</div><!--main_container END-->
+
+
+<div id="footer">
+    <div class="footer_banner">
+        <div class="footer_btn">
+            <ul>
+                <li><a href="#" id="footer_prev"><img src="../img/common_19/footer_prev.png" alt="이전" ></a> </li>
+                <li><a href="#" id="footer_next"><img src="../img/common_19/footer_next.png" alt="다음" ></a> </li>
+                <li>
+                    <a href="#" id="footer_pause"><img src="../img/common_19/footer_stop.png" alt="일시정지" ></a>
+                    <a href="#" id="footer_play"><img src="../img/common_19/footer_play.png" alt="재생" ></a>
+                </li>
+                <li><a href="#"><img src="../img/common_19/footer_more.png" alt="베너 더보기"> </a> </li>
+            </ul>
+        </div>
+        <div class="footer_slide">
+            <ul id="footer_slider">
+                <li>
+                    <a href="#">
+                        <img src="../img/common_19/footer_banner01.png" alt="클린아이">
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="../img/common_19/footer_banner02.png" alt="대한적십자사">
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="../img/common_19/footer_banner03.png" alt="세계속의 경기도">
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="../img/common_19/footer_banner04.png" alt="경기도시공사">
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="../img/common_19/footer_banner05.png" alt="세움터">
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div><!--footer_banner END-->
+
+    <div class="footer_link">
+        <ul class="footer_link_wrap">
+            <li>
+                <a href="#">광명시청SNS</a>
+                <ul class="footer_link_box">
+                    <li><a href="#">관련사이트명</a> </li>
+                    <li><a href="#">관련사이트명</a> </li>
+                    <li><a href="#">관련사이트명</a> </li>
+                    <li><a href="#">관련사이트명</a> </li>
+                    <li><a href="#">관련사이트명</a> </li>
+                    <li><a href="#">관련사이트명</a> </li>
+                    <li><a href="#">관련사이트명</a> </li>
+                    <li><a href="#">관련사이트명</a> </li>
+                </ul>
+            </li>
+            <li>
+                <a href="#">동주민센터</a>
+                <ul class="footer_link_box footer_link_box02">
+                    <li><a href="#">관련사이트명</a> </li>
+                    <li><a href="#">관련사이트명</a> </li>
+                    <li><a href="#">관련사이트명</a> </li>
+                    <li><a href="#">관련사이트명</a> </li>
+                    <li><a href="#">관련사이트명</a> </li>
+                    <li><a href="#">관련사이트명</a> </li>
+                    <li><a href="#">관련사이트명</a> </li>
+                    <li><a href="#">관련사이트명</a> </li>
+                </ul>
+            </li>
+            <li>
+                <a href="#">유관기관</a>
+                <ul class="footer_link_box footer_link_box03">
+                    <li><a href="#">관련사이트명</a> </li>
+                    <li><a href="#">관련사이트명</a> </li>
+                    <li><a href="#">관련사이트명</a> </li>
+                    <li><a href="#">관련사이트명</a> </li>
+                    <li><a href="#">관련사이트명</a> </li>
+                    <li><a href="#">관련사이트명</a> </li>
+                    <li><a href="#">관련사이트명</a> </li>
+                    <li><a href="#">관련사이트명</a> </li>
+                </ul>
+            </li>
+            <li>
+                <a href="#">관련사이트</a>
+                <ul class="footer_link_box footer_link_box04">
+                    <li><a href="#">관련사이트명</a> </li>
+                    <li><a href="#">관련사이트명</a> </li>
+                    <li><a href="#">관련사이트명</a> </li>
+                    <li><a href="#">관련사이트명</a> </li>
+                    <li><a href="#">관련사이트명</a> </li>
+                    <li><a href="#">관련사이트명</a> </li>
+                    <li><a href="#">관련사이트명</a> </li>
+                    <li><a href="#">관련사이트명</a> </li>
+                </ul>
+            </li>
+        </ul><!--footer_link_wrap END-->
+    </div><!--footer_link END-->
+
+    <div class="footer_wrap">
+        <div class="footer_content">
+            <ul>
+                <li class="footer_logo">
+                    <img src="../img/common_19/footer_logo.png" alt="함께하는 시민 웃는 광명">
+                </li>
+                <li>
+                    <ul class="footer_a">
+                        <li><a href="#" class="footer_point">개인정보처리방침</a> </li>
+                        <li><a href="#">이메일주소 무단수집거부</a> </li>
+                        <li><a href="#">뷰어다운로드</a> </li>
+                        <li class="f_line_none"><a href="#">웹접근성정책</a> </li>
+                        <li class="footer_sns">
+                            <ul>
+                                <li><a href="#" class="sns_facebook"></a> </li>
+                                <li><a href="#" class="sns_twitter"></a> </li>
+                                <li><a href="#" class="sns_kakao"></a> </li>
+                                <li><a href="#" class="sns_blog"></a> </li>
+                                <li><a href="#" class="sns_instagram"></a> </li>
+                                <li><a href="#" class="sns_youtube"></a> </li>
+                                <li><a href="#" class="sns_naver"></a> </li>
+                                <li><a href="#" class="sns_share"></a> </li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <p class="footer_p">
+                        우)14303 | 경기도 광명시 오리로 613(하인동) | 광명시 민원콜센터 : 1688-3399  FAX : (02)2680-2867<br>
+                        COPYRIGHT(C)2019 GWANGMYEONG CITY HEALTH CENTER. ALL RIGHTS RESERVED.
+                    </p>
+                </li>
+                <li class="wa_ico">
+                    <a href="#"><img src="../img/common_19/wa_ico.png" alt="WA WEB ACCESSIBILITY"></a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div><!--footer END-->
+
+
+</body>
+</html>

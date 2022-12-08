@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>재밍</title>
+    <link rel="stylesheet" type="text/css" href="../css/reset.css">
+    <link rel="stylesheet" type="text/css" href="../css/layout.css">
+    <link rel="stylesheet" type="text/css" href="../css/layout_media.css">
+    <link rel="stylesheet" type="text/css" href="../css/main.css">
+    <link rel="stylesheet" type="text/css" href="../css/main_media.css">
+    <script src="../js/lib/jquery-1.12.4.min.js"></script>
+    <script src="../js/lib/jquery.mousewheel.js"></script>
+    <script src="../js/layout.js"></script>
+    <script src="../js/main.js"></script>
+</head>
+<body>
+
+<div id="skipNav">
+    <p><a href="#container">본문바로가기</a></p>
+    <p><a href="#gnb">주메뉴바로가기</a></p>
+</div>
+
+<header>
+    <div class="header_wrap">
+        <ul>
+            <li class="logo">
+                <a href="main.html" title="메인으로">
+                    <img src="../images/common/logo.png" alt="JAMMING" class="pc-block">
+                    <img src="../images/common/mobile_logo.png" alt="JAMMING" class="mobile-block">
+                </a>
+            </li>
+            <li id="gnb" class="gnb">
+                <ul>
+                    <li><a href="../sub/service.html">재밍 소개</a></li>
+                    <li><a href="../sub/view.html">참여현황보기</a></li>
+                    <li><a href="../sub/chat.html">재밍참여하기</a></li>
+                </ul>
+            </li>
+            <li class="log_wrap">
+                 
+                <ul>
+                    <li class="log"><a href="#">로그인</a></li>
+                    <li class="join"><a href="#">회원가입</a></li>
+                </ul>
+               
+                <!-- 로그인 했을때
+                <ul class="login_wrap">
+                    <li>
+                        <a href="#"><span>홍</span>홍길동</a>
+                        <ul class="login_menu"> 
+                            <li><a href="#">마이페이지</a></li>
+                            <li><a href="#">로그아웃</a></li>
+                        </ul>
+                    </li>
+                </ul>
+               -->
+                <ul class="font_size_btn">
+                    <li><a href="#" onclick="zoomIn();"><img src="../images/common/font_plus.png" alt="글자확대"></a></li>
+                    <li><a href="#" onClick="zoomOut();"><img src="../images/common/font_mi.png" alt="글자축소"></a></li>
+                </ul>
+            </li>
+        </ul>
+    </div><!-- header_wrap END -->
+</header>
+
+<div id="container" class="main_page01 page" data-page="1">
+    <div class="main_content">
+        <ul>
+            <li class="main_con_lft">
+                <h1 class="main_tit">
+                    미래 유망기술 발굴을 위한
+                    <p>재밍 <span>토론 플랫폼</span></p>
+                </h1>
+                <a href="#" class="gradient_btn main_info_btn" data-n="1" >
+                    서비스 소개<img src="../images/main/down_arrow.png" alt="↓">
+                </a>
+            </li>
+            <li class="main_con_chat">
+                <div class="main_chat_wrap">
+                    <img src="../images/main/main_obj.png" alt="" class="pc-block">
+                    <img src="../images/main/m_main_obj.png" alt="" class="mobile-block">
+                    <div class="main_chat_img">
+                        <img src="../images/main/chat_img.png" alt="" class="pc-block">
+                        <img src="../images/main/m_chat_img.png" alt="" class="mobile-block">
+                    </div>
+                </div>
+            </li>
+        </ul>
+    </div><!-- main_content END -->
+</div><!-- main_page01 END -->
+<div class="main_page02 page" data-page="2">
+    <div class="main_content">
+        <h2 class="main_tit02">서비스 소개</h2>
+        <ul>
+            <li class="main_service_con">
+                <h3>
+                    <img src="../images/main/main_logo_t.png" alt="JAMMING" class="pc-block">
+                    <img src="../images/main/m_main_logo_t.png" alt="JAMMING" class="mobile-block">
+                
+                </h3>
+                <h4>
+                    온라인 공간에서 다양한 아이디어와<br class="mobile-block"> 의견을 공유하여 관련주제의 <br class="mobile-block">
+                    최신 관심사와 문제점을 공유하고<br class="mobile-block"> 실시간으로 해결책을 모색하는 
+                    개방형<br class="mobile-block"> 온라인 브레인스토밍
+                </h4>
+                <p>
+                    재밍(Jamming)시스템은 IBM에서 미래기술예측을 위해 활용하는 방법으로, 유망기술과 관련된 문제들을 
+                    자유롭게 토론하여 해결책을 찾아가는 개방형 온라인 브레인스토밍의 한 형태입니다. 이를 통해 다양하고 
+                    자유로운 의견들을 데이터화하여 기술로드맵 기획에 활용할 예정에 있습니다.
+                </p>
+                <ul class="main_btn_list">
+                    <li class="btn_sb"><a href="#">현황보기</a></li>
+                    <li class="btn_bl"><a href="#">재밍 참여</a></li>
+                    <li class="btn_yl"><a href="#"><img src="../images/main/kakao_ch_ico.png" alt="Ch">재밍 카카오채널 추가</a></li>
+                </ul> 
+            </li>
+            <li class="main_service_rgt">
+                <img src="../images/main/main_obj02.png" alt="" class="pc-block">
+                <img src="../images/main/m_main_obj02.png" alt="" class="mobile-block">
+            </li>
+        </ul>
+    </div>
+</div><!-- main_page02 END -->
+
+<footer>
+    <div class="footer_wrap">
+        <ul>
+            <li>(우 30141) 세종특별자치시 집현중앙로 79, 중소기업기술정보진흥원(TIPA)  TEL: 044-390-0440, 0441 )</li>
+            <li>COPYRIGHT © TIPA(Korea Technology and Information Promotion Agency for SMEs). ALL RIGHT RESERVED</li> 
+         </ul>
+    </div><!-- footer_wrap END -->
+</footer>
+</body>
+</html>

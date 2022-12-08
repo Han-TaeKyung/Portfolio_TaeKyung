@@ -1,0 +1,10 @@
+.tour_a{width: 139px; height: 100%; background-image: url("../img/common/header_top_bg02.png"); background-repeat: no-repeat;}
+.event_a{width: 139px; height: 100%; background-image: url("../img/common/header_top_bg03.png"); background-repeat: no-repeat; padding-left: 20px !important;}
+.physical_a{width: 157px; height: 100%; background-image: url("../img/common/header_top_bg04.png"); background-repeat: no-repeat;padding-left: 20px !important;}
+
+
+@media screen and (max-width:1199px)  {
+    .m_gnb_icon ul li a span{font-size: 12px;}
+    .m_gnb_icon ul li{width: 66px; margin-right: 14px;}
+    .m_gnb_icon ul li img{width: 64px;}
+}

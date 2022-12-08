@@ -1,0 +1,427 @@
+.global-area02 ul li {display:inline-block;}
+.global-area02 ul li + li {margin-left:-16px;}
+.global-area02 a {display:inline-block; color:#888; height:42px !important; letter-spacing:0em !important;}
+.global-menu02:after {
+    display: block;
+    clear: both;
+    content: '';
+}
+
+.global-area02 {
+    position: relative;
+}
+
+.global-menu02 {
+    width: 1024px;
+    margin: auto;
+    padding-top: 6px;
+    border-color: #376ec0;
+}
+
+.global-menu02 li {
+    display: inline-block;
+    vertical-align: top;
+    margin-right: 2px;
+    line-height: 0;
+}
+
+.global-menu02 li a {
+    display: block;
+    position: relative;
+    width: 180px;
+    padding-bottom: 2px;
+    padding-left: 0px;
+    padding-right: 12px;
+    border-bottom: 0;
+    border-radius: 8px 8px 0 0;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 400;
+    text-decoration: none;
+    text-align: center;
+    line-height: 44px;
+}
+
+
+.global-menu02 li:nth-child(1) a {
+    background-image: url('http://www.paju.go.kr/resources/user/common/images/tab01_off.png');
+    background-repeat: no-repeat;
+    background-position: left 2px;
+    margin-left: -5px;
+    z-index: 4;
+}
+
+.global-menu02 li:nth-child(2) a {
+    background-image: url('../images/common/tab05_off.png');
+    background-repeat: no-repeat;
+    background-position: left 2px;
+    margin-left: -5px;
+    z-index: 3;
+}
+
+.global-menu02 li:nth-child(3) a {
+    background-image: url('http://www.paju.go.kr/resources/user/common/images/tab02_off.png');
+    background-repeat: no-repeat;
+    background-position: left 2px;
+    margin-left: -5px;
+    z-index: 2;
+}
+
+.global-menu02 li:nth-child(4) a {
+    background-image: url('http://www.paju.go.kr/resources/user/common/images/tab03_off.png');
+    background-repeat: no-repeat;
+    background-position: left 2px;
+    margin-left: -5px;
+    z-index: 1;
+}
+
+.global-menu02 li:nth-child(5) a {
+    background-image: url('http://www.paju.go.kr/resources/user/common/images/tab04_off.png');
+    background-repeat: no-repeat;
+    background-position: left 2px;
+    margin-left: -5px;
+}
+
+.global-menu02 li:nth-child(1) a:after {
+    background-image: url('http://www.paju.go.kr/resources/user/www/images/layout/bg-global-menu1.png');
+    z-index: 40;
+}
+
+
+.global-menu02 li.on a {
+    position: relative;
+}
+
+.global-menu02 li.on:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 2px;
+    height: 8px;
+    background: url('http://www.paju.go.kr/resources/user/www/images/layout/bg-globalmenu-shadow.png') repeat-x 0 0;
+    z-index: 100;
+}
+
+.global-menu02 li.on:after {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 2px;
+    content: '';
+}
+
+.global-menu02 li:nth-child(1).on a {
+    color: #376ec0;
+    border-color: #376ec0;
+    background-image: url('http://www.paju.go.kr/resources/user/common/images/tab01_on.png');
+    background-repeat: no-repeat;
+    background-position: left 2px;
+}
+.global-menu02 li:nth-child(2).on a {
+    color: #72cf6d;
+    border-color: #72cf6d;
+    background-image: url('../images/common/tab05_on.png');
+    background-repeat: no-repeat;
+    background-position: left 2px;
+}
+.global-menu02 li:nth-child(3).on a {
+    color: #fc415b;
+    border-color: #fc415b;
+    background-image: url('http://www.paju.go.kr/resources/user/common/images/tab02_on.png');
+    background-repeat: no-repeat;
+    background-position: left 2px;
+}
+
+.global-menu02 li:nth-child(4).on a {
+    color: #2eb8d3;
+    border-color: #2eb8d3;
+    background-image: url('http://www.paju.go.kr/resources/user/common/images/tab03_on.png');
+    background-repeat: no-repeat;
+    background-position: left 2px;
+}
+
+.global-menu02 li:nth-child(5).on a {
+    color: #7e7e7f;
+    border-color: #7e7e7f;
+    background-image: url('http://www.paju.go.kr/resources/user/common/images/tab04_on.png');
+    background-repeat: no-repeat;
+    background-position: left 2px;
+}
+
+.global-menu02 li:nth-child(1).on:after {
+    background-color: #376ec0;
+    z-index: 40;
+}
+
+.global-menu02 li:nth-child(2).on:after {
+    background-color: #72cf6d;
+    z-index: 30;
+}
+
+.global-menu02 li:nth-child(3).on:after {
+    background-color: #fc415b;
+    z-index: 20;
+}
+
+.global-menu02 li:nth-child(4).on:after {
+    background-color: #2eb8d3;
+    z-index: 10;
+}
+
+.global-menu02 li:nth-child(5).on:after {
+    background-color: #7e7e7f;
+}
+
+.global-menu02 li.on a,
+.global-menu02 li.on a:after {
+    z-index: 100;
+}
+.util-area {
+    height: 36px;
+    line-height: 36px;
+    width: 1024px;
+    margin: auto;
+}
+
+.util-area:after {
+    display: block;
+    clear: both;
+    content: '';
+}
+
+.sns-media li {
+    display: inline-block;
+    margin-right: 3px;
+    vertical-align: middle;
+}
+
+.sns-media li a {
+    display: block;
+    height: 21px;
+    line-height: 21px;
+}
+
+.sns-media li.media-paju {
+    margin-right: 5px;
+}
+
+.sns-media li.media-paju a {
+    width: 97px;
+    border: 1px solid #ddd;
+    border-radius: 12px;
+    font-size: 12px;
+    padding-left: 27px;
+    color: #376ec0;
+    background: url(http://www.paju.go.kr/resources/user/www/images/layout/ico-media-play.png) no-repeat 12px center;
+    text-decoration: none;
+}
+
+.sns-media li.mobile-paju a {
+    width: 74px;
+    border: 1px solid #e3eeff;
+    border-radius: 12px;
+    font-size: 12px;
+    padding-left: 27px;
+    color: #376ec0;
+    background:#edf4ff url(http://www.paju.go.kr/resources/user/www/images/layout/ico-media-play.png) no-repeat 12px center;
+    text-decoration: none;
+}
+
+.sns-media li.dDay_link a {
+    width: 150px;
+    /*border: 1px solid #ddd;*/
+    border-radius: 12px;
+    font-size: 12px;
+    color: #ffffff;
+    /*background: #ffa800;*/
+    background: #376ec0;
+    text-decoration: none;
+    font-weight:bold;
+    text-align:center;
+}
+.sns-media li.dDay_link a span.tt2 {
+    color:#fffeb0;
+}
+
+.sns-media li.kakaostory a,
+.sns-media li.twitter a,
+.sns-media li.facebook a,
+.sns-media li.naverblog a,
+.sns-media li.youtube a {
+    width: 21px;
+    text-indent: -9999px;
+    overflow: hidden;
+    background: url(http://www.paju.go.kr/resources/user/www/images/layout/sp-ico-sns.png) no-repeat;
+}
+
+.sns-media li.media a {}
+
+.sns-media li.kakaostory a {}
+
+.sns-media li.twitter a {
+    background-position: -28px 0;
+}
+
+.sns-media li.facebook a {
+    background-position: -56px 0;
+}
+
+.sns-media li.naverblog a {
+    background-position: -84px 0;
+}
+
+.sns-media li.youtube a {
+    background-position: right 0;
+}
+
+.util-area:after {
+    display: block;
+    clear: both;
+    content: '';
+}
+
+.util-menu li,
+.user-menu,
+.util-control,
+.txt-zoom,
+.language-menu {
+    display: inline-block;
+    vertical-align: top;
+}
+
+.sns-media {
+    float: left;
+}
+
+.util-menu {
+    float: right;
+}
+
+.user-menu li + li {
+    position: relative;
+    margin-left: 6px;
+    padding-left: 10px;
+}
+
+.user-menu li + li:before {
+    position: absolute;
+    top: 12px;
+    left: 0;
+    display: block;
+    width: 1px;
+    height: 12px;
+    background-color: #ddd;
+    content: '';
+}
+
+.user-menu li a {
+    display: block;
+    color: #666;
+    font-size: 13px;
+    text-decoration: none;
+}
+.user-menu li a strong {font-weight:400;}
+.user-menu li a:hover,
+.user-menu li a:focus {
+    color: #222;
+}
+
+.util-control {
+    margin-left: 13px;
+}
+
+.txt-zoom {
+    margin: 8px 5px 0 4px;
+    padding-left: 8px;
+    height: 20px;
+    line-height: 20px;
+    border-left: 1px solid #ccc;
+}
+
+.btn-zoom-in {
+    position: relative;
+    margin-right: 10px;
+}
+
+.btn-zoom-in:after {
+    position: absolute;
+    display: block;
+    right: -6px;
+    top: 4px;
+    width: 1px;
+    height: 12px;
+    background-color: #ddd;
+    content: '';
+}
+
+.language-menu {
+    margin-top: 4px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.language-menu li {
+    float: left;
+}
+
+.language-menu li + li {
+    border-left: 1px solid #ddd;
+}
+
+.language-menu li a,
+.language-menu li strong {
+    display: block;
+    width: 40px;
+    color: #666;
+    font-size: 12px;
+    line-height: 26px;
+    text-align: center;
+    text-decoration: none;
+}
+
+.language-menu li strong {
+    font-weight: 400;
+    color: #376ec0;
+    background-color: #fff;
+}
+.sns-media .air_info{height: 21px; vertical-align: top; font-size: 13px; letter-spacing: -0.05em; color: #666666; position: relative; padding-left: 11px; margin-left: 4px;}
+.sns-media .air_info:before{position: absolute; content: " "; width: 1px; height: 20px; background-color: #cccccc; left: 0; top: 9px;}
+.print{margin-top: 7px;}
+.gnb-area{width: 100%; height: auto; border-top:1px solid #e5e5e5; border-bottom: 1px solid #e5e5e5; padding: 20px 0 15px; position: relative;}
+.gnb-area .inner{width: 1024px; height: auto; margin: 0 auto;}
+.gnb_wrap:after{display: block; content: ""; clear: both;}
+.logo{float: left;}
+.gnb_menu{float: right; width: calc(100% - 157px); margin-top: 26px;}
+.gnb_menu > ul{text-align: right;}
+.gnb_menu > ul > li{display: inline-block; padding-right: 41px; margin-right: 37px; background-image: url("../images/common/gnb_line.png"); background-repeat: no-repeat; background-position: right; position: relative;}
+.gnb_menu > ul > li:last-child{margin-right: 0; padding-right: 0; background-image: none}
+.gnb_menu > ul > li a{font-size: 18px; font-weight: 400; color: #333333; letter-spacing: -0.08em; padding-bottom: 18px;}
+.gnb_2depth{position: absolute; width: 1024px; margin-top: 20px; z-index: 101; left:0; height: 0; overflow: hidden;}
+.gnb_2depth03{margin-left: -412px;}
+.gnb_2depth04{margin-left: -142px;}
+.gnb_2depth > li{float: left; margin-right:30px; line-height: 48px;}
+.gnb_2depth > li:last-child{margin-right: 0;}
+.gnb_menu .gnb_2depth > li a{font-size: 16px; color: #fff; padding-bottom: 0;}
+.gnb_2depth:after{display: block; content: ""; clear: both;}
+.gnb_2depth_bg{position: absolute; width: 100%; height:48px; background-color: rgba(54,84,180,0.9); margin-top: 16px; z-index: 100; display: none;}
+.gnb_menu > ul .gnb_on > a{color:#3654b4; border-bottom: 4px solid #3654b4; padding-bottom: 14px; }
+.gnb_menu > ul .gnb_on02 > a{color:#3654b4; border-bottom: 4px solid #3654b4; padding-bottom: 14px; }
+.gnb_menu > ul .gnb_on .gnb_2depth{height: auto;}
+
+footer{width: 100%; height: auto; background-color: #353535}
+.footer_top{width: 100%; height: auto; border-bottom: 1px solid #2a2a2a; padding:16px 0 14px}
+.footer_top_inner{width: 1024px; height: auto; margin: 0 auto; position: relative;}
+.footer_top_inner > ul > li{float: left; position: relative; padding-right: 21px; margin-right: 20px;}
+.footer_top_inner > ul > li:before{position: absolute; width: 1px; height: 16px; background-color: #2a2a2a; content: " "; right: 0; top: 5px;}
+.footer_top_inner > ul:after{display: block; content: ""; clear: both;}
+.footer_top_inner > ul > li a{font-size: 15px; line-height: 25px; color: rgba(255,255,255,0.6);}
+.footer_top_inner > ul > li.fb a{color: #fff;}
+.top{width: 56px; height: 56px; border-left:1px solid #2a2a2a; border-right:1px solid #2a2a2a; line-height: 56px; display: block; position: absolute; right: 0; top: -16px; text-align: center;}
+.top img{vertical-align: middle; margin-top: -4px;}
+.footer_inner{width: 1024px; margin: 0 auto; padding: 26px 0;}
+.footer_inner p{font-size: 14px; line-height: 23px; letter-spacing: -0.05em; color:rgba(255,255,255,0.5);}
+
+

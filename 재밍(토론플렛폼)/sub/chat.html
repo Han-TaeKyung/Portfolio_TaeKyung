@@ -1,0 +1,648 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>재밍</title>
+    <link rel="stylesheet" type="text/css" href="../css/reset.css">
+    <link rel="stylesheet" type="text/css" href="../css/layout.css">
+    <link rel="stylesheet" type="text/css" href="../css/layout_media.css">
+    <link rel="stylesheet" type="text/css" href="../css/jquery.mCustomScrollbar.css">
+    <link rel="stylesheet" type="text/css" href="../css/sub.css">
+    <link rel="stylesheet" type="text/css" href="../css/sub_media.css">
+    <link rel="stylesheet" type="text/css" href="../css/chat.css">
+    <link rel="stylesheet" type="text/css" href="../css/chat_media.css">
+    <script src="../js/lib/jquery-1.12.4.min.js"></script>
+    <script src="../js/lib/jquery.mousewheel.js"></script>
+    <script src="../js/lib/jquery.bxslider.min.js"></script>
+    <script src="../js/lib/jquery.mCustomScrollbar.concat.min.js"></script>
+    <script src="../js/layout.js"></script>
+    <script src="../js/sub.js"></script>
+</head>
+<body>
+
+<div id="skipNav">
+    <p><a href="#container">본문바로가기</a></p>
+    <p><a href="#gnb">주메뉴바로가기</a></p>
+</div>
+<div class="mask"></div>
+
+<header>
+    <div class="header_wrap">
+        <ul>
+            <li class="logo">
+                <a href="../main/main.html" title="메인으로">
+                    <img src="../images/common/logo.png" alt="JAMMING" class="pc-block">
+                    <img src="../images/common/mobile_logo.png" alt="JAMMING" class="mobile-block">
+                </a>
+            </li>
+            <li id="gnb" class="gnb">
+                <ul>
+                    <li><a href="service.html">재밍 소개</a></li>
+                    <li><a href="view.html">참여현황보기</a></li>
+                    <li><a href="chat.html">재밍참여하기</a></li>
+                </ul>
+            </li>
+            <li class="log_wrap">
+                 <!-- 로그아웃 상태
+                <ul>
+                    <li class="log"><a href="#">로그인</a></li>
+                    <li class="join"><a href="#">회원가입</a></li>
+                </ul>
+                -->
+                <ul class="login_wrap">
+                    <li>
+                        <a href="#"><span>홍</span>홍길동</a>
+                        <ul class="login_menu"> 
+                            <li><a href="#">마이페이지</a></li>
+                            <li><a href="#">로그아웃</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            
+                <ul class="font_size_btn">
+                    <li><a href="#" onclick="zoomIn();"><img src="../images/common/font_plus.png" alt="글자확대"></a></li>
+                    <li><a href="#" onClick="zoomOut();"><img src="../images/common/font_mi.png" alt="글자축소"></a></li>
+                </ul>
+            </li>
+        </ul>
+    </div><!-- header_wrap END -->
+</header>
+
+
+<div id="container" class="sub_chat">
+
+    <div class="chatWrap">
+        <ul>
+            <li class="chatConetnt">
+               <div class="chat_top">
+                    <h3>
+                        <span>재난안전</span>
+                        <b>3차원 위험시설물 감시 관리기능 송수신 장치3차원 위험시설물 감시 관리기능 송수신 장치3차원 위험시설물 감시 관리기능 송수신 장치3차원 위험시설물 감시 관리기능 송수신 장치</b>
+                    </h3>
+                    <ul>
+                        <li class="chat_fileBtn">
+                            <a href="#"><img src="../images/sub/file_btn.png" alt="모아보기"></a> 
+                        </li>
+                        <li class="chatSearch">
+                            <a href="#">
+                                <img src="../images/sub/search_btn.png" alt="검색" class="chat_mobile_none">
+                                <img src="../images/sub/m_search_btn.png" alt="검색" class="chat_mobile_block">
+                            </a>
+                            <ul class="chat_search">
+                                <li class="chat_search_input">
+                                    <input type="text" class="search_text mulg" title="검색어 입력" placeholder="검색 내용을입력하세요.">
+                                </li>
+                                <li class="chat_search_close"><a href="#" class="mulg">닫기</a></li>
+                            </ul>
+                        </li>
+                        <li class="chatEsc">
+                            <a href="#">
+                                <img src="../images/sub/esc_btn.png" alt="나가기" class="chat_mobile_none">
+                                <img src="../images/sub/m_esc_btn.png" alt="나가기" class="chat_mobile_block">
+                            </a>
+                        </li>
+                    </ul>
+               </div>
+               <div class="chat_notice">
+                    <label class="notice_label mulg">공지사항</label>
+                    <span class="notice_con mulg">
+                        욕설 및 상대방을 비방하는 메시지는 삭제됩니다.
+                    </span>
+                    <a href="#" class="notice_more">
+                        <img src="../images/sub/notice_more.png" alt="더보기" class="chat_mobile_none">
+                        <img src="../images/sub/m_notice_more.png" alt="더보기" class="chat_mobile_block">
+                    </a>
+               </div><!-- chat_notice END -->
+               <div class="chat_wrap">
+                    <div class="chat_content chat_cont_height02" id="content-d1"><!-- 답글창 생길때 높이값. class="chat_cont_height02" 추가 답글창 없을때는 class빼기  -->
+                        <div class="chat_pdd">
+                            <div class="chat_day_start">
+                                <span><b class="mulg">2021년 05월 24일 월요일</b></span>
+                            </div>
+                            <div class="participant">
+                                <p><b>홍길동</b>님이 참여했습니다.<span>오후 12시 21분</span></p>
+                            </div>
+                            <div class="participant">
+                                <p><b>김하늘</b>님이 참여했습니다.<span>오후 12시 21분</span></p>
+                            </div>
+                            <div class="message_wrap">
+                                <div class="p_message">
+                                    <p class="part_name">
+                                        <label class="mulg bg_sb">홍<i class="chat_mark"></i></label><span>홍길동</span><em>오후 12시 21분</em>
+                                    </p>
+                                    <ul class="message_con">
+                                        <li class="message_box">
+                                            중소기업기술정보진흥원은 2002년 설립 이후 우리 중소기업들이 기술경쟁력을 갖추고 성장하도록 지원 하는데 일익을 담당하여 왔습니다. 중소기업기술정보진흥원은 2002년 설
+                                            립 이후 우리 중소기업들이 기술경쟁력을 갖추고 성장하도록 지원 하는데 일익을 담당하여 왔습니다.
+                                        </li>
+                                        <li class="message_btn">
+                                            <a href="#" class="gd_num gd_on">16</a>
+                                            <a href="#" class="reply_btn">답글</a>
+                                        </li>
+                                    </ul>
+                                </div><!-- p_message END -->
+
+                                <div class="a_message">
+                                    <p class="part_name">
+                                        <em>오후 12시 21분</em><span>홍길동</span>
+                                    </p>
+                                    <ul class="message_con">
+                                        <li class="message_btn">
+                                            <a href="#" class="gd_num">16</a>
+                                            <a href="#" class="reply_btn">답글</a>
+                                        </li>
+                                        <li class="message_box">
+                                            미래를 준비하는 파트너, 중소기업과 함께 도약하는 TIPA
+                                        </li>
+                                    </ul>
+                                </div><!-- a_message END -->
+
+                                <div class="p_message">
+                                    <p class="part_name">
+                                        <label class="mulg bg_yl">테</label><span>테스트</span><em>오후 12시 28분</em>
+                                    </p>
+                                    <ul class="message_con">
+                                        <li class="message_box">
+                                            <p class="message_file">
+                                                중소기업기술정보진흥원 브로슈어.pdf
+                                                <span>용량 4.36MB</span>
+                                            </p>
+                                            <a href="#" class="message_file_down">다운로드</a>
+                                        </li>
+                                        <li class="message_btn">
+                                            <a href="#" class="gd_num gd_on">24</a>
+                                            <a href="#" class="reply_btn">답글</a>
+                                        </li>
+                                    </ul>
+                                </div><!-- p_message END -->
+                                <div class="a_message">
+                                    <p class="part_name">
+                                        <em>오후 12시 29분</em><span>김하늘</span>
+                                    </p>
+                                    <ul class="message_con">
+                                        <li class="message_btn">
+                                            <a href="#" class="gd_num">16</a>
+                                            <a href="#" class="reply_btn">답글</a>
+                                        </li>
+                                        <li class="message_box">
+                                            항상 새롭게 거듭나는 노력으로 중소벤처기업 여러분의 신뢰를 만들어 나가겠습니다. 변함없는 관심과 성원을 부탁드립니다.
+
+                                        </li>
+                                    </ul>
+                                </div><!-- a_message END -->
+
+                                <div class="p_message">
+                                    <p class="part_name">
+                                        <label class="mulg bg_pp">테</label><span>테스트</span><em>오후 12시 28분</em>
+                                    </p>
+                                    <ul class="message_con">
+                                        <li class="message_box">
+                                            <span class="reply_name"><b>김하늘</b>에게 답장</span>
+                                            <p class="message_reply_con">
+항상 새롭게 거듭나는 노력으로 중소벤처기업 여러분의 신뢰를 만들어 나가겠습니다. 변함없는 관심과 성원을 부탁드립니다.
+                                            </p>
+                                            <p class="message_reply">
+                                                동의합니다.
+                                            </p>
+                                        </li>
+                                        <li class="message_btn">
+                                            <a href="#" class="gd_num">0</a>
+                                            <a href="#" class="reply_btn">답글</a>
+                                        </li>
+                                    </ul>
+                                </div><!-- p_message END -->
+
+                                <div class="a_message">
+                                    <p class="part_name">
+                                        <em>오후 12시 29분</em><span>김하늘</span>
+                                    </p>
+                                    <ul class="message_con">
+                                        <li class="message_btn">
+                                            <a href="#" class="gd_num">16</a>
+                                            <a href="#" class="reply_btn">답글</a>
+                                        </li>
+                                        <li class="message_box">
+                                            <p class="message_file">
+                                                중소기업기술정보진흥원 브로슈어.pdf
+                                                <span>용량 4.36MB</span>
+                                            </p>
+                                            <a href="#" class="message_file_down">다운로드</a>
+                                        </li>
+                                    </ul>
+                                </div><!-- a_message END -->
+
+                                <div class="a_message">
+                                    <p class="part_name">
+                                        <em>오후 12시 29분</em><span>김하늘</span>
+                                    </p>
+                                    <ul class="message_con">
+                                        <li class="message_btn">
+                                            <a href="#" class="gd_num">16</a>
+                                            <a href="#" class="reply_btn">답글</a>
+                                        </li>
+                                        <li class="message_box">
+                                            <span class="reply_name"><b>김하늘</b>에게 답장</span>
+                                            <p class="message_reply_con">
+항상 새롭게 거듭나는 노력으로 중소벤처기업 여러분의 신뢰를 만들어 나가겠습니다. 변함없는 관심과 성원을 부탁드립니다.
+                                            </p>
+                                            <p class="message_reply">
+                                                동의합니다.
+                                            </p>
+                                        </li>
+                                    </ul>
+                                </div><!-- a_message END -->
+
+                                <div class="a_message">
+                                    <p class="part_name">
+                                        <em>오후 12시 29분</em><span>김하늘</span>
+                                    </p>
+                                    <ul class="message_con">
+                                        <li class="message_btn">
+                                            <a href="#" class="gd_num">16</a>
+                                            <a href="#" class="reply_btn">답글</a>
+                                        </li>
+                                        <li class="message_box reply_file_box">
+                                            <span class="reply_name"><b>김하늘</b>에게 답장</span>
+                                            <p class="message_file">
+                                                중소기업기술정보진흥원 브로슈어.pdf
+                                                <span>용량 4.36MB</span>
+                                            </p>
+                                            <a href="#" class="message_file_down">다운로드</a>
+                                            <p class="message_reply">
+                                                동의합니다.
+                                            </p>
+                                        </li>
+                                    </ul>
+                                </div><!-- a_message END -->
+
+                                <div class="p_message">
+                                    <p class="part_name">
+                                        <label class="mulg bg_pp">테</label><span>테스트</span><em>오후 12시 28분</em>
+                                    </p>
+                                    <ul class="message_con">
+                                        <li class="message_box reply_file_box">
+                                            <span class="reply_name"><b>김하늘</b>에게 답장</span>
+                                            <p class="message_file">
+                                                중소기업기술정보진흥원 브로슈어.pdf
+                                                <span>용량 4.36MB</span>
+                                            </p>
+                                            <a href="#" class="message_file_down">다운로드</a>
+                                            <p class="message_reply">
+                                                동의합니다.
+                                            </p>
+                                        </li>
+                                        <li class="message_btn">
+                                            <a href="#" class="gd_num">0</a>
+                                            <a href="#" class="reply_btn">답글</a>
+                                        </li>
+                                    </ul>
+                                </div><!-- p_message END -->
+                            </div><!-- message_wrap END -->
+                        </div>
+                    </div><!-- chat_content END -->
+                    <div class="chat_input">
+                        <ul class="chat_reply">
+                            <li>
+                                <h6 class="mulg"><span>김하늘</span>에게 답장</h6>
+                                <p class="mulg">항상 새롭게 거듭나는 노력으로 중소벤처기업 여러분의 신뢰를 만들어 나가겠습니다. 변함없는 관심과 성원을 
+                                    부탁드립니다.항상 새롭게 거듭나는 노력으로 중소벤처기업 여러분의 신뢰를 만들어 나가겠습니다. 변함없는 관심과 성원을 
+                                    부탁드립니다.
+                                </p>
+                            </li>
+                            <li class="chat_reply_close">
+                                <a href="#">
+                                    <img src="../images/sub/reply_close.png" alt="답장 닫기" class="chat_mobile_none">
+                                    <img src="../images/sub/m_reply_close.png" alt="답장 닫기" class="chat_mobile_block">
+                                </a>
+                            </li>
+                        </ul>
+                        <ul class="chat_input_box">
+                            <li class="chat_file_add">
+                                <a href="#" class="file_add" title="파일첨부"></a>
+                            </li>
+                            <li class="chat_input_txt">
+                                <textarea  class="chat_txt mulg" title="내용입력" placeholder="내용을 입력해 주세요"></textarea>
+                                <button type="button" class="chat_btn mulg">전송</button>
+                            </li>
+                        </ul>
+                    </div><!-- chat_input END -->
+               </div><!-- chat_wrap END -->
+            </li><!-- chatConetnt END -->
+            <li class="chatFile">
+                <h5><a href="#" class="chatFile_close"><img src="../images/sub/m_back_ico.png" alt="뒤로"></a>모아보기</h5>
+                <div class="chat_file_top">
+                    <ul class="chat_period">
+                        <li class="mulg"><b>운영기간</b> 2021.05.24 (09:00) ~ 2021.05.28 (09:00)</li>
+                    </ul>
+                    <ul class="chat_file_tab">
+                        <li class="chat_file_tab_on chat_file_tab01">
+                            <a href="#" class="mulg">이미지</a>
+                        </li>
+                        <li class="chat_file_tab02">
+                            <a href="#" class="mulg">파일</a>
+                        </li>
+                        <li class="chat_file_tab03">
+                            <a href="#" class="mulg">링크</a>
+                        </li>
+                    </ul>
+                </div><!-- chat_file_top END -->
+                <div class="file_wrap" id="content-d2">
+                    <ul class="file_images">
+                        <li class="images_popup"><a href="#"><img src="../images/sub/img_sample01.png" alt="이미지"></a></li><!-- 클릭시 팝업창 열림 -->
+                        <li><a href="#"><img src="../images/sub/img_sample02.png" alt="이미지"></a></li>
+                        <li><a href="#"><img src="../images/sub/img_sample03.png" alt="이미지"></a></li>
+                        <li><a href="#"><img src="../images/sub/img_sample04.png" alt="이미지"></a></li>
+                        <li><a href="#"><img src="../images/sub/img_sample01.png" alt="이미지"></a></li>
+                        <li><a href="#"><img src="../images/sub/img_sample02.png" alt="이미지"></a></li>
+                        <li><a href="#"><img src="../images/sub/img_sample03.png" alt="이미지"></a></li>
+                        <li><a href="#"><img src="../images/sub/img_sample04.png" alt="이미지"></a></li>
+                        <li><a href="#"><img src="../images/sub/img_sample01.png" alt="이미지"></a></li>
+                        <li><a href="#"><img src="../images/sub/img_sample02.png" alt="이미지"></a></li>
+                        <li><a href="#"><img src="../images/sub/img_sample03.png" alt="이미지"></a></li>
+                        <li><a href="#"><img src="../images/sub/img_sample04.png" alt="이미지"></a></li>
+                        <li><a href="#"><img src="../images/sub/img_sample01.png" alt="이미지"></a></li>
+                        <li><a href="#"><img src="../images/sub/img_sample02.png" alt="이미지"></a></li>
+                        <li><a href="#"><img src="../images/sub/img_sample03.png" alt="이미지"></a></li>
+                        <li><a href="#"><img src="../images/sub/img_sample04.png" alt="이미지"></a></li>
+                    </ul><!-- file_images END -->
+                    <ul class="file_files">
+                        <li>
+                            <a href="#">
+                                <span class="file_label">
+                                    <label class="bg_sb mulg">홍</label>
+                                </span>
+                                <span class="file_content">
+                                    <b data-filetype=".pdf" class="mulg">중소기업기술정보진흥원 브로슈어중소기업기술정보진흥원 브로슈어.pdf</b>
+                                    <em class="mulg"><q class="mulg">김하늘</q>2021년 5월 24일 오후 12시 22분</em>
+                                </span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <span class="file_label">
+                                    <label class="bg_yl mulg">홍</label>
+                                </span>
+                                <span class="file_content">
+                                    <b data-filetype=".pdf" class="mulg">중소기업기술정보진흥원 브로슈어.pdf</b>
+                                    <em class="mulg"><q class="mulg">김하늘</q>2021년 5월 24일 오후 12시 22분</em>
+                                </span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <span class="file_label">
+                                    <label class="bg_pp mulg">홍</label>
+                                </span>
+                                <span class="file_content">
+                                    <b data-filetype=".pdf" class="mulg">중소기업기술정보진흥원 브로슈어중소기업기술정보진흥원 브로슈어.pdf</b>
+                                    <em class="mulg"><q class="mulg">김하늘</q>2021년 5월 24일 오후 12시 22분</em>
+                                </span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <span class="file_label">
+                                    <label class="bg_or mulg">홍</label>
+                                </span>
+                                <span class="file_content">
+                                    <b data-filetype=".pdf" class="mulg">중소기업기술정보진흥원 브로슈어.pdf</b>
+                                    <em class="mulg"><q class="mulg">김하늘</q>2021년 5월 24일 오후 12시 22분</em>
+                                </span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <span class="file_label">
+                                    <label class="bg_gn mulg">홍</label>
+                                </span>
+                                <span class="file_content">
+                                    <b data-filetype=".pdf" class="mulg">중소기업기술정보진흥원 브로슈어.pdf</b>
+                                    <em class="mulg"><q class="mulg">김하늘</q>2021년 5월 24일 오후 12시 22분</em>
+                                </span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <span class="file_label">
+                                    <label class="bg_sb mulg">홍</label>
+                                </span>
+                                <span class="file_content">
+                                    <b data-filetype=".pdf" class="mulg">중소기업기술정보진흥원 브로슈어중소기업기술정보진흥원 브로슈어.pdf</b>
+                                    <em class="mulg"><q class="mulg">김하늘</q>2021년 5월 24일 오후 12시 22분</em>
+                                </span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <span class="file_label">
+                                    <label class="bg_yl mulg">홍</label>
+                                </span>
+                                <span class="file_content">
+                                    <b data-filetype=".pdf" class="mulg">중소기업기술정보진흥원 브로슈어.pdf</b>
+                                    <em class="mulg"><q class="mulg">김하늘</q>2021년 5월 24일 오후 12시 22분</em>
+                                </span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <span class="file_label">
+                                    <label class="bg_pp mulg">홍</label>
+                                </span>
+                                <span class="file_content">
+                                    <b data-filetype=".pdf" class="mulg">중소기업기술정보진흥원 브로슈어중소기업기술정보진흥원 브로슈어.pdf</b>
+                                    <em class="mulg"><q class="mulg">김하늘</q>2021년 5월 24일 오후 12시 22분</em>
+                                </span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <span class="file_label">
+                                    <label class="bg_or mulg">홍</label>
+                                </span>
+                                <span class="file_content">
+                                    <b data-filetype=".pdf" class="mulg">중소기업기술정보진흥원 브로슈어.pdf</b>
+                                    <em class="mulg"><q class="mulg">김하늘</q>2021년 5월 24일 오후 12시 22분</em>
+                                </span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <span class="file_label">
+                                    <label class="bg_gn mulg">홍</label>
+                                </span>
+                                <span class="file_content">
+                                    <b data-filetype=".pdf" class="mulg">중소기업기술정보진흥원 브로슈어.pdf</b>
+                                    <em class="mulg"><q class="mulg">김하늘</q>2021년 5월 24일 오후 12시 22분</em>
+                                </span>
+                            </a>
+                        </li>
+                    </ul><!-- file_files END -->
+                    <ul class="file_link">
+                        <li>
+                            <p>
+                                <a href="#" target="_blank" class="mulg">http://www.tipa.or.kr/</a>
+                                <span class="mulg">중소기업기술정보진흥원 홈페이지입니다.</span>
+                                <em class="mulg"><q class="mulg">김하늘</q>2021년 5월 24일 오후 12시 22분</em>
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                <a href="#" target="_blank" class="mulg">http://www.tipa.or.kr/</a>
+                                <span class="mulg">중소기업기술정보진흥원 홈페이지입니다.</span>
+                                <em class="mulg"><q class="mulg">김하늘</q>2021년 5월 24일 오후 12시 22분</em>
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                <a href="#" target="_blank" class="mulg">http://www.tipa.or.kr/</a>
+                                <span class="mulg">중소기업기술정보진흥원 홈페이지입니다.</span>
+                                <em class="mulg"><q class="mulg">김하늘</q>2021년 5월 24일 오후 12시 22분</em>
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                <a href="#" target="_blank" class="mulg">http://www.tipa.or.kr/</a>
+                                <span class="mulg">중소기업기술정보진흥원 홈페이지입니다.</span>
+                                <em class="mulg"><q class="mulg">김하늘</q>2021년 5월 24일 오후 12시 22분</em>
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                <a href="#" target="_blank" class="mulg">http://www.tipa.or.kr/</a>
+                                <span class="mulg">중소기업기술정보진흥원 홈페이지입니다.</span>
+                                <em class="mulg"><q class="mulg">김하늘</q>2021년 5월 24일 오후 12시 22분</em>
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                <a href="#" target="_blank" class="mulg">http://www.tipa.or.kr/</a>
+                                <span class="mulg">중소기업기술정보진흥원 홈페이지입니다.</span>
+                                <em class="mulg"><q class="mulg">김하늘</q>2021년 5월 24일 오후 12시 22분</em>
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                <a href="#" target="_blank" class="mulg">http://www.tipa.or.kr/</a>
+                                <span class="mulg">중소기업기술정보진흥원 홈페이지입니다.</span>
+                                <em class="mulg"><q class="mulg">김하늘</q>2021년 5월 24일 오후 12시 22분</em>
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                <a href="#" target="_blank" class="mulg">http://www.tipa.or.kr/</a>
+                                <span class="mulg">중소기업기술정보진흥원 홈페이지입니다.</span>
+                                <em class="mulg"><q class="mulg">김하늘</q>2021년 5월 24일 오후 12시 22분</em>
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                <a href="#" target="_blank" class="mulg">http://www.tipa.or.kr/</a>
+                                <span class="mulg">중소기업기술정보진흥원 홈페이지입니다.</span>
+                                <em class="mulg"><q class="mulg">김하늘</q>2021년 5월 24일 오후 12시 22분</em>
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                <a href="#" target="_blank" class="mulg">http://www.tipa.or.kr/</a>
+                                <span class="mulg">중소기업기술정보진흥원 홈페이지입니다.</span>
+                                <em class="mulg"><q class="mulg">김하늘</q>2021년 5월 24일 오후 12시 22분</em>
+                            </p>
+                        </li>
+                        
+                    </ul><!-- file_link END -->
+                </div><!-- file_wrap END -->
+            </li><!-- chatFile END -->
+        </ul>
+    </div><!-- chatWrap END -->
+    <div class="file_images_popup">
+        <div class="popup_top">
+            <ul>
+                <li><a href="#"><img src="../images/sub/down_ico.png" alt="다운로드"></a></li>
+                <li class="image_popup_t">
+                    <p class="mulg popup_tit">Test-image.jpg</p>
+                    <p class="mulg popup_part">
+                        <b class="mulg">홍길동</b> · 2021년 5월 24일 오후 12시 22분 · 용량 4.36MB
+                    </p>
+                </li>
+            </ul>
+        </div><!-- popup_top END -->
+        <div class="popup_con">
+            <img src="../images/sub/img_sample01_big.png" alt="이미지">
+        </div>
+        <a href="#" class="popup_close"><img src="../images/sub/popup_close.png" alt="팝업닫기"></a>
+    </div><!-- file_images_popup END -->
+
+    <div class="notice_popup">
+        <h3 class="mulg">공지사항</h3>
+        <div id="content-d3" class="notice_popup_wrap">
+            <ul class="notice_popup_con">
+                <li>
+                    <div>
+                        <p>욕설 및 상대방을 비방하는 메시지는 삭제됩니다.</p>
+                        <span><b>관리자</b>2021년 5월 24일 오후 12시 22분</span>
+                    </div>
+                </li>
+                <li>
+                    <div>
+                        <p>욕설 및 상대방을 비방하는 메시지는 삭제됩니다.</p>
+                        <span><b>관리자</b>2021년 5월 24일 오후 12시 22분</span>
+                    </div>
+                </li>
+                <li>
+                    <div>
+                        <p>욕설 및 상대방을 비방하는 메시지는 삭제됩니다.</p>
+                        <span><b>관리자</b>2021년 5월 24일 오후 12시 22분</span>
+                    </div>
+                </li>
+                <li>
+                    <div>
+                        <p>욕설 및 상대방을 비방하는 메시지는 삭제됩니다.</p>
+                        <span><b>관리자</b>2021년 5월 24일 오후 12시 22분</span>
+                    </div>
+                </li>
+                <li>
+                    <div>
+                        <p>욕설 및 상대방을 비방하는 메시지는 삭제됩니다.</p>
+                        <span><b>관리자</b>2021년 5월 24일 오후 12시 22분</span>
+                    </div>
+                </li>
+                <li>
+                    <div>
+                        <p>욕설 및 상대방을 비방하는 메시지는 삭제됩니다.</p>
+                        <span><b>관리자</b>2021년 5월 24일 오후 12시 22분</span>
+                    </div>
+                </li>
+                <li>
+                    <div>
+                        <p>욕설 및 상대방을 비방하는 메시지는 삭제됩니다.</p>
+                        <span><b>관리자</b>2021년 5월 24일 오후 12시 22분</span>
+                    </div>
+                </li>
+                <li>
+                    <div>
+                        <p>욕설 및 상대방을 비방하는 메시지는 삭제됩니다.</p>
+                        <span><b>관리자</b>2021년 5월 24일 오후 12시 22분</span>
+                    </div>
+                </li>
+                <li>
+                    <div>
+                        <p>욕설 및 상대방을 비방하는 메시지는 삭제됩니다.</p>
+                        <span><b>관리자</b>2021년 5월 24일 오후 12시 22분</span>
+                    </div>
+                </li>
+                <li>
+                    <div>
+                        <p>욕설 및 상대방을 비방하는 메시지는 삭제됩니다.</p>
+                        <span><b>관리자</b>2021년 5월 24일 오후 12시 22분</span>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <a href="#" class="popup_close"><img src="../images/sub/popup_close.png" alt="팝업닫기"></a>
+    </div><!-- notice_popup END -->
+</div><!-- sub_chat END -->
+
+
+</body>
+</html>

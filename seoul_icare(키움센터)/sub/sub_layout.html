@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>서울시아이돌봄포털</title>
+    <link rel="stylesheet" type="text/css" href="../css/reset.css">
+    <link rel="stylesheet" type="text/css" href="../css/layout.css">
+    <link rel="stylesheet" type="text/css" href="../css/layout_media.css">
+    <link rel="stylesheet" type="text/css" href="../css/sub_content.css">
+    <link rel="stylesheet" type="text/css" href="../css/sub_content_media.css">
+    <script src="../js/lib/jquery-1.12.4.min.js"></script>
+    <script src="../js/lib/bxslider.min.js"></script>
+    <script src="../js/layout.js"></script>
+    <script src="../js/sub.js"></script>
+</head>
+<body>
+
+<div id="skipNav">
+    <p><a href="#container">본문바로가기</a></p>
+    <p><a href="#gnb">주메뉴바로가기</a></p>
+</div>
+
+<div id="seoul-common-gnb">서울시 메뉴바 들어갈 곳</div>
+
+<div class="header">
+    <div class="header_wrap">
+        <div class="header_top">
+            <ul>
+                <!--<li class="h_search">
+                    <input type="text" title="검색어 입력폼" placeholder="검색어를 입력하세요.">
+                    <button type="button"><img src="../img/common/dot_ico.png" alt="검색버튼"></button>
+                </li>-->
+                <li class="h_btn">
+                    <a href="#">로그인</a>
+                </li>
+                <li class="h_btn">
+                    <a href="#">회원가입</a>
+                </li>
+            </ul>
+        </div><!--header_top END-->
+        <div id="gnb">
+            <ul>
+                <li class="logo">
+                    <a href="../main/main.html" title="메인으로"><img src="../img/common/logo.png" alt="서울시 아이돌봄 케어"></a>
+                </li>
+                <li class="m_gnbBtn">
+                    <button type="button" class="m_gnbOpen"><img src="../img/common/m_gnb.png" alt="메뉴열기"></button>
+                    <button type="button" class="m_gnbClose"><img src="../img/common/m_gnb_close.png" alt="메뉴닫기"></button>
+                </li>
+                <li class="gnb_wrap">
+                    <div class="mobile_login">
+                        <ul>
+                            <li class="login_btn"><a href="#">로그인</a> </li>
+                            <li class="join_btn"><a href="#">회원가입</a> </li>
+                        </ul>
+                    </div>
+                    <ul>
+                        <li><a href="#" class="pc_menu">서비스 소개</a>
+                            <a href="#" class="mobile_menu">서비스 소개</a>
+                            <div class="gnb_2dep">
+                                <ul>
+                                    <li><a href="#">서울시 온마을 아이돌봄사업</a></li>
+                                    <li><a href="#">우리동네 키움센터</a></li>
+                                    <li><a href="#">지역아동센터</a></li>
+                                    <li><a href="#">열린 육아방</a></li>
+                                    <li><a href="#">공동육아 나눔터</a></li>
+                                    <li class="gnb_3dep">
+                                        <a href="#" class="pc_menu">서울시 아이돌봄 서비스</a>
+                                        <a href="#" class="mobile_menu">서울시 아이돌봄 서비스</a>
+                                        <ul>
+                                            <li><a href="#">아이돌봄 서비스 소개</a> </li>
+                                            <li><a href="#">아이돌봄 서비스 종류</a> </li>
+                                            <li><a href="#">아이돌봄 서비스 신청방법</a> </li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="#">초등돌봄교실</a></li>
+                                    <li><a href="#">청소년방과후 아카데미</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li><a href="#" class="pc_menu">우리동네키움센터 예약</a>
+                            <a href="#" class="mobile_menu">우리동네키움센터 예약</a>
+                            <div class="gnb_2dep">
+                                <ul>
+                                    <li><a href="#">돌봄서비스 예약 안내</a> </li>
+                                    <li><a href="#">우리동네키움센터 예약</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="gnb_bg_none"><a href="#">맞춤형 정보 서비스</a> </li>
+                        <li class="gnb_bg_none"><a href="#">아이돌봄시설 지도</a> </li>
+                        <li><a href="#" class="pc_menu">홍보·알림</a>
+                            <a href="#" class="mobile_menu">홍보·알림</a>
+                            <div class="gnb_2dep">
+                                <ul>
+                                    <li><a href="#">공지사항</a> </li>
+                                    <li><a href="#">홍보방</a></li>
+                                    <li><a href="#">우리동네키움센터 소식</a></li>
+                                    <li><a href="#">갤러리</a></li>
+                                    <li><a href="#">우리동네 보육반장 소식</a> </li>
+                                    <li><a href="#">자주묻는질문</a> </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li><a href="#" class="pc_menu">우리키움 참여단</a>
+                            <a href="#" class="mobile_menu">우리키움 참여단</a>
+                            <div class="gnb_2dep">
+                                <ul>
+                                    <li><a href="#">우리키움 참여단 소개</a> </li>
+                                    <li><a href="#">우리키움 참여단 인증</a> </li>
+                                    <li><a href="#">참여단 소통방</a></li>
+                                    <li><a href="#">공지사항</a></li>
+                                    <li><a href="#">활동·알림</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                    </ul>
+                </li><!--gnb_wrap END-->
+            </ul>
+            <div class="m_gnb_bg"></div>
+        </div><!--gnb END-->
+    </div><!--header_wrap END-->
+</div><!--header END-->
+
+<div class="location">
+    <div class="location_wrap">
+        <ul>
+            <li class="home">
+                <a href="#"><img src="../img/common/sta_home.png" alt="메인으로"></a>
+            </li>
+            <li class="m_location"><!--모바일쪽 로케이션-->
+                <p>돌봄 서비스 예약</p>
+                <p>우리동네 키움센터 예약</p>
+            </li>
+            <li class="location_bar"><!--pc쪽 로케이션-->
+                <a href="#">돌봄 서비스 예약</a>
+                <ul>
+                    <li><a href="#">서비스 소개</a> </li>
+                    <li class="lb_on"><a href="#">돌봄 서비스 예약</a> </li>
+                    <li><a href="#">맞춤형 정보 서비스</a> </li>
+                    <li><a href="#">아이돌봄 시설 지도</a> </li>
+                    <li><a href="#">홍보·알림</a> </li>
+                    <li><a href="#">우리키움 참여단</a> </li>
+                </ul>
+            </li>
+            <li class="location_bar"><!--pc쪽 로케이션-->
+                <a href="#">돌봄 서비스 예약 안내</a>
+                <ul>
+                    <li class="lb_on"><a href="#">돌봄 서비스 예약 안내</a> </li>
+                    <li><a href="#">우리동네 키움센터 예약</a> </li>
+                    <li><a href="#">열린 육아방 예약</a> </li>
+                </ul>
+            </li>
+        </ul>
+    </div><!--location_wrap END-->
+</div><!--location END-->
+
+<div id="container" class="sub_container">
+    <div class="sub_content">
+        <h2 class="sub_title01 mb_55">돌봄 예약 서비스 안내</h2>
+
+        <dl class="info_box on mb_62"><!-- 활성화 class="on" -->
+            <dt><button type="button" class="btn btn_detail"><span class="tit"><img src="../img/sub/info_icon.png" alt="i">돌봄 예약 서비스 이용 안내</span><em class="action"></em></button></dt>
+            <dd>
+                <ul class="list_ty01">
+                    <li>돌봄 예약 서비스란 ‘우리동네 키움센터’ 및 ‘열린 육아방’을 손쉽게 검색하고, 예약할 수 있도록 지원하는 서비스입니다.</li>
+                    <li>우리동네 키움센터는 센터별 이용신청(신청서 제출 및 센터 방문 상담 필요)후 예약이 가능합니다.</li>
+                    <li>열린 육아방은 별도 신청서 작성 없이 예약 서비스를 이용하실 수 있습니다.</li>
+                </ul>
+            </dd>
+        </dl>
+
+        <h3 class="sub_title02 mb_38">돌봄 예약 서비스 소개</h3>
+        <div class="half_box">
+            <div>
+                <h4 class="sub_title03">우리동네 키움센터</h4>
+                <div class="table_ty01">
+                    <table>
+                        <caption>우리동네 키움센터(이용대상, 예약종류, 운영시간, 이용비용)</caption>
+                        <colgroup>
+                            <col style="width: 23.5%">
+                            <col style="width: auto">
+                        </colgroup>
+                        <tbody>
+                        <tr>
+                            <th scope="row">이용 대상</th>
+                            <td>돌봄이 필요한 만6세 ~ 12세(초등학생)</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">예약 종류</th>
+                            <td>
+                                <ul class="list_ty02">
+                                    <li><span class="font_222">상시 돌봄</span> :  일정한 기간이 정해진 정기적(종일돔봄, 시간제돌봄) 돌봄을 의미</li>
+                                    <li><span class="font_222">일시 돌봄</span> :  학교 휴업, 이용자의 긴급사유 발생 등으로 갑자기 발생한 비정기적 돌봄을 의미</li>
+                                </ul>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th scope="row">운영 시간</th>
+                            <td>
+                                주 5일(평일), 1일 8시간 이상 운영<br>
+                                ※센터별 운영시간 상이
+                            </td>
+                        </tr>
+                        <tr>
+                            <th scope="row">이용 비용</th>
+                            <td>
+                                <span class="font_222">무료</span><br>
+                                급/간식 및 프로그램 제공에 따라 센터별 비용 발생할 수 있음
+                            </td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <div>
+                <h4 class="sub_title03">열린 육아방</h4>
+                <div class="table_ty01">
+                    <table>
+                        <caption>열린 육아방(이용대상, 예약종류, 운영시간, 이용비용)</caption>
+                        <colgroup>
+                            <col style="width: 23.5%">
+                            <col style="width: auto">
+                        </colgroup>
+                        <tbody>
+                        <tr>
+                            <th scope="row">이용 대상</th>
+                            <td>영·유아아동</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">예약 종류</th>
+                            <td>
+                                육아방 시설 이용 및 자조 모임<br>
+                                ※자조모임 시설이용 유무는 각 열린 육아방 운영에 따라 상이
+                            </td>
+                        </tr>
+                        <tr>
+                            <th scope="row">운영 시간</th>
+                            <td>
+                                <span class="font_222">주 5일(평일) 운영<br>
+                                    ※센터별 운영시간 상이</span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th scope="row">이용 비용</th>
+                            <td>
+                                무료
+                            </td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div><!--half_box END-->
+    </div><!--sub_content END-->
+
+    <div class="sub_content02">
+        <div class="sub_content02_wrap">
+            <h3 class="sub_title02 mb_55">
+                우리동네 키움센터 <span class="point font_b">예약 서비스 이용 방법</span>
+            </h3>
+            <div class="thumb_box">
+                <ul class="box_shadow">
+                    <li class="thumb_img">
+                        <img src="../img/sub/thumb_img01.png" alt="우리동네 키움센터 검색 이미지">
+                    </li>
+                    <li class="thumb_con">
+                        <h4><span class="label gradient">STEP_01</span>우리동네 키움센터 검색</h4>
+                        <ul class="list_ty01">
+                            <li><span class="font_222">“우리동네 키움센터 예약”</span>  또는 맞춤형 <span class="font_222">“아이돌봄 정보검색”</span>에서 원하는 지역의 우리동네 키움센터를 검색해주세요.<br>
+                                <span class="font_15">(회원가입 후 거주지를 입력해주시면 센터 검색 시 등록한 거주지 주변의 우리동네 키움센터를 손쉽게 검색할 수 있어요)</span>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+
+                <ul class="box_shadow">
+                    <li class="thumb_img">
+                        <img src="../img/sub/thumb_img02.png" alt="우리동네 키움센터  이용신청 이미지">
+                    </li>
+                    <li class="thumb_con">
+                        <h4><span class="label gradient">STEP_02</span>우리동네 키움센터  이용신청</h4>
+                        <ul class="list_ty01">
+                            <li>우리동네 키움센터에 예약하시려면 반드시 이용신청 자격을 승인 받아야 해요.</li>
+                            <li>예약 하시려는 우리동네 키움센터에 이용 신청 등록을 해주세요.</li>
+                            <li>
+                                이용 신청 등록은 이용 신청서 및 개인정보활용 동의서, 귀가 동의서, 응급처치 동의서 등의 서류를 등록해주셔야 해요.
+                                <br><span class="font_15">(온라인에서 이용 신청서를 비롯한 각종 문서 등록이 어려우신 분들은 이용 신청 후 각 우리동네 키움센터에 방문하여 서류를 등록해주셔도 됩니다.)</span>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+
+                <ul class="box_shadow">
+                    <li class="thumb_img">
+                        <img src="../img/sub/thumb_img03.png" alt="우리동네 키움센터  방문상담 이미지">
+                    </li>
+                    <li class="thumb_con">
+                        <h4><span class="label gradient">STEP_03</span>우리동네 키움센터  방문상담</h4>
+                        <ul class="list_ty01">
+                            <li>이용 신청서를 등록하시면, 우리동네 키움센터 담당자가 등록하신 신청서를 검토 후 여러분들께 방문상담 일정을 안내
+                                해드려요.
+                            </li>
+                            <li>
+                                방문상담은 아이들이 우리동네 키움센터에서 잘 적응할 수 있는지에 대한 상담을 진행해요.
+                                <br><span class="font_15">(성향 파악 및 알레르기 반응 여부 등)</span>
+                            </li>
+                            <li>모든 상담이 끝나면 우리동네 키움센터 담당자가 상담한 내용을 바탕으로 검토 후 이용 신청 승인 여부를 결정해요.</li>
+                            <li>이용 신청이 승인되면 원하는 기간과 시간에 돌봄 서비스를 이용하실 수 있어요.</li>
+                        </ul>
+                    </li>
+                </ul>
+            </div><!--thumb_box END-->
+
+            <div class="note_info">
+                <ul class="note_t">
+                    <li><img src="../img/sub/icon.png" alt="!">유의사항</li>
+                </ul>
+                <ul class="list_ty03">
+                    <li>- 우리동네 키움센터 예약 신청은 우리동네 키움센터별 이용 자격 획득(이용신청서 작성 및 방문 상담)이 필요합니다.</li>
+                    <li>- 방문 상담(자녀 성향 및 특이사항 등) 시 우리동네 키움센터별 운영 정책에 따라, 이용 자격 획득이 불가할 수 있습니다</li>
+                </ul>
+            </div><!--note_info END-->
+
+            <button type="button" class="gradient btn_ty01">우리동네 키움센터 예약하러 가기</button>
+
+        </div><!--sub_content02_wrap END-->
+    </div>
+</div><!--container END-->
+
+
+<footer id="footer">
+    <div class="footer_wrap">
+        <div class="inner">
+            <div class="footer-link">
+                <ul>
+                    <li><a href="#">홈페이지 도우미</a></li>
+                    <li class="policy"><a href="#">개인정보처리방침</a></li>
+                    <li class="mobile_none"><a href="#">저작권 정책</a></li>
+                    <li class="mobile_none"><a href="#">영상정보처리기기 운영 관리방침</a></li>
+                    <li><a href="#">홈페이지 바로잡기</a></li>
+                    <li class="mobile_none"><a href="#">사이트맵</a></li>
+                    <li id="li_mogo"><a href="#">PC버전</a></li>
+                </ul>
+                <div class="sns sns-new">
+                    <a href="#" class="rss">RSS</a>
+                    <a href="https://www.facebook.com/seoul.kr" class="fb" target="_blank" title="새창열림" onclick="se_click_logging('https://www.facebook.com/seoul.kr?tr_code=sns',location.href);">페이스북</a>
+                    <a href="http://twitter.com/seoulmania" class="tw" target="_blank" title="새창열림" onclick="se_click_logging('http://twitter.com/seoulmania?tr_code=sns',location.href);">트위터</a>
+                    <a href="http://www.instagram.com/seoul_official" class="ins" target="_blank" title="새창열림" onclick="se_click_logging('http://www.instagram.com/seoul_official?tr_code=sns',location.href);">인스타그램</a>
+                    <a href="http://story.kakao.com/ch/seoul" class="ks" target="_blank" title="새창열림" onclick="se_click_logging('http://story.kakao.com/ch/seoul?tr_code=sns',location.href);">카카오스토리</a>
+                    <a href="http://www.youtube.com/seoullive" class="yt" target="_blank" title="새창열림" onclick="se_click_logging('http://www.youtube.com/seoullive?tr_code=sns',location.href);">유튜브</a>
+                    <a href="http://blog.seoul.go.kr" class="bl" target="_blank" title="새창열림" onclick="se_click_logging('http://blog.seoul.go.kr?tr_code=sns',location.href);">블로그</a>
+                </div>
+            </div>
+        </div>
+    </div><!--footer_wrap END-->
+    <div class="footer_wrap02">
+        <div class="row">
+            <div class="inner">
+                <span class="foo-logo inquiry"><em class="blind">문의 전화번호 120, 정보를 못찾으셨나요? 120 다산콜센터로 물어보세요!</em></span>
+                <div class="address">
+                    <p class="city">서울특별시청  04524 서울특별시 중구 세종대로 110 <a href="#" onclick="action_logging({tr_code:'footer_07'});" class="map">[찾아오시는 길]</a></p>
+                    <p class="">대표전화 : 02-120 또는 02-731-2120</p>
+                    <p class="copy">© Seoul Metropolitan Government all rights reserved</p>
+                </div>
+                <div class="mark">
+                    <!--
+                    <a href="/seoul/gcs.do"  onclick="action_logging({tr_code:'gcs'});" target="_blank" title="굿콘텐츠제공서비스 품질인증서"><img src="/res_newseoul/images/footer_mark_good.png" alt="이용자가 선택한 우수 콘텐츠 서비스 - 한국데이터베이스진흥원 인증마크" /></a>
+                    -->
+                    <a href="#" onclick="action_logging({tr_code:'wa'});" title="웹접근성 품질마크"><img src="../img/common/footer_mark_wah.png" alt="과학기술정보통신부 WEB ACCESSIBILITY 마크(웹 접근성 품질인증 마크)"></a>
+                </div>
+            </div>
+        </div>
+    </div><!--footer_wrap02 END-->
+</footer>
+
+</body>
+</html>

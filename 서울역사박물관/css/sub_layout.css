@@ -1,0 +1,7 @@
+#container {box-sizing:border-box; width:1200px; min-height:calc(100vh - 344px); margin:0 auto; padding:60px 0 90px;}
+#container:after {display:block; clear:both; content:'';}
+.header_wrap{background-image: none; border-bottom: 1px solid #222;}
+
+@media screen and (max-width:1199px)  {
+    .header_wrap{border-bottom: 0;}
+}

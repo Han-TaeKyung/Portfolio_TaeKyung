@@ -1,0 +1,902 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JDC</title>
+    <link rel="stylesheet" type="text/css" href="../css/common.css"><!-- 기존에 JDC에 있는 파일입니다. layout이랑 겹치는 부분 삭제. -->
+    <link rel="stylesheet" type="text/css" href="../css/layout.css">
+    <link rel="stylesheet" type="text/css" href="../css/layout_media.css">
+    <link rel="stylesheet" type="text/css" href="../css/new_main.css">
+    <link rel="stylesheet" type="text/css" href="../css/new_main_media.css">
+    <script src="../js/jQuery-2.1.4.min.js"></script><!-- 기존에 JDC에 있는 파일입니다. -->
+    <script src="../js/jquery.bxslider.min.js"></script><!-- 기존에 JDC에 있는 파일입니다. -->
+    <script src="../js/jquery.mousewheel.js"></script>
+    <script src="../js/layout.js"></script>
+    <script src="../js/new_main.js"></script>
+</head>
+<body>
+
+<div id="skipNav">
+    <a href="#container">본문바로가기</a>
+    <a href="#header">주메뉴 바로가기</a>
+</div>
+
+
+<div id="header">
+    <div class="header_top">
+        <div class="header_top_wrap">
+            <ul class="lang">
+                <li class="lang_on"><a href="#">KOR</a> </li>
+                <li><a href="#">ENG</a> </li>
+                <li><a href="#">CHN</a> </li>
+                <li><a href="#">JPN</a> </li>
+            </ul><!--lang END-->
+
+            <ul class="logo">
+                <li><a href="#" title="메인으로"><img src="../img/common/logo.png" alt="JDC 제주국제자유도시 개발센터"> </a> </li>
+            </ul><!--logo END-->
+
+            <ul class="all_wrap">
+                <li><a href="#"><img src="../img/common/jj.png" alt="제주문화 바로가기"></a> </li>
+                <li class="search">
+                    <a href="#" class="search_btn"><img src="../img/common/search_btn.png" alt="검색창 열기"> </a>
+                    <ul class="search_box">
+                        <li class="search_input"><input type="text" title="검색어입력" placeholder="검색어를 입력하세요."></li>
+                        <li>
+                            <a href="#"><img src="../img/common/search_btn.png" alt="검색 버튼"> </a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="all_menu">
+                    <a href="#"><img src="../img/common/all_menu.png" alt="전체메뉴">전체메뉴 </a>
+                </li>
+            </ul><!--all_wrap END-->
+
+
+            <ul class="m_gnbBtn">
+                <li>
+                    <a href="#" class="m_searchBtn"><img src="../img/common/m_search.png" alt="검색"></a>
+                    <button type="button" class="m_search_close"><img src="../img/common/m_search_close.png" alt="검색 닫기"></button>
+                </li>
+                <li>
+                    <a href="#" class="m_gnb"><img src="../img/common/m_gnb.png" alt="메뉴 열기"></a>
+                    <button type="button" class="m_gnb_close"><img src="../img/common/m_gnb_close.png" alt="메뉴닫기"> </button>
+                </li>
+            </ul><!--m_gnbBtn END-->
+        </div><!--header_top_wrap END-->
+    </div><!--header_top END-->
+
+    <!--모바일 검색폼-->
+    <div class="m_search" id="m_search">
+        <div>
+            <input type="text" title="검색어입력" placeholder="검색어를 입력하세요.">
+            <button type="button"><img src="../img/common/m_dot.png" alt="검색"></button>
+        </div>
+    </div><!--m_search END-->
+    <!--모바일 검색폼 END-->
+
+    <div class="header_wrap" id="gnb_wrap">
+        <div class="m_lang">
+            <ul>
+                <li class="m_lang_on"><a href="#">KOR</a> </li>
+                <li><a href="#">ENG</a> </li>
+                <li><a href="#">CHN</a> </li>
+                <li><a href="#">JPN</a> </li>
+            </ul>
+        </div><!--m_lang END-->
+        <ul class="gnb">
+            <li class="m_gnb_on">
+                <a href="#" class="pc_gnb">정보공개</a>
+                <a href="#" class="mobile_gnb"><span>정보공개</span></a>
+                <div class="gnb_2dep">
+                    <h6 class="m_gnb_title">정보공개</h6>
+                    <ul>
+                        <li class="gnb_3dep">
+                            <a href="#">사전정보공개</a>
+                            <ul>
+                                <li><a href="#">제도안내</a> </li>
+                                <li><a href="#">정보목록</a> </li>
+                                <li><a href="#">사전정보공개목록</a> </li>
+                                <li><a href="#">정보공개규정</a> </li>
+                            </ul>
+                        </li>
+                        <li class="gnb_3dep">
+                            <a href="#">정보공개청구</a>
+                            <ul>
+                                <li><a href="#">오프라인 청구</a> </li>
+                                <li><a href="#">온라인 청구</a> </li>
+                            </ul>
+                        </li>
+                        <li><a href="#">공공데이터 개방</a> </li>
+                        <li><a href="#">사업실명제</a> </li>
+                    </ul>
+                </div>
+            </li>
+            <li>
+                <a href="#" class="pc_gnb">경영공시</a>
+                <a href="#" class="mobile_gnb"><span>경영공시</span></a>
+                <div class="gnb_2dep">
+                    <h6 class="m_gnb_title">경영공시</h6>
+                    <ul>
+                        <li><a href="#">경영공시목차</a> </li>
+                        <li class="gnb_3dep">
+                            <a href="#">일반현황</a>
+                            <ul>
+                                <li><a href="#">일반형황</a> </li>
+                                <li><a href="#">예산현황</a> </li>
+                            </ul>
+                        </li>
+                        <li class="gnb_3dep">
+                            <a href="#">기관운영</a>
+                            <ul>
+                                <li><a href="#">목차</a> </li>
+                                <li><a href="#">임직원수</a> </li>
+                                <li><a href="#">임원현황</a> </li>
+                                <li><a href="#">신규채용현황.유연근무현황</a> </li>
+                                <li><a href="#">임원연봉</a> </li>
+                                <li><a href="#">직원평균보수</a> </li>
+                                <li><a href="#">업무추진비</a> </li>
+                                <li><a href="#">복리후생비</a> </li>
+                                <li><a href="#">임원국외출장정보</a> </li>
+                                <li><a href="#">노동조합관련현황</a> </li>
+                                <li><a href="#">취업규칙</a> </li>
+                            </ul>
+                        </li>
+                        <li class="gnb_3dep">
+                            <a href="#">주요사업, 경영성과</a>
+                            <ul>
+                                <li><a href="#">목차</a> </li>
+                                <li><a href="#">요약대차대조표</a> </li>
+                                <li><a href="#">요약손익계산서</a> </li>
+                                <li><a href="#">수입지출현황</a> </li>
+                                <li><a href="#">주요사업</a> </li>
+                                <li><a href="#">투자집행내역</a> </li>
+                                <li><a href="#">자본금및주주현황</a> </li>
+                                <li><a href="#">장단기차입금현황</a> </li>
+                                <li><a href="#">투자및출자현황</a> </li>
+                                <li><a href="#">연관출연및증여현황</a> </li>
+                                <li><a href="#">경영부담비용추계</a> </li>
+                                <li><a href="#">납세정보현황</a> </li>
+                            </ul>
+                        </li>
+                        <li class="gnb_3dep">
+                            <a href="#">대내외평가</a>
+                            <ul>
+                                <li><a href="#">목차</a> </li>
+                                <li><a href="#">국회지적사항</a> </li>
+                                <li><a href="#">감사원주무부처지적사항</a> </li>
+                                <li><a href="#">경영실적평가결과</a> </li>
+                                <li><a href="#">경영평가지적사항</a> </li>
+                                <li><a href="#">고객만족도조사결과</a> </li>
+                                <li><a href="#">감사직무실적평가결과</a> </li>
+                                <li><a href="#">이사회회의록및내부감사결과</a> </li>
+                            </ul>
+                        </li>
+
+                        <li class="gnb_3dep">
+                            <a href="#">공지사항</a>
+                            <ul>
+                                <li><a href="#">목차</a> </li>
+                                <li><a href="#">임직원채용정보</a> </li>
+                                <li><a href="#">계약정보:수의계약</a> </li>
+                                <li><a href="#">입찰정보</a> </li>
+                                <li><a href="#">관계법령</a> </li>
+                                <li><a href="#">정관/내부규정</a> </li>
+                                <li><a href="#">제·개정 예고 규정</a> </li>
+                                <li><a href="#">규정변경에 대한 의견 제출</a> </li>
+                            </ul>
+                        </li>
+
+                        <li class="gnb_3dep">
+                            <a href="#">복리후생관련8대항목</a>
+                            <ul>
+                                <li><a href="#">목차</a> </li>
+                                <li><a href="#">유가족특별채용</a> </li>
+                                <li><a href="#">휴직급여</a> </li>
+                                <li><a href="#">퇴직금</a> </li>
+                                <li><a href="#">교육비</a> </li>
+                                <li><a href="#">건강검진,의료비 및 단체보험</a> </li>
+                                <li><a href="#">경조금</a> </li>
+                                <li><a href="#">휴가및휴직</a> </li>
+                                <li><a href="#">제도운영상황</a> </li>
+                                <li><a href="#">노조운영지원비</a> </li>
+                                <li><a href="#">영리시설,장비운영권 노조위탁</a> </li>
+                                <li><a href="#">단체협약상 별도 합의사항</a> </li>
+                                <li><a href="#">단체협약외의 별도 합의사항</a> </li>
+                            </ul>
+                        </li>
+
+                        <li class="gnb_3dep">
+                            <a href="#">자율공시</a>
+                            <ul>
+                                <li><a href="#">알기쉬운부채정보</a> </li>
+                                <li><a href="#">환경경영</a> </li>
+                                <li><a href="#">전국차량 및 장비현황</a> </li>
+                                <li><a href="#">공무국외 여행계획서</a> </li>
+                                <li><a href="#">출장보고서</a> </li>
+                                <li><a href="#">신용도평가</a> </li>
+                                <li><a href="#">고문변호사 현황</a> </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </li>
+            <li>
+                <a href="#" class="pc_gnb">기관소개</a>
+                <a href="#" class="mobile_gnb"><span>기관소개</span></a>
+                <div class="gnb_2dep">
+                    <h6 class="m_gnb_title">기관소개</h6>
+                    <ul>
+                        <li class="gnb_3dep">
+                            <a href="#">경영공시목차</a>
+                            <ul>
+                                <li><a href="#">경영철학</a> </li>
+                                <li><a href="#">경영전략</a> </li>
+                            </ul>
+                        </li>
+                        <li><a href="#">기관소개</a> </li>
+                        <li class="gnb_3dep">
+                            <a href="#">상징체계</a>
+                            <ul>
+                                <li><a href="#">CI 및 캐릭터</a> </li>
+                            </ul>
+                        </li>
+                        <li><a href="#">조직구성</a> </li>
+                        <li><a href="#">오시는길</a> </li>
+                    </ul>
+                </div>
+
+            </li>
+            <li>
+                <a href="#" class="pc_gnb">참여·소통</a>
+                <a href="#" class="mobile_gnb"><span>참여·소통</span></a>
+                <div class="gnb_2dep">
+                    <h6 class="m_gnb_title">참여·소통</h6>
+                    <ul>
+                        <li class="gnb_3dep">
+                            <a href="#">2depth</a>
+                            <ul>
+                                <li><a href="#">3depth</a> </li>
+                                <li><a href="#">3depth</a> </li>
+                            </ul>
+                        </li>
+                        <li class="gnb_3dep">
+                            <a href="#">2depth</a>
+                            <ul>
+                                <li><a href="#">3depth</a> </li>
+                                <li><a href="#">3depth</a> </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </li>
+            <li>
+                <a href="#" class="pc_gnb">열린경영</a>
+                <a href="#" class="mobile_gnb"><span>열린경영</span></a>
+                <div class="gnb_2dep">
+                    <h6 class="m_gnb_title">열린경영</h6>
+                    <ul>
+                        <li class="gnb_3dep">
+                            <a href="#">2depth</a>
+                            <ul>
+                                <li><a href="#">3depth</a> </li>
+                                <li><a href="#">3depth</a> </li>
+                            </ul>
+                        </li>
+                        <li class="gnb_3dep">
+                            <a href="#">2depth</a>
+                            <ul>
+                                <li><a href="#">3depth</a> </li>
+                                <li><a href="#">3depth</a> </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </li>
+            <li>
+                <a href="#" class="pc_gnb">인재채용</a>
+                <a href="#" class="mobile_gnb"><span>인재채용</span></a>
+                <div class="gnb_2dep">
+                    <h6 class="m_gnb_title">인재채용</h6>
+                    <ul>
+                        <li><a href="#">인재상</a> </li>
+                        <li><a href="#">직무소개</a> </li>
+                        <li><a href="#">채용안내</a> </li>
+                        <li><a href="#">채용공고</a> </li>
+                        <li><a href="#">즐거운 회사생활</a> </li>
+                        <li><a href="#">지역인재양성</a> </li>
+                     </ul>
+                </div>
+            </li>
+            <li>
+                <a href="#" class="pc_gnb">사업정보</a>
+                <a href="#" class="mobile_gnb"><span>사업정보</span></a>
+                <div class="gnb_2dep">
+                    <h6 class="m_gnb_title">사업정보</h6>
+                    <ul>
+                        <li class="gnb_3dep">
+                            <a href="#">첨단과학</a>
+                            <ul>
+                                <li><a href="#">제주첨단과학기술단지</a> </li>
+                            </ul>
+                        </li>
+                        <li class="gnb_3dep">
+                            <a href="#">교육</a>
+                            <ul>
+                                <li><a href="#">영어교육도시</a> </li>
+                            </ul>
+                        </li>
+                        <li class="gnb_3dep">
+                            <a href="#">관광</a>
+                            <ul>
+                                <li><a href="#">신화역사공원</a> </li>
+                                <li><a href="#">제주항공우주박물관</a> </li>
+                            </ul>
+                        </li>
+                        <li class="gnb_3dep">
+                            <a href="#">의료</a>
+                            <ul>
+                                <li><a href="#">헬스케어타운</a> </li>
+                            </ul>
+                        </li>
+                        <li class="gnb_3dep">
+                            <a href="#">주택</a>
+                            <ul>
+                                <li><a href="#">공공임대주택</a> </li>
+                            </ul>
+                        </li>
+                        <li><a href="#">면세점</a> </li>
+                    </ul>
+                </div>
+            </li>
+            <!--jdc 스토리는 메인개편 후에 작업진행예정 입니다.-->
+            <!--<li class="jdc_story">
+                <a href="#">
+                    <img src="../img/common/jdc_stroy.png" alt="JDC 스토리" class="mobile_none">
+                    <span class="mobile_b">JDC스토리</span>
+                </a>
+            </li>-->
+        </ul><!--gnb END-->
+        <ul class="m_gnb_bg">
+            <li class="m_gnb_bg_gray"></li>
+        </ul>
+    </div><!--header_wrap END-->
+</div><!--header END-->
+
+
+<div class="main_page01 page" data-page="1" id="container">
+    <div class="main_visual">
+        <!--20190801 메인베너 이미지 수정-->
+        <ul id="main_visual_slide">
+            <li class="visual_con">
+                <img src="../img/main/main_visual/main_visual01.jpg" alt="메인비주얼">
+                <p>
+                    <img src="../img/main/main_visual/TXT/main_visual01_txt.png" alt="성장과 공존을 통해 국민에게 한걸음 더 다가가겠습니다! JDC는 제주의 가치창출을 통해 성장과 공존이 조화로운 국제자유도시를 조성하기 위해 설립된 국토교통부 산하 국가 공기업입니다. 관광, 교육, 의료, 첨단 분야의 핵심사업 완성과 제주의 가치 창출을 위한 미래 사업을 통해 제주의 미래 성장기반을 강화하기 위해 노력하고 있습니다.">
+                </p>
+            </li>
+            <li class="visual_con">
+                <img src="../img/main/main_visual/main_visual02.jpg" alt="메인비주얼">
+                <p>
+                    <img src="../img/main/main_visual/TXT/main_visual01_txt.png" alt="성장과 공존을 통해 국민에게 한걸음 더 다가가겠습니다! JDC는 제주의 가치창출을 통해 성장과 공존이 조화로운 국제자유도시를 조성하기 위해 설립된 국토교통부 산하 국가 공기업입니다. 관광, 교육, 의료, 첨단 분야의 핵심사업 완성과 제주의 가치 창출을 위한 미래 사업을 통해 제주의 미래 성장기반을 강화하기 위해 노력하고 있습니다.">
+                </p>
+            </li>
+            <li class="visual_con">
+                <img src="../img/main/main_visual/main_visual03.jpg" alt="메인비주얼">
+                <p>
+                    <img src="../img/main/main_visual/TXT/main_visual01_txt.png" alt="자연과 함께 공존하며, 도민과 함께 상생하겠습니다! JDC는 제주의 가치창출을 통해 성장과 공존이 조화로운 국제자유도시를 조성하기 위해 설립된 국토교통부 산하 국가 공기업입니다. 관광, 교육, 의료, 첨단 분야의 핵심사업 완성과 제주의 가치 창출을 위한 미래 사업을 통해 제주의 미래 성장기반을 강화하기 위해 노력하고 있습니다.">
+                </p>
+            </li>
+            <li class="visual_con">
+                <img src="../img/main/main_visual/main_visual04.jpg" alt="메인비주얼">
+                <p>
+                    <img src="../img/main/main_visual/TXT/main_visual01_txt.png" alt="자연과 함께 공존하며, 도민과 함께 상생하겠습니다! JDC는 제주의 가치창출을 통해 성장과 공존이 조화로운 국제자유도시를 조성하기 위해 설립된 국토교통부 산하 국가 공기업입니다. 관광, 교육, 의료, 첨단 분야의 핵심사업 완성과 제주의 가치 창출을 위한 미래 사업을 통해 제주의 미래 성장기반을 강화하기 위해 노력하고 있습니다.">
+                </p>
+            </li>
+            <li class="visual_con">
+                <img src="../img/main/main_visual/main_visual05.jpg" alt="메인비주얼">
+                <p>
+                    <img src="../img/main/main_visual/TXT/main_visual01_txt.png" alt="일자리가 성장이고 복지입니다. JDC는 제주의 가치창출을 통해 성장과 공존이 조화로운 국제자유도시를 조성하기 위해 설립된 국토교통부 산하 국가 공기업입니다. 관광, 교육, 의료, 첨단 분야의 핵심사업 완성과 제주의 가치 창출을 위한 미래 사업을 통해 제주의 미래 성장기반을 강화하기 위해 노력하고 있습니다.">
+                </p>
+            </li>
+        </ul>
+        <!--20190801 메인베너 이미지 수정 END-->
+
+        <!--<ul class="main_visual_btn">
+            <li><a href="#">제주를 위한 특별함. JDC</a> </li>
+        </ul>-->
+    </div><!--main_visual END-->
+
+    <div class="main_page01_bar">
+        <div class="left_bg"></div>
+        <div class="right_bg"></div>
+        <div class="main_page01_con">
+            <ul>
+                <li class="main_notice">
+                    <ul>
+                        <li class="notice_title">
+                            공지사항
+                        </li>
+                        <li class="notice_day">
+                            2019.01.18
+                        </li>
+                        <li class="notice_txt">
+                            <a href="#">2019년도 제주국제자유도시개발센터 기록관리기준표 고시</a>
+                        </li>
+                        <li class="notice_btn">
+                            <a href="#">
+                                <img src="../img/main/notice_bg.png" alt="전체공지사항 보기"><span>전체 공지사항 보기</span>
+                            </a>
+                        </li>
+                    </ul>
+                </li><!--main_notice END-->
+                <li class="main_search">
+                    <div>
+                        <input type="text" title="검색하기" placeholder="Search">
+                        <button type="button"><img src="../img/main/search_btn.png" alt="검색"></button>
+                    </div>
+                </li><!--main_search END-->
+            </ul>
+        </div><!--main_latest END-->
+    </div><!--main_page01_con END-->
+</div><!--main_page01 END-->
+<div class="main_page02 page" data-page="2">
+    <h4 class="main_title01 font_godob">
+        <img src="../img/main/title_line.png" alt="-"><span>JDC</span><img src="../img/main/title_line.png" alt="-">
+    </h4>
+    <h5 class="main_title02 font_godob">NEWS</h5>
+
+    <div class="main_page02_wrap">
+        <div class="main_news_lft">
+            <div class="youtubu_box">
+                <img src="../img/main/youtubu_img.png" alt="유튜브 영역">
+            </div><!--youtubu_box END-->
+        </div><!--main_news_lft END-->
+        <div class="main_news_rgt">
+            <div class="main_banner">
+                <ul id="main_banner_slide">
+                    <li>
+                        <a href="#"><img src="../img/main/banner_img01.png" alt="우리는 언제나 처음이다"></a>
+                    </li>
+                    <li>
+                        <a href="#"><img src="../img/main/banner_img01.png" alt="우리는 언제나 처음이다"></a>
+                    </li>
+                </ul>
+            </div><!--main_banner END-->
+
+            <div class="main_box">
+                <ul>
+                    <li>
+                        <a href="#">
+                            <span class="main_box_img">
+                                <img src="../img/main/box_img01.png" alt="아무도 들려주지 않은 이야기 : 포구, 바닷길의 시작">
+                            </span>
+                            <span class="main_box_con">
+                                제주의 꿈<br>
+                                <b>2018.October / Vol.153</b>
+                            </span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <span class="main_box_img">
+                                <img src="../img/main/box_img02.png" alt="JAM 제주항공우주박물관">
+                            </span>
+                            <span class="main_box_con">
+                                보도자료<br>
+                                <b>제주항공우주박물관 겨울방학 자원 겨울방학 자원</b>
+                            </span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div><!--main_news_rgt END-->
+
+        <div class="main_news_lft">
+            <div class="main_sns_wrap">
+                <div class="m_sns_btn">
+                    <ul>
+                        <li class="m_sns_active m_sns01">
+                            <a href="#">
+                                <img src="../img/main/m_facebook_off.png" alt="페이스북">
+                                <img src="../img/main/m_facebook_on.png" alt="페이스북" class="m_sns_on">
+                            </a>
+                            <p class="arrow_on"><img src="../img/main/m_facebook_arrow.png" alt="on 효과"> </p>
+                        </li>
+                        <li class="m_sns02">
+                            <a href="#">
+                                <img src="../img/main/m_insta_off.png" alt="인스타그램">
+                                <img src="../img/main/m_insta_on.png" alt="인스타그램" class="m_sns_on">
+                            </a>
+                            <p class="arrow_on"><img src="../img/main/m_insta_arrow.png" alt="on 효과"> </p>
+                        </li>
+                        <li class="m_sns03">
+                            <a href="#">
+                                <img src="../img/main/m_naver_off.png" alt="네이버포스트">
+                                <img src="../img/main/m_naver_on.png" alt="네이버포스트" class="m_sns_on">
+                            </a>
+                            <p class="arrow_on"><img src="../img/main/m_naver_arrow.png" alt="on 효과"> </p>
+                        </li>
+                    </ul>
+                </div>
+                <ul>
+                    <li class="main_sns main_sns01">
+                        <h5>JDC 페이스북</h5>
+                        <ul class="scroll_style01">
+                            <li>
+                                <img src="../img/main/facebook_img.png" alt="JDC 페이스북 내용">
+                                <p class="snsCont">
+                                    &lt;제주항공우주박물관 (JAM) 설날 이벤트&gt;
+                                        2.2(토) ~ 2.6(수) 설 연휴기간 이벤트를 진행합
+                                        니다. 연휴동안 어디갈까 고민중이라면!?
+                                        아이들과 제주에서 휴가차 왔다면!?
+                                        다채로운 행사와 선물까지 받을 수 있는 제주항
+                                        공우주박물관으로 놀러오세요!
+                                </p>
+                            </li>
+                            <li>
+                                <img src="../img/main/facebook_img.png" alt="JDC 페이스북 내용">
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="main_sns main_sns02">
+                        <h5>JDC 인스타그램</h5>
+                        <ul class="scroll_style">
+                            <li>
+                                <img src="../img/main/instar_img.png" alt="JDC 인스타그램 내용">
+                            </li>
+                            <li>
+                                <img src="../img/main/instar_img.png" alt="JDC 인스타그램 내용">
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="main_sns main_sns03">
+                        <h5>JDC 네이버 포스트</h5>
+                        <ul class="scroll_style01">
+                            <li>
+                                <img src="../img/main/naver_img.png" alt="JDC 네이버포스트 내용">
+                            </li>
+                            <li>
+                                <img src="../img/main/naver_img.png" alt="JDC 네이버포스트 내용">
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div><!--main_sns_wrap END-->
+        </div><!--main_news_lft END-->
+
+    </div><!--main_page02_wrap END-->
+</div><!--main_page02 END-->
+<div class="main_page03 page" data-page="3">
+    <h4 class="main_title01 font_godob">
+        <img src="../img/main/title_line.png" alt="-"><span>JDC</span><img src="../img/main/title_line.png" alt="-">
+    </h4>
+    <h5 class="main_title02 font_godob">PROJECT</h5>
+
+    <div class="main_page03_wrap">
+        <ul>
+            <li>
+                <div class="projecet project01">
+                    <span class="project_img">
+                        <a href="#" onclick="return false"><img src="../img/main/project_img01.png" alt="첨단과학"></a>
+                    </span>
+                    <span class="project_title font_godob">
+                        첨단과학<img src="../img/main/title_ico01.png" alt="아이콘">
+                    </span>
+                </div>
+                <div class="project_hover">
+                    <h5 class="font_godob">첨단과학<img src="../img/main/title_ico01.png" alt="아이콘"></h5>
+                    <p class="ph_tit font_godob">제주첨단과학기술단지</p>
+                    <p class="ph_txt">
+                        청정산업 IT·BT의 제주육성과<br>
+                        첨단과학분야 우량기업 유치 및 양질의<br>
+                        일자리를 창출하는 대한민국의<br>
+                        실리콘밸리입니다.
+                    </p>
+                    <a href="#" class="project_more"><img src="../img/main/project_more.png" alt="첨단과학 더보기"></a>
+                </div>
+            </li>
+            <li>
+                <div class="projecet project01">
+                    <span class="project_img">
+                        <a href="#" onclick="return false"><img src="../img/main/project_img02.png" alt="교육"></a>
+                    </span>
+                    <span class="project_title font_godob">
+                        교육<img src="../img/main/title_ico02.png" alt="아이콘">
+                    </span>
+                </div>
+                <div class="project_hover">
+                    <h5 class="font_godob">교육<img src="../img/main/title_ico02.png" alt="아이콘"></h5>
+                    <p class="ph_tit font_godob">영어교육도시</p>
+                    <p class="ph_txt">
+                        최고의 교육환경, 친환경 및 최적의 기반
+                        시설 위에 세계적 건축 예술성을 더하여
+                        동북아 교육허브의 글로벌 명품 교육도시
+                        로 부상하고 있습니다.
+                    </p>
+                    <a href="#" class="project_more"><img src="../img/main/project_more.png" alt="교육 더보기"></a>
+                </div>
+            </li>
+            <li>
+                <div class="projecet project01">
+                    <span class="project_img">
+                        <a href="#" onclick="return false"><img src="../img/main/project_img03.png" alt="관광"></a>
+                    </span>
+                    <span class="project_title font_godob">
+                        관광<img src="../img/main/title_ico03.png" alt="아이콘">
+                    </span>
+                </div>
+                <div class="project_hover">
+                    <h5 class="font_godob">관광<img src="../img/main/title_ico03.png" alt="아이콘"></h5>
+                    <p class="ph_tit font_godob">신화역사공원</p>
+                    <p class="ph_txt">
+                        제주와 한국, 그리고 세계의 문화·역사·
+                        신화가 한데 어우러진 세계적 수준의
+                        관광단지를 조성합니다.
+                    </p>
+                    <a href="#" class="project_more"><img src="../img/main/project_more.png" alt="관광 더보기"></a>
+                </div>
+            </li>
+            <li>
+                <div class="projecet project01">
+                    <span class="project_img">
+                        <a href="#" onclick="return false"> <img src="../img/main/project_img04.png" alt="박물관"></a>
+                    </span>
+                    <span class="project_title font_godob">
+                        박물관<img src="../img/main/title_ico04.png" alt="아이콘">
+                    </span>
+                </div>
+                <div class="project_hover">
+                    <h5 class="font_godob">박물관<img src="../img/main/title_ico04.png" alt="아이콘"></h5>
+                    <p class="ph_tit font_godob">제주항공우주박물관</p>
+                    <p class="ph_txt">
+                        국내외 주요 과학관·박물관과의 업무협약
+                        등 지속적인 신규 콘텐츠 개발을 통해
+                        세계 최고 수준의 교육·문화시설로 도약
+                        하고 있습니다.
+                    </p>
+                    <a href="#" class="project_more"><img src="../img/main/project_more.png" alt="박물관 더보기"></a>
+                </div>
+            </li>
+            <li>
+                <div class="projecet project01">
+                    <span class="project_img">
+                        <a href="#" onclick="return false"><img src="../img/main/project_img05.png" alt="의료"></a>
+                    </span>
+                    <span class="project_title font_godob">
+                        의료<img src="../img/main/title_ico05.png" alt="의료">
+                    </span>
+                </div>
+                <div class="project_hover">
+                    <h5 class="font_godob">의료<img src="../img/main/title_ico05.png" alt="아이콘"></h5>
+                    <p class="ph_tit font_godob">제주헬스케어타운</p>
+                    <p class="ph_txt">
+                        의료,관광,연구기능의 연계로 글로벌
+                        특화 의료환경을 제공합니다.
+                    </p>
+                    <a href="#" class="project_more"><img src="../img/main/project_more.png" alt="관광 더보기"></a>
+                </div>
+            </li>
+            <li>
+                <div class="projecet project01">
+                    <span class="project_img">
+                        <a href="#" onclick="return false"><img src="../img/main/project_img06.png" alt="주택"></a>
+                    </span>
+                    <span class="project_title font_godob">
+                        주택<img src="../img/main/title_ico06.png" alt="주택">
+                    </span>
+                </div>
+                <div class="project_hover">
+                    <h5 class="font_godob">주택<img src="../img/main/title_ico06.png" alt="아이콘"></h5>
+                    <p class="ph_tit font_godob">제주첨단과학기술단지</p>
+                    <p class="ph_txt">
+                        청정산업 IT·BT의 제주육성과
+                        첨단과학분야 우량기업 유치 및 양질의
+                        일자리를 창출하는 대한민국의
+                        실리콘밸리입니다.
+                    </p>
+                    <a href="#" class="project_more"><img src="../img/main/project_more.png" alt="주택 더보기"></a>
+                </div>
+            </li>
+            <li>
+                <div class="projecet project01">
+                    <span class="project_img">
+                        <a href="#" onclick="return false"><img src="../img/main/project_img07.png" alt="면세"></a>
+                    </span>
+                    <span class="project_title font_godob">
+                        면세<img src="../img/main/title_ico07.png" alt="면세">
+                    </span>
+                </div>
+                <div class="project_hover">
+                    <h5 class="font_godob">면세<img src="../img/main/title_ico07.png" alt="아이콘"></h5>
+                    <p class="ph_tit font_godob">JDC 지정면세점</p>
+                    <p class="ph_txt">
+                        15개 품목, 260여개의 브랜드, 34,000여
+                        삼품을 취급하며 시중가보다 20%-60%
+                        저렴합니다.
+                    </p>
+                    <a href="#" class="project_more"><img src="../img/main/project_more.png" alt="면세 더보기"></a>
+                </div>
+            </li>
+            <li>
+                <div class="projecet project01">
+                    <span class="project_img">
+                        <a href="#" onclick="return false"><img src="../img/main/project_img08.png" alt="미래"></a>
+                    </span>
+                    <span class="project_title font_godob">
+                        미래<img src="../img/main/title_ico08.png" alt="미래">
+                    </span>
+                </div>
+                <div class="project_hover">
+                    <h5 class="font_godob">미래<img src="../img/main/title_ico07.png" alt="아이콘"></h5>
+                    <p class="ph_tit font_godob">제주첨단과학기술단지</p>
+                    <p class="ph_txt">
+                        청정산업 IT·BT의 제주육성과
+                        첨단과학분야 우량기업 유치 및 양질의
+                        일자리를 창출하는 대한민국의
+                        실리콘밸리입니다.
+                    </p>
+                    <a href="#" class="project_more"><img src="../img/main/project_more.png" alt="주택 더보기"></a>
+                </div>
+            </li>
+        </ul>
+    </div><!--main_page03_wrap END-->
+</div><!--main_page03 END-->
+
+<div class="main_nav">
+    <ul>
+        <li data-n="1" class="main_on main_nav01">HOME</li>
+        <li data-n="2" class="main_nav02">NEWS</li>
+        <li data-n="3" class="main_nav03">PROJECT</li>
+    </ul>
+</div><!--main_line END-->
+
+
+<div id="footer">
+    <div class="footer_siteWrap">
+        <ul class="footer_site">
+            <li>
+                <a href="#">
+                    <span class="site_logo">
+                        <img src="../img/common/site_logo01.png" alt="제주첨단과학기술단지">
+                    </span>
+                    <span class="site_name">
+                        제주첨단과학기술단지
+                    </span>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <span class="site_logo">
+                        <img src="../img/common/site_logo02.png" alt="NLCS JEJU">
+                    </span>
+                    <span class="site_name">
+                        NLCS JEJU
+                    </span>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <span class="site_logo">
+                        <img src="../img/common/site_logo03.png" alt="BHA">
+                    </span>
+                    <span class="site_name">
+                        BHA
+                    </span>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <span class="site_logo">
+                        <img src="../img/common/site_logo04.png" alt="제주항공우주박물관">
+                    </span>
+                    <span class="site_name">
+                        제주항공우주박물관
+                    </span>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <span class="site_logo">
+                        <img src="../img/common/site_logo05.png" alt="JDC 면세점">
+                    </span>
+                    <span class="site_name">
+                        JDC 면세점
+                    </span>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <span class="site_logo">
+                        <img src="../img/common/site_logo06.png" alt="SJA JEJU">
+                    </span>
+                    <span class="site_name">
+                        SJA JEJU
+                    </span>
+                </a>
+            </li>
+        </ul><!--footer_site END-->
+
+        <ul class="footer_siteBtn">
+            <li class="fs_prev"><a href="#" onclick="return false"><img src="../img/common/m_footer_prev.png" alt="이전"> </a> </li>
+            <li class="fs_next"><a href="#" onclick="return false"><img src="../img/common/m_footer_next.png" alt="다음"> </a> </li>
+        </ul><!--footer_siteBtn END-->
+    </div><!--footer_siteWrap END-->
+
+    <div class="footer_banner">
+        <div class="fb_wrap">
+            <ul class="fb_title">
+                <li class="mobile_none">배너모음</li>
+                <li class="m_bannerBtn"><a href="#" onclick="return false">관련기관 배너모음</a> </li>
+                <li class="fb_btn">
+                    <ul>
+                        <li><a href="#" title="이전" class="fb_prev"></a> </li>
+                        <li>
+                            <a href="#" title="정지" class="fb_stop"></a>
+                            <a href="#" title="재생" class="fb_play"></a>
+                        </li>
+                        <li><a href="#" title="다음" class="fb_next"></a> </li>
+                    </ul>
+                </li>
+            </ul>
+            <ul id="fb_slide">
+                <li><a href="#">국토교통부</a> </li>
+                <li><a href="#">JOB-ALIO 공공기관 채용정보시스템</a> </li>
+                <li><a href="#">국민권익위원회</a> </li>
+                <li><a href="#">착한운전 마일지지제</a> </li>
+                <li><a href="#">생활법령정보</a> </li>
+                <li><a href="#">JEJU PRIDE UNITED</a> </li>
+            </ul>
+        </div>
+    </div><!--footer_banner END-->
+
+    <div class="m_banner">
+        <h4>관련기관 배너모음</h4>
+        <ul>
+            <li><a href="#">국토교통부</a> </li>
+            <li><a href="#">JOB-ALIO 공공기관 채용정보시스템</a> </li>
+            <li><a href="#">국민권익위원회</a> </li>
+            <li><a href="#">착한운저 마일리지</a> </li>
+            <li><a href="#">생활법령정보</a> </li>
+            <li><a href="#">JEJU PRIDE UNITED</a> </li>
+            <li><a href="#">국토교통부</a> </li>
+            <li><a href="#">JOB-ALIO 공공기관 채용정보시스템</a> </li>
+            <li><a href="#">국민권익위원회</a> </li>
+            <li><a href="#">착한운저 마일리지</a> </li>
+            <li><a href="#">생활법령정보</a> </li>
+            <li><a href="#">JEJU PRIDE UNITED</a> </li>
+        </ul>
+        <button type="button" class="m_banner_close"><img src="../img/common/m_banner_close.png" alt="관력기관 배너모음 닫기"> </button>
+    </div><!--m_banner END-->
+
+    <div class="footer_wrap">
+        <div class="fw">
+            <ul class="footer_con">
+                <li class="footer_g">
+                    <p><a href="#">이용안내</a> </p>
+                    <p><a href="#">고객헌장</a> </p>
+                    <p><a href="#">개인정보처리방침</a> </p>
+                    <p><a href="#">저작권보호정책</a></p> <br class="mobile_b02">
+                    <p><a href="#">이메일무단수집거부</a> </p>
+                    <p><a href="#">사이트맵</a> </p>
+                    <p><a href="#">찾아오시는길</a> </p>
+                    <p><a href="#">이메일</a> </p>
+                </li>
+
+                <li class="footer_addr">
+                    <p>
+                        우)63309 제주특별자치도 제주시 첨단로 213-4 제주첨단과학기술단지 엘리트빌딩 (영평동 2170-2)<br>
+                        Tel. 064-797-5500 Fax. 064-797-5502<br>
+                        Copyright © Jeju Free International City Development Center. All Rights Reserved.
+                    </p>
+                </li><!--footer_addr END-->
+            </ul>
+            <ul class="footer_wa">
+                <li class="wa_img"><a href="#"><img src="../img/common/wa.png" alt="과학기술정보통신부 WA WEB ACCESSIBILITY"></a> </li>
+                <li class="ieco_img"><a href="#"><img src="../img/common/ieco.png" alt="iECO AWARD"></a> </li>
+            </ul>
+        </div>
+    </div><!--footer_wrap END-->
+</div><!--footer END-->
+</body>
+</html>

@@ -1,0 +1,18 @@
+.error_page{width: 640px; position: absolute; left:50%; margin-left: -320px; top: 50%; margin-top: -250px;}
+.error_box{width: 100%; height: 430px; border:1px solid #dddddd; text-align: center; padding-top: 55px;}
+.error_box p{font-size: 32px; font-weight: bold; color: #000000; letter-spacing: -0.025em; line-height: 39px; padding-top: 43px;}
+.error_box p span{font-weight: bold; color: #f47320;}
+.btn_2color{margin-top: 34px;}
+.btn_2color ul{text-align: center;}
+.btn_2color ul li{display: inline-block;}
+.btn_2color ul li:first-child{margin-right: 6px;}
+.btn_2color ul li:nth-child(2){margin-right: 6px;}
+.btn_2color ul li a{display: block; width: 100%; height: 100%; }
+.btnOr a{font-size: 17px; font-weight: bold; color: #fff; letter-spacing: 0; background-color: #f47320; padding: 18px 24px;}
+.btnWh a{font-size: 17px; font-weight: bold; color: #424242; letter-spacing: 0; border:1px solid #40485b;padding: 17px 31px; background-color: #fff;}
+
+@media screen and (max-width:767px)  {
+    .error_page{width: 95%; position: inherit; margin: 0 auto; margin-top: 50px; margin-bottom: 50px;}
+    .error_box p{font-size: 20px; line-height: 30px;}
+    .btn_2color ul li {margin-bottom: 10px;}
+}

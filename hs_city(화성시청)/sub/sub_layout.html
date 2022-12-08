@@ -1,0 +1,1110 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>화성시청</title>
+    <link rel="stylesheet" type="text/css" href="../css/reset.css">
+    <link rel="stylesheet" type="text/css" href="../css/master.css">
+    <script src="../js/lib/jquery-1.12.4.min.js"></script>
+    <script src="../js/lib/jquery.bxslider.min.js"></script>
+    <script src="../js/master.js"></script>
+</head>
+<body>
+<div class="skip-navigation">
+    <p><a href="#container">본문바로가기</a></p>
+    <p><a href="#header">주메뉴 바로가기</a></p>
+</div>
+<div class="mask"></div>
+<div id="header">
+    <div class="header_top">
+        <div class="header_top_wrap">
+            <ul class="header_top_lft">
+                <li class="home_a"><a href="#"><img src="../img/common/home_icon.png" alt="홈">화성시청</a> </li>
+                <li class="tour_a"><a href="#"><img src="../img/common/tour_icon.png" alt="문화관광">문화관광 </a> </li>
+            </ul><!--header_top_lft END-->
+
+            <ul class="header_top_rgt">
+                <li><a href="#">로그인</a> </li>
+                <li><a href="#">회원가입</a> </li>
+                <li class="br_size">
+                    <ul>
+                        <li><a href="#"><img src="../img/common/plus_icon.png" alt="화면크기 확대"> </a> </li>
+                        <li class="mg_10">화면크기</li>
+                        <li><a href="#"><img src="../img/common/minus_icon.png" alt="화면크기 축소"> </a> </li>
+                    </ul>
+                </li>
+                <li class="lg_select">
+                    <select title="언어설정">
+                        <option value="">Language</option>
+                        <option value="">Korea</option>
+                        <option value="">English</option>
+                    </select>
+                </li>
+            </ul><!--header_top_rgt END-->
+        </div><!--header_top_wrap END-->
+    </div><!--header_top END-->
+
+    <div class="header_con">
+        <div class="header_con_wrap">
+            <ul class="logo">
+                <li>
+                    <a href="../main/main.html" title="홈으로"><img src="../img/common/logo.png" alt="길이열리는 화성시"></a><img src="../img/common/logo_02.png" alt="사람이먼저인 화성" class="logo_img02">
+                </li>
+            </ul><!--logo END-->
+            <ul class="header_search">
+                <li class="h_search_con">
+                    <input type="text" title="검색" placeholder="검색어를 입력해 주세요">
+                    <button type="button"><img src="../img/common/search_btn.png" alt="검색버튼"> </button>
+                </li>
+            </ul><!--header_search END-->
+            <ul class="header_weather">
+                <li class="weather">
+                    <ul>
+                        <li class="weather_icon"><img src="../img/common/weather_icon.png" alt="날씨아이콘"></li>
+                        <li class="temp">12℃</li>
+                        <li class="weather_txt">구름 조금</li>
+                    </ul>
+                </li><!--weather END-->
+                <li class="air_con">
+                    <img src="../img/common/air_icon.png" alt="미세먼지">
+                    <span>미세먼지</span>
+                    <span class="air_bad">매우나쁨</span>
+                </li>
+            </ul><!--header_weather END-->
+        </div><!--header_con_wrap END-->
+        <div class="mobile m_gnb_btn">
+            <ul>
+                <li><a href="#"><img src="../img/common/m_gnb_btn.png" alt="메뉴버튼"> </a> </li>
+            </ul>
+        </div>
+    </div><!--header_con END-->
+
+
+    <div class="header_gnb">
+        <div class="mobile open_gnb">
+            <div class="open_gnb_logo">
+                <ul>
+                    <li class="open_logo"><img src="../img/common/m_logo.png" alt="길이열리는 화성시 사람이 먼저인화성"></li>
+                    <li class="close_gnb">
+                        <a href="#"><img src="../img/common/m_close_gnb.png" alt="메뉴닫기"> </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="open_join">
+                <ul>
+                    <li><a href="#">로그인</a> </li>
+                    <li><a href="#">회원가입</a> </li>
+                    <li class="lg_select">
+                        <select title="언어설정">
+                            <option value="">Language</option>
+                            <option value="">Korea</option>
+                            <option value="">English</option>
+                        </select>
+                    </li>
+                </ul>
+            </div><!--open_join END-->
+        </div><!--open_gnb END-->
+        <ul>
+            <li class="field">
+                <a href="#"><img src="../img/common/field_icon.png" alt="아이콘">
+                    <span class="field_down">분야별정보<img src="../img/common/field_arrow.png" alt="아이콘"></span>
+                    <span class="field_up">분야별정보<img src="../img/common/field_arrow_up.png" alt="아이콘"></span>
+                </a>
+                <div class="field_wrap">
+                    <ul class="field_content">
+                        <li>
+                            <a href="#">
+                                <span class="field_icon">
+                                    <img src="../img/common/field_icon01.png" alt="건강·복지">
+                                    <img src="../img/common/field_icon01_on.png" alt="건강·복지" class="imgover">
+                                </span>
+                                <span>건강·복지</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <span class="field_icon">
+                                    <img src="../img/common/field_icon02.png" alt="교육·취업">
+                                    <img src="../img/common/field_icon02_on.png" alt="교육·취업" class="imgover">
+                                </span>
+                                <span>교육·취업</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <span class="field_icon">
+                                    <img src="../img/common/field_icon03.png" alt="교통·환경">
+                                    <img src="../img/common/field_icon03_on.png" alt="교통·환경" class="imgover">
+                                </span>
+                                <span>교통·환경</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <span class="field_icon">
+                                    <img src="../img/common/field_icon04.png" alt="기업지원">
+                                    <img src="../img/common/field_icon04_on.png" alt="기업지원" class="imgover">
+                                </span>
+                                <span>기업지원</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <span class="field_icon">
+                                    <img src="../img/common/field_icon05.png" alt="농림축수산">
+                                    <img src="../img/common/field_icon05_on.png" alt="농림축수산" class="imgover">
+                                </span>
+                                <span>농림축수산</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <span class="field_icon">
+                                    <img src="../img/common/field_icon06.png" alt="법·제도">
+                                    <img src="../img/common/field_icon06_on.png" alt="법·제도" class="imgover">
+                                </span>
+                                <span>법·제도</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <span class="field_icon">
+                                    <img src="../img/common/field_icon07.png" alt="세금·경제">
+                                    <img src="../img/common/field_icon07_on.png" alt="세금·경제" class="imgover">
+                                </span>
+                                <span>세금·경제</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <span class="field_icon">
+                                    <img src="../img/common/field_icon08.png" alt="여성·가족">
+                                    <img src="../img/common/field_icon08_on.png" alt="여성·가족" class="imgover">
+                                </span>
+                                <span>여성·가족</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <span class="field_icon">
+                                    <img src="../img/common/field_icon09.png" alt="재난·재해">
+                                    <img src="../img/common/field_icon09_on.png" alt="재난·재해" class="imgover">
+                                </span>
+                                <span>재난·재해</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <span class="field_icon">
+                                    <img src="../img/common/field_icon10.png" alt="주택·부동산">
+                                    <img src="../img/common/field_icon10_on.png" alt="주택·부동산" class="imgover">
+                                </span>
+                                <span>주택·부동산</span>
+                            </a>
+                        </li>
+                    </ul><!--field_content END-->
+                </div><!--field_wrap END-->
+            </li>
+            <li class="gnb mobile">
+                <a href="#">분야별정보</a>
+                <div class="gnb_wrap">
+                    <div class="gnb_wrap_w">
+                        <ul class="gnb_menu">
+                            <li class="gnb_menu_con">
+                                <ul>
+                                    <li>
+                                        <a href="#">건강·복지</a>
+                                    </li>
+                                </ul>
+                            </li><!--gnb_menu_con END-->
+                            <li class="gnb_menu_con">
+                                <ul>
+                                    <li>
+                                        <a href="#">교육·취업</a>
+                                    </li>
+                                </ul>
+                            </li><!--gnb_menu_con END-->
+                            <li class="gnb_menu_con">
+                                <ul>
+                                    <li>
+                                        <a href="#">교통·환경</a>
+                                    </li>
+                                </ul>
+                            </li><!--gnb_menu_con END-->
+                            <li class="gnb_menu_con">
+                                <ul>
+                                    <li>
+                                        <a href="#">기업지원</a>
+                                    </li>
+                                </ul>
+                            </li><!--gnb_menu_con END-->
+                            <li class="gnb_menu_con">
+                                <ul>
+                                    <li>
+                                        <a href="#">농립축수산</a>
+                                    </li>
+                                </ul>
+                            </li><!--gnb_menu_con END-->
+                            <li class="gnb_menu_con">
+                                <ul>
+                                    <li>
+                                        <a href="#">법·제도</a>
+                                    </li>
+                                </ul>
+                            </li><!--gnb_menu_con END-->
+                            <li class="gnb_menu_con">
+                                <ul>
+                                    <li>
+                                        <a href="#">세금·경제</a>
+                                    </li>
+                                </ul>
+                            </li><!--gnb_menu_con END-->
+                            <li class="gnb_menu_con">
+                                <ul>
+                                    <li>
+                                        <a href="#">여성·가족</a>
+                                    </li>
+                                </ul>
+                            </li><!--gnb_menu_con END-->
+                            <li class="gnb_menu_con">
+                                <ul>
+                                    <li>
+                                        <a href="#">재난·재해</a>
+                                    </li>
+                                </ul>
+                            </li><!--gnb_menu_con END-->
+                            <li class="gnb_menu_con">
+                                <ul>
+                                    <li>
+                                        <a href="#">주택·부동산</a>
+                                    </li>
+                                </ul>
+                            </li><!--gnb_menu_con END-->
+                        </ul><!--gnb_menu END-->
+                    </div><!--gnb_wrap_w END-->
+                </div><!--gnb_wrap END-->
+            </li>
+
+            <li class="gnb">
+                <a href="#">정보공개</a>
+                <div class="gnb_wrap">
+                    <p class="gray_line"></p>
+                    <div class="gnb_wrap_w">
+                        <ul class="gnb_menu_img">
+                            <li>
+                                <h2>정보<span class="point_color font_b">공개</span></h2>
+                                <p>편리한 화성시 민원행정서비스</p>
+                            </li>
+                            <li>
+                                <img src="../img/common/gnb_menu_img04.png" alt="행정정보이미지">
+                            </li>
+                        </ul><!--gnb_menu_img END-->
+                        <ul class="gnb_menu">
+                            <li class="gnb_menu_con">
+                                <ul>
+                                    <li class="gnb_3dep">
+                                        <a href="#">정보공개 이용안내</a>
+                                        <ul>
+                                            <li><a href="#">불복구제절차</a> </li>
+                                            <li><a href="#">정보공개청구 및 처리절차</a> </li>
+                                            <li><a href="#">비공개대상정보</a> </li>
+                                            <li><a href="#">청구공개대상정보</a> </li>
+                                            <li><a href="#">청구공개대상공공기관</a> </li>
+                                            <li><a href="#">정보공개청구권자</a> </li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li><!--gnb_menu_con END-->
+                            <li class="gnb_menu_con">
+                                <ul>
+                                    <li>
+                                        <a href="#">사전정보공표</a>
+                                    </li>
+                                </ul>
+                                <ul>
+                                    <li>
+                                        <a href="#">정보목록</a>
+                                    </li>
+                                </ul>
+                            </li><!--gnb_menu_con END-->
+                            <li class="gnb_menu_con">
+                                <ul>
+                                    <li>
+                                        <a href="#">공공데이터 개방</a>
+                                    </li>
+                                </ul>
+                                <ul>
+                                    <li>
+                                        <a href="#">정책실명제</a>
+                                    </li>
+                                </ul>
+                            </li><!--gnb_menu_con END-->
+                            <li class="gnb_menu_con">
+                                <ul>
+                                    <li class="gnb_3dep">
+                                        <a href="#">공유재산 정보공개</a>
+                                        <ul>
+                                            <li><a href="#">대부[임대]안내</a> </li>
+                                            <li><a href="#">매각안내</a> </li>
+                                            <li><a href="#">일반재산 공개</a> </li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li><!--gnb_menu_con END-->
+                        </ul><!--gnb_menu END-->
+                    </div><!--gnb_wrap_w END-->
+                </div><!--gnb_wrap END-->
+            </li>
+            <li class="gnb">
+                <a href="#">시민참여</a>
+                <div class="gnb_wrap">
+                    <p class="gray_line"></p>
+                    <div class="gnb_wrap_w">
+                        <ul class="gnb_menu_img">
+                            <li>
+                                <h2>시민<span class="point_color font_b">참여</span></h2>
+                                <p>편리한 화성시 민원행정서비스</p>
+                            </li>
+                            <li>
+                                <img src="../img/common/gnb_menu_img04.png" alt="행정정보이미지">
+                            </li>
+                        </ul><!--gnb_menu_img END-->
+                        <ul class="gnb_menu">
+                            <li class="gnb_menu_con">
+                                <ul>
+                                    <li class="gnb_3dep">
+                                        <a href="#">제안마당</a>
+                                        <ul>
+                                            <li><a href="#">제안제도안내</a> </li>
+                                        </ul>
+                                    </li>
+                                </ul>
+
+                            </li><!--gnb_menu_con END-->
+                            <li class="gnb_menu_con">
+                                <ul>
+                                    <li>
+                                        <a href="#">e-화성뉴스</a>
+                                    </li>
+                                </ul>
+                                <ul>
+                                    <li>
+                                        <a href="#">시민게시판</a>
+                                    </li>
+                                </ul>
+                            </li><!--gnb_menu_con END-->
+                            <li class="gnb_menu_con">
+                                <ul>
+                                    <li class="gnb_3dep">
+                                        <a href="#">시민옴브즈만</a>
+                                        <ul>
+                                            <li><a href="#">옴부즈만 소개</a> </li>
+                                            <li><a href="#">구성현황 및 운영개요</a> </li>
+                                            <li><a href="#">고충민원 신청</a> </li>
+                                            <li><a href="#">운영상황 공표</a> </li>
+                                            <li><a href="#">언론홍보</a> </li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li><!--gnb_menu_con END-->
+                            <li class="gnb_menu_con">
+                                <ul>
+                                    <li class="gnb_3dep">
+                                        <a href="#">명예감사관</a>
+                                        <ul>
+                                            <li><a href="#">명예감사관 소개</a> </li>
+                                            <li><a href="#">소통 광장</a> </li>
+                                            <li><a href="#">시정 현안사항 안내</a> </li>
+                                            <li><a href="#">활동 현황</a> </li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li><!--gnb_menu_con END-->
+                        </ul><!--gnb_menu END-->
+                    </div><!--gnb_wrap_w END-->
+                </div><!--gnb_wrap END-->
+            </li>
+            <li class="gnb">
+                <a href="#">전자민원</a>
+                <div class="gnb_wrap">
+                    <p class="gray_line"></p>
+                    <div class="gnb_wrap_w">
+                        <ul class="gnb_menu_img">
+                            <li>
+                                <h2>전자<span class="point_color font_b">민원</span></h2>
+                                <p>편리한 화성시 민원행정서비스</p>
+                            </li>
+                            <li>
+                                <img src="../img/common/gnb_menu_img04.png" alt="행정정보이미지">
+                            </li>
+                        </ul><!--gnb_menu_img END-->
+                        <ul class="gnb_menu">
+                            <li class="gnb_menu_con">
+                                <ul>
+                                    <li class="gnb_3dep">
+                                        <a href="#">민원종합안내</a>
+                                        <ul>
+                                            <li><a href="#">화성시콜센터</a> </li>
+                                            <li><a href="#">민원서비스헌장</a> </li>
+                                            <li><a href="#">민원행정 및 제도개선 방안</a> </li>
+                                            <li><a href="#">민원제도</a> </li>
+                                            <li><a href="#">행정정보공동이용 서류</a> </li>
+                                            <li><a href="#">구술 및 유선민원사무 종류</a> </li>
+                                            <li><a href="#">제증명 수수료</a> </li>
+                                            <li><a href="#">사전심사청구제 운영</a> </li>
+                                            <li><a href="#">복합민원사무안내</a> </li>
+                                            <li><a href="#">뷰어프로그램 다운받기</a> </li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li><!--gnb_menu_con END-->
+                            <li class="gnb_menu_con">
+                                <ul>
+                                    <li class="gnb_3dep">
+                                        <a href="#">민원신청</a>
+                                        <ul>
+                                            <li><a href="#">민원처리안내</a> </li>
+                                            <li><a href="#">국민신문고</a> </li>
+                                            <li><a href="#">110온라인 채팅/화상(수화)상담</a> </li>
+                                            <li class="lh_18"><a href="#" target="_blank">129온라인 채팅/화상(수화)<br class="pc">상담<img src="../img/common/site_icon.png" alt="바로가기"></a> </li>
+                                            <li><a href="#">관련사이트</a> </li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li><!--gnb_menu_con END-->
+                            <li class="gnb_menu_con">
+                                <ul>
+                                    <li>
+                                        <a href="#">민원편람 및 서식</a>
+                                    </li>
+                                </ul>
+                                <ul>
+                                    <li>
+                                        <a href="#">예산낭비신고센터</a>
+                                    </li>
+                                </ul>
+                            </li><!--gnb_menu_con END-->
+                            <li class="gnb_menu_con">
+                                <ul>
+                                    <li>
+                                        <a href="#">부패행위신고</a>
+                                    </li>
+                                </ul>
+                                <ul>
+                                    <li>
+                                        <a href="#">공익신고</a>
+                                    </li>
+                                </ul>
+                            </li><!--gnb_menu_con END-->
+                        </ul><!--gnb_menu END-->
+                    </div><!--gnb_wrap_w END-->
+                </div><!--gnb_wrap END-->
+            </li>
+            <li class="gnb">
+                <a href="#">행정정보</a>
+                <div class="gnb_wrap">
+                    <p class="gray_line"></p>
+                    <div class="gnb_wrap_w">
+                        <ul class="gnb_menu_img">
+                            <li>
+                                <h2>행정<span class="point_color font_b">정보</span></h2>
+                                <p>편리한 화성시 민원행정서비스</p>
+                            </li>
+                            <li>
+                                <img src="../img/common/gnb_menu_img04.png" alt="행정정보이미지">
+                            </li>
+                        </ul><!--gnb_menu_img END-->
+                        <ul class="gnb_menu">
+                            <li class="gnb_menu_con">
+                                <ul>
+                                    <li class="gnb_3dep">
+                                        <a href="#">알림정보</a>
+                                        <ul>
+                                            <li><a href="#">시정알림방</a> </li>
+                                            <li><a href="#">공고/고시</a> </li>
+                                            <li><a href="#">보도자료</a> </li>
+                                            <li><a href="#">주간시정</a> </li>
+                                            <li><a href="#">도정소식</a> </li>
+                                            <li><a href="#">반상회보</a> </li>
+                                        </ul>
+                                    </li>
+                                </ul>
+
+                                <ul>
+                                    <li>
+                                        <a href="#" target="_blank">재정 및 주민참여<img src="../img/common/site_icon.png" alt="바로가기"></a>
+                                    </li>
+                                </ul>
+                            </li><!--gnb_menu_con END-->
+                            <li class="gnb_menu_con">
+                                <ul>
+                                    <li class="gnb_3dep">
+                                        <a href="#">통계정보</a>
+                                        <ul>
+                                            <li><a href="#">인구현황</a> </li>
+                                            <li><a href="#">자동차등록현황</a> </li>
+                                            <li><a href="#">2011년 이후 통계 자료실</a> </li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                                <ul>
+                                    <li class="gnb_3dep">
+                                        <a href="#">규제개혁</a>
+                                        <ul>
+                                            <li><a href="#">규제개혁</a> </li>
+                                            <li><a href="#">규제등록 및 관리제도</a> </li>
+                                            <li><a href="#">지방규제신고센터</a> </li>
+                                        </ul>
+                                    </li>
+                                </ul>
+
+                            </li><!--gnb_menu_con END-->
+                            <li class="gnb_menu_con">
+                                <ul>
+                                    <li class="gnb_3dep">
+                                        <a href="#">계약(입찰)정보</a>
+                                        <ul>
+                                            <li><a href="#">입찰공고안내</a> </li>
+                                            <li><a href="#">수의계약공개</a> </li>
+                                            <li><a href="#">관련사이트</a> </li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li><!--gnb_menu_con END-->
+                            <li class="gnb_menu_con">
+                                <ul>
+                                    <li class="gnb_3dep">
+                                        <a href="#">민방위</a>
+                                        <ul>
+                                            <li><a href="#">민방위란?</a> </li>
+                                            <li><a href="#">전시국민행동요령</a> </li>
+                                            <li><a href="#">전시대비 필요물자</a> </li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li><!--gnb_menu_con END-->
+                        </ul><!--gnb_menu END-->
+                    </div><!--gnb_wrap_w END-->
+                </div><!--gnb_wrap END-->
+            </li>
+            <li class="gnb">
+                <a href="#">화성시소개</a>
+                <div class="gnb_wrap">
+                    <p class="gray_line"></p>
+                    <div class="gnb_wrap_w">
+                        <ul class="gnb_menu_img">
+                            <li>
+                                <h2>화성시<span class="point_color font_b">소개</span></h2>
+                                <p>편리한 화성시 민원행정서비스</p>
+                            </li>
+                            <li>
+                                <img src="../img/common/gnb_menu_img04.png" alt="행정정보이미지">
+                            </li>
+                        </ul><!--gnb_menu_img END-->
+                        <ul class="gnb_menu">
+                            <li class="gnb_menu_con">
+                                <ul>
+                                    <li class="gnb_3dep">
+                                        <a href="#">시청안내</a>
+                                        <ul>
+                                            <li><a href="#">행정조직안내</a> </li>
+                                            <li><a href="#">직원찾기</a> </li>
+                                            <li><a href="#">청사안내도</a> </li>
+                                            <li><a href="#">찾아오시는길</a> </li>
+                                            <li><a href="#">화성시가하는일</a> </li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li><!--gnb_menu_con END-->
+                            <li class="gnb_menu_con">
+                                <ul>
+                                    <li class="gnb_3dep">
+                                        <a href="#">일반현황</a>
+                                        <ul>
+                                            <li><a href="#">화성시 연혁</a> </li>
+                                            <li><a href="#">화성시의 위상</a> </li>
+                                            <li><a href="#">화성의 노래</a> </li>
+                                            <li><a href="#">화성의 상징</a> </li>
+                                            <li><a href="#">행정구역</a> </li>
+                                            <li><a href="#">화성시의 기후</a> </li>
+                                            <li><a href="#">화성시의우호도시</a> </li>
+                                            <li><a href="#">역대화성시장</a> </li>
+                                            <li><a href="#">화성시 면적</a> </li>
+                                            <li><a href="#">조직운영 5대 지표 공개</a> </li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li><!--gnb_menu_con END-->
+                            <li class="gnb_menu_con">
+                                <ul>
+                                    <li>
+                                        <a href="#">시정백서</a>
+                                    </li>
+                                </ul>
+
+                            </li><!--gnb_menu_con END-->
+                            <li class="gnb_menu_con">
+                                <ul>
+                                    <li class="gnb_3dep">
+                                        <a href="#">시정홍보관</a>
+                                        <ul>
+                                            <li><a href="#">2025 화성시 장기발전계획</a> </li>
+                                            <li><a href="#">서해안 개발 프로젝트</a> </li>
+                                            <li><a href="#">시정방침</a> </li>
+                                            <li><a href="#">10대 핵심과제 100개 공약사업</a> </li>
+                                            <li><a href="#">성과평가</a> </li>
+                                            <li><a href="#">시정계획</a> </li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li><!--gnb_menu_con END-->
+                        </ul><!--gnb_menu END-->
+                    </div><!--gnb_wrap_w END-->
+                </div><!--gnb_wrap END-->
+            </li>
+            <li class="all_btn gnb pc">
+                <a href="#"><img src="../img/common/all_gnb_btn.png" alt="전체메뉴"></a>
+                <div class="gnb_wrap">
+                    <p class="gray_line"></p>
+                    <div class="gnb_wrap_w">
+
+                        <ul class="gnb_menu">
+                            <li class="gnb_menu_con">
+                                <ul>
+                                    <li>
+                                        <a href="#">시민참여</a>
+                                        <ul>
+                                            <li><a href="#">제안마당</a> </li>
+                                            <li><a href="#">e-화성뉴스</a> </li>
+                                            <li><a href="#">시민게시판</a> </li>
+                                            <li><a href="#">시민옴부즈만</a> </li>
+                                            <li><a href="#">명예감사관</a> </li>
+                                        </ul>
+                                    </li>
+                                </ul>
+
+                                <ul>
+                                    <li>
+                                        <a href="#">전자민원</a>
+                                        <ul>
+                                            <li><a href="#">민원종합안내</a> </li>
+                                            <li><a href="#">민원신청</a> </li>
+                                            <li><a href="#">민원편람 및 서식</a> </li>
+                                            <li><a href="#">예산낭비신고센터</a> </li>
+                                            <li><a href="#">부패행위신고</a> </li>
+                                            <li><a href="#">공익신고</a> </li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li><!--gnb_menu_con END-->
+                            <li class="gnb_menu_con">
+                                <ul>
+                                    <li>
+                                        <a href="#">화성시소개</a>
+                                        <ul>
+                                            <li><a href="#">시청안내</a> </li>
+                                            <li><a href="#">일반현황</a> </li>
+                                            <li><a href="#">시정백서</a> </li>
+                                            <li><a href="#">시정홍보관</a> </li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li><!--gnb_menu_con END-->
+                            <li class="gnb_menu_con">
+                                <ul>
+                                    <li>
+                                        <a href="#">행정정보</a>
+                                        <ul>
+                                            <li><a href="#">알림정보</a> </li>
+                                            <li><a href="#">재정 및 주민참여</a> </li>
+                                            <li><a href="#">통계정보</a> </li>
+                                            <li><a href="#">규제개혁</a> </li>
+                                            <li><a href="#">계약(입찰)정보</a> </li>
+                                            <li><a href="#">민방위</a> </li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li><!--gnb_menu_con END-->
+                            <li class="gnb_menu_con">
+                                <ul>
+                                    <li>
+                                        <a href="#">분야별정보</a>
+                                        <ul>
+                                            <li><a href="#">건강 · 복지</a> </li>
+                                            <li><a href="#">교육 · 취업</a> </li>
+                                            <li><a href="#">교통 · 환경</a> </li>
+                                            <li><a href="#">기업지원</a> </li>
+                                            <li><a href="#">농림축수산</a> </li>
+                                            <li><a href="#">법 · 제도</a> </li>
+                                            <li><a href="#">세금 · 경제</a> </li>
+                                            <li><a href="#">여성 · 가족</a> </li>
+                                            <li><a href="#">재난 · 재해</a> </li>
+                                            <li><a href="#">주택 · 부동산</a> </li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li><!--gnb_menu_con END-->
+                            <li class="gnb_menu_con">
+                                <ul>
+                                    <li>
+                                        <a href="#">정보공개</a>
+                                        <ul>
+                                            <li><a href="#">정보공개 이용안내</a> </li>
+                                            <li><a href="#">사전정보공표</a> </li>
+                                            <li><a href="#">정보목록</a> </li>
+                                            <li><a href="#">공공데이터 개방</a> </li>
+                                            <li><a href="#">정책실명제</a> </li>
+                                            <li><a href="#">공유재산 정보공개</a> </li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li><!--gnb_menu_con END-->
+                        </ul><!--gnb_menu END-->
+                    </div><!--gnb_wrap_w END-->
+                </div><!--gnb_wrap END-->
+            </li>
+        </ul>
+    </div><!--header_gnb END-->
+</div><!--header END-->
+
+<div id="container" class="sub_container">
+    <div class="sta">
+        <div class="sta_wrap">
+            <ul class="snb">
+                <li class="sta_home"><a href="#"><img src="../img/common/sta_home_icon.png" alt="메인화면"></a> </li>
+                <li class="snb_menu">
+                    <a href="#">행정정보</a>
+                    <ul>
+                        <li><a href="#">정보공개</a> </li>
+                        <li><a href="#">시민참여</a> </li>
+                        <li><a href="#">전자민원</a> </li>
+                        <li><a href="#">행정정보</a> </li>
+                        <li><a href="#">화성시소개</a> </li>
+                    </ul>
+                </li>
+                <li class="snb_menu">
+                    <a href="#">알림정보</a>
+                    <ul>
+                        <li><a href="#">알림정보</a> </li>
+                        <li><a href="#">재정 및 주민참여</a> </li>
+                        <li><a href="#">통계정보</a> </li>
+                        <li><a href="#">규제개혁</a> </li>
+                        <li><a href="#">계약(입찰)정보</a> </li>
+                        <li><a href="#">민방위</a> </li>
+                    </ul>
+                </li>
+                <li class="snb_menu">
+                    <a href="#">시정알림방</a>
+                    <ul>
+                        <li><a href="#">시정알림방</a> </li>
+                        <li><a href="#">공고/고시</a> </li>
+                        <li><a href="#">주간시정</a> </li>
+                        <li><a href="#">도정소식</a> </li>
+                        <li><a href="#">반상회보</a> </li>
+                    </ul>
+                </li>
+            </ul><!--snb END-->
+        </div><!--sta_wrap END-->
+    </div><!--sta-->
+
+    <div class="sub_content_wrap">
+        <div class="lnb">
+            <div class="lnb_content">
+                <div class="lnb_title">
+                    <ul>
+                        <li><img src="../img/common/lnb_img01.png" alt="이미지"> </li>
+                        <li>
+                            행정<span class="point_color font_b">정보</span>
+                        </li>
+                    </ul>
+                </div><!--lnb_title END-->
+                <div class="lnb_menu">
+                    <ul>
+                        <li>
+                            <a href="#">알림정보</a>
+                            <ul class="lnb_2dep">
+                                <li><a href="#">시정알림방</a> </li>
+                                <li><a href="#">공고/공시</a> </li>
+                                <li><a href="#">주간시정</a> </li>
+                                <li><a href="#">도정소식</a> </li>
+                                <li><a href="#">반상회보</a> </li>
+                            </ul>
+                        </li>
+                        <li class="lnb_site">
+                            <a href="#">재정 및 주민참여</a>
+                        </li>
+                        <li>
+                            <a href="#">통계정보</a>
+                            <ul class="lnb_2dep">
+                                <li><a href="#">인구현황</a> </li>
+                                <li><a href="#">자동차등록현황</a> </li>
+                                <li><a href="#">2011년 이후 통계 자료실</a> </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">규제개혁</a>
+                            <ul class="lnb_2dep">
+                                <li><a href="#">규제개혁</a> </li>
+                                <li><a href="#">규제등록 및 관리제도</a> </li>
+                                <li><a href="#">지방규제신고센터</a> </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">계약(입찰)정보</a>
+                            <ul class="lnb_2dep">
+                                <li><a href="#">입찰공고 안내</a> </li>
+                                <li><a href="#">수의계약공개</a> </li>
+                                <li><a href="#">관련사이트</a> </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">민방위</a>
+                            <ul class="lnb_2dep">
+                                <li><a href="#">민방위란?</a> </li>
+                                <li><a href="#">전시국민행동요령</a> </li>
+                                <li><a href="#">전시대비 필요절차</a> </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div><!--lnb_menu END-->
+            </div><!--lnb_content END-->
+        </div><!--lnb END-->
+        <div class="sub_content">
+
+            <div class="sub_content_title">
+                <h2>시정알림방</h2>
+                <ul>
+                    <li><a href="#">현재 페이지 주소 복사<img src="../img/common/link_icon.png" alt=""> </a> </li>
+                    <li><a href="#">새창으로 프린트<img src="../img/common/print_icon.png" alt=""> </a> </li>
+                </ul>
+            </div>
+
+
+            <!--공공누리-->
+            <div class="ggnuri">
+                <ul>
+                    <li><img src="../img/common/ggnuri_icon.png" alt="공공누리 아이콘"></li>
+                    <li>
+                        상위 저작물은 <span class="font_b">화성시 홈페이지</span> 저작권청책에 따라 <span class="font_b">담당부서와 협의 후</span> 이용하시기 바랍니다.
+                    </li>
+                </ul>
+            </div><!--ggnuri END-->
+
+
+            <div class="ggnuri">
+                <ul>
+                    <li><img src="../img/common/ggnuri_icon02.png" alt="공공누리 아이콘"></li>
+                    <li class="ggnuri_txt02">
+                        <p>· 화성시청의 최신 자료를 제공해드립니다.</p>
+                        <p>· 화성시청 자료 저작물은 "공공누리 4유형(출처표시+저작권+변경금지)" 조건에 따라 누구나 이용할 수 있습니다.</p>
+                    </li>
+                </ul>
+            </div>
+            <!--공공누리END-->
+
+            <!--만족도 조사-->
+            <div class="vote mt_59">
+                <ul class="vote_info">
+                    <li aria-flowto="float_lft">
+                        <p><span class="font_b">- 담당부서</span> : 기획예산담당관실</p>
+                        <p><span class="font_b">- 연락처</span> : 031-369-3199</p>
+                    </li>
+                    <li class="float_rgt">
+                        <p><span class="font_b">- 최종수정</span> : 2018-05-08 10:36:13</p>
+                    </li>
+                </ul>
+                <ul class="vote_chk">
+                    <li class="vote_title"><img src="../img/common/vote_icon.png" alt="아이콘">이 페이지에서 제공하는 정보에 대하여 어느 정도 만족하셨습니까?</li>
+                    <li class="vote_radio">
+                        <input type="radio" id="vote_chk01" name="vote_radio">
+                        <label for="vote_chk01">매우만족</label>
+                        <input type="radio" id="vote_chk02" name="vote_radio">
+                        <label for="vote_chk02">만족</label>
+                        <input type="radio" id="vote_chk03" name="vote_radio">
+                        <label for="vote_chk03">보통</label>
+                        <input type="radio" id="vote_chk04" name="vote_radio">
+                        <label for="vote_chk04">불만족</label>
+                        <input type="radio" id="vote_chk05" name="vote_radio">
+                        <label for="vote_chk05">매우불만족</label>
+                        <button type="button" class="vote_btn">등록</button>
+                    </li>
+                </ul>
+            </div><!--vote END-->
+            <!--만족도 조사 END-->
+
+
+        </div><!--sub_content END-->
+    </div><!--sub_content_wrap END-->
+</div><!--sub_container END-->
+
+
+<div id="footer">
+    <div class="footer_banner">
+        <div class="footer_banner_wrap">
+            <ul>
+                <li class="fb_title pc">배너모음</li>
+                <li class="fb_btn_box">
+                    <ul class="fb_btn">
+                        <li><a href="#" id="fb_prev"><img src="../img/common/footer_prev.png" alt="이전"> </a> </li>
+                        <li><a href="#" id="fb_pause"><img src="../img/common/footer_stop.png" alt="일시정지"> </a>
+                            <a href="#" id="fb_play"><img src="../img/common/footer_play.png" alt="재생"> </a>
+                        </li>
+                        <li><a href="#" id="fb_next"><img src="../img/common/footer_next.png" alt="이전"> </a> </li>
+                    </ul>
+                    <ul class="fb_btn_all">
+                        <li><a href="#" onclick="return false;">전체보기</a> </li>
+                    </ul>
+                </li>
+                <li class="fb_banner">
+                    <ul id="fb_banner_slide">
+                        <li><a href="#" target="_blank">화성시여성가족재단</a> </li>
+                        <li><a href="#" target="_blank">화성시사회적경제지원센터</a> </li>
+                        <li><a href="#" target="_blank">화성시 교육포털 더나은</a> </li>
+                    </ul>
+                </li>
+                <li class="fb_site">
+                    <ul>
+                        <li>
+                            <a href="#" onclick="return false;">직속기관/사업소<img src="../img/common/more_icon.png" alt="더보기"> </a>
+                            <ul class="fb_site_box">
+                                <li><a href="#" target="_blank">동부출장소</a> </li>
+                                <li><a href="#" target="_blank">농업기술센터</a> </li>
+                                <li><a href="#" target="_blank">보건소</a> </li>
+                                <li><a href="#" target="_blank">차량등록사업소</a> </li>
+                                <li><a href="#" target="_blank">지역개발사업소</a> </li>
+                                <li><a href="#" target="_blank">맑은물사업소</a> </li>
+                                <li><a href="#" target="_blank">환경사업소</a> </li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <ul>
+                        <li>
+                            <a href="#" onclick="return false;">화성시 패밀리 사이트<img src="../img/common/more_icon.png" alt="더보기"></a>
+                            <ul class="fb_site_box">
+                                <li><a href="#" target="_blank">e-Book</a> </li>
+                                <li><a href="#" target="_blank">개별공시지가열람</a> </li>
+                                <li><a href="#" target="_blank">건강가정지원센터</a> </li>
+                                <li><a href="#" target="_blank">계약정보공개시스템</a> </li>
+                                <li><a href="#" target="_blank">교육포털 더나은</a> </li>
+                                <li><a href="#" target="_blank">교통정보시스템</a> </li>
+                                <li><a href="#" target="_blank">기업SOS넷</a> </li>
+                                <li><a href="#" target="_blank">남부노인복지관</a> </li>
+                                <li><a href="#" target="_blank">노사민정협의회</a> </li>
+                                <li><a href="#" target="_blank">다문화가족지원센터</a> </li>
+                                <li><a href="#" target="_blank">대형폐기물</a> </li>
+                                <li><a href="#" target="_blank">동탄1동주민자치센터</a> </li>
+                                <li><a href="#" target="_blank">동탄2동주민자치센터</a> </li>
+                                <li><a href="#" target="_blank">동탄3동주민자치센터</a> </li>
+                                <li><a href="#" target="_blank">동탄4동주민자치센터</a> </li>
+                                <li><a href="#" target="_blank">드림스타트센터</a> </li>
+                                <li><a href="#" target="_blank">만성질환관리센터</a> </li>
+                                <li><a href="#" target="_blank">모두누림센터</a> </li>
+                                <li><a href="#" target="_blank">문화재단</a> </li>
+                                <li><a href="#" target="_blank">병점2동주민자치센터</a> </li>
+                                <li><a href="#" target="_blank">보육정보센터</a> </li>
+                                <li><a href="#" target="_blank">복합복지타운나래울</a> </li>
+                                <li><a href="#" target="_blank">부동산거래관리시스템</a> </li>
+                                <li><a href="#" target="_blank">사회적 경제지원센터</a> </li>
+                                <li><a href="#" target="_blank">사회적공동체</a> </li>
+                                <li><a href="#" target="_blank">수거차량 위치추적 시스템</a> </li>
+                                <li><a href="#" target="_blank">수도요금 납부 시스템</a> </li>
+                                <li><a href="#" target="_blank">스마트 통리장넷</a> </li>
+                                <li><a href="#" target="_blank">시립도서관</a> </li>
+                                <li><a href="#" target="_blank">시티투어 하루</a> </li>
+                                <li><a href="#" target="_blank">에코센터</a> </li>
+                                <li><a href="#" target="_blank">여성새로일하기센터</a> </li>
+                                <li><a href="#" target="_blank">외교통상부 여권안내</a> </li>
+                                <li><a href="#" target="_blank">외국인복지센터</a> </li>
+                                <li><a href="#" target="_blank">우리꽃식물원</a> </li>
+                                <li><a href="#" target="_blank">인재육성재단</a> </li>
+                                <li><a href="#" target="_blank">자원봉사센터</a> </li>
+                                <li><a href="#" target="_blank">제암리3.1운동순국기념관</a> </li>
+                                <li><a href="#" target="_blank">주민참여예산방</a> </li>
+                                <li><a href="#" target="_blank">주정차단속알림서비스</a> </li>
+                                <li><a href="#" target="_blank">주정차위반 민원서비스</a> </li>
+                                <li><a href="#" target="_blank">지속가능발전협의회</a> </li>
+                                <li><a href="#" target="_blank">창의지성교육지원센터</a> </li>
+                                <li><a href="#" target="_blank">토지이용계획확인원</a> </li>
+                                <li><a href="#" target="_blank">포토갤러리</a> </li>
+                                <li><a href="#" target="_blank">푸드통합지원센터</a> </li>
+                                <li><a href="#" target="_blank">향토박물관</a> </li>
+                                <li><a href="#" target="_blank">화성IBK기업은행배구단</a> </li>
+                                <li><a href="#" target="_blank">화성도시공사</a> </li>
+                                <li><a href="#" target="_blank">화성문화원</a> </li>
+                                <li><a href="#" target="_blank">화성시 어린이급식지원센터</a> </li>
+                                <li><a href="#" target="_blank">화성시여성가족재단</a> </li>
+                                <li><a href="#" target="_blank">화성시의회</a> </li>
+                                <li><a href="#" target="_blank">화성시체육회</a> </li>
+                                <li><a href="#" target="_blank">화성에서 온 TV</a> </li>
+                                <li><a href="#" target="_blank">환경오염정보</a> </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li><!--fb_site END-->
+            </ul>
+        </div><!--footer_banner_wrap END-->
+    </div><!--footer_banner END-->
+    <div class="footer_link">
+        <div class="footer_link_wrap">
+            <ul>
+                <li class="point_color"><a href="#">개인정보처리방침</a> </li>
+                <li><a href="#">이메일무단수집거부</a> </li>
+                <li><a href="#">저작권정책</a> </li>
+                <li><a href="#">시청오시는길</a> </li>
+                <li><a href="#">직원전화번호부</a> </li>
+                <li class="pc"><a href="#">뷰어프로그램 다운로드</a> </li>
+                <li><a href="#">원격지원 서비스</a> </li>
+            </ul>
+        </div><!--footer_link_wrap END-->
+    </div><!--footer_link END-->
+
+    <div class="footer_con">
+        <ul>
+            <li class="footer_logo">
+                <img src="../img/common/footer_logo.png" alt="길이 열리는 화성시" class="m_flogo">
+                <img src="../img/common/footer_call.png" alt="말로거는 전화 1636 화성시청" class="mobile m_fcall">
+            </li>
+            <li class="footer_txt">
+                <p class="footer_add">
+                    (우)18274 경기도 화성시 남양읍 시청로 159 ☏ 1577-4200<br>
+                    Copyright (c) 2018 by hwaseong city alAl rights reserved.
+                </p>
+                <p class="footer_w">
+                    본 홈페이지는 게시된 이메일주소의 자동수집을 거부하며 이를 위반할 시  정보통신망법에 의해 처벌됨을 유념하시기 바랍니다.
+                </p>
+            </li>
+            <li class="mt_36 pc">
+                <img src="../img/common/footer_call.png" alt="말로거는 전화 1636 화성시청">
+            </li>
+            <li class="wa_logo pc">
+                <img src="../img/common/wa_logo.png" alt="웹접근성 인증마크">
+            </li>
+            <li class="footer_visit pc">
+                <table>
+                    <caption>방문자 수</caption>
+                    <colgroup>
+                        <col width="26px">
+                        <col width="auto">
+                    </colgroup>
+                    <tbody>
+                    <tr>
+                        <th scope="rowgroup" rowspan="3">방<br>문<br>자</th>
+                        <td>오늘<span>1,500</span></td>
+                    </tr>
+                    <tr>
+                        <td>이달<span>44,550</span></td>
+                    </tr>
+                    <tr>
+                        <td>전체<span>18,971,347</span></td>
+                    </tr>
+                    </tbody>
+                </table>
+            </li>
+        </ul>
+    </div><!--footer_con END-->
+</div><!--footer END-->
+
+
+</body>
+</html>

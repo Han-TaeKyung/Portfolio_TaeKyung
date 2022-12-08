@@ -1,0 +1,34 @@
+@media screen and (max-width: 1399px){ 
+    .main_page01{width: 100%; height: auto; padding-bottom: 41px; background-image: url(../images/main/m_main_bg01.png); background-repeat: no-repeat; background-position:center bottom; background-size: 100%;}
+    .main_content{width: 100%; height: auto;}
+    .main_tit{font-size: 22px; text-align: center; margin-bottom: 21px;}
+    .main_tit p{font-size: 38px; margin-top: -2px;}
+    .main_con_lft{float: none; padding-top:45px;}
+    .main_info_btn{width: 125px; height: 39px; border-radius: 20px; font-size: 14px; line-height: 39px; margin: 0 auto;}
+    .main_info_btn img{height: 13px; margin-left: 10px;}
+    .main_con_chat{float: none; width: 300px; margin-right: 0; margin:35px auto;;}
+    .main_chat_wrap > img{width: 300px;}
+    .main_chat_img{top:62px; left: 91px;}
+    .main_chat_img img{width: auto; height: 57px;}
+    .main_page02{width: 100%; height: auto; padding-top: 73px; padding-bottom: 0; background-image: url(../images/main/m_main_bg02.png); background-repeat: no-repeat; background-position:center top; background-size: 100%;}
+    .main_service_con{width: 90%; margin:30px auto 0; float: none;}
+    .main_tit02{font-size: 24px;}
+    .main_service_con > h3{width: 238px; margin: 0 auto;}
+    .main_service_con h4{font-size: 18px; line-height: 26px; padding-right: 0; text-align: center; margin-top: 39px;}
+    .main_service_con p{font-size: 14px; line-height: 21px; color: #666666; text-align: center; margin-top: 28px;}
+    .main_btn_list {text-align: center; margin-top: 56px;}
+    .main_btn_list > li{display: inline-block; float: none; margin-right: 2px;}
+    .main_btn_list > li{width: auto; height: 40px; border-radius: 20px;}
+    .main_btn_list > li a{font-size: 13px; line-height: 40px;}
+    .main_btn_list > li.btn_sb a{padding: 0 19px;}
+    .main_btn_list > li.btn_bl a{padding: 0 18px;}
+    .main_btn_list > li.btn_yl a{padding: 0 14px;}
+    .main_btn_list .btn_yl img{display: none;}
+    .main_service_rgt{width: 100%; margin-left: 0; margin-top: 52px; position: inherit;}
+    .main_service_rgt img{height: 336px; width: auto; margin: 0 auto;}
+}
+@media screen and (max-width: 340px){ 
+    .main_btn_list > li.btn_sb a{padding: 0 10px;}
+    .main_btn_list > li.btn_bl a{padding: 0 10px;}
+    .main_btn_list > li.btn_yl a{padding: 0 10px;}
+}

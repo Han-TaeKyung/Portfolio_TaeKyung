@@ -1,0 +1,1186 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>Blueworks</title>
+    <link rel="stylesheet" type="text/css" href="../../css/reset.css">
+    <link rel="stylesheet" type="text/css" href="../../css/icons.css">
+    <link rel="stylesheet" type="text/css" href="../../css/new_style.css">
+    <script type="text/javascript" src="../../js/lib/jquery-1.12.4.min.js"></script>
+    <script type="text/javascript" src="../../js/lib/jquery.bxslider.min.js"></script>
+    <script type="text/javascript" src="../../js/new_script.js"></script>
+</head>
+<body>
+<div id="mask"></div>
+    <div id="header">
+        <ul class="logo">
+            <li><a href="#"><img src="../../img/common/logo.png" alt="Blueworks"></a></li>
+        </ul><!--logo END-->
+        <ul class="sta">
+            <li class="sta_title">
+                <h2 class="mal_font">APP 에러</h2>
+                <ul class="sta_wrap">
+                    <li><i class="fa fa-home"></i></li>
+                    <li><i class="fa fa-angle-right"></i> </li>
+                    <li>운영관리</li>
+                    <li><i class="fa fa-angle-right"></i> </li>
+                    <li class="sta_on">APP 에러</li>
+                </ul>
+            </li><!--sta_title END-->
+            <li class="sta_user">
+                <ul class="sta_user_wrap">
+                    <li class="pt_6">
+                        <i class="fa fa-user-circle"></i>
+                    </li>
+                    <li>
+                        <span>홍길동</span>
+                    </li>
+                    <li>
+                        대리 기획
+                    </li>
+                    <li>
+                        <a href="#"><i class="fa fa-power-off"></i></a>
+                    </li>
+                </ul><!--sta_user_wrap END-->
+                <ul class="sta_alram">
+                    <li>
+                        <a href="#"><i class="fa fa-bell-o"></i></a>
+                        <p class="alram_on"></p>
+                    </li>
+                </ul><!--sta_alram END-->
+            </li><!--sta_user END-->
+        </ul><!--sta END-->
+    </div><!--header END-->
+
+    <div class="container">
+
+        <div id="gnb">
+            <ul id="nav">
+                <li><a href="#"><i class="fa fa-th-large"></i>Dashboard</a>
+                </li>
+                <li><a href="#"><i class="fa fa-pie-chart"></i>운영관리</a>
+                    <ul>
+                        <li><a href="#"><span>-</span>APP에러</a></li>
+                        <li><a href="#"><span>-</span>SR</a></li>
+                        <li><a href="#"><span>-</span>시스템현황</a></li>
+                    </ul>
+                </li>
+                <li><a href="#"><i class="fa fa-bar-chart-o"></i>통계정보</a>
+                    <ul>
+                        <li><a href="#"><span>-</span>에러발생현황</a></li>
+                        <li><a href="#"><span>-</span>에러관리현황</a></li>
+                        <li><a href="#"><span>-</span>운영관리현황</a></li>
+                        <li><a href="#"><span>-</span>담당자별현황</a></li>
+                        <li><a href="#"><span>-</span>처리기간별현황</a></li>
+                        <li><a href="#"><span>-</span>처리기간준수현황</a></li>
+                    </ul>
+                </li>
+                <li><a href="#"><i class="fa fa-puzzle-piece"></i>조직관리</a>
+                    <ul>
+                        <li><a href="#"><span>-</span>부서관리</a></li>
+                        <li><a href="#"><span>-</span>담당자관리</a></li>
+                    </ul>
+                </li>
+                <li><a href="#"><i class="fa fa-cog"></i>환경설정</a>
+                    <ul>
+                        <li><a href="#"><span>-</span>서버관리</a></li>
+                        <li><a href="#"><span>-</span>시스템관리</a></li>
+                        <li><a href="#"><span>-</span>메뉴관리</a></li>
+                        <li><a href="#"><span>-</span>시나리오관리</a></li>
+                        <li><a href="#"><span>-</span>필터관리</a></li>
+                        <li><a href="#"><span>-</span>휴일관리</a></li>
+                        <li><a href="#"><span>-</span>등급관리</a></li>
+                        <li><a href="#"><span>-</span>저장소관리</a></li>
+                        <li><a href="#"><span>-</span>라이센스관리</a></li>
+                    </ul>
+                </li>
+                <li><a href="#"><i class="fa fa-sticky-note-o"></i>샘플</a>
+                    <ul>
+                        <li><a href="#"><span>-</span>샘플목록</a></li>
+                    </ul>
+                </li>
+            </ul>
+
+            <ul class="copyright">
+                <li>2017 © BlueWorks.</li>
+            </ul><!--copy_right END-->
+        </div><!--gnb END-->
+
+        <div class="content">
+           <div class="handle_wrap">
+                <ul class="handle_btn">
+                    <li><a href="javascript:" id="handlePopup01">처리자 배정</a> </li>
+                    <li><a href="javascript:" id="handlePopup02">처리중</a> </li>
+                    <li><a href="javascript:" id="handlePopup03" class="handle_btn_on">처리완료</a> </li>
+                    <li><a href="javascript:" id="handlePopup04">무시</a> </li>
+                    <li><a href="javascript:" id="handlePopup05">보관소</a> </li>
+                    <li><a href="javascript:" id="handlePopup06">등급변경</a> </li>
+                    <li><a href="javascript:" id="handlePopup07">메모</a> </li>
+                </ul><!--handle_btn END-->
+
+               <ul class="activity_btn">
+                    <li>
+                        <a href="javascript:" onclick="javascript:showPopup02()" id="activity_popup">
+                            <i class="fa fa-long-arrow-left"></i>Activity Stream<span>14</span>
+                        </a>
+                    </li>
+               </ul>
+           </div><!--handle_wrap END-->
+
+            <!--처리자 배정 팝업-->
+            <div id="handle_popup01" class="handle_popup">
+                <div class="handle_popup_wrap">
+                    <p class="handle_arrow"><img src="../../img/sub/handle_arrow.png" alt=""></p>
+                    <h3>처리자 배정</h3>
+                    <ul>
+                        <li>
+                            <select>
+                                <option>등급선택</option>
+                                <option>매우낮음</option>
+                                <option>낮음</option>
+                                <option>매우높음</option>
+                                <option>높음</option>
+                            </select>
+                            <select>
+                                <option>처리자</option>
+                                <option>처리자1</option>
+                                <option>처리자2</option>
+                            </select>
+                        </li>
+                        <li class="handle_day">
+                            <p>요청완료일</p>
+                            <ul>
+                                <li>
+                                    <i class="fa fa-calendar"></i>
+                                    <input type="text" value="2017-07-08 ~ 2017-08-08">
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <textarea placeholder="요청사항" class="handle_text_box"></textarea>
+                        </li>
+                        <li class="handle_popup_btn">
+                            <a href="#" class="save_btn">저장</a>
+                            <a href="#" class="close_btn" id="handle_popup_close">닫기</a>
+                        </li>
+                    </ul>
+                </div><!--handle_popup_wrap END-->
+            </div><!--handle_popup END-->
+            <!--처리자 배정 팝업 END-->
+
+            <!--처리중 팝업-->
+            <div id="handle_popup02" class="handle_popup">
+                <div class="handle_popup_wrap">
+                    <p class="handle_arrow"><img src="../../img/sub/handle_arrow.png" alt=""></p>
+                    <h3>처리중</h3>
+                    <ul>
+                        <li class="handle_day">
+                            <p>요청완료일</p>
+                            <ul>
+                                <li>
+                                    <i class="fa fa-calendar"></i>
+                                    <input type="text" value="2017-07-08 ~ 2017-08-08">
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <textarea placeholder="요청사항" class="handle_text_box"></textarea>
+                        </li>
+                        <li class="handle_popup_btn">
+                            <a href="#" class="save_btn">저장</a>
+                            <a href="#" class="close_btn" id="handle_popup_close02">닫기</a>
+                        </li>
+                    </ul>
+                </div><!--handle_popup_wrap END-->
+            </div><!--handle_popup END-->
+            <!--처리중 팝업 END-->
+
+            <!--처리완료 팝업-->
+            <div id="handle_popup03" class="handle_popup">
+                <div class="handle_popup_wrap">
+                    <p class="handle_arrow"><img src="../../img/sub/handle_arrow.png" alt=""></p>
+                    <h3>처리완료</h3>
+                    <ul>
+                        <li>
+                            <textarea placeholder="요청사항" class="handle_text_box"></textarea>
+                        </li>
+                        <li class="handle_popup_btn">
+                            <a href="#" class="save_btn">저장</a>
+                            <a href="#" class="close_btn" id="handle_popup_close03">닫기</a>
+                        </li>
+                    </ul>
+                </div><!--handle_popup_wrap END-->
+            </div><!--handle_popup END-->
+            <!--처리완료 팝업 END-->
+
+            <!--무시 팝업-->
+            <div id="handle_popup04" class="handle_popup">
+                <div class="handle_popup_wrap">
+                    <p class="handle_arrow"><img src="../../img/sub/handle_arrow.png" alt=""></p>
+                    <h3>무시</h3>
+                    <ul>
+                        <li>
+                            <textarea placeholder="요청사항" class="handle_text_box"></textarea>
+                        </li>
+                        <li class="handle_popup_btn">
+                            <a href="#" class="save_btn">저장</a>
+                            <a href="#" class="close_btn" id="handle_popup_close04">닫기</a>
+                        </li>
+                    </ul>
+                </div><!--handle_popup_wrap END-->
+            </div><!--handle_popup END-->
+            <!--무시 END-->
+
+            <!--보관소 팝업-->
+            <div id="handle_popup05" class="handle_popup">
+                <div class="handle_popup_wrap">
+                    <p class="handle_arrow"><img src="../../img/sub/handle_arrow.png" alt=""></p>
+                    <h3>무시</h3>
+                    <ul>
+                        <li>
+                            <textarea placeholder="요청사항" class="handle_text_box"></textarea>
+                        </li>
+                        <li class="handle_popup_btn">
+                            <a href="#" class="save_btn">저장</a>
+                            <a href="#" class="close_btn" id="handle_popup_close05">닫기</a>
+                        </li>
+                    </ul>
+                </div><!--handle_popup_wrap END-->
+            </div><!--handle_popup END-->
+            <!--보관소 END-->
+
+            <!-- 팝업-->
+            <div id="handle_popup06" class="handle_popup">
+                <div class="handle_popup_wrap">
+                    <p class="handle_arrow"><img src="../../img/sub/handle_arrow.png" alt=""></p>
+                    <h3>처리자 배정</h3>
+                    <ul>
+                        <li>
+                            <select>
+                                <option>등급선택</option>
+                                <option>매우낮음</option>
+                                <option>낮음</option>
+                                <option>매우높음</option>
+                                <option>높음</option>
+                            </select>
+                        </li>
+                        <li class="handle_popup_btn">
+                            <a href="#" class="save_btn">저장</a>
+                            <a href="#" class="close_btn" id="handle_popup_close06">닫기</a>
+                        </li>
+                    </ul>
+                </div><!--handle_popup_wrap END-->
+            </div><!--handle_popup END-->
+            <!--등급변경 팝업 END-->
+
+            <!--메모 팝업-->
+            <div id="handle_popup07" class="handle_popup">
+                <div class="handle_popup_wrap">
+                    <p class="handle_arrow"><img src="../../img/sub/handle_arrow.png" alt=""></p>
+                    <h3>메모</h3>
+                    <ul>
+                        <li>
+                            <textarea placeholder="요청사항" class="handle_text_box"></textarea>
+                        </li>
+                        <li class="handle_popup_btn">
+                            <a href="#" class="save_btn">저장</a>
+                            <a href="#" class="close_btn" id="handle_popup_close07">닫기</a>
+                        </li>
+                    </ul>
+                </div><!--handle_popup_wrap END-->
+            </div><!--handle_popup END-->
+            <!--메모 END-->
+
+            <!--팝업창-->
+            <div id="act_popup" class="act_popup">
+                <div class="act_close_btn activity_btn">
+                    <li>
+                        <a href="#" id="act_close">
+                            <i class="fa fa-close"></i>Activity Stream<span>14</span>
+                        </a>
+                    </li>
+                </div><!--act_close_btn END-->
+                <div class="act_line"></div>
+                <div class="act_popup_wrap">
+                    <div class="act_popup_content">
+                        <ul class="act_con">
+                            <li class="act_con_box">
+                                <p class="act_list_icon">
+                                    <img src="../../img/sub/act_popup_arrow.png" alt="표시">
+                                </p>
+                                <ul>
+                                    <li class="act_name">
+                                        황명욱(peter)
+                                        <span class="act_color act_blue">우선순위변경</span>
+                                    </li>
+                                    <li class="act_txt">
+                                        우선순위를 매우높음에서 높음(으)로 변경하였습니다.
+                                    </li>
+                                    <li class="act_user_txt">
+                                        사용자 입력메시지 입니다.<br>
+                                        사용자입력메시지!!
+                                    </li>
+                                    <li class="act_day">
+                                        2017-06-28 11:06:25
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul><!--act_con END-->
+
+                        <ul class="act_con">
+                            <li class="act_con_box">
+                                <p class="act_list_icon">
+                                    <img src="../../img/sub/act_popup_arrow.png" alt="표시">
+                                </p>
+                                <ul>
+                                    <li class="act_name">
+                                        황명욱(peter)
+                                        <span class="act_color act_yellow">처리자배정</span>
+                                    </li>
+                                    <li class="act_txt">
+                                        처리자1(handler1)님에게 SR 처리를 요청하였습니다. 처리완료 요청일은 2017-06-30입니다.
+                                    </li>
+                                    <li class="act_user_txt">
+                                        사용자 입력메시지 입니다.<br>
+                                        사용자입력메시지!!
+                                    </li>
+                                    <li class="act_day">
+                                        2017-06-28 11:06:25
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul><!--act_con END-->
+
+                        <ul class="act_con">
+                            <li class="act_con_box">
+                                <p class="act_list_icon">
+                                    <img src="../../img/sub/act_popup_arrow.png" alt="표시">
+                                </p>
+                                <ul>
+                                    <li class="act_name">
+                                        황명욱(peter)
+                                        <span class="act_color act_red">작업요청</span>
+                                    </li>
+                                    <li class="act_day">
+                                        2017-06-28 11:06:25
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul><!--act_con END-->
+
+                        <ul class="act_con">
+                            <li class="act_con_box">
+                                <p class="act_list_icon">
+                                    <img src="../../img/sub/act_popup_arrow.png" alt="표시">
+                                </p>
+                                <ul>
+                                    <li class="act_name">
+                                        황명욱(peter)
+                                        <span class="act_color act_gray">무시</span>
+                                    </li>
+                                    <li class="act_day">
+                                        2017-06-28 11:06:25
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul><!--act_con END-->
+
+                        <ul class="act_con">
+                            <li class="act_con_box">
+                                <p class="act_list_icon">
+                                    <img src="../../img/sub/act_popup_arrow.png" alt="표시">
+                                </p>
+                                <ul>
+                                    <li class="act_name">
+                                        황명욱(peter)
+                                        <span class="act_color act_green">보관소</span>
+                                    </li>
+                                    <li class="act_user_txt">
+                                        사용자 입력메시지 입니다.<br>
+                                        사용자입력메시지!!
+                                    </li>
+                                    <li class="act_day">
+                                        2017-06-28 11:06:25
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul><!--act_con END-->
+
+                        <ul class="act_con">
+                            <li class="act_con_box">
+                                <p class="act_list_icon">
+                                    <img src="../../img/sub/act_popup_arrow.png" alt="표시">
+                                </p>
+                                <ul>
+                                    <li class="act_name">
+                                        황명욱(peter)
+                                        <span class="act_color act_green">보관소</span>
+                                    </li>
+                                    <li class="act_user_txt">
+                                        사용자 입력메시지 입니다.<br>
+                                        사용자입력메시지!!
+                                    </li>
+                                    <li class="act_day">
+                                        2017-06-28 11:06:25
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul><!--act_con END-->
+
+
+                    </div>
+                </div><!--act_popup_wrap END-->
+            </div>
+            <!--팝업창 END-->
+
+            <div class="app_subTab box_relv">
+                <div class="tab_wrap mb_10">
+                    <ul class="tabMenu">
+                        <li class="tab_on"><a href="#tab_con01">기본정보</a></li>
+                        <li><a href="#tab_con02">에러정보</a></li>
+                    </ul>
+                </div><!--tab_wrap END-->
+                <div class="tab_con tab_con01">
+                    <div class="app_subTable mb_10">
+                        <div class="app_subTable_wrap">
+                            <table>
+                                <caption>기본정보(번호, 위치, 등급, 사용자(회원), 서버IP, 완료 요청일, 완료 예정일)</caption>
+                                <colgroup>
+                                    <col style="width:185px">
+                                    <col style="width: 593px;">
+                                    <col style="width:185px">
+                                    <col style="width: auto;">
+                                </colgroup>
+                                <tbody>
+                                <tr>
+                                    <th>번호</th>
+                                    <td>EM20170615-00003</td>
+                                    <th>위치</th>
+                                    <td>홈<i class="fa fa-angle-right"></i>1depth<i class="fa fa-angle-right"></i>1depth </td>
+                                </tr>
+                                <tr>
+                                    <th>등급</th>
+                                    <td>
+                                        <span class="chart_color chart_yellow">높음</span>
+                                    </td>
+                                    <th>사용자(회원)</th>
+                                    <td>0명</td>
+                                </tr>
+                                <tr>
+                                    <th>서버IP</th>
+                                    <td colspan="3">
+                                        0.0.0.0
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th>완료 요청일</th>
+                                    <td>
+                                        2017-06-30
+                                    </td>
+                                    <th>완료 예정일</th>
+                                    <td>
+                                        <span class="font_red">
+                                            2017-06-30(20일 초과)
+                                        </span>
+                                        <a href="javascript:" id="day_Change_btn">
+                                            <span class="bule_btn">
+                                                <i class="fa fa-calendar"></i>날짜 변경
+                                            </span>
+                                        </a>
+                                    </td>
+                                </tr>
+
+                                </tbody>
+                            </table>
+
+                            <!--날짜변경 팝업-->
+                            <div id="day_change" class="handle_popup">
+                                <div class="handle_popup_wrap">
+                                    <p class="handle_arrow"><img src="../../img/sub/handle_arrow.png" alt=""></p>
+                                    <h3>날짜변경</h3>
+                                    <ul>
+                                        <li class="handle_day">
+                                            <p>완료예정일</p>
+                                            <ul>
+                                                <li>
+                                                    <i class="fa fa-calendar"></i>
+                                                    <input type="text" value="2017-07-08 ~ 2017-08-08">
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li>
+                                            <textarea placeholder="요청사항" class="handle_text_box"></textarea>
+                                        </li>
+                                        <li class="handle_popup_btn">
+                                            <a href="#" class="save_btn">저장</a>
+                                            <a href="#" class="close_btn" id="day_popup_close">닫기</a>
+                                        </li>
+                                    </ul>
+                                </div><!--handle_popup_wrap END-->
+                            </div><!--handle_popup END-->
+                            <!--처리중 팝업 END-->
+
+                        </div>
+                    </div><!--app_subTable END-->
+
+                    <div class="app_subTable">
+                        <div class="app_subTable_wrap">
+                            <table>
+                                <caption>기본정보(파일명, 수정자, 수정일, 수정내용, 에러유형(응답코드, 에러메세지))</caption>
+                                <colgroup>
+                                    <col style="width:185px">
+                                    <col style="width: 593px;">
+                                    <col style="width:185px">
+                                    <col style="width: auto;">
+                                </colgroup>
+                                <tbody>
+                                <tr>
+                                    <th>파일명</th>
+                                    <td>kr.co.zesinc.example.site.ExampleService</td>
+                                    <th>수정자</th>
+                                    <td>홍길동</td>
+                                </tr>
+                                <tr>
+                                    <th>수정일</th>
+                                    <td>
+                                        2017-06-01
+                                    </td>
+                                    <th>수정내용</th>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <th>에러유형(응답코드)</th>
+                                    <td>
+                                        응용오류(500)
+                                    </td>
+                                    <th>에러메세지</th>
+                                    <td>
+                                        Test
+                                    </td>
+                                </tr>
+
+                                </tbody>
+                            </table>
+                        </div>
+                    </div><!--app_subTable END-->
+
+                    <div class="surver_list">
+                        <div class="surver_list_title">
+                            <h4>서비스중인 서버 목록</h4>
+                        </div>
+                        <div class="surver_list_wrap">
+                            <ul>
+                                <li>dev1</li>
+                                <li><span>0</span> 건</li>
+                            </ul>
+                            <ul>
+                                <li>dev2</li>
+                                <li><span>0</span> 건</li>
+                            </ul>
+                            <ul class="surver_list_on">
+                                <li>dev3</li>
+                                <li><span>14</span> 건</li>
+                            </ul>
+                            <ul>
+                                <li>dev4</li>
+                                <li><span>0</span> 건</li>
+                            </ul>
+                            <ul>
+                                <li>dev5</li>
+                                <li><span>0</span> 건</li>
+                            </ul>
+                            <ul>
+                                <li>dev6</li>
+                                <li><span>0</span> 건</li>
+                            </ul>
+                        </div>
+                    </div><!--surver_list END-->
+
+                    <div class="surver_chart">
+                        <ul>
+                            <li><img src="../../img/sub/chart_02.png" alt="그래프"></li>
+                        </ul><!--line_chart_con END-->
+                    </div>
+                </div>
+                <div class="tab_con tab_con02">
+                    <div class="error_content">
+                        <ul class="Tab_btn02">
+                            <li class="error_btn_on"><a href="#error_con01">Code 정보</a></li>
+                            <li><a href="#error_con02">Log 정보</a></li>
+                            <li><a href="#error_con03">사용자 정보</a></li>
+                        </ul><!--Tab_btn02-->
+
+                        <div class="error_con error_con01">
+                            <div class="error_con01_wrap">
+                                <ul class="logged_con ">
+                                    <li class="title_txt">Logged Error</li>
+                                    <li class="logged_con_list">
+                                        <ul>
+                                            <li><a href="#">ExampleService.issueException<img src="../../img/sub/file_icon.png" alt="icon"></a></li>
+                                            <li><a href="#">ExampleServlet.doGet<img src="../../img/sub/file_icon.png" alt="icon"></a></li>
+                                            <li class="lc_list_on"><a href="#">ExampleService.issueException<img src="../../img/sub/file_icon.png" alt="icon"></a></li>
+                                            <li><a href="#">ExampleServlet.doGet<img src="../../img/sub/file_icon.png" alt="icon"></a></li>
+                                            <li><a href="#">ExampleService.issueException<img src="../../img/sub/file_icon.png" alt="icon"></a></li>
+                                            <li><a href="#">ExampleServlet.doGet<img src="../../img/sub/file_icon.png" alt="icon"></a></li>
+                                            <li><a href="#">ExampleService.issueException<img src="../../img/sub/file_icon.png" alt="icon"></a></li>
+                                        </ul>
+                                    </li><!--logged_con_list END-->
+
+                                    <!--sql 추가-->
+                                    <li class="sqlBtn">
+                                        <a href="#">View SQL Query</a>
+                                    </li>
+                                    <!--sql 추가 END-->
+                                </ul><!--logged END-->
+                                <ul class="update">
+                                    <!--sql 추가-->
+                                    <li class="update_wrap Query_list_wrap">
+                                        <ul class="title_txt">
+                                            <li>SQL Query List</li>
+                                        </ul>
+                                        <ul class="update_con">
+                                            <li class="update_table query_table">
+                                                <table>
+                                                    <caption>SQL Query List(수행시간, 파라미터, 쿼리)</caption>
+                                                    <colgroup>
+                                                        <col style="width: 42px">
+                                                        <col style="width: 141px">
+                                                        <col style="width: 233px">
+                                                        <col style="width: auto">
+                                                    </colgroup>
+                                                    <thead>
+                                                    <tr>
+                                                        <th></th>
+                                                        <th>수행시간</th>
+                                                        <th>파라미터</th>
+                                                        <th>쿼리</th>
+                                                    </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                    <tr>
+                                                        <td class="text-center">1</td>
+                                                        <td>5 ms</td>
+                                                        <td><p class="ellipsis">'system1','system1','system1','system1','system1','system1'</p></td>
+                                                        <td><p class="ellipsis"><a href="#"> 쿼리들어갈 공간입니다.쿼리들어갈 공간입니다.쿼리들어갈 공간입니다.쿼리들어갈 공간입니다.쿼리들어갈 공간입니다.쿼리들어갈 공간입니다.</a></p></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="text-center">2</td>
+                                                        <td>5 ms</td>
+                                                        <td><p class="ellipsis">'system1'</p></td>
+                                                        <td><p class="ellipsis"><a href="#">쿼리들어갈 공간입니다.</a>-</p></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="text-center">3</td>
+                                                        <td>5 ms</td>
+                                                        <td><p class="ellipsis">'system1'</p></td>
+                                                        <td><p class="ellipsis"><a href="#">쿼리들어갈 공간입니다.</a>-</p></td>
+                                                    </tr>
+
+                                                    </tbody>
+                                                </table>
+                                            </li>
+                                        </ul><!--update_con END-->
+                                    </li><!--update END-->
+                                    <!--sql 추가 END-->
+
+
+                                    <li class="update_wrap">
+                                        <ul class="title_txt">
+                                            <li>Update</li>
+                                        </ul>
+                                        <ul class="update_con">
+                                            <li class="update_table">
+                                                <table>
+                                                    <caption>Update(수정자, 최종수정일시, 최종수정내용)</caption>
+                                                    <colgroup>
+                                                        <col style="width: 42px">
+                                                        <col style="width: 141px">
+                                                        <col style="width: 233px">
+                                                        <col style="width: auto">
+                                                    </colgroup>
+                                                    <thead>
+                                                    <tr>
+                                                        <th></th>
+                                                        <th>수정자</th>
+                                                        <th>최종수정일시</th>
+                                                        <th>최종수정내용</th>
+                                                    </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                    <tr>
+                                                        <td class="font_green"><i class="fa fa-check-square-o"></i> </td>
+                                                        <td>홍길동</td>
+                                                        <td>2017-06-19 14:24:43</td>
+                                                        <td>수정내용일 보여지는 영역입니다.</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td></td>
+                                                        <td>홍길동</td>
+                                                        <td>2017-06-05 14:24:43</td>
+                                                        <td>수정내용일 보여지는 영역입니다.</td>
+                                                    </tr>
+                                                    </tbody>
+                                                </table>
+                                            </li>
+                                            <li class="update_btn">
+                                                <a href="javascript:" onclick="javascript:sourcePopup()" id="source_popup_btn">소스 비교</a>
+                                            </li>
+                                        </ul><!--update_con END-->
+                                    </li><!--update END-->
+
+                                    <li class="source_wrap">
+                                        <ul class="title_txt">
+                                            <li>Source Error</li>
+                                        </ul>
+                                        <ul class="source_con">
+                                            <li>
+                                                <img src="../../img/sub/source_img.png" alt="소스에러 샘플이미지">
+                                            </li>
+                                        </ul><!--source_con END-->
+                                    </li><!--source_wrap END-->
+                                </ul><!--update_con END-->
+
+
+
+                            </div><!--error_con01_wrap END-->
+
+                            <!--소스비교 팝업창-->
+                            <div id="source_popup" class="source_popup_wrap">
+                                <h3 class="title_txt">소스비교</h3>
+                                <p>
+                                    <a href="#" id="source_close">
+                                        <img src="../../img/sub/alram_btn.png" alt="닫기">
+                                    </a>
+                                </p>
+                                <div>
+                                    소스 들어갈 곳입니다.
+                                </div>
+                            </div><!--source_popup END-->
+                            <!--소스비교 팝업창 END-->
+
+                        </div><!--error_con END-->
+
+                        <div class="error_con error_con02">
+                            <div class="error_con02_wrap">
+                                <ul>
+                                    <li>
+                                        javax.servlet.ServletException: test<br>
+                                        at kr.co.zesinc.example.site.ExampleService.issueException(ExampleService.java:32)<br>
+                                        at kr.co.zesinc.example.site.ExampleServlet.doGet(ExampleServlet.java:46)<br>
+                                        at javax.servlet.http.HttpServlet.service(HttpServlet.java:620)<br>
+                                        at javax.servlet.http.HttpServlet.service(HttpServlet.java:727)<br>
+                                        at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:303)
+                                    </li>
+                                </ul>
+                            </div>
+                        </div><!--error_con END-->
+
+                        <div class="error_con error_con03">
+                            <div class="error_con03_wrap">
+                                <ul class="error_con03_btn">
+                                    <li class="member_select">
+                                        <select>
+                                            <option value="">회원구분</option>
+                                            <option value="">회원구분</option>
+                                            <option value="">회원구분</option>
+                                        </select>
+                                    </li>
+                                    <li>
+                                        <div class="calendar">
+                                            <ul class="calendar_select">
+                                                <li>
+                                                    <a href="#" class="calender_btn"><i class="fa fa-calendar"></i></a>
+                                                    <input type="text" value="2017-06-16 ~ 2017-07-20" class="calendar_box" id="">
+                                                </li>
+
+                                            </ul><!--calender_select END-->
+                                            <ul class="calendar_btn">
+                                                <li><a href="#">1주</a> </li>
+                                                <li><a href="#" class="calendar_on">1달</a> </li>
+                                                <li><a href="#">6달</a> </li>
+                                                <li><a href="#">1년</a> </li>
+                                            </ul><!--calendar_btn END -->
+                                        </div><!--calendar END-->
+                                    </li>
+                                </ul><!--error_con03_btn END-->
+
+                                <div class="error_con03_table">
+                                    <table>
+                                        <caption>사용자정보 (회원구분, 운영체계, 브라우저, IP, 발생일시, 정보보기)</caption>
+                                        <colgroup>
+                                            <col style="width:278px ">
+                                            <col style="width: 264px">
+                                            <col style="width: 315px">
+                                            <col style="width: 315px">
+                                            <col style="width: 350px">
+                                            <col style="width: auto">
+                                        </colgroup>
+                                        <thead>
+                                            <tr>
+                                                <th>회원구분</th>
+                                                <th>운영체계</th>
+                                                <th>브라우저</th>
+                                                <th>IP</th>
+                                                <th>발생일시</th>
+                                                <th>정보보기</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                        <tr>
+                                            <td>비회원</td>
+                                            <td>Window</td>
+                                            <td>Internet Explorer</td>
+                                            <td>203.172.124.089</td>
+                                            <td>2017-06-28 11:04:05</td>
+                                            <td>
+                                                <a href="#" id="errorPopup" onclick="javascript:errorPopup()">
+                                                    <img src="../../img/sub/error_btn_icon.png" alt="정보보기">
+                                                </a>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>비회원</td>
+                                            <td>Window</td>
+                                            <td>Internet Explorer</td>
+                                            <td>203.172.124.089</td>
+                                            <td>2017-06-28 11:04:05</td>
+                                            <td>
+                                                <a href="#">
+                                                    <img src="../../img/sub/error_btn_icon.png" alt="정보보기">
+                                                </a>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>비회원</td>
+                                            <td>Window</td>
+                                            <td>Internet Explorer</td>
+                                            <td>203.172.124.089</td>
+                                            <td>2017-06-28 11:04:05</td>
+                                            <td>
+                                                <a href="#">
+                                                    <img src="../../img/sub/error_btn_icon.png" alt="정보보기">
+                                                </a>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>비회원</td>
+                                            <td>Window</td>
+                                            <td>Internet Explorer</td>
+                                            <td>203.172.124.089</td>
+                                            <td>2017-06-28 11:04:05</td>
+                                            <td>
+                                                <a href="#">
+                                                    <img src="../../img/sub/error_btn_icon.png" alt="정보보기">
+                                                </a>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>비회원</td>
+                                            <td>Window</td>
+                                            <td>Internet Explorer</td>
+                                            <td>203.172.124.089</td>
+                                            <td>2017-06-28 11:04:05</td>
+                                            <td>
+                                                <a href="#">
+                                                    <img src="../../img/sub/error_btn_icon.png" alt="정보보기">
+                                                </a>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>비회원</td>
+                                            <td>Window</td>
+                                            <td>Internet Explorer</td>
+                                            <td>203.172.124.089</td>
+                                            <td>2017-06-28 11:04:05</td>
+                                            <td>
+                                                <a href="#">
+                                                    <img src="../../img/sub/error_btn_icon.png" alt="정보보기">
+                                                </a>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>비회원</td>
+                                            <td>Window</td>
+                                            <td>Internet Explorer</td>
+                                            <td>203.172.124.089</td>
+                                            <td>2017-06-28 11:04:05</td>
+                                            <td>
+                                                <a href="#">
+                                                    <img src="../../img/sub/error_btn_icon.png" alt="정보보기">
+                                                </a>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>비회원</td>
+                                            <td>Window</td>
+                                            <td>Internet Explorer</td>
+                                            <td>203.172.124.089</td>
+                                            <td>2017-06-28 11:04:05</td>
+                                            <td>
+                                                <a href="#">
+                                                    <img src="../../img/sub/error_btn_icon.png" alt="정보보기">
+                                                </a>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>비회원</td>
+                                            <td>Window</td>
+                                            <td>Internet Explorer</td>
+                                            <td>203.172.124.089</td>
+                                            <td>2017-06-28 11:04:05</td>
+                                            <td>
+                                                <a href="#">
+                                                    <img src="../../img/sub/error_btn_icon.png" alt="정보보기">
+                                                </a>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>비회원</td>
+                                            <td>Window</td>
+                                            <td>Internet Explorer</td>
+                                            <td>203.172.124.089</td>
+                                            <td>2017-06-28 11:04:05</td>
+                                            <td>
+                                                <a href="#">
+                                                    <img src="../../img/sub/error_btn_icon.png" alt="정보보기">
+                                                </a>
+                                            </td>
+                                        </tr>
+                                        </tbody>
+                                    </table>
+                                </div><!--error_con03_tabe END-->
+
+
+                                <div class="table_paging">
+                                    <ul class="paging_txt">
+                                        <li>전체 <span>15</span>건 중 <span>1</span>번째 부터 <span>10</span>번째</li>
+                                    </ul><!--paging_txt END-->
+                                    <ul class="paging">
+                                        <li class="paging_prev paging_btn"><a href="#">Previous</a></li>
+                                        <li class="paging_num paging_on"><a href="#">1</a></li>
+                                        <li class="paging_num"><a href="#">2</a></li>
+                                        <li class="paging_num"><a href="#">3</a></li>
+                                        <li class="paging_num"><a href="#">4</a></li>
+                                        <li class="paging_num"><a href="#">5</a></li>
+                                        <li class="paging_num"><a href="#">6</a></li>
+                                        <li class="paging_next paging_btn padding_btn_on"><a href="#">Next</a></li>
+                                    </ul><!--paging END--->
+                                </div><!--table_paging END--->
+                            </div><!--tab_con_wrap END-->
+                            </div>
+
+                            <div class="error_con03_popup" id="error_con03Popup">
+                                <h3>오류 상세 정보</h3>
+                                <a href="#" id="errorPopup_close"><img src="../../img/sub/error_popup_close.png" alt="닫기"> </a>
+                                <div class="errorPopup_wrap">
+                                    <div class="errorPopup_con">
+
+                                        <ul class="error_table">
+                                            <li>
+                                                <table>
+                                                    <caption>오류상세정보 표</caption>
+                                                    <colgroup>
+                                                        <col style="width: 170px">
+                                                        <col style="width: 595px">
+                                                        <col style="width: 170px">
+                                                        <col style="width: auto">
+                                                    </colgroup>
+                                                    <tr>
+                                                        <th>오류번호</th>
+                                                        <td>
+                                                            EM20170803-00003(228389314970338)
+                                                        </td>
+                                                        <th>
+                                                            브라우저
+                                                        </th>
+                                                        <td>
+                                                            chrome (59.0.3071.115)
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th>프로토콜</th>
+                                                        <td>HTTP/1.1</td>
+                                                        <th>요청방식</th>
+                                                        <td>GET</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th>요청 URL (From)</th>
+                                                        <td colspan="3">null</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th>요청 URL (To)</th>
+                                                        <td colspan="3">http://localhost:8080/example-site/holiday/getNextSeq.do</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th>파라미터</th>
+                                                        <td colspan="3">null</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th>쿼리스트링</th>
+                                                        <td colspan="3">null</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th>컨텐츠 유형</th>
+                                                        <td colspan="3">null</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th>응답 유형</th>
+                                                        <td colspan="3">text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8</td>
+                                                    </tr>
+                                                </table>
+                                            </li>
+                                        </ul><!--error_table END-->
+
+                                    </div><!--errorPopup_con END-->
+                                </div><!--errorPopup_wrap END-->
+
+                                <div class="errorPopup_wrap">
+                                    <div class="errorPopup_con">
+
+                                        <ul class="error_box">
+                                            <li class="error_box01">
+                                                <table>
+                                                    <caption>이름,ID, 이메일, 발생일시</caption>
+                                                    <colgroup>
+                                                        <col style="width: 75px">
+                                                        <col style="width: auto">
+                                                    </colgroup>
+                                                    <tr>
+                                                        <th>이름</th>
+                                                        <td>null</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th>ID</th>
+                                                        <td>null</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th>이메일</th>
+                                                        <td>null</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th>발생일시</th>
+                                                        <td>2017-08-04 10:42:17</td>
+                                                    </tr>
+                                                </table>
+                                            </li><!--error_box01 END-->
+
+                                            <li class="error_box02">
+                                                <table>
+                                                    <caption>장치, 운영체제, 프로그램, IP</caption>
+                                                    <colgroup>
+                                                        <col style="width: 75px">
+                                                        <col style="width: auto">
+                                                    </colgroup>
+                                                    <tr>
+                                                        <th>장치</th>
+                                                        <td>Computer</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th>운영체제</th>
+                                                        <td>Windows</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th>프로그램</th>
+                                                        <td>chrome(59.0.3071.115)(Browser)</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th>IP</th>
+                                                        <td>0:0:0:0:0:0:0:1</td>
+                                                    </tr>
+                                                </table>
+                                            </li><!--error_box02 END-->
+
+                                            <li class="error_box03">
+                                                <ul>
+                                                    <li class="error_icon">
+                                                        <img src="../../img/sub/error_icon.png" alt="오류표시">
+                                                    </li>
+                                                    <li class="error_box03_con">
+                                                        <p class="error_box_title">StatusCode<span class="code_color">500</span></p>
+                                                        <p class="error_box_title">Session</p>
+                                                        <p class="error_box_txt">
+                                                            nullnullnullnullnullnullnullnullnullnullnullnullnullnullnullnullnullnullnullnullnulln
+                                                            ullnullnullnullnullnullnullnullnullnullnullnullnullnullnullnullnullnullnullnullnullnullnullnull...
+                                                        </p>
+                                                        <p class="error_box_title">Cookie</p>
+                                                        <p class="error_box_txt">
+                                                            <span>raygun4js-userid : 8e3a3668-e86d-06d8-69c4-21a320d26cd3</span>
+                                                            <span>JSESSIONID :  F1F75904A905297B6B92742D68505EF1asdasdasdasdas42D68505EF1asdasdasdasdas... </span>
+                                                        </p>
+                                                    </li><!--error_box03_con END-->
+                                                </ul>
+                                            </li><!--error_box03 END-->
+
+                                            <li class="error_box04">
+                                                <table>
+                                                    <caption>사이트, IP</caption>
+                                                    <colgroup>
+                                                        <col style="width: 75px">
+                                                        <col style="width: auto">
+                                                    </colgroup>
+                                                    <tr>
+                                                        <th>사이트</th>
+                                                        <td>localhost</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th>IP</th>
+                                                        <td>0:0:0:0:0:0:0:1</td>
+                                                    </tr>
+                                                </table>
+                                            </li><!--error_box02 END-->
+
+                                        </ul><!--error_box END-->
+
+                                    </div><!--errorPopup_con END-->
+                                </div><!--errorPopup_wrap END-->
+
+                                <div class="errorPopup_wrap">
+                                    <div class="errorPopup_con">
+
+                                        <ul class="error_table">
+                                            <li>
+                                                <table>
+                                                    <caption>오류상세정보 표</caption>
+                                                    <colgroup>
+                                                        <col style="width: 170px">
+                                                        <col style="width: 595px">
+                                                        <col style="width: 170px">
+                                                        <col style="width: auto">
+                                                    </colgroup>
+                                                    <tr>
+                                                        <th>이름</th>
+                                                        <td>null</td>
+                                                        <th>아이디</th>
+                                                        <td>null</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th>이메일</th>
+                                                        <td>null</td>
+                                                        <th>구분</th>
+                                                        <td>비회원</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th>발생일시</th>
+                                                        <td>2017-08-04 10:42:17</td>
+                                                        <th>아이피</th>
+                                                        <td>0:0:0:0:0:0:0:1</td>
+                                                    </tr>
+                                                </table>
+                                            </li>
+                                        </ul><!--error_table END-->
+
+                                    </div><!--errorPopup_con END-->
+                                </div><!--errorPopup_wrap END-->
+
+                            </div><!--error_con03_popup END-->
+
+                        </div><!--error_con END-->
+
+                    </div><!--error_content END-->
+                </div>
+            </div><!--app_subTab END-->
+        </div><!--content END-->
+
+    </div><!--container END-->
+</body>
+</html>

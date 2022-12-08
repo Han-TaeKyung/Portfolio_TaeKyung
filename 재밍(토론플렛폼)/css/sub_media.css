@@ -1,0 +1,120 @@
+@media screen and (max-width: 1399px){ 
+    .subWrap{width: 90%;}
+    .subWrap02{width: 93%;}
+    .loginCon{width: 100%; max-width: 350px;}
+    .sub_tit_lg{font-size: 24px;}
+    .sub_tit_md{font-size: 17px;}
+    .sub_tit_xxlg{font-size: 32px;}
+    .sub_tit_xlg{font-size: 28px;}
+    .mypage{padding: 41px 0 40px;}
+    .chat_room > li{width:32%; margin-right: 2%; margin-bottom: 10px;}
+    .chat_room > li:nth-child(3n){margin-right: 0;}
+
+    .scroll_box{display: block;}
+    .scroll .table_ty_con{width:1390px;}
+    .scroll{overflow-x: scroll;}
+
+    .sub_container_bg02{background-image: none; padding: 60px 0 100px;}
+    .service_txt01{font-size: 20px; line-height: 28px; margin-top: 28px;}
+    .service_txt01 br, .service_txt02 br{display: none;}
+    .service_txt02{font-size: 16px; margin-top: 18px;}
+    .sub_logo_img{width: 238px;}
+    .jm_intro{margin-top: 100px;}
+    .jm_box_wrap{margin-top: 60px;}
+    .jm_box_wrap > li{width: 32%; margin-left: 2%}
+    .jm_box_wrap > li:first-child{margin-left: 0;}
+    .jm_box{padding: 202px 10px 0;}
+    .jm_box h5{font-size: 18px;}
+    .jm_box p{font-size: 14px;}
+    .sub_tit_lg.pt40{padding-top: 23px;}
+    .chat_search{margin-top: 10px;}
+    .chat_search > li{margin-left: 0;}
+    .chat_search .text_ty02{width: 100%;}
+    .chat_search_select {width: 48%;}
+    .select_ty01{height: 36px; line-height: 34px; font-size: 13px; padding-left: 10px; background-position: right 10px center;}
+    .chat_search_select + .chat_search_select {margin-left: 4%;}
+    .chat_search_select .select_ty01{width: 100%;}
+    .chat_search_input{width: calc(100% - 88px); margin-top: 8px;}    
+    .chat_search_input .text_ty02{height: 36px; line-height: 34px; font-size: 13px; padding-left: 10px; }
+    .chat_search_sbtn{margin-top: 8px; margin-left: 8px !important;}
+    .chat_search_rbtn{margin-top: 8px;margin-left: 8px !important;}
+    .chat_search_sbtn a{text-indent: -9999px;  display: block; width: 36px;  height: 36px; background-image: url(../images/sub/m_search_ico.png); background-size:36px; background-position: center;}
+    .chat_search_rbtn a{text-indent: -9999px;  display: block; width: 36px;  height: 36px; background-image: url(../images/sub/m_reset_ico.png); background-size:36px; background-position: center;}
+
+    .chat_list {margin-top: 17px;}
+    .chat_list > li{width: 48%; margin-right: 4%;}
+    .chat_list > li:nth-child(2n){margin-right: 0;}
+    .chat_list > li a{padding: 13px 10px 16px;}
+    .board_num{font-size: 13px; margin-left: 10px;}
+    .chat_state{position: inherit; margin-top: 13px;}
+    .chat_label{font-size: 11px; margin-bottom: 3px;}
+    .chat_tit{width: 100%; font-size: 14px; margin-bottom: 10px;overflow: hidden;text-overflow: ellipsis; display: -webkit-box !important; white-space: normal;-webkit-line-clamp: 2; -webkit-box-orient: vertical; word-wrap:break-word; line-height: 19px;height: 38px; }
+    .chat_info em{display: block; font-size: 11px; background-position:left 3px ; padding-left: 19px;}
+    .chat_state{width: 100%; height: 24px; font-size: 11px; line-height: 24px;}
+    .chat_day{background-image: url(../images/sub/m_chat_day.png); background-size: 12px; margin-bottom: 5px;}
+    .chat_pp{background-image: url(../images/sub/m_chat_pp.png); background-size:auto 12px;}
+    .paging{margin-top: 40px;}
+    .chat_day q{padding-left: 0;}
+
+    /* 참여현황보기 */
+    .dashboardCon_01 > ul{width: 300px;}
+    .dashboardCon_01 > div{width: calc(100% - 324px);}
+    .dash_state01{width: 100%;}
+    .dash_state_num span b{font-size: 30px;}
+    .dash_state_num span img{width: 18px; margin-right: 10px;}
+    .state_graph{ position: relative; padding-bottom: 62px;}
+    .state_gh{position: absolute; width: 100%; left:-8px; bottom:20px; }
+    .desktop_p{background-size: 32px; padding-right: 40px;}
+    .desktop_p span{font-size: 25px;}
+    .mobile_p{background-size: 32px; padding-left: 40px; margin-left: 40px;}
+    .mobile_p span{font-size: 25px;}
+    .dash_state02{width: 100%;}
+    .mobile_wd{width: calc(100% + 324px); margin-left: -324px;}
+    .dashboardCon_02 .db02_rgt{float: none; width: 100%;}
+    .dashboardCon_02 .db02_lft{float: none; width: 100%;}
+    .dashboardCon_02 .db02_lft > li{float: left; width: 48%; margin-right: 4%;}
+    .dashboardCon_02 .db02_lft > li:nth-child(2n){margin-right: 0;}
+}
+@media screen and (max-width: 767px){ 
+    .myinfo {padding: 15px 20px 17px;} 
+    .myinfo_list > li > h5{width: 120px;}
+    .myinfo_list > li > p{width: calc(100% - 120px);word-break: break-word;}
+    .chat_room > li{width:49%; height: auto; padding: 15px 20px; margin-right: 2%; margin-bottom: 5px;}
+    .chat_room > li h5{font-size: 13px;}
+    .chat_room > li p{font-size: 21px;}
+    .chat_room > li:nth-child(3n){margin-right: 2%;}
+    .chat_room > li:nth-child(2n){margin-right: 0;}
+ 
+    .join_tit{ width: 100%;}
+    .join_input{width: 100%;}
+    .joinCon .join_input_nick input{width: calc(100% - 108px);}
+    .joinCon .join_input_nick .btn_blueline{width: 100px;}
+    .joinCon .text_ty02.wd_127{width: 50%;}
+    .join_input > p{margin-right: 20px;}
+
+    .joinCon .btn_bkline a{width: 130px; height: 45px; line-height: 43px; font-size: 14px;}
+    .btn_point a{width: 130px; height: 45px; line-height: 45px; font-size: 14px;}
+    .jm_box_wrap > li{width: 100%; margin-left: 0; float: none; margin-bottom: 10px;}  
+    .joinCon{width: 100%; max-width: 640px;}
+    .joinCon .text_ty02{width: 100%;}
+    .mobile_none{display: none;}
+    .join_tit_ih{line-height: 44px; padding-top: 0;}
+    .select_ty02{width: 100%;}
+    .chat_list > li{width: 100%; margin-right: 0;}
+    .chat_list > li:nth-child(2n){margin-right: 0;}
+
+    /* 참여현황보기 */
+    .tab_ty02 > li a{font-size: 14px;}
+    .tab_ty02 > li{margin-right: 15px;}
+    .tab_ty03 > li a{font-size: 12px; padding: 7px 13px 8px;}
+    .dashboardCon_01 > ul{width: 100%; float: none;}
+    .dashboardCon_01 > div{width: 100%;}
+    .dash_state_num{padding: 10px 0 7px;}
+    .state_graph{padding-bottom: 40px;}
+    .state_gh{bottom: 0;}
+    .mobile_wd{width: 100%; margin-left: 0;}
+    .dashboardCon_02 .db02_lft > li{float: none; width: 100%; margin-right: 0;}
+}
+@media screen and (max-width: 350px){ 
+    .tab_ty03 > li a{font-size: 11px;}
+}

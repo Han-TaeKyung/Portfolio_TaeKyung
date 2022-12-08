@@ -1,0 +1,109 @@
+.m_gnb_btn{display: none;}
+.mobile_gnb_wrap{display: none;}
+.mobile-menu{display: none !important;}
+.mobile_3dep_02{display: none;}
+/* 20201130수정 start */
+.login_m{display: none;}
+.logout_m{display: none;}
+/* 20201130수정 end */
+
+.mobile{display: none;}
+.mobile_gnb_open{display: none;}
+.gnb_3dep{display: none;}
+
+@media screen and (max-width:1199px)  {
+	#container{padding-top: 15px;}
+    #seoul-common-gnb{display: block;}
+    #seoul-gnb-plugin .seoul-gnb-menu {right:0 !important;}
+   
+    
+    /* 서울시배너추가 */
+    .seoul_banner_wrap{width: 92%; max-height: 70px; height:auto; margin: 30px auto;}
+    .seoul_banner_pc{padding: 30px 4%;}
+
+    /* 2021메인개편 layout START */
+    .pc{display: none;}
+    .mobile{display: block;}
+    .mobile_gnb_open{display: none;}
+    .header_wrap{width: 100%; padding: 0 4% 10px; border-bottom: 1px solid #222222; z-index: 999; top:0;}
+    .header_wrap > div{width: 100%;}
+    .logo{margin-top: 10px;}
+    .logo img{width: 75px;}
+    .m_gnb_btn{display: block; width: 24px; margin-top: 18px; margin-left: 23px;}
+    .gnb_member{margin: 0;}
+    .mobile_gnb_open{position: absolute; top:0; width: 100%; height: 50px; background-color: #811517; left:0}
+    .m_logo{float: left; padding-left: 4%; margin-top: 9px;}
+    .m_logo img{width: auto; height: 32px;}
+    .gnb_close{float: right; width: 52px; height: 50px;}    
+    .mobile_gnb_open > ul:after{display: block; content: ""; clear: both;}
+    #gnb{float: none; display: none;  margin-top: 50px; position: fixed; width: 100%; left: 0; background-color: #fff; z-index: 55;}
+    .gnb_top{width: 100%; height: 47px; background-color: #222222; padding: 9px 4%;}
+    .gnb_member li:first-child{margin-right: 8px;}
+    .gnb_member li a{display: inline-block; width: 78px; height: 28px; border-radius: 2px; text-align: center; line-height: 26px; }
+    .gnb_member .gnb_login a{font-size: 12px; color:#fff; border:1px solid #fff;}
+    .gnb_member .gnb_join a{font-size: 12px; color:#e4002b; border:1px solid #e4002b;}
+    .gnb_top .m_gnb_top{float: right;}
+    .m_gnb_top li a{display: inline-block; width: 75px; height: 28px; padding-left: 20px; background-color: #fff; border-radius: 14px; font-size:12px; color:#222; text-align: center; line-height: 30px;}
+    .m_gnb_top li:first-child{margin-right: 8px;}
+    .sns_btn a{background-image: url(../images/common_21/sns_bg.png); background-repeat: no-repeat; background-position: 12px center;}
+    .onair_btn a{background-image: url(../images/common_21/semutv.png); background-repeat: no-repeat; background-position: 8px center;}
+    .m_rgt{float: right;}
+    .m_rgt > ul{float: left;}
+    .m_rgt:after{display: block; content: ""; clear: both;}
+    .lg{margin-right: 0; margin-top: 21px;}
+    .lg li a{font-size: 13px; padding-right: 20px;}
+    .lg > li > ul{z-index: 10;}
+    .gnb_wrap > ul{float: none;}
+    .gnb_wrap > ul > li{float: none; margin-left: 0;}
+    .gnb_2dep > li{float: none;}
+
+    .gnb_menu{position: fixed; height: 100%; background-color: #f5f5f5; margin-top: 0;}
+    .gnb_menu>li>ul{display: block; position: fixed; font-size: inherit; overflow-y: scroll; height: calc(100% - 98px);; background-color: #fff; width: calc(100% - 120px); right: 0; left: inherit; top: 98px; border-bottom: 0; padding: 0 15px  !important;}
+    .gnb_menu>li>a{width: 120px; display: block; float: left; padding: 0 0 0 15px; height: auto; font-size: 17px; line-height: 48px; color: #333333; box-sizing: border-box}
+    .gnb_menu>li>ul.gnb_2dep{display: none;}
+    .gnb_menu>li.m_gnb_on>ul.gnb_2dep{display: block;}
+    .gnb_menu > li:hover > a{font-weight: bold; color:#e4002b; border-bottom: 0; box-sizing: border-box; background-color: #fff;}
+    .gnb_menu > li > a:focus{font-weight: bold; color:#e4002b; border-bottom: 0; background-color: #fff; } 
+    .gnb_2dep > li{line-height: inherit; margin-right: 0;}
+    .gnb_3dep{display: block;}
+    .gnb_2dep > li > a{border-bottom: 1px solid #dddddd; display: block; width: 100%; font-size: 16px; color: #333333; padding: 12px 0 11px;}
+    .gnb_2dep > li > a:hover, .gnb_2dep > li > a:focus{color:#e4002b;}
+    .gnb_3dep > ul{background-color: #f5f5f5; border-bottom: 1px solid #ddd; padding: 9px 10px 7px; display: none;}
+    .gnb_3dep > ul > li > a{font-size:15px; color: #333333; line-height: 29px; position: relative; padding-left: 11px;}
+    .gnb_3dep > ul > li > a:before{position: absolute; content: " "; left: 0; top: 7px; width:  6px; height: 1px; background-color: #333333;}
+    .gnb_3dep > a{background-image: url("../images/common_21/gnb_3dep_off.png"); background-repeat: no-repeat; background-size:16px; background-position: right; }
+    .gnb_3dep_on > a{background-image: url("../images/common_21/gnb_3dep_on.png");}
+    .gnb_3dep_on > ul{display: block;}
+
+    .seoul_banner_mobile{padding: 25px 4%;}
+    .footer_wrap{width: 92%; padding: 0;}
+    .ft_link ul li{margin-right: 20px;}
+    .ft_link ul li a{font-size: 12px;}
+    .ft_link, .ft_info{float: none;}
+    .ft_sns{float: none; margin-top: 19px;}
+    .ft_sns ul{text-align: center;}
+    .ft_sns ul li{float: none; display: inline-block; margin-left: 7px;}
+    .ft_sns ul li a{width: 30px; height: 30px; background-image: url(../images/common_21/m_sns_on.png); background-size: auto 30px;}
+    .footer_wrap > ul:first-child{margin-bottom: 0;}
+    .ft_info {margin-top: 16px; padding-bottom: 10px;}
+    .ft_info p{font-size: 11px; line-height: 15px;}
+    .ft_info p span{font-size: 11px;}
+
+}
+@media screen and (max-width:767px)  {
+     /* 서울시배너추가 */
+    .seoul_banner_pc{display: none;}
+    .seoul_banner_mobile{display: block; }
+    .seoul_banner_mobile img{width: 100%; height:auto;}
+    .seoul_banner_wrap{width: 92%; max-height: inherit; height:auto; margin: 20px auto;}
+}
+
+@media screen and (max-width:360px)  {
+	.m_login {margin-right: 5px;}
+	.m_login a {width: 95px; font-size: 11px;}
+	.m_join a {width: 60px; font-size: 11px;}
+}
+@media screen and (max-width:350px)  {
+    .gnb_member li a{width: 56px;}
+    .m_gnb_top li a{width: 70px;}
+}

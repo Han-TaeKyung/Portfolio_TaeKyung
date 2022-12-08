@@ -1,0 +1,554 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>재밍</title>
+    <link rel="stylesheet" type="text/css" href="../css/reset.css">
+    <link rel="stylesheet" type="text/css" href="../css/layout.css">
+    <link rel="stylesheet" type="text/css" href="../css/layout_media.css">
+    <link rel="stylesheet" type="text/css" href="../css/sub.css">
+    <link rel="stylesheet" type="text/css" href="../css/sub_media.css">
+    <script src="../js/lib/jquery-1.12.4.min.js"></script>
+    <script src="../js/lib/jquery.mousewheel.js"></script>
+    <script src="../js/lib/jquery.bxslider.min.js"></script>
+    <script src="../js/lib/jquery.mCustomScrollbar.concat.min.js"></script>
+    <script src="../js/layout.js"></script>
+    <script src="../js/sub.js"></script>
+</head>
+<body>
+
+<div id="skipNav">
+    <p><a href="#container">본문바로가기</a></p>
+    <p><a href="#gnb">주메뉴바로가기</a></p>
+</div>
+
+<header>
+    <div class="header_wrap">
+        <ul>
+            <li class="logo">
+                <a href="../main/main.html" title="메인으로">
+                    <img src="../images/common/logo.png" alt="JAMMING" class="pc-block">
+                    <img src="../images/common/mobile_logo.png" alt="JAMMING" class="mobile-block">
+                </a>
+            </li>
+            <li id="gnb" class="gnb">
+                <ul>
+                    <li><a href="service.html">재밍 소개</a></li>
+                    <li><a href="view.html">참여현황보기</a></li>
+                    <li><a href="chat.html">재밍참여하기</a></li>
+                </ul>
+            </li>
+            <li class="log_wrap">
+                 <!-- 로그아웃 상태
+                <ul>
+                    <li class="log"><a href="#">로그인</a></li>
+                    <li class="join"><a href="#">회원가입</a></li>
+                </ul>
+                -->
+                <ul class="login_wrap">
+                    <li>
+                        <a href="#"><span>홍</span>홍길동</a>
+                        <ul class="login_menu"> 
+                            <li><a href="#">마이페이지</a></li>
+                            <li><a href="#">로그아웃</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            
+                <ul class="font_size_btn">
+                    <li><a href="#" onclick="zoomIn();"><img src="../images/common/font_plus.png" alt="글자확대"></a></li>
+                    <li><a href="#" onClick="zoomOut();"><img src="../images/common/font_mi.png" alt="글자축소"></a></li>
+                </ul>
+            </li>
+        </ul>
+    </div><!-- header_wrap END -->
+</header>
+
+<div id="container" class="sub_container">
+    <div class="sub_container_bg">
+        <div class="subWrap">
+            <div class="dashboard_Wrap">
+                <h3 class="sub_tit_lg">참여현황 보기</h3>
+                <ul class="tab_ty02">
+                    <li><a href="#">전체</a></li>
+                    <li class="tab_ty02_on"><a href="#">재난안전</a></li>
+                    <li><a href="#">환경</a></li>
+                    <li><a href="#">국민건강</a></li>
+                </ul><!-- tab_ty02 END -->
+                <ul class="tab_ty03">
+                    <li class="tab_ty03_on"><a href="#">전체</a></li>
+                    <li><a href="#">3차원 위험시설물 감시 관리기능 송수신 장치</a></li>
+                    <li><a href="#">도심 내 미세먼지 상세 오염도 정보 제공 플랫폼</a></li>
+                    <li><a href="#">스마트빌딩 자동화 시스템 기술</a></li>
+                    <li><a href="#">3차원 위험시설물 감시 관리기능 송수신 장치</a></li>
+                    <li><a href="#">도심 내 미세먼지 상세 오염도 정보 제공 플랫폼</a></li>
+                    <li><a href="#">스마트빌딩 자동화 시스템 기술</a></li>
+                </ul><!-- tab_ty03 END -->
+
+                <div class="dashboardCon_01">
+                    <ul>
+                        <li class="dash_box">
+                            <h5 class="dash_tit">기준기간</h5>
+                            <p class="db_day mulg">
+                                2021.05.24 ~ 2021.05.28
+                            </p>
+                            <a href="#" class="set_btn">
+                                <img src="../images/sub/set_ico.png" alt="설정">
+                            </a>
+                        </li>
+                        <li class="dash_box">
+                            <h5 class="dash_tit">주요 키워드</h5>
+                            <div class="keyword_list">
+                                <table class="dash_table">
+                                    <caption>주요 키워드(번호, 키워드단어, 키워드 단어수)</caption>
+                                    <colgroup>
+                                        <col style="width: 34px;">
+                                        <col style="width: auto;">
+                                        <col style="width: 74px;">
+                                    </colgroup>
+                                    <thead>
+                                        <tr>
+                                            <th scope="col" class="blind">번호</th>
+                                            <th scope="col" class="blind">키워드 단어</th>
+                                            <th scope="col" class="blind">키워드 단어수</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td class="center">1</td>
+                                            <td class="pl_19">공개</td>
+                                            <td class="ta_rgt">
+                                                <span class="keyword_num">6,927</span>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="center">2</td>
+                                            <td class="pl_19">결정</td>
+                                            <td class="ta_rgt">
+                                                <span class="keyword_num">4,578</span>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="center">3</td>
+                                            <td class="pl_19">청구</td>
+                                            <td class="ta_rgt">
+                                                <span class="keyword_num">4,578</span>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="center">4</td>
+                                            <td class="pl_19">경우</td>
+                                            <td class="ta_rgt">
+                                                <span class="keyword_num">4,578</span>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="center">5</td>
+                                            <td class="pl_19">신청</td>
+                                            <td class="ta_rgt">
+                                                <span class="keyword_num">4,578</span>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="center">6</td>
+                                            <td class="pl_19">이내</td>
+                                            <td class="ta_rgt">
+                                                <span class="keyword_num">4,578</span>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="center">7</td>
+                                            <td class="pl_19">공공기관</td>
+                                            <td class="ta_rgt">
+                                                <span class="keyword_num">4,578</span>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="center">8</td>
+                                            <td class="pl_19">통지</td>
+                                            <td class="ta_rgt">
+                                                <span class="keyword_num">4,578</span>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="center">9</td>
+                                            <td class="pl_19">이의</td>
+                                            <td class="ta_rgt">
+                                                <span class="keyword_num">4,578</span>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="center">10</td>
+                                            <td class="pl_19">동의</td>
+                                            <td class="ta_rgt">
+                                                <span class="keyword_num">4,578</span>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </li>
+                    </ul>
+                    <div>
+                        <ul class="dash_state">
+                            <li class="dash_box dash_state01">
+                                <h5 class="dash_tit">사용자 현황</h5>
+                                <p class="dash_state_num">
+                                    <span class="mulg"><img src="../images/sub/state_ico01.png" alt=""><b class="mulg">13,294</b> 명</span>
+                                </p>
+                                <ul class="state_graph">
+                                    <li class="desktop_p">
+                                        <p class="mulg"><span class="mulg">72</span> %</p>
+                                        <p class="mulg text_sm">Desktop</p>
+                                    </li>
+                                    <li class="state_gh">
+                                        <span class="gh_blue" style="width: 72%;"></span>
+                                        <span class="gh_yl" style="width: 28%;"></span>
+                                    </li>
+                                    <li class="mobile_p">
+                                        <p class="mulg"><span class="mulg">28</span> %</p>
+                                        <p class="mulg text_sm">Mobile</p>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="dash_box dash_state02">
+                                <h5 class="dash_tit">내 활동현황</h5>
+                                <!-- 로그인 START-->
+                                <div class="mt20">
+                                    <a href="#" class="myinfo_btn">내 정보 보기</a>
+                                    <table class="dash_table">
+                                        <caption>내 활동 현황(활동내용, 수)</caption>
+                                        <colgroup>
+                                            <col style="width: auto;">
+                                            <col style="width: 81px;">
+                                        </colgroup>
+                                        <thead>
+                                            <tr>
+                                                <th scope="col" class="blind">활동내용</th>
+                                                <th scope="col" class="blind">활동 수</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>채팅</td>
+                                                <td class="ta_rgt">
+                                                    <span class="my_num">12,934</span>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>작성 답글</td>
+                                                <td class="ta_rgt">
+                                                    <span class="my_num">8,239</span>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>달린 답글</td>
+                                                <td class="ta_rgt">
+                                                    <span class="my_num">245</span>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>공유 파일</td>
+                                                <td class="ta_rgt">
+                                                    <span class="my_num">13</span>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>좋아요 수</td>
+                                                <td class="ta_rgt">
+                                                    <span class="my_num">7</span>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                                <!-- 로그인 END-->
+                                <!-- 비로그인 START -->
+                                <!--
+                                <div class="center">
+                                    <p class="login_txt mulg">로그인 후 확인하실 수 있습니다.</p>
+                                    <a href="#" class="gradient btn_log">로그인</a>
+                                </div>-->
+                                <!-- 비로그인 END -->
+                            </li>
+                        </ul>
+                        <ul class="mobile_wd">
+                            <li class="dash_box">
+                                <h5 class="dash_tit">참여현황</h5>
+                                <div class="chart_wrap">
+                                    <img src="../images/sub/gh_sample.png" alt="차트영역">
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div><!-- dashboardCon_01 END -->
+                <div class="dashboardCon_02">
+                    <ul class="db02_rgt">
+                        <li class="dash_box">
+                            <h5 class="dash_tit">메세지 수</h5>
+                                <div class="chart_wrap">
+                                    <img src="../images/sub/gh_sample.png" alt="차트영역">
+                                </div>
+                        </li>
+                        <li class="dash_box">
+                            <h5 class="dash_tit">태킹 키워드</h5>
+                                <div class="chart_wrap">
+                                    <img src="../images/sub/gh_sample.png" alt="차트영역">
+                                </div>
+                        </li>
+                    </ul><!-- db02_rgt END -->
+                    <ul class="db02_lft">
+                        <li class="dash_box">
+                            <h5 class="dash_tit">가장 활발한 사용자</h5>
+                            <ul class="slide_btn">
+                                <li><a href="#" title="이전" class="prev prev01"></a></li>
+                                <li><a href="#" title="다음" class="next next01"></a></li>
+                            </ul>
+                            <ul id="dash_slide" class="mt20"> 
+                                <li>
+                                    <table class="dash_table">
+                                        <caption>가장 활발한 사용자(번호, 가장활발한 사용자 아이디, 활동 수)</caption>
+                                        <colgroup>
+                                            <col style="width: 34px;">
+                                            <col style="width: auto;">
+                                            <col style="width: 74px;">
+                                        </colgroup>
+                                        <thead>
+                                            <tr>
+                                                <th scope="col" class="blind">번호</th>
+                                                <th scope="col" class="blind">가장 활발한 사용자 아이디</th>
+                                                <th scope="col" class="blind">활동 수</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td class="center">1</td>
+                                                <td class="pl_19">test0001</td>
+                                                <td class="ta_rgt">
+                                                    <span class="id_num">6,927</span>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="center">2</td>
+                                                <td class="pl_19">sample02</td>
+                                                <td class="ta_rgt">
+                                                    <span class="id_num">4,578</span>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="center">3</td>
+                                                <td class="pl_19">system123</td>
+                                                <td class="ta_rgt">
+                                                    <span class="id_num">3,927</span>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="center">4</td>
+                                                <td class="pl_19">asdf9876</td>
+                                                <td class="ta_rgt">
+                                                    <span class="id_num">2,927</span>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="center">5</td>
+                                                <td class="pl_19">admin99</td>
+                                                <td class="ta_rgt">
+                                                    <span class="id_num">1,927</span>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </li>
+                                <li>
+                                    <table class="dash_table">
+                                        <caption>가장 활발한 사용자(번호, 가장활발한 사용자 아이디, 활동 수)</caption>
+                                        <colgroup>
+                                            <col style="width: 34px;">
+                                            <col style="width: auto;">
+                                            <col style="width: 74px;">
+                                        </colgroup>
+                                        <thead>
+                                            <tr>
+                                                <th scope="col" class="blind">번호</th>
+                                                <th scope="col" class="blind">가장 활발한 사용자 아이디</th>
+                                                <th scope="col" class="blind">활동 수</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td class="center">6</td>
+                                                <td class="pl_19">test0001</td>
+                                                <td class="ta_rgt">
+                                                    <span class="id_num">927</span>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="center">7</td>
+                                                <td class="pl_19">sample02</td>
+                                                <td class="ta_rgt">
+                                                    <span class="id_num">827</span>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="center">8</td>
+                                                <td class="pl_19">system123</td>
+                                                <td class="ta_rgt">
+                                                    <span class="id_num">727</span>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="center">9</td>
+                                                <td class="pl_19">asdf9876</td>
+                                                <td class="ta_rgt">
+                                                    <span class="id_num">627</span>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="center">10</td>
+                                                <td class="pl_19">admin99</td>
+                                                <td class="ta_rgt">
+                                                    <span class="id_num">527</span>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="dash_box">
+                            <h5 class="dash_tit">최다 공감 누적 사용자</h5>
+                            <ul class="slide_btn">
+                                <li><a href="#" title="이전" class="prev prev02"></a></li>
+                                <li><a href="#" title="다음" class="next next02"></a></li>
+                            </ul>
+                            <ul id="dash_slide02" class="mt20"> 
+                                <li>
+                                    <table class="dash_table">
+                                        <caption>최다 공감 누적 사용자(번호, 최다 공감 누적 사용자 아이디, 활동 수)</caption>
+                                        <colgroup>
+                                            <col style="width: 34px;">
+                                            <col style="width: auto;">
+                                            <col style="width: 74px;">
+                                        </colgroup>
+                                        <thead>
+                                            <tr>
+                                                <th scope="col" class="blind">번호</th>
+                                                <th scope="col" class="blind">최다 공감 누적 사용자 아이디</th>
+                                                <th scope="col" class="blind">활동 수</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td class="center">1</td>
+                                                <td class="pl_19">test0001</td>
+                                                <td class="ta_rgt">
+                                                    <span class="sh_num">6,927</span>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="center">2</td>
+                                                <td class="pl_19">sample02</td>
+                                                <td class="ta_rgt">
+                                                    <span class="sh_num">4,578</span>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="center">3</td>
+                                                <td class="pl_19">system123</td>
+                                                <td class="ta_rgt">
+                                                    <span class="sh_num">3,927</span>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="center">4</td>
+                                                <td class="pl_19">asdf9876</td>
+                                                <td class="ta_rgt">
+                                                    <span class="sh_num">2,927</span>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="center">5</td>
+                                                <td class="pl_19">admin99</td>
+                                                <td class="ta_rgt">
+                                                    <span class="sh_num">1,927</span>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </li>
+                                <li>
+                                    <table class="dash_table">
+                                        <caption>가장 활발한 사용자(번호, 최다 공감 누적 사용자 아이디, 활동 수)</caption>
+                                        <colgroup>
+                                            <col style="width: 34px;">
+                                            <col style="width: auto;">
+                                            <col style="width: 74px;">
+                                        </colgroup>
+                                        <thead>
+                                            <tr>
+                                                <th scope="col" class="blind">번호</th>
+                                                <th scope="col" class="blind">최다 공감 누적 사용자 아이디</th>
+                                                <th scope="col" class="blind">활동 수</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td class="center">6</td>
+                                                <td class="pl_19">test0001</td>
+                                                <td class="ta_rgt">
+                                                    <span class="sh_num">927</span>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="center">7</td>
+                                                <td class="pl_19">sample02</td>
+                                                <td class="ta_rgt">
+                                                    <span class="sh_num">827</span>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="center">8</td>
+                                                <td class="pl_19">system123</td>
+                                                <td class="ta_rgt">
+                                                    <span class="sh_num">727</span>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="center">9</td>
+                                                <td class="pl_19">asdf9876</td>
+                                                <td class="ta_rgt">
+                                                    <span class="sh_num">627</span>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="center">10</td>
+                                                <td class="pl_19">admin99</td>
+                                                <td class="ta_rgt">
+                                                    <span class="sh_num">527</span>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul><!-- db02_lft END -->
+                </div>
+            </div><!-- dashboard_Wrap END -->
+        </div><!-- subWrap END -->
+    </div><!-- sub_container_bg END -->
+
+    
+</div><!-- sub_container END -->
+
+<footer>
+    <div class="footer_wrap">
+        <ul>
+            <li>(우 30141) 세종특별자치시 집현중앙로 79, 중소기업기술정보진흥원(TIPA)  TEL: 044-390-0440, 0441 )</li>
+            <li>COPYRIGHT © TIPA(Korea Technology and Information Promotion Agency for SMEs). ALL RIGHT RESERVED</li> 
+         </ul>
+    </div><!-- footer_wrap END -->
+</footer>
+</body>
+</html>

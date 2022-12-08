@@ -1,0 +1,224 @@
+/*테블릿*/
+.m_main_page02_con{display: none;}
+@media screen and (max-width: 1199px){
+    body, html{height: auto;}
+    .main_nav{display:none;}
+    .page{height: auto;}
+    .main_page01{border-bottom: 3px solid #dddddd;}
+    .main_page01_wrap{position: inherit; height: auto;}
+    .main_visual_con{width: 100%; left: 0; margin-left: 0; bottom: 50px; top: inherit; padding: 0 4%;}/*20191125 수정*/
+    .main_visual_txt h4{font-size:18px; margin-bottom: 0;}
+    .main_visual_txt h5{font-size: 32px; margin-bottom: 16px;}
+    .main_visual_txt p{font-size: 15px; line-height: 22px; padding-top:25px}
+    .page01_con{width: 92%;}
+    .main_visual_txt p:before{width: 51px;}
+    .slide_counter span{font-size: 15px;}
+    .slide_counter{font-size: 10px; padding: 0 9px;}
+    .main_visual_btn{margin-top:0;} /* 20191125 수정*/
+    .main_visual_btn > ul > li{ line-height: 20px;}
+    .main_visual_btn > ul > li.ml_20{margin-left: 12px;}
+    .visual_prev img{height: 20px;}
+    .visual_next img{height: 20px;}
+    .visual_stop img, .visual_play img{height: 21px;}
+    .clear h4{font-size: 16px;line-height: 19px; margin-right: 12px;}
+    .clear p{line-height: 15px;}
+    .clear p a{font-size: 11px; background-size: 9px; padding-right:15px; background-position: 98%;}
+    .clear p img{width: 10px; margin-top: 1px; margin-right:6px; }
+    .main_center_num > li{width: 16.6%; margin-right: 0; margin-bottom: 14px;}
+    .numBox{width: 60px; height: 61px; background-size: cover; font-size: 10px; padding-top: 9px; display: block; margin: 0 auto;}
+    .numBox b{font-size: 30px; margin-bottom: -3px;}
+    .numTxt{font-size: 12px; display: block !important}
+    .main_center_num{float: none;}
+    .main_center_rgt{float: none; border-top:1px solid #dddddd; padding: 16px 0; margin-top: 4px;}
+    .main_center_rgt:after{display: block; content: ""; clear: both;}
+    .main_center_rgt p.dot{font-size: 12px;float: left; padding-left: 9px; line-height: 32px;}
+    .main_center_rgt p.dot:before{width: 3px; height: 3px; top: 14px;}
+    .main_btn_ty01{float:right; width:130px; height:32px; font-size: 13px; line-height: 32px; padding: 0; text-align: center; margin: 0;}
+    .main_loginAfter{padding-top:21px; }
+    .main_search h4{font-size: 16px; margin-bottom: 13px;}
+    .main_loginBefore{padding-top: 25px;}
+    .main_loginBefore p.dot{font-size: 12px; padding-left: 9px; line-height: 16px;}
+    .main_loginBefore p.dot:before{width: 3px; height: 3px; top: 5px;}
+    .main_loginBefore > ul > li{float: none; width: 100%;}
+    .main_searchBox{width: 100%; height: 44px; background-image:linear-gradient(90deg, #eead4b, #eb6565 ); border-radius: 4px; padding: 2px; margin-top: 9px;}
+    .main_searchBox ul{width: 100%; height:40px; background-color: #fff; border-radius: 2px;}
+    .main_login{height: auto; border-left:0; border-top:1px solid #dddddd; margin-top: 16px; padding: 18px 0 24px;}
+    .search_input{padding: 0 12px; width: calc(100% - 40px);}
+    .search_input input{height: 40px; font-size: 13px;}
+    .search_btn{width: 40px; margin-top: 10px;}
+    .search_btn img{width: 20px;}
+    .search_btn:before{width: 1px}
+    .main_login > ul{margin-left: 9px; margin-top: 12px;}
+    .main_login_btn{width:80px; height: 32px; margin-right: 12px;}
+    .main_login_btn a{font-size: 13px;}
+    .main_login > ul > li.main_login_btn{ line-height: 32px; }
+    .main_login > ul > li{line-height: 32px; font-size: 11px;}
+    .main_join_btn a{font-size: 11px;}
+    .main_join_btn{margin-left:7px; }
+
+    .main_content{width: 100%;}
+    .main_page02{background-image: none; background-color: #fff;}
+    .main_page02 .main_content{padding-top: 39px;}
+    .main_title_ty01{font-size: 21px;}
+    .main_title_ty02{font-size: 13px; line-height:19px; margin-top: 7px; }
+    .main_page02_con{display: none;}
+    .m_main_page02_con{display: block; width: 92%; margin: 14px auto 24px; }
+    .m_main_page02_con > ul > li{float: left;}
+    .m_main_page02_con > ul:last-child{border-bottom: 0;}
+    .m_main_page02_con > ul:after{display: block; content: ""; clear: both;}
+    .m_main_page02_con > ul{border-bottom: 1px solid #ececec; height: 91px;}
+    .m_m_page02_ico{width:73px; padding-left:4px; line-height: 91px;}
+    .m_m_page02_ico img{vertical-align: middle; margin-top: -2px;}
+    .m_m_page02_txt{line-height: 90px; margin-left: 27px; font-size: 12px; color: #666666;}
+    .m_m_page02_txt span{font-size: 15px; font-weight: bold; color: #222222;}
+
+    .main_page03{background-image: none; background-color: #fdf3ea;}
+    .main_page03 .main_content{width: 92%; margin:0 auto; padding-top: 39px;}
+    .main_half{margin-top: 30px;}
+    .main_half > li{float:none; width: 100%;}
+    .main_title_ty02 br{display: none;}
+    .main_title_ty03{font-size: 16px; background-size: auto 15px; background-repeat: no-repeat; padding-left: 10px; margin-bottom: 14px;}
+    .table_ty_li > li:first-child{width: 10.6%;}
+    .table_ty_li > li{width:17.2%; margin-left: 0.6%;}
+    .table_ty_li > li p{margin-bottom: 2px;}
+    .table_ty_li > li p:first-child{height: 40px; line-height: 13px; padding-top: 7px;}
+    .table_ty_li > li .title_h{font-size: 11px; line-height: 40px !important;}
+    .table_ty_li > li .title_h02{font-size: 11px; }
+    .table_ty_li > li .con_num{font-size: 15px;}
+    .table_ty_li > li p{height: 48px; line-height: 48px;}
+    .main_list li{font-size: 14px; padding-left: 10px;}
+    .main_list li:before{top: 6px;}
+    .main_half_lft .mt_65{margin-top: 29px;}
+    .main_half_lft .mt_65 > div{margin-top: 28px; text-align: center;}
+    .main_half_rgt{margin-top:31px; }
+    .main_half_rgt .mt_40{margin-top: 21px;}
+    .main_list li{margin-top:9px; }
+    .main_half_rgt .mt_20{margin-top: 18px; margin-bottom: 40px; text-align: center;}
+
+    .main_page04 .main_post{width: 100%;}
+    .main_page04 .main_content02 > div{width: 92%;}
+    .main_page04 .main_content02{padding-bottom: 40px; padding-top: 31px;}
+    .main_title_ty04{font-size: 16px; text-align: left;}
+    .main_page04 .main_content01{padding-left: 4%; padding-bottom: 33px;}
+    .post_con .post_title{font-size: 14px; margin-bottom: 7px;text-overflow:ellipsis;  white-space:nowrap;  word-wrap:normal;  overflow:hidden;}
+    .post_con {font-size: 11px;}
+    #main_post_slide .post{width: 300px !important}
+    .main_page04 .main_content01 .main_title_ty04{padding: 29px 0 22px;}
+    .post_con{padding-top: 11px;}
+    .post_con .post_day{padding-left: 9px; margin-left: 9px;}
+    .post_con .post_day:before{height: 10px; top: 0}
+    .main_half02{margin-top: 22px;}
+    .main_half02 > li:first-child{padding-right: 0; margin-bottom: 10px;}
+    .tab_list li a span{font-size:15px; }
+    .tab_list.m1 .m1 a span, .tab_list.m2 .m2 a span, .tab_list.m3 .m3 a span{border-bottom: 3px solid #eb6565; padding-bottom: 3px;}
+    .tab_list > ul > li > a{padding-left: 12px; margin-left: 10px;}
+    .tab_list li ul .latest_more{top: -44px;}
+    .tab_list li ul .latest_more a{font-size: 11px; background-size: 10px; padding-right: 18px;}
+    .tab_list li span.date{display: none;}
+    .tab_list li li{padding: 10px 0 4px;}
+    .tab_list li li:last-child{border-bottom: 0;}
+    .tab_list li ul .latest_con a{width: 100%; font-size: 14px;}
+    .tab_list li ul{top: 33px;}
+    .gallery_more{top: -2px;}
+    .gallery_more a{font-size: 11px; background-size: 10px; padding-right: 18px;}
+    .gallery_slide_con{height: auto;}
+    .main_gallery .bx-wrapper .bx-controls{top: 0; left: 67px;}
+    .main_gallery .bx-wrapper .bx-pager.bx-default-pager a{width: 6px; height: 6px; margin-left: 9px;}
+    .main_gallery .bx-wrapper .bx-pager.bx-default-pager a.active, .bx-wrapper .bx-pager.bx-default-pager a:focus{width: 6px; height: 6px;}
+    .main_gallery{margin-top: 18px;}
+    .gallery_slide_con{width: 300px !important}
+    .main_gallery .bx-wrapper{margin: 0 auto;}
+    .post_btn{display: none;}
+
+    /* 20191125 추가 */
+    .main_visual_txt{width: 100%; margin-left: 0; left: 4%; top:25px;text-align: left; }
+    .main_map{margin: 18px auto 40px;}
+    /* 20191125 추가 END */
+}
+/*모바일*/
+@media screen and (max-width: 767px){
+    .main_visual{min-height: 278px; overflow: hidden;}
+    #main_slider li{text-align: center;}
+    #main_slider li img{min-height: 278px; width: 632px; max-width: inherit; margin-left: -130px;}
+    .main_center_num > li{width: 33.3%; margin-right: 0;}
+    .main_search{width: 100%;}
+    .main_searchBox{width: 100%; height: 44px; }
+    .main_login{width: 100%;}
+    #main_post_slide .post{width: 165px !important}
+    .main_gallery .bx-wrapper{margin: 0 auto; max-width: 330px !important;}
+   .gallery_slide_con{width: 165px !important}
+
+
+
+}
+/* 20191125 추가 */
+@media screen and (max-width: 620px){
+    .main_map{position: relative; height: 320px; width: 380px; margin-bottom: 40px;}
+    .map_pin li p{width: 23px; height: 25px; font-size: 12px; font-weight: bold; color: #eb6565; letter-spacing: -0.05em; line-height: 25px; text-align: center;}
+    .map_pin li{position: absolute; width: 40px; height: 34px; background-image: url("../img/main/pin.png"); background-size: cover;}
+    .pin_gs{left: 0; top:50%; margin-left: 42px; margin-top: -41px;}/*강서구*/
+    .pin_yc{left: 0; top:50%; margin-left: 71px; margin-top: 10px;}/*양천구*/
+    .pin_gr{left: 0; top:50%; margin-left: 43px; margin-top: 60px;}/*구로구*/
+    .pin_gc{left: 0; top:50%; margin-left: 120px; margin-top: 88px;}/*금천구*/
+    .pin_ydp{left: 0; top:50%; margin-left: 118px; margin-top: 12px;}/*영등포구*/
+    .pin_dj{left: 0; top:50%; margin-left: 158px; margin-top: 27px;}/*동작구*/
+    .pin_ga{left: 0; top:50%; margin-left: 157px; margin-top: 69px;}/*관악구*/
+    .pin_sc{left: 0; top:50%; margin-left: 214px; margin-top: 49px;}/*서초구*/
+    .pin_gn{left: 0; top:50%; margin-left: 261px; margin-top: 40px;}/*강남구*/
+    .pin_sp{left: 0; top:50%; margin-left: 309px; margin-top: 26px;}/*송파구*/
+    .pin_gd{right: 0; top:50%; margin-right: 5px; margin-top: -28px;}/*강동구*/
+    .pin_db{left: 50%; top:0; margin-left: 42px; margin-top: 2px;}/*도봉구*/
+    .pin_no{left: 50%; top:0; margin-left: 80px; margin-top: 18px;}/*노원구*/
+    .pin_gb{left: 50%; top:0; margin-left: 19px; margin-top: 31px;}/*강북구*/
+    .pin_ep{left: 50%; top:0; margin-left: -55px; margin-top: 55px;}/*은평구*/
+    .pin_sb{left: 50%; top:0; margin-left: 26px; margin-top: 77px;}/*성북구*/
+    .pin_jr01{left: 50%; top:0; margin-left: 97px; margin-top: 81px;}/*중랑구*/
+    .pin_ddm{left: 50%; top:0; margin-left: 57px; margin-top: 100px;}/*동대문구*/
+    .pin_jr02{left: 50%; top:0; margin-left: -5px; margin-top: 96px;}/*종로구*/
+    .pin_sdm{left: 50%; top:0; margin-left: -46px; margin-top: 103px;}/*서대문구*/
+    .pin_mp{left: 50%; top:0; margin-left: -70px; margin-top: 125px;}/*마포구*/
+    .pin_ys{left: 50%; top:50%; margin-left: -9px; margin-top:-5px;}/*용산구*/
+    .pin_jg{left: 50%; top:50%; margin-left: 21px; margin-top:-29px;}/*중구*/
+    .pin_sd{left: 50%; top:50%; margin-left: 63px; margin-top:-14px;}/*성동구*/
+    .pin_gj{left: 50%; top:50%; margin-left: 91px; margin-top:-25px;}/*광진구*/
+}
+@media screen and (max-width: 414px){
+    .main_map{position: relative; height: 247px; width: 294px;}
+    .map_pin li p{width: 20px; height: 20px; font-size: 10px; font-weight: bold; color: #eb6565; letter-spacing: -0.05em; line-height: 20px; text-align: center;}
+    .map_pin li{position: absolute; width: 35px; height: 30px; background-image: url("../img/main/pin.png"); background-size: cover;}
+    .pin_gs{left: 0; top:50%; margin-left: 31px; margin-top: -31px;}/*강서구*/
+    .pin_yc{left: 0; top:50%; margin-left: 53px; margin-top: 7px;}/*양천구*/
+    .pin_gr{left: 0; top:50%; margin-left: 30px; margin-top: 46px;}/*구로구*/
+    .pin_gc{left: 0; top:50%; margin-left: 91px; margin-top: 64px;}/*금천구*/
+    .pin_ydp{left: 0; top:50%; margin-left: 90px; margin-top: 5px;}/*영등포구*/
+    .pin_dj{left: 0; top:50%; margin-left: 120px; margin-top: 20px;}/*동작구*/
+    .pin_ga{left: 0; top:50%; margin-left: 122px; margin-top: 53px;}/*관악구*/
+    .pin_sc{left: 0; top:50%; margin-left: 164px; margin-top: 37px;}/*서초구*/
+    .pin_gn{left: 0; top:50%; margin-left: 200px; margin-top: 29px;}/*강남구*/
+    .pin_sp{left: 0; top:50%; margin-left: 238px; margin-top: 19px;}/*송파구*/
+    .pin_gd{right: 0; top:50%; margin-right: 1px; margin-top: -23px;}/*강동구*/
+    .pin_db{left: 50%; top:0; margin-left: 32px; margin-top: -2px;}/*도봉구*/
+    .pin_no{left: 50%; top:0; margin-left: 61px; margin-top: 11px;}/*노원구*/
+    .pin_gb{left: 50%; top:0; margin-left: 13px; margin-top: 22px;}/*강북구*/
+    .pin_ep{left: 50%; top:0; margin-left: -43px; margin-top: 40px;}/*은평구*/
+    .pin_sb{left: 50%; top:0; margin-left: 18px; margin-top: 58px;}/*성북구*/
+    .pin_jr01{left: 50%; top:0; margin-left: 74px; margin-top: 59px;}/*중랑구*/
+    .pin_ddm{left: 50%; top:0; margin-left: 44px; margin-top: 75px;}/*동대문구*/
+    .pin_jr02{left: 50%; top:0; margin-left: -5px; margin-top: 72px;}/*종로구*/
+    .pin_sdm{left: 50%; top:0; margin-left: -37px; margin-top: 77px;}/*서대문구*/
+    .pin_mp{left: 50%; top:0; margin-left: -57px; margin-top: 92px;}/*마포구*/
+    .pin_ys{left: 50%; top:50%; margin-left: -12px; margin-top:-8px;}/*용산구*/
+    .pin_jg{left: 50%; top:50%; margin-left: 21px; margin-top:-29px;}/*중구*/
+    .pin_sd{left: 50%; top:50%; margin-left: 49px; margin-top:-14px;}/*성동구*/
+    .pin_gj{left: 50%; top:50%; margin-left: 76px; margin-top:-25px;}/*광진구*/
+}
+/* 20191125 추가 END */
+
+@media screen and (max-width: 340px){
+    .main_visual_txt h5{font-size: 28px; margin-bottom: 16px;}
+    .m_m_page02_ico{width: 60px;}
+    .m_m_page02_txt{margin-left: 10px;}
+    .tab_list li a span{font-size: 14px;}
+    .tab_list > ul > li > a{padding-left: 8px; margin-left: 8px;}
+    .tab_list li ul .latest_more a{font-size: 11px; background-size: 10px; padding-right: 14px;}
+}
